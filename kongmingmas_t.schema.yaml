@@ -1,0 +1,19 @@
+# Rime schema
+# encoding: utf-8
+
+# 空明码-宏版S 的繁体镜像：仅供 kongmingmas 的拼音反查作为
+# reverse_lookup/target 使用（luna 反查候选为繁体，需要繁体键的反查库）。
+# 本 schema 不用于输入。
+
+schema:
+  schema_id: kongmingmas_t
+  name: 空明码-宏版S(繁体镜像,反查用)
+  version: "1"
+  dependencies:
+
+translator:
+  dictionary: kongmingmas_t
+  enable_completion: false
+  enable_sentence: false
+  enable_user_dict: false
+  enable_encoder: false

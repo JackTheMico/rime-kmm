@@ -1,0 +1,11 @@
+patch:
+  schema_list:
+    - {schema: kongmingmas}
+    - {schema: kongmingma}
+    - {schema: english}
+  "menu/page_size": 6
+  "menu/alternative_select_labels": [ ⒈, ⒉, ⒊, ⒋, ⒌, ⒍, ⒎, ⒏, ⒐, ⒑, ⒒, ⒓, ⒔, ⒕, ⒖, ⒗, ⒘, ⒙, ⒚, ⒛ ]
+  "switcher/caption": 「方案选单」
+  "switcher/hotkeys":
+    - Alt+Tab
+    - Control+grave

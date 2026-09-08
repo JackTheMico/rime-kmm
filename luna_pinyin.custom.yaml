@@ -1,0 +1,7 @@
+# 让 luna_pinyin 依赖词典能在本机编译：去掉缺失的预设引用
+# （本机 rime-data 缺少 key_binder/symbols 预设，导致 luna_pinyin.schema 构建失败、
+#   反查依赖词典无法生成）
+patch:
+  key_binder/import_preset:
+  recognizer/import_preset:
+  punctuator/import_preset:
