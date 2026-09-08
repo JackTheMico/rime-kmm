@@ -131,7 +131,7 @@ chord_composer:
     - xform/(xcv)/9/
     - xform/(nm)/m/
     - xlit|;,./|FDJG|
-    - xform/^([qwertasdfgzxcvb]+)$/$1=/
+    - xform/^([qwertasdfgzxcvb]+)( ?)$/$1=$2/
     - xform/^([yuiophjklFnmDJG])/=$1/
     - xform|([A-Za-z])|$1-|
     - xform/^([7890]+)$/$1=/
@@ -212,6 +212,9 @@ chord_composer:
     - xform/[ru]-/r/
     - xform/[ty]-/t/
     - xform/^\S{3,}$//
+    # 空格并击单字转换规则（左手 $1=  -> $1_=；右手 =$1  -> =_$1）
+    - xform/^([A-Za-z])= $/$1_=/
+    - xform/^=([A-Za-z]) $/=_$1/
   # 并击过程中套用的式样
   prompt_format:
     # 加方括号
