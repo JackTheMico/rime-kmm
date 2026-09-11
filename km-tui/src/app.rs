@@ -94,6 +94,13 @@ pub enum Popup {
     None,
     Add(Box<AddState>),
     ConfirmDeploy { on_exit: bool },
+    ConfirmDelete {
+        entry_idx: u32,
+        word: String,
+        code: String,
+        same_code_count: usize,
+        rank: usize,
+    },
     DeployLog(String),
     SwitchDict(DirTree),
     Message(String),
@@ -167,7 +174,7 @@ impl App {
         app.dict_name = name;
         app.stage = Stage::Ready;
         app.start_pinyin();
-        app.status = "Normal 模式: j/k 移动 · J/K 调序 · H/L 置顶/底 · / 检索 · a 添加 · o 换库 · d 部署 · q 退出".into();
+        app.status = "Normal 模式: j/k 移动 · J/K 调序 · H/L 置顶/底 · x 删除 · / 检索 · a 添加 · o 换库 · d 部署 · q 退出".into();
         app
     }
 
@@ -301,7 +308,7 @@ impl App {
                 }
                 self.start_pinyin();
                 self.status = format!(
-                    "已加载词库「{}」（共 {} 条条目）。按 / 或 i 检索，j/k 移动，J/K 调序。",
+                    "已加载词库「{}」（共 {} 条条目）。按 / 或 i 检索，j/k 移动，J/K 调序，x 删除。",
                     self.dict_name,
                     self.dict.len()
                 );
@@ -449,6 +456,10 @@ impl App {
                             state.on_word_changed(&self.dict);
                         }
                         self.popup = Popup::Add(Box::new(state));
+                    }
+                    KeyCode::Char('x') | KeyCode::Delete => {
+                        self.last_key_g = false;
+                        self.prompt_delete_selected();
                     }
 
                     // File & Deployment Actions
@@ -648,6 +659,19 @@ impl App {
                     _ => {}
                 }
             },
+            Popup::ConfirmDelete { entry_idx, .. } => {
+                let target_idx = *entry_idx;
+                match k.code {
+                    KeyCode::Char('y') | KeyCode::Char('Y') | KeyCode::Enter => {
+                        self.popup = Popup::None;
+                        self.execute_delete(target_idx);
+                    }
+                    KeyCode::Char('n') | KeyCode::Char('N') | KeyCode::Esc | KeyCode::Char('q') => {
+                        self.popup = Popup::None;
+                    }
+                    _ => {}
+                }
+            }
             Popup::Help | Popup::Message(_) => match k.code {
                 KeyCode::Esc | KeyCode::Enter | KeyCode::Char('q') | KeyCode::Char(' ') => {
                     self.popup = Popup::None;
@@ -693,6 +717,45 @@ impl App {
                     );
                 }
             }
+        }
+    }
+
+    fn prompt_delete_selected(&mut self) {
+        if self.results.is_empty() || self.selected >= self.results.len() {
+            return;
+        }
+        let entry_idx = self.results[self.selected];
+        let word = self.dict.word(entry_idx).to_string();
+        let code = self.dict.code(entry_idx).to_string();
+        let (rank, same_code_count) = self.dict.candidate_rank(entry_idx).unwrap_or((1, 1));
+        self.popup = Popup::ConfirmDelete {
+            entry_idx,
+            word,
+            code,
+            same_code_count,
+            rank,
+        };
+    }
+
+    fn execute_delete(&mut self, entry_idx: u32) {
+        if let Some((word, code)) = self.dict.delete_entry(entry_idx) {
+            self.session_modified = true;
+            if !self.results.is_empty()
+                && self.selected < self.results.len()
+                && self.results[self.selected] == entry_idx
+            {
+                self.results.remove(self.selected);
+            } else {
+                self.results.retain(|&x| x != entry_idx);
+            }
+            if self.results.is_empty() {
+                self.selected = 0;
+            } else if self.selected >= self.results.len() {
+                self.selected = self.results.len() - 1;
+            }
+            self.status = format!(
+                "✔ 已删除条目「{word}  {code}」（后台已调度防抖保存，.bak 已备份）"
+            );
         }
     }
 

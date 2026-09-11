@@ -30,9 +30,11 @@ pub enum SaveResult {
     Failed(String),
 }
 
+pub const TOMBSTONE_FLAG: u8 = 0x80;
+
 #[derive(Clone, Copy, Debug)]
 pub struct EntryRef {
-    pub buf_id: u8, // 0 = 主文件 buffer, 1 = 追加 buffer
+    pub buf_id: u8, // 低位表示缓冲区：0 = 主文件, 1 = 追加；最高位 0x80 为墓碑标记 (已删除)
     pub ws: u32,
     pub we: u32,
     pub cs: u32,
@@ -57,6 +59,8 @@ pub struct Dict {
     pub pinyin_map: Option<PinyinMap>,
     pub pinyin_index: Option<HashMap<String, Vec<u32>>>,
 
+    pub deleted_count: usize,
+
     // 脏标记与保存状态
     pub dirty: bool,
     pub last_modified: Option<Instant>,
@@ -80,6 +84,7 @@ impl Dict {
             single_char_map: HashMap::new(),
             pinyin_map: None,
             pinyin_index: None,
+            deleted_count: 0,
             dirty: false,
             last_modified: None,
             is_saving: false,
@@ -199,6 +204,7 @@ impl Dict {
             single_char_map,
             pinyin_map: None,
             pinyin_index: None,
+            deleted_count: 0,
             dirty: false,
             last_modified: None,
             is_saving: false,
@@ -247,7 +253,10 @@ impl Dict {
             let b1 = payload.appended.as_bytes();
 
             for e in payload.entries.iter() {
-                let (w_slice, c_slice) = if e.buf_id == 0 {
+                if e.is_deleted() {
+                    continue;
+                }
+                let (w_slice, c_slice) = if e.buffer_id() == 0 {
                     (&b0[e.ws as usize..e.we as usize], &b0[e.cs as usize..e.ce as usize])
                 } else {
                     (&b1[e.ws as usize..e.we as usize], &b1[e.cs as usize..e.ce as usize])
@@ -265,12 +274,12 @@ impl Dict {
     }
 
     pub fn len(&self) -> usize {
-        self.entries.len()
+        self.entries.len().saturating_sub(self.deleted_count)
     }
 
     pub fn word(&self, i: u32) -> &str {
         let e = &self.entries[i as usize];
-        if e.buf_id == 0 {
+        if e.buffer_id() == 0 {
             &self.buffer[e.ws()..e.we()]
         } else {
             &self.appended_buffer[e.ws()..e.we()]
@@ -279,7 +288,7 @@ impl Dict {
 
     pub fn code(&self, i: u32) -> &str {
         let e = &self.entries[i as usize];
-        if e.buf_id == 0 {
+        if e.buffer_id() == 0 {
             &self.buffer[e.cs()..e.ce()]
         } else {
             &self.appended_buffer[e.cs()..e.ce()]
@@ -293,6 +302,10 @@ impl Dict {
 
     /// 获取指定条目在其编码同码候选中的排位：`(rank_1_indexed, total_count)`
     pub fn candidate_rank(&self, entry_idx: u32) -> Option<(usize, usize)> {
+        let idx = entry_idx as usize;
+        if idx >= self.entries.len() || self.entries[idx].is_deleted() {
+            return None;
+        }
         let code = self.code(entry_idx);
         let list = self.code_index.get(code)?;
         let pos = list.iter().position(|&x| x == entry_idx)?;
@@ -479,6 +492,9 @@ impl Dict {
         }
         // 其次包含匹配
         for (i, e) in self.entries.iter().enumerate() {
+            if e.is_deleted() {
+                continue;
+            }
             let idx = i as u32;
             if out.contains(&idx) {
                 continue;
@@ -586,6 +602,81 @@ impl Dict {
         new_idx
     }
 
+    /// 删除指定条目（采用墓碑标记软删除，O(1) 维护索引与内存映射）
+    /// 返回被删除条目的 (word, code)
+    pub fn delete_entry(&mut self, entry_idx: u32) -> Option<(String, String)> {
+        let idx = entry_idx as usize;
+        if idx >= self.entries.len() {
+            return None;
+        }
+        if self.entries[idx].is_deleted() {
+            return None;
+        }
+
+        let word = self.word(entry_idx).to_string();
+        let code = self.code(entry_idx).to_string();
+
+        // 1. 标记墓碑
+        let entries_mut = Arc::make_mut(&mut self.entries);
+        entries_mut[idx].buf_id |= TOMBSTONE_FLAG;
+        self.deleted_count += 1;
+
+        // 2. 从 code_index 中移除该条目
+        if let Some(list) = self.code_index.get_mut(&code) {
+            list.retain(|&x| x != entry_idx);
+            if list.is_empty() {
+                self.code_index.remove(&code);
+            }
+        }
+
+        // 3. 从 word_index 中移除该条目
+        if let Some(list) = self.word_index.get_mut(&word) {
+            list.retain(|&x| x != entry_idx);
+            if list.is_empty() {
+                self.word_index.remove(&word);
+            }
+        }
+
+        // 4. 从 pinyin_index 中移除该条目
+        if let Some(pinyin_map) = &self.pinyin_map {
+            if let Some(py) = word_to_pinyin(pinyin_map, &word) {
+                if let Some(idx_map) = self.pinyin_index.as_mut() {
+                    if let Some(list) = idx_map.get_mut(&py) {
+                        list.retain(|&x| x != entry_idx);
+                        if list.is_empty() {
+                            idx_map.remove(&py);
+                        }
+                    }
+                }
+            }
+        }
+
+        // 5. 单字形码映射联动：若为单字，且该字在当前编码下已无其他条目，则从 single_char_map 移除该编码
+        let mut char_iter = word.chars();
+        if let Some(first_ch) = char_iter.next() {
+            if char_iter.next().is_none() {
+                let still_has_code = self
+                    .code_index
+                    .get(&code)
+                    .map(|list| list.iter().any(|&e| self.word(e) == word))
+                    .unwrap_or(false);
+                if !still_has_code {
+                    if let Some(codes) = self.single_char_map.get_mut(&first_ch) {
+                        codes.retain(|c| c != &code);
+                        if codes.is_empty() {
+                            self.single_char_map.remove(&first_ch);
+                        }
+                    }
+                }
+            }
+        }
+
+        self.dirty = true;
+        self.last_modified = Some(Instant::now());
+
+        Some((word, code))
+    }
+
     pub fn set_pinyin_map(&mut self, m: PinyinMap) {
         self.pinyin_map = Some(m);
     }
@@ -618,6 +709,16 @@ impl Dict {
 
 // 辅助方法，简化切片访问
 impl EntryRef {
+    #[inline(always)]
+    pub fn is_deleted(&self) -> bool {
+        (self.buf_id & TOMBSTONE_FLAG) != 0
+    }
+
+    #[inline(always)]
+    pub fn buffer_id(&self) -> u8 {
+        self.buf_id & !TOMBSTONE_FLAG
+    }
+
     #[inline(always)]
     pub fn ws(&self) -> usize {
         self.ws as usize
@@ -738,5 +839,38 @@ mod tests {
         let bottom_idx = dict.reorder_extreme(top_idx, false).unwrap();
         assert_eq!(dict.word(bottom_idx), "丁");
         assert_eq!(dict.candidate_rank(bottom_idx), Some((4, 4)));
+    }
+
+    #[test]
+    fn test_delete_entry() {
+        let content = "---\nname: test\n...\n视\ts=\n事\tS=\n世\ts=\n";
+        let (_guard, path) = create_temp_dict(content);
+
+        let mut dict = Dict::load(&path).unwrap();
+        assert_eq!(dict.len(), 3);
+        assert_eq!(dict.candidate_rank(2), Some((2, 2)));
+
+        // 删除 "世" (index 2)
+        let deleted = dict.delete_entry(2).unwrap();
+        assert_eq!(deleted, ("世".to_string(), "s=".to_string()));
+        assert_eq!(dict.len(), 2);
+
+        // 同码候选只剩 "视"
+        assert_eq!(dict.get_same_code_entries("s="), vec![0]);
+        assert_eq!(dict.candidate_rank(0), Some((1, 1)));
+        assert_eq!(dict.candidate_rank(2), None);
+
+        // 检索 "世" 结果为空
+        assert!(dict.search_word("世").is_empty());
+
+        // 单字映射中 "世" 的编码已被移除
+        assert!(dict.single_char_map.get(&'世').is_none());
+
+        // 写盘验证：已过滤已删除条目
+        dict.flush_sync().unwrap();
+        let saved = std::fs::read_to_string(&path).unwrap();
+        assert!(!saved.contains("世\ts="));
+        let lines: Vec<&str> = saved.lines().filter(|l| l.contains('\t')).collect();
+        assert_eq!(lines, vec!["视\ts=", "事\tS="]);
     }
 }

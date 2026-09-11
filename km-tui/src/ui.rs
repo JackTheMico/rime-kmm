@@ -17,6 +17,13 @@ pub fn ui(frame: &mut Frame, app: &App) {
         Popup::None => {}
         Popup::Add(state) => draw_add_popup(frame, state),
         Popup::ConfirmDeploy { on_exit } => draw_confirm_deploy_popup(frame, *on_exit),
+        Popup::ConfirmDelete {
+            word,
+            code,
+            same_code_count,
+            rank,
+            ..
+        } => draw_confirm_delete_popup(frame, word, code, *same_code_count, *rank),
         Popup::DeployLog(log) => draw_deploy_log_popup(frame, log),
         Popup::SwitchDict(tree) => draw_switch_dict_popup(frame, tree),
         Popup::Message(m) => draw_msg_popup(frame, m),
@@ -626,6 +633,67 @@ fn draw_confirm_deploy_popup(frame: &mut Frame, on_exit: bool) {
     frame.render_widget(Paragraph::new(text), inner);
 }
 
+fn draw_confirm_delete_popup(
+    frame: &mut Frame,
+    word: &str,
+    code: &str,
+    same_code_count: usize,
+    rank: usize,
+) {
+    let area = centered_rect(62, 10, frame.area());
+    frame.render_widget(Clear, area);
+
+    let block = Block::bordered()
+        .title(" 删除条目确认 ")
+        .border_style(Style::new().bold().red());
+    frame.render_widget(block, area);
+
+    let inner = Rect {
+        x: area.x + 2,
+        y: area.y + 1,
+        width: area.width.saturating_sub(4),
+        height: area.height.saturating_sub(2),
+    };
+
+    let impact_line = if same_code_count > 1 {
+        Line::from(vec![
+            Span::styled("  同码影响：", Style::new().dark_gray()),
+            Span::styled(
+                format!(
+                    "当前排第 [{rank}/{same_code_count}] 位（删除后剩余 {} 项，后续候选顺位自动前移）",
+                    same_code_count - 1
+                ),
+                Style::new().yellow(),
+            ),
+        ])
+    } else {
+        Line::from(vec![
+            Span::styled("  同码影响：", Style::new().dark_gray()),
+            Span::styled("该编码下唯一条目（删除后该编码将无候选）", Style::new().dark_gray()),
+        ])
+    };
+
+    let text = vec![
+        Line::from(vec![
+            Span::styled("确认删除条目：", Style::new().bold()),
+            Span::styled(format!(" {word} "), Style::new().bold().yellow().reversed()),
+            Span::raw("    编码："),
+            Span::styled(format!(" {code} "), Style::new().bold().cyan()),
+        ]),
+        Line::from(""),
+        impact_line,
+        Line::from(""),
+        Line::from(vec![
+            Span::styled("  [Y / Enter] ", Style::new().bold().red()),
+            Span::raw("确认删除      "),
+            Span::styled("  [N / Esc / q] ", Style::new().bold().dark_gray()),
+            Span::raw("取消返回"),
+        ]),
+    ];
+
+    frame.render_widget(Paragraph::new(text), inner);
+}
+
 fn draw_deploy_log_popup(frame: &mut Frame, log: &str) {
     let area = centered_rect(76, 18, frame.area());
     frame.render_widget(Clear, area);
@@ -723,7 +791,7 @@ fn draw_msg_popup(frame: &mut Frame, msg: &str) {
 }
 
 fn draw_help_popup(frame: &mut Frame) {
-    let area = centered_rect(70, 18, frame.area());
+    let area = centered_rect(70, 20, frame.area());
     frame.render_widget(Clear, area);
 
     let block = Block::bordered()
@@ -748,6 +816,7 @@ fn draw_help_popup(frame: &mut Frame) {
         Line::from("  / 或 i             进入检索模式（检索框输入；Esc 返回 Normal）"),
         Line::from("  Tab                循环切换检索模式（编码 / 拼音 / 字词）"),
         Line::from("  a                  添加字词（支持单字码参考与自动推导）"),
+        Line::from("  x 或 Delete        删除当前选中的条目（弹窗确认）"),
         Line::from("  K (Shift+K)        同码候选项向上微调位次（提高候选优先级）"),
         Line::from("  J (Shift+J)        同码候选项向下微调位次"),
         Line::from("  H (Shift+H)        同码候选项直接置顶为第 1 首选"),
