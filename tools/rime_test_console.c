@@ -3,6 +3,7 @@
 #include <rime_api.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 static void on_notify(void* ctx, RimeSessionId session,
                       const char* type, const char* value) {
@@ -17,33 +18,24 @@ static void print_state(RimeApi* api, RimeSessionId session, const char* tag) {
     return;
   }
   const char* preedit = context.composition.preedit ? context.composition.preedit : "";
-  printf("%-14s | preedit='%s' 候选数=%d", tag, preedit, context.menu.num_candidates);
-  int show = context.menu.num_candidates > 3 ? 3 : context.menu.num_candidates;
+  printf("%-14s | preedit='%s' 候选数=%d\n", tag, preedit, context.menu.num_candidates);
+  int show = context.menu.num_candidates > 10 ? 10 : context.menu.num_candidates;
   for (int i = 0; i < show; i++) {
     RimeCandidate* c = &context.menu.candidates[i];
-    printf(" | [%d]%s(%s)", i + (context.menu.page_no ? 0 : 0),
+    printf("    [%d] %s (%s)\n", i,
            c->text ? c->text : "?", c->comment ? c->comment : "-");
-    if (i == 0 && c->comment) {  // [DEBUG-revcm] 首候选注释十六进制
-      printf(" HEX:");
-      for (const unsigned char* p = (const unsigned char*)c->comment; *p && p < (const unsigned char*)c->comment + 40; p++)
-        printf("%02x", *p);
-    }
   }
-  printf("\n");
   api->free_context(&context);
 }
 
 int main(int argc, char** argv) {
-  setvbuf(stdout, NULL, _IONBF, 0);  // [DEBUG-revcm] 段错误时保留已打印内容
-  const char* schema_id = argc > 1 ? argv[1] : "kongmingma";
-  RimeTraits traits;
-  RIME_STRUCT_INIT(RimeTraits, traits);
+  setvbuf(stdout, NULL, _IONBF, 0);
+  const char* schema_id = argc > 1 ? argv[1] : "kongmingmas";
+  const char* custom_input = argc > 2 ? argv[2] : NULL;
+  RIME_STRUCT(RimeTraits, traits);
   traits.shared_data_dir = "/usr/share/rime-data";
   traits.user_data_dir = "/home/jackwy/.local/share/fcitx5/rime";
   traits.log_dir = "/home/jackwy/.local/share/fcitx5/rime/.test-logs";
-  traits.distribution_name = "Rime";
-  traits.distribution_code_name = "rime-test-console";
-  traits.distribution_version = "1.0";
   traits.app_name = "rime.rime-test-console";
 
   RimeApi* api = rime_get_api();
@@ -53,8 +45,10 @@ int main(int argc, char** argv) {
   printf("stage: setup done\n"); fflush(stdout);
   api->initialize(NULL);  // 沿用 setup 时的 traits，避免重复应用
   printf("stage: initialize done\n"); fflush(stdout);
-  if (api->start_maintenance(/*full_check=*/True))  // 全量部署：编译 luna_pinyin 依赖
-    api->join_maintenance_thread();
+  if (argc > 3 && strcmp(argv[3], "--deploy") == 0) {
+    if (api->start_maintenance(/*full_check=*/True))
+      api->join_maintenance_thread();
+  }
   printf("stage: maintenance done\n"); fflush(stdout);
 
   RimeSessionId session = api->create_session();
@@ -64,11 +58,21 @@ int main(int argc, char** argv) {
     return 1;
   }
   printf("stage: session created\n"); fflush(stdout);
-  fprintf(stderr, "[DEBUG-revcm] before select_schema\n");
   if (!api->select_schema(session, schema_id)) {
     printf("切换 %s 失败\n", schema_id);
   }
-  fprintf(stderr, "[DEBUG-revcm] after select_schema\n");
+
+  if (custom_input) {
+    printf("=== 测试序列：%s ===\n", custom_input);
+    if (api->simulate_key_sequence(session, custom_input)) {
+      print_state(api, session, custom_input);
+    } else {
+      printf("simulate_key_sequence 失败\n");
+    }
+    api->destroy_session(session);
+    api->finalize();
+    return 0;
+  }
   printf("=== 基线：simulate fa（并击正常出字，证明无回归）===\n");
   if (api->simulate_key_sequence(session, "fa")) {
     print_state(api, session, "fa");
