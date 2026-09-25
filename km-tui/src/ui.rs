@@ -24,7 +24,7 @@ pub fn ui(frame: &mut Frame, app: &App) {
             rank,
             ..
         } => draw_confirm_delete_popup(frame, word, code, *same_code_count, *rank),
-        Popup::DeployLog(log) => draw_deploy_log_popup(frame, log),
+        Popup::DeployLog { log, .. } => draw_deploy_log_popup(frame, log),
         Popup::SwitchDict(tree) => draw_switch_dict_popup(frame, tree),
         Popup::Message(m) => draw_msg_popup(frame, m),
         Popup::Help => draw_help_popup(frame),
@@ -114,7 +114,7 @@ fn draw_pick(frame: &mut Frame, app: &App) {
         " 词库目录树 (空) ".to_string()
     } else {
         format!(
-            " 词库目录树 [第 {}/{} 项]（j/k 移动 · l/Enter 打开 · h 上级 · q 退出） ",
+            " 词库目录树 [第 {}/{} 项]（j/k 移动 · l/Enter 打开 · h/Esc 上级 · ^q 退出） ",
             app.dir_tree.selected + 1,
             app.dir_tree.flat.len()
         )
@@ -306,13 +306,15 @@ fn draw_ready(frame: &mut Frame, app: &App) {
         Span::raw("检索  "),
         Span::styled("a ", Style::new().bold().yellow()),
         Span::raw("添加  "),
+        Span::styled("x ", Style::new().bold().yellow()),
+        Span::raw("删除  "),
         Span::styled("w ", Style::new().bold().yellow()),
         Span::raw("保存  "),
         Span::styled("o ", Style::new().bold().yellow()),
         Span::raw("换库  "),
         Span::styled("d ", Style::new().bold().yellow()),
         Span::raw("部署  "),
-        Span::styled("q ", Style::new().bold().yellow()),
+        Span::styled("^q ", Style::new().bold().yellow()),
         Span::raw("退出"),
     ]);
     let status_line = Line::from(vec![
@@ -824,7 +826,7 @@ fn draw_help_popup(frame: &mut Frame) {
         Line::from("  w 或 Ctrl+s        立即落盘保存当前修改（平时自动 300ms 异步防抖写盘）"),
         Line::from("  o                  唤出词库切换抽屉，快速切换其它 .dict.yaml"),
         Line::from("  d 或 Ctrl+r        重新部署并同步词库至 fcitx5-rime"),
-        Line::from("  q 或 Esc           退出程序（检测到修改时弹出部署确认）"),
+        Line::from("  Ctrl+q (或 Ctrl+c) 退出程序（检测到修改时弹出部署确认）"),
         Line::from(""),
         Line::from(Span::styled("【实时写盘与备份】", Style::new().bold().yellow())),
         Line::from("  任何调序或新增均在后台原子写入，自动生成 .bak 安全备份。"),

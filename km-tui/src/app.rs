@@ -101,7 +101,7 @@ pub enum Popup {
         same_code_count: usize,
         rank: usize,
     },
-    DeployLog(String),
+    DeployLog { log: String, on_exit: bool },
     SwitchDict(DirTree),
     Message(String),
     Help,
@@ -148,7 +148,7 @@ impl App {
             focus: Focus::Results,
             results: Vec::new(),
             selected: 0,
-            status: "j/k 移动 · l/Enter 打开 · h 返回上级 · q 退出".into(),
+            status: "j/k 移动 · l/Enter 打开 · h/Esc 返回上级 · ^q 退出".into(),
             popup: Popup::None,
             pinyin_rx: None,
             deploy_cmd,
@@ -174,7 +174,7 @@ impl App {
         app.dict_name = name;
         app.stage = Stage::Ready;
         app.start_pinyin();
-        app.status = "Normal 模式: j/k 移动 · J/K 调序 · H/L 置顶/底 · x 删除 · / 检索 · a 添加 · o 换库 · d 部署 · q 退出".into();
+        app.status = "Normal 模式: j/k 移动 · J/K 调序 · H/L 置顶/底 · a 添加 · x 删除 · / 检索 · o 换库 · d 部署 · ^q 退出".into();
         app
     }
 
@@ -231,6 +231,10 @@ impl App {
 
     fn handle_pick(&mut self, k: KeyEvent) {
         let ctrl = k.modifiers.contains(KeyModifiers::CONTROL);
+        if ctrl && (k.code == KeyCode::Char('q') || k.code == KeyCode::Char('c')) {
+            self.should_quit = true;
+            return;
+        }
         if ctrl && k.code == KeyCode::Char('d') {
             self.dir_tree.move_sel(10);
             return;
@@ -269,12 +273,9 @@ impl App {
                     self.load_dict(&path);
                 }
             }
-            KeyCode::Left | KeyCode::Char('h') | KeyCode::Backspace => {
+            KeyCode::Left | KeyCode::Char('h') | KeyCode::Backspace | KeyCode::Esc => {
                 self.last_key_g = false;
                 self.dir_tree.left();
-            }
-            KeyCode::Char('q') | KeyCode::Esc => {
-                self.should_quit = true;
             }
             _ => {
                 self.last_key_g = false;
@@ -322,6 +323,12 @@ impl App {
     fn handle_key(&mut self, k: KeyEvent) {
         let ctrl = k.modifiers.contains(KeyModifiers::CONTROL);
         let alt = k.modifiers.contains(KeyModifiers::ALT);
+
+        if ctrl && (k.code == KeyCode::Char('q') || k.code == KeyCode::Char('c')) {
+            self.last_key_g = false;
+            self.request_quit();
+            return;
+        }
 
         match self.focus {
             Focus::Query => match k.code {
@@ -489,13 +496,8 @@ impl App {
                         self.last_key_g = false;
                         self.popup = Popup::ConfirmDeploy { on_exit: false };
                     }
-                    KeyCode::Char('q') | KeyCode::Esc => {
+                    KeyCode::Esc => {
                         self.last_key_g = false;
-                        self.request_quit();
-                    }
-                    KeyCode::Char('c') if ctrl => {
-                        self.last_key_g = false;
-                        self.request_quit();
                     }
                     KeyCode::Enter => {
                         self.last_key_g = false;
@@ -595,10 +597,17 @@ impl App {
                         let _ = self.dict.flush_sync();
                         let log = deploy::sync_and_deploy(&self.dict.path, Some(&self.deploy_cmd));
                         if is_exit {
-                            self.popup = Popup::DeployLog(format!("{log}\n\n[按任意键退出程序]"));
+                            self.popup = Popup::DeployLog {
+                                log: format!("{log}\n\n[按任意键退出程序]"),
+                                on_exit: true,
+                            };
                             self.should_quit = false; // 用户看一眼部署日志后再退
                         } else {
-                            self.popup = Popup::DeployLog(log);
+                            self.session_modified = false;
+                            self.popup = Popup::DeployLog {
+                                log,
+                                on_exit: false,
+                            };
                         }
                     }
                     KeyCode::Char('n') | KeyCode::Char('N') => {
@@ -615,16 +624,21 @@ impl App {
                     _ => {}
                 }
             }
-            Popup::DeployLog(_) => match k.code {
-                KeyCode::Esc | KeyCode::Enter | KeyCode::Char('q') | KeyCode::Char(' ') => {
-                    if self.session_modified {
-                        self.should_quit = true;
-                    } else {
-                        self.popup = Popup::None;
+            Popup::DeployLog { on_exit, .. } => {
+                let is_exit = *on_exit;
+                if is_exit {
+                    self.should_quit = true;
+                } else if ctrl && (k.code == KeyCode::Char('q') || k.code == KeyCode::Char('c')) {
+                    self.should_quit = true;
+                } else {
+                    match k.code {
+                        KeyCode::Esc | KeyCode::Enter | KeyCode::Char('q') | KeyCode::Char(' ') => {
+                            self.popup = Popup::None;
+                        }
+                        _ => {}
                     }
                 }
-                _ => {}
-            },
+            }
             Popup::SwitchDict(tree) => {
                 if ctrl && k.code == KeyCode::Char('d') {
                     tree.move_sel(10);
@@ -883,3 +897,112 @@ impl App {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crossterm::event::{KeyCode, KeyEvent, KeyModifiers};
+
+    fn make_key(code: KeyCode, modifiers: KeyModifiers) -> KeyEvent {
+        KeyEvent::new(code, modifiers)
+    }
+
+    #[test]
+    fn test_handle_pick_keys() {
+        let mut app = App::pick(PathBuf::from("."), "echo".into(), None);
+        // Pressing 'q' should not quit
+        app.handle(make_key(KeyCode::Char('q'), KeyModifiers::NONE));
+        assert!(!app.should_quit);
+
+        // Pressing 'Esc' should not quit
+        app.handle(make_key(KeyCode::Esc, KeyModifiers::NONE));
+        assert!(!app.should_quit);
+
+        // Pressing Ctrl+q should quit
+        app.handle(make_key(KeyCode::Char('q'), KeyModifiers::CONTROL));
+        assert!(app.should_quit);
+    }
+
+    #[test]
+    fn test_handle_ready_quit_keys() {
+        let mut app = App::pick(PathBuf::from("."), "echo".into(), None);
+        app.stage = Stage::Ready;
+
+        // Pressing 'q' should not quit
+        app.handle(make_key(KeyCode::Char('q'), KeyModifiers::NONE));
+        assert!(!app.should_quit);
+        assert!(matches!(app.popup, Popup::None));
+
+        // Pressing 'Esc' should not quit
+        app.handle(make_key(KeyCode::Esc, KeyModifiers::NONE));
+        assert!(!app.should_quit);
+        assert!(matches!(app.popup, Popup::None));
+
+        // Pressing Ctrl+q with clean state quits immediately
+        app.handle(make_key(KeyCode::Char('q'), KeyModifiers::CONTROL));
+        assert!(app.should_quit);
+    }
+
+    #[test]
+    fn test_handle_ready_ctrl_q_with_modifications() {
+        let mut app = App::pick(PathBuf::from("."), "echo".into(), None);
+        app.stage = Stage::Ready;
+        app.session_modified = true;
+
+        // Pressing Ctrl+q when modified should ask to confirm deploy before exit
+        app.handle(make_key(KeyCode::Char('q'), KeyModifiers::CONTROL));
+        assert!(!app.should_quit);
+        assert!(matches!(app.popup, Popup::ConfirmDeploy { on_exit: true }));
+    }
+
+    #[test]
+    fn test_deploy_log_popup_close_does_not_quit_when_manual() {
+        let mut app = App::pick(PathBuf::from("."), "echo".into(), None);
+        app.stage = Stage::Ready;
+        app.session_modified = true; // Even if session was marked modified
+
+        app.popup = Popup::DeployLog {
+            log: "deploy success".into(),
+            on_exit: false,
+        };
+
+        // Pressing Esc should close popup and NOT quit
+        app.handle(make_key(KeyCode::Esc, KeyModifiers::NONE));
+        assert!(!app.should_quit);
+        assert!(matches!(app.popup, Popup::None));
+
+        // Reopen and test 'q'
+        app.popup = Popup::DeployLog {
+            log: "deploy success".into(),
+            on_exit: false,
+        };
+        app.handle(make_key(KeyCode::Char('q'), KeyModifiers::NONE));
+        assert!(!app.should_quit);
+        assert!(matches!(app.popup, Popup::None));
+
+        // Reopen and test Enter
+        app.popup = Popup::DeployLog {
+            log: "deploy success".into(),
+            on_exit: false,
+        };
+        app.handle(make_key(KeyCode::Enter, KeyModifiers::NONE));
+        assert!(!app.should_quit);
+        assert!(matches!(app.popup, Popup::None));
+    }
+
+    #[test]
+    fn test_deploy_log_popup_quits_when_on_exit() {
+        let mut app = App::pick(PathBuf::from("."), "echo".into(), None);
+        app.stage = Stage::Ready;
+
+        app.popup = Popup::DeployLog {
+            log: "deploy success".into(),
+            on_exit: true,
+        };
+
+        // Any key exits
+        app.handle(make_key(KeyCode::Char(' '), KeyModifiers::NONE));
+        assert!(app.should_quit);
+    }
+}
+
