@@ -225,7 +225,6 @@ _	_=
 搜索	!S
 貼	!t
 捅	!T
-也	!v
 ’	!V
 外國	!W
 鮮	!x
@@ -234,7 +233,6 @@ _	_=
 詢	!X
 以上	!y
 幽	!Y
-沿	!Y
 掩	!Y
 支持	!z
 遭	!Z
@@ -247,14 +245,9 @@ _	_=
 半殖民地	*B
 不可避免	*B
 牲	*c
-猾	*c
-咆	*c
-喋	*c
 調查研究	*d
 帝國主義	*d
 叢	*f
-騾	*f
-磐	*f
 嗡	*f
 共產主義	*G
 國際形勢	*G
@@ -282,9 +275,6 @@ _	_=
 統一戰線	*T
 統一思想	*T
 擋	*v
-帚	*v
-耪	*v
-噬	*v
 唯物主義	*w
 無產階級	*W
 物質文明	*W
@@ -610,7 +600,6 @@ _	_
 扔	<r
 乳	<R
 神	<s
-拾	<s
 速	<S
 挺	<t
 擠	<u
@@ -634,7 +623,6 @@ _	_
 壹	1~
 1、	1~
 `	1q
-~	1q
 2	2
 貳	2~
 2、	2~
@@ -709,9 +697,6 @@ _	_
 單位	8D
 而且	8e
 比較	8E
-雯	8f
-稗	8f
-棄	8f
 法律	8F
 感覺	8g
 剛剛	8G
@@ -4503,8 +4488,6 @@ Z	aZ
 哀歌和清彈	AghqT
 阿根廷共和國	AgtGhG
 賬	AG
-酥	AG
-杳	AG
 昂貴	AG@=
 按規定辦	AGdB
 愛國僑胞	AGqB
@@ -5548,9 +5531,6 @@ Z	aZ
 熝頭僧	AiTs
 爊煎	Aiji
 爊炕	AiKi
-杏	AI
-檀	AI
-潛	AI
 鞍	Aj
 毐 /	Aj
 毐	Aj/=
@@ -6286,8 +6266,6 @@ Z	aZ
 安可一日無此君	AkyrWcJ
 阿克塞哈薩克族自治縣	AkSHSkZzzx
 寵	AK
-隧	AK
-惚	AK
 阿咖酚散	AKfS
 氨咖黃敏	AKHm
 愛開玩笑	AKWx
@@ -16667,7 +16645,6 @@ Z	aZ
 拗項	Auxj
 按不住	AuBZ
 拱	AU
-皿	AU
 鱗	AU
 埃	Av
 埃 .	Av
@@ -17040,7 +17017,6 @@ Z	aZ
 埃利森	Avls
 脹	AV
 蝠	AV
-桀	AV
 奧	Aw
 翱 .	Aw
 翱	Aw.=
@@ -22972,7 +22948,6 @@ Z	aZ
 表格	b`
 並擊助手	b~
 愚	b<
-霹	b<
 橡	b<
 筆記本	b2
 筆記本電腦	b4
@@ -28569,8 +28544,6 @@ Z	aZ
 貝爾格萊德	begLd
 彼惡敢當我哉	beGDWZ
 溜	bE
-捎	bE
-涎	bE
 便	bf
 俾 w	bf
 俾	bfw=
@@ -48391,7 +48364,6 @@ Z	aZ
 便勝卻人間無數	bsQrjWS
 便是人間好時節	bsrjHsj
 粒	bS
-掂	bS
 腺	bS
 比上不足	bSBZ
 碧水青山	bSqS
@@ -65752,8 +65724,6 @@ Z	aZ
 不二門開休闖首	BemKxCS
 博爾塔拉蒙古自治州	BeTLmGzzZ
 潭	BE
-蜻	BE
-蓖	BE
 保	Bf
 保 l	Bf
 保	Bfl=
@@ -73720,7 +73690,6 @@ Z	aZ
 爆直	Bizj
 瑩	BI
 滌	BI
-秫	BI
 博	Bj
 勃 ,	Bj
 勃	Bj,=
@@ -101743,7 +101712,6 @@ Z	aZ
 不聞先王之遺言	BwxWzyY
 豹	BW
 諜	BW
-耪	BW
 百萬富翁	BWFw
 百萬買宅	BWMZ
 百萬雄兵	BWxb
@@ -109417,9 +109385,7 @@ Z	aZ
 半匹紅綃一丈綾	BpHxyZl
 除	c'
 催	c!
-灸	c!
 汰	c!
-悚	c!
 媸	c,
 媸 m	c,
 媸	c,m=
@@ -110755,10 +110721,6 @@ Z	aZ
 娍	c<
 娍 k	c<
 娍	c<k=
-押	c0
-咄	c0
-碳	c0
-璇	c0
 詞庫	c2
 測試一下	c4
 成就	c8
@@ -132216,8 +132178,6 @@ Z	aZ
 成人不自在自在不成人	crBzZzZBcr
 誓	cR
 巒	cR
-酞	cR
-顙	cR
 喫軟不喫硬	cRBy
 齒如齊貝	cRqb
 齒如含貝	cRHb
@@ -184170,8 +184130,6 @@ Z	aZ
 初識不知曲中意	CsBzQZy
 春生夏長秋收冬藏	CsxZqSDC
 噪	CS
-簍	CS
-饈	CS
 垂裳而治	CSez
 草率收兵	CSSb
 草率決定	CSJd
@@ -203073,13 +203031,7 @@ Z	aZ
 締緝	d/j/
 締生	d/sQ
 廉	d:
-螃	d:
-粕	d:
-嗽	d:
 炸	d?
-橄	d?
-沏	d?
-噤	d?
 嬁	d<
 嬁 .	d<
 嬁	d<.=
@@ -230581,9 +230533,6 @@ Z	aZ
 提獎	dujy
 墊將	dujy
 署	dU
-秸	dU
-痞	dU
-嚏	dU
 堤	dv
 堤 s	dv
 堤	dvs=
@@ -245582,9 +245531,6 @@ Z	aZ
 妒忌的	D<jd
 妒悍	D<Ho
 妒害	D<Ho
-浸	D0
-螃	D0
-俑	D0
 打電話	D0
 都不知道	D4
 大佬	D7
@@ -281031,7 +280977,6 @@ Z	aZ
 短喙	DQHL
 蔭	Dr
 榴	Dr
-嗩	Dr
 大人物	DrW=
 單人獨匹	DrDp
 單人皮艇	Drpt
@@ -300733,13 +300678,9 @@ Z	aZ
 大科技	Dkkj
 大課間	Dkkj
 烈	e!
-救	e!
 詩	e!
 景	e,
 磨	e/
-眶	e/
-硷	e/
-繚	e/
 貳	e:
 貳 h	e:
 貳	e:h=
@@ -300868,16 +300809,9 @@ Z	aZ
 貳君	e:JN
 貳郡	e:JN
 莊	e?
-架	e?
 介	e?
 錦	e`
-誡	e`
-濺	e`
-涅	e`
 津	e~
-跋	e~
-餞	e~
-澈	e~
 娥	e<
 娥 q	e<
 娥	e<q=
@@ -300922,10 +300856,6 @@ Z	aZ
 娥輪	e<L:
 娥眉沙	e<mS
 娥說	e<YP
-箭	e0
-葫	e0
-疥	e0
-沏	e0
 噁心	e2
 恩愛	e4a=
 二逼	e4b=
@@ -300935,18 +300865,6 @@ Z	aZ
 兒戲	e4x=
 而已	e4y=
 兒子	e4z=
-斜	e7
-僚	e7
-鉸	e7
-漱	e7
-嚇	e8
-譏	e8
-僥	e8
-浣	e8
-寂	e9
-後	e9
-睫	e9
-沂	e9
 僅	ea
 恩愛	eA
 恩愛	eA*=
@@ -301607,9 +301525,6 @@ Z	aZ
 而不自適其適者也	eBzsqsy
 兒不嫌母醜狗不嫌家貧	eBxMCGBxjp
 焦	ec
-咎	ec
-緘	ec
-縐	ec
 二次元	ec7=
 二次大戰	ecDZ
 二次方程	ecFc
@@ -314333,10 +314248,7 @@ Z	aZ
 扼喉	eUHl
 搤吭	eUHl
 扼吭	eUHl
-掩	ev
 頹	ev
-繭	ev
-絢	ev
 堮	eV
 堨	eVs=
 堮 l	eV
@@ -316178,16 +316090,10 @@ Z	aZ
 辮	E!
 謅	E!
 泣	E,
-贍	E,
 峙	E,
 脊	E.
-蘑	E.
-痔	E.
 淫	E/
-猩	E/
-盅	E/
 僧	E:
-踊	E:
 誅	E:
 蔣	E?
 捻	E?
@@ -316197,18 +316103,6 @@ Z	aZ
 茂	E<
 唧	E<
 蛛	E<
-沾	E0
-蟀	E0
-漬	E0
-鼎	E7
-羚	E7
-篆	E7
-寓	E8
-犁	E8
-淄	E8
-蠻	E9
-鋅	E9
-滓	E9
 安卓	EA
 必須	Eb
 曾經	Ec
@@ -316225,8 +316119,6 @@ Z	aZ
 根本	Eg
 故意	EG
 薦	Eh
-莖	Eh
-蘸	Eh
 後來	EH
 竭	Ei
 鯊	Ei
@@ -316234,11 +316126,9 @@ Z	aZ
 你這樣	Ei
 言論	EI
 教育	Ej
-介	EJ
 科學	Ek
 淮	EK
 槳	EK
-鍺	EK
 力量	El
 來了	EL
 明顯	Em
@@ -316281,7 +316171,6 @@ Z	aZ
 團隊	ET
 睡覺	Eu
 酬	EU
-簍	EU
 沼	EU
 作用	Ev
 樣子	EV
@@ -316289,12 +316178,8 @@ Z	aZ
 完善	EW
 現實	Ex
 乾	EX
-俐	EX
-甄	EX
 一般	Ey
 矢	EY
-鯽	EY
-瘴	EY
 知識	Ez
 造成	EZ
 發現	f'
@@ -316303,14 +316188,8 @@ Z	aZ
 翂	f!r=
 翂翂	f!f!
 償	f,
-甥	f,
-畦	f,
-亳	f,
 坐	f.
 績	f/
-蜻	f/
-棄	f/
-渭	f/
 匪	f:
 匪 a	f:
 匪	f:a=
@@ -334469,7 +334348,6 @@ FOMO	fo
 摓衣	fUyy
 摓掖	fUyU
 摓策	fUcQ
-伊	fv
 封	fV
 墳 y	fV
 墳	fVy=
@@ -340734,9 +340612,6 @@ FOMO	fo
 發信機	F,xj
 發孝	F,xj
 發行商	F,xS
-鮑	F.
-摹	F.
-他	F.
 紡	F/
 紡 y	F/
 紡	F/y=
@@ -376186,17 +376061,8 @@ FOMO	fo
 頸後推	g!HT
 頸椎管	g!ZG
 輯	g,
-熒	g,
-扦	g,
-傣	g,
 倉	g.
-隧	g.
-釺	g.
-傈	g.
 贏	g/
-櫥	g/
-仟	g/
-侗	g/
 給不起	g/Bq
 給電	g/dg
 給價	g/jf
@@ -376611,7 +376477,6 @@ FOMO	fo
 戈爾德	g:ed
 戈爾丁	g:ed
 戈爾迪	g:ed
-僅	g;
 給	g?
 給 f	g?
 給	g?f=
@@ -377512,13 +377377,7 @@ FOMO	fo
 給我追	g?WZ
 給我講	g?Wj
 債	g`
-酥	g`
-薔	g`
-汕	g`
 悔	g~
-殃	g~
-塹	g~
-汾	g~
 哿	g<
 哿 z	g<
 哿	g<z=
@@ -389933,9 +389792,6 @@ FOMO	fo
 閣欄	gULx
 擱樓	gULx
 售	gv
-鄂	gv
-訖	gv
-邯	gv
 埂	gV
 埂 j	gV
 埂	gVj=
@@ -396540,7 +396396,6 @@ FOMO	fo
 關鍵	G7
 過程	G8
 幹嘛	G9
-固	Ga
 公安	GA
 公安部門	GABm
 港澳辦公室	GABs
@@ -454476,19 +454331,9 @@ FOMO	fo
 翯	h!y=
 翯翯	h!h!
 渾	h,
-瀕	h,
-炔	h,
-忻	h,
 拆	h.
-筍	h.
-攘	h.
-仵	h.
 悠	h/
-黔	h/
-腮	h/
-仝	h/
 綪	h/q=
-𬌗	h:
 隺	h:
 𬌗	h:f=
 紇	h?
@@ -455100,10 +454945,6 @@ FOMO	fo
 賀建國	h<jG
 賀今朝	h<jZ
 賀錦齋	h<jZ
-撒	h0
-駒	h0
-墒	h0
-涇	h0
 ∑ e	h3
 ∑	h3e=
 哈哈	h3a=
@@ -455126,22 +454967,7 @@ FOMO	fo
 好像	h3x=
 還有	h3y=
 或者	h3z=
-轎	h7
-蠍	h7
-苫	h7
-邇	h7
-奴	h8
-滷	h8
-汕	h8
-凊	h8
-郵	h9
-澇	h9
-繕	h9
-邙	h9
 勵	ha
-窪	ha
-泅	ha
-邰	ha
 壑	hA
 齕 q	hA
 齕	hAq=
@@ -465154,9 +464980,7 @@ FOMO	fo
 很可能要	hknY
 何可一日無此君	hkyrWcJ
 鴻	hK
-氈	hK
 醛	hK
-冼	hK
 很快發現	hKFx
 很快過去	hKGQ
 很快就能	hKjn
@@ -467623,9 +467447,7 @@ FOMO	fo
 何乃趣取大物爲	hNQQDWw
 河南蒙古族自治縣	hNmGZzzx
 逸	ho
-蟋	ho
 氰	ho
-翦	ho
 恨	hO
 恨 n	hO
 恨	hOn=
@@ -468145,9 +467967,6 @@ FOMO	fo
 恆直	hOzj
 恆遠	hOYH
 掙	hp
-藐	hp
-酋	hp
-卞	hp
 和平	hp*=
 和平共處五項原則	hpGz
 和平進程	hpjc
@@ -468915,9 +468734,6 @@ FOMO	fo
 鶴瘞	hPyy
 鶴膺	hPyy
 禍	hq
-榔	hq
-橇	hq
-雒	hq
 呵欠連天	hqlt
 何奇不有	hqBY
 很奇怪啊	hqGA
@@ -476638,9 +476454,6 @@ html	html
 曷與三五相攀追	hYSWxPZ
 何用浮名絆此身	hYFmBcs
 晶	hz
-饞	hz
-顴	hz
-鄺	hz
 合資銀行	hzyH
 涸澤而漁	hzeY
 合資企業	hzqy
@@ -482649,7 +482462,6 @@ html	html
 活躍	H0
 好的	H7
 好多	H8
-混	Ha
 虎	HA
 虎 t	HA
 虎	HAt=
@@ -541362,7 +541174,6 @@ html	html
 力	i,
 九	i,
 刀	i,
-乃	i,
 飝	i,,,
 姦	i,,,
 刕	i,,,
@@ -541870,7 +541681,6 @@ html	html
 孋	i,zy
 娙	i,.j
 廴	i.
-厶	i.
 又	i.
 乄	i.
 皴	i.,.
@@ -544290,7 +544100,6 @@ html	html
 薑	ibzz
 𦭜	iblr
 蔄	ibul
-報	iB
 氵	ic
 丿	ic
 氺	ic
@@ -546126,7 +545935,6 @@ html	html
 銜	iezh
 銜	iezh
 舸	iezl
-餓	iE
 亻	if
 人	if
 卜	if
@@ -551911,9 +551719,7 @@ html	html
 礓	ikzz
 殭	ikzz
 厖	ikkav
-囗	il
 口	il
-叨	il
 跛	il,.
 呶	il,.
 嗋	il,d
@@ -553531,7 +553337,6 @@ html	html
 孹	inmz
 孠	inmz
 屘	inmz
-努	iN
 恊	io,,
 怶	io,.
 怓	io,.
@@ -555945,7 +555750,6 @@ html	html
 邠	irm=
 刂	is
 日	is
-曰	is
 暘	is,c
 昭	is,l
 昅	is,v
@@ -556271,7 +556075,6 @@ html	html
 幾	it
 兒	it
 九	it
-匕	it
 皺	it,.
 狓	it,.
 鮍	it,.
@@ -562172,29 +561975,22 @@ html	html
 基礎	I`
 有關	I~
 鄙	Ib
-報	IB
 齒	Ic
-除	IC
 當	Id
 代	ID
-淨	Ie
 妃	If
-歌	Ig
 鶴	Ih
 裏面	Ii
 己	Ij
-漸	IJ
 李	Il
 麼？	Im
 嗎？	IM
 呢？	In
 輕	Iq
-娶	IQ
 人們	Ir
 石	Is
 說：“	IS
 繁體	It
-坐	Iu
 問	Iw
 碗	IW
 角	Ix
@@ -602398,9 +602194,6 @@ html	html
 解鈴還須繫鈴人	jlHXjlr
 家累千金坐不垂堂	jlqjZBCT
 紋	jL
-唁	jL
-娠	jL
-岱	jL
 經綸天下	jLtx
 經綸滿腹	jLMF
 焦慮不安	jLBA
@@ -628556,8 +628349,6 @@ html	html
 劫運	jvYH
 劫餘灰	jvYH
 健	jV
-疾	jV
-巾	jV
 舅	jw
 皎 y	jw
 皎	jwy=
@@ -629375,9 +629166,6 @@ html	html
 借問吹簫向紫煙	jwCxxzY
 節文斯二者是也	jwsezsy
 鷹	jW
-挎	jW
-砷	jW
-轂	jW
 九萬里風鵬正舉	jWlJ
 頸外動脈	jWDM
 頸外側區	jWcQ
@@ -646880,19 +646668,6 @@ html	html
 娟倩	J<qf
 娟小	J<xd
 娟姍牛	J<Sn
-惶	J0
-垛	J0
-眺	J0
-捆	J7
-捻	J7
-籬	J7
-兮	J8
-贅	J8
-笆	J8
-塌	J9
-屹	J9
-舷	J9
-坐	Ja
 歫	JA
 歫 ;	JA
 歫	JA;=
@@ -664522,16 +664297,11 @@ html	html
 狷戻	JTtp
 睜	k!
 撬	k!
-擻	k!
 聆	k!
 頸	k,
-剿	k,
 漱	k,
-陟	k,
 衫	k/
 澗	k/
-慫	k/
-敕	k/
 軻	k:
 軻 z	k:
 軻	k:z=
@@ -664569,22 +664339,6 @@ html	html
 娔	k<
 娔 j	k<
 娔	k<j=
-巾	k0
-吆	k0
-他	k0
-攸	k0
-歇	k7
-贅	k7
-蒜	k7
-鵾	k7
-湊	k8
-崎	k8
-髓	k8
-絳	k8
-韻	k9
-箕	k9
-蓑	k9
-輶	k9
 可愛	ka
 肯	kA
 肯 d	kA
@@ -666414,9 +666168,6 @@ html	html
 客耳那堪不忍聞	keNKBrw
 鏗爾舍琴而對吏	kesqeDl
 晉	kE
-饃	kE
-墅	kE
-黜	kE
 可分	kf
 可分對策	kfDc
 可分態射	kfTs
@@ -667361,9 +667112,7 @@ html	html
 客行努力更強食	kHNlgqs
 客行歲晚非遠遊	kHSWfYY
 獄	ki
-芹	ki
 贖	ki
-穡	ki
 焅虐	kiNA
 焅毒	kiDH
 炣	kI
@@ -673611,7 +673360,6 @@ html	html
 吻	ku
 鯨	ku
 噬	ku
-岫	ku
 搕	kU
 掯 a	kU
 掯	kUa=
@@ -673632,9 +673380,6 @@ html	html
 掯勒	kUlJ
 掯除	kUCM
 昔	kv
-蝠	kv
-黍	kv
-俶	kv
 坑	kV
 坷 z	kV
 坷	kVz=
@@ -673978,9 +673723,6 @@ html	html
 肯問簞瓢與萬鍾	kwDpYWZ
 可謂仁之方也已	kwrzFyy
 辰	kW
-簸	kW
-戍	kW
-稷	kW
 可望不可及	kWBj
 課外讀物	kWDW
 可望而不可及	kWej
@@ -678635,7 +678377,6 @@ html	html
 蟆	K.
 宕	K.
 綢	K/
-揩	K/
 淌	K/
 匡	K:
 匱 g	K:
@@ -683519,7 +683260,6 @@ html	html
 況爾初不語	KeCBY
 堯	KE
 拌	KE
-嶂	KE
 侃	Kf
 佧 a	Kf
 佧	Kfa=
@@ -713822,9 +713562,6 @@ html	html
 練習賽	l/xS
 練形術	l/xS
 炎	l:
-酉	l:
-撻	l:
-殤	l:
 連	l;
 輛 j	l;
 輛	l;j=
@@ -721482,9 +721219,6 @@ html	html
 兩兒腰綬擁高軒	leYSYGX
 聊爾作戲悅我神	leZxYWs
 遂	lE
-垛	lE
-獺	lE
-飫	lE
 領	lf
 令 p	lf
 令	lfp=
@@ -762461,7 +762195,6 @@ html	html
 綠陰陰	L?yy
 姬	L`
 鱉	L`
-篾	L`
 嵌	L~
 吆	L~
 湃	L~
@@ -762474,7 +762207,6 @@ html	html
 論壇	L9
 耍	La
 餾	La
-漩	La
 慮	LA
 盧 n	LA
 盧	LAn=
@@ -800278,7 +800010,6 @@ html	html
 沒有	m'
 奸	m!
 璧	m!
-肄	m!
 妙	m,
 媌 b	m,
 媌	m,b=
@@ -801082,7 +800813,6 @@ html	html
 免費	m:
 祭	m?
 硯	m?
-詣	m?
 每個人都	m_
 每一個	m~
 每天都	m~
@@ -822593,7 +822323,6 @@ html	html
 明日復明日明日何其多	mrFmrmD
 犧	mR
 鱉	mR
-銥	mR
 泌乳素瘤	mRSl
 面如土色	mRTs
 面容失認	mRsr
@@ -839146,7 +838875,6 @@ html	html
 母親節	M?qj
 淹	M~
 茉	M~
-扦	M~
 姆	M<
 姥	M<j=
 姆 /	M<
@@ -839287,21 +839015,8 @@ html	html
 姥姥說	M<MS
 姥鯊	M<Sc
 姆巴	M<Bm
-縷	M0
-滬	M0
-蟹	M0
-朽	M7
-涮	M7
-廄	M7
-瑤	M8
-蟋	M8
-鬃	M8
-黛	M9
-躪	M9
-馴	M9
 滲	Ma
 酪	Ma
-秕	Ma
 母愛	MA
 暮靄沉沉	MAcc
 母愛氾濫	MAFL
@@ -857055,7 +856770,6 @@ html	html
 莫認家山作本元	MrjSZbY
 苑	MR
 痹	MR
-杈	MR
 茫然不知所措	MRBC
 茫然不知	MRBz
 買入價格	MRjg
@@ -868485,8 +868199,6 @@ html	html
 娘子	n,zm
 妮子	n,zm
 涵	n.
-鵑	n.
-閹	n.
 紐	n/
 紐 m	n/
 紐	n/m=
@@ -868688,8 +868400,6 @@ html	html
 紐伯裏	n/Bl
 紐奧良	n/Al
 啞	n:
-皿	n:
-奄	n:
 匿	n;
 匿 b	n;
 匿	n;b=
@@ -868748,7 +868458,6 @@ html	html
 匿瑕	n;xh
 寡	n?
 粟	n?
-佯	n?
 逆天者亡	n@
 逆天改命	n_
 枚	n`
@@ -877765,8 +877474,6 @@ html	html
 粘結劑	nijj
 逆教	nijj
 攤	nI
-菠	nI
-蟹	nI
 聶	nj
 釀 p	nj
 釀	njp=
@@ -879075,8 +878782,6 @@ html	html
 寧可折本休要飢損	nksbxYS
 寧可折本休要飢損	nkzbxYS
 峽	nK
-啄	nK
-嗅	nK
 扭虧爲盈	nKwy
 扭虧增盈	nKzy
 內控嚴密	nKYm
@@ -881075,8 +880780,6 @@ html	html
 匿名文件傳送協議	nmwjZSy
 牛沒馬回觀六道	nmMHGlD
 糟	nM
-涮	nM
-蚜	nM
 年邁體弱	nMtR
 內膜系統	nMxT
 內模共振	nMGz
@@ -885092,8 +884795,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 念去去千里煙波	nQQqlYB
 鳥鵲之巢可攀援而窺	nQzCkPK
 玻	nr
-撮	nr
-哮	nr
 尼日利亞	nrlY
 能人輩出	nrbC
 能人所不能	nrSn
@@ -885186,8 +884887,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 疑人勿使使人勿疑	nrWssrn
 疑人勿使使人勿疑	nrWssry
 筋	nR
-蚯	nR
-楔	nR
 內容包括	nRBK
 內燃機車	nRjc
 牛肉泡饃	nRPM
@@ -888282,8 +887981,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 埝掌鎮	nvZz
 埝地	nvdv
 蔡	nV
-鴦	nV
-馴	nV
 臬	nw
 臬 x	nw
 臬	nwx=
@@ -889252,8 +888949,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 能向花前幾回醉	nxHqjHZ
 能行五者於天下	nxWzYtx
 郊	nX
-踱	nX
-絢	nX
 擬序結構	nXjG
 齧雪吞氈	nXTZ
 凝血細胞	nXxB
@@ -891759,8 +891454,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 年比馮唐未覺衰	nbfTwjS
 南方	N'
 繳	N!
-鯨	N!
-稗	N!
 乃	N,
 奶 ,	N,
 奶	N,,=
@@ -893559,10 +893252,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 納賽爾	N/Se
 暇	N:
 募	N:
-畦	N:
 疫	N?
-宦	N?
-蕎	N?
 男孩	N@
 女孩	N_
 男人	N~
@@ -894964,8 +894654,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 那麼	N8
 哪裏	N9
 泳	Na
-蚯	Na
-黍	Na
 虐	NA
 虐 ;	NA
 虐	NA;=
@@ -897659,7 +897347,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 男兒何不帶吳鉤	NehBDWG
 甩	NE
 匈	NE
-荸	NE
 拿	Nf
 儂 p	Nf
 儂	Nfp=
@@ -902948,8 +902635,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 儂今葬花人笑癡	NjZHrxc
 怒江傈僳族自治州	NjlSZzzZ
 撕	NJ
-簸	NJ
-薺	NJ
 南橘北枳	NJbz
 哪句是真	NJsz
 那居然是	NJRs
@@ -915583,38 +915268,18 @@ $y-$m-$d$20$h:$mi:$s	now=
 塞	o!
 雅	o!
 揭	o,
-揩	o,
-孿	o,
 幀	o,
 倆	o.
-葷	o.
-灤	o.
-衩	o.
 巖	o/
-癟	o/
-螞	o/
-詣	o/
 輩	o:
 燒	o:
 徑	o:
-伴	o?
 悲	o?
-振	o?
 租	o`
-囉	o`
-氓	o`
-毖	o`
 貢	o~
-匾	o~
-謾	o~
-甭	o~
 懂	o<
 授	o<
 享	o<
-夕	o0
-鴛	o0
-抿	o0
-嘀	o0
 我呀	o3a=
 我爸	o3b=
 我的	o3d=
@@ -915628,20 +915293,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 我想	o3x=
 我有	o3y=
 我在	o3z=
-忌	o7
-蟆	o7
-眯	o7
-閹	o7
-戀	o8
-寅	o8
-靡	o8
-咆	o8
-捷	o9
-靂	o9
-娩	o9
-哮	o9
 上午	oa
-坐	oA
 比賽	ob*=
 保證	oB@=
 當時	oD
@@ -915652,9 +915304,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 回來	oH
 功能	oi*=
 袖	oI
-蹋	oI
-攣	oI
-剁	oI
 自己	oj
 簡直	oj*=
 精彩	oj@=
@@ -915663,16 +915312,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 辣椒	oL
 眼睛	oo
 籍	op
-豺	op
-麓	op
-賅	op
 排名	oP
 偶然	or*=
 以爲	ou
 敲	oU
-瘩	oU
-潞	oU
-劊	oU
 建設	ov
 唯一	ow
 休息	ox
@@ -915681,19 +915324,12 @@ $y-$m-$d$20$h:$mi:$s	now=
 政府	oZ
 偶爾	O'
 肩	O!
-潔	O!
-袋	O!
 株	O,
 韭	O,
 轅	O,
-賤	O.
-蝟	O.
 離	O.
 哉	O/
-躪	O/
-亓	O/
 箱	O:
-仲	O:
 錦	O:
 區楚良	O:Cl
 區瑞強	O:Rq
@@ -916698,34 +916334,17 @@ $y-$m-$d$20$h:$mi:$s	now=
 歐陽正	O;Yz
 臂	O?
 涉	O?
-鼻	O?
 稽	O`
-痢	O`
-顓	O`
 喉	O~
 芋	O~
-仉	O~
 洪	O<
 帳	O<
 皆	O<
-鈞	O0
-猾	O0
-佘	O0
-秩	O7
-淤	O7
-閆	O7
-憾	O8
-磷	O8
-鄢	O8
-熙	O9
-稈	O9
-緱	O9
 趟	Oa
 捶	Oa
 欒	Oa
 俯	OA
 秤	OA
-郟	OA
 哦啊哦的	OAed
 哦啊哦的	OAOd
 哦呵呵呵	OAAA
@@ -916822,8 +916441,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 藕團鄉	ObTx
 偶變投隙	ObTx
 榜	OB
-迂	OB
-俟	OB
 偶不平衡	OBph
 歐寶公司	OBGs
 歐寶車隊	OBcD
@@ -916895,8 +916512,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 漚泊	OcPc
 偶此琳宮居	OclGJ
 碩	OC
-榨	OC
-竺	OC
 偶除須鬢著袈裟	OCXS
 偶存離子	OClz
 區財政局	OCzJ
@@ -917081,8 +916696,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 偶爾說笑	OeYx
 偶爾也有	OeyY
 浴	OE
-蛀	OE
-酈	OE
 偶	Of
 偶 g	Of
 偶	Ofg=
@@ -917533,7 +917146,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 謳歌歸聖子	OgGsz
 謳歌歸子啓	OgGzq
 丫	OG
-鍬	OG
 暨	OG
 偶感風寒	OGfH
 歐冠小組	OGxZ
@@ -917659,7 +917271,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 耦合常數	OhCS
 歹	OH
 拌	OH
-厙	OH
 哦哈哈哈	OHHH
 哦好玩嗎	OHWM
 哦還可以	OHky
@@ -917695,8 +917306,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 熰	Oi;=
 熰	Oi;l
 妝	OI
-攆	OI
-扈	OI
 偶見	Oj
 偶見宿主	OjSZ
 偶極測深	Ojcs
@@ -917755,7 +917364,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 耦俱無猜	OJWC
 啼	Ok
 搔	Ok
-郜	Ok
 區柯克式	Okks
 哦呵呵呵	OkAA
 哦呵呵呵	OkAh
@@ -917773,7 +917381,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 哦可哦可	OkOk
 飢	OK
 螢	OK
-訾	OK
 歐凱公司	OKGs
 哦開機可	OKjk
 哦看見了	OKjl
@@ -918118,7 +917725,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 歐靚腰支柳一渦	OlYzlyW
 漆	OL
 渝	OL
-闞	OL
 歐拉常數	OLCS
 歐拉路徑	OLLj
 歐拉回路	OLHL
@@ -918292,8 +917898,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 歐母畫荻	OMHd
 歐姆定律	OMdL
 佐	On
-瘓	On
-藺	On
 歐內斯特	Onst
 鷗鳥忘機	OnWj
 哦你不是	OnBs
@@ -918317,8 +917921,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 鷗鳥一雙隨坐嘯	OnySSZx
 鷗鳥蒹葭成四鄰	Onjjcsl
 悽	ON
-梆	ON
-澹	ON
 歐納西斯	ONxs
 哦那不是	ONBs
 哦那好啊	ONHA
@@ -918407,7 +918009,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 歐清辣哨	OqLS
 斑	OQ
 椎	OQ
-莘	OQ
 區區矻矻	OQKK
 區區碌碌	OQLL
 區區冗冗	OQRR
@@ -918423,7 +918024,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 區區惓惓	OQQQ
 茅	Or
 鉀	Or
-宓	Or
 偶人經雨踣	OrjB
 慪人生氣	Orsq
 偶人經雨踣	OrjYB
@@ -918540,7 +918140,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 偶然樽俎對青燈	ORZZDqd
 巷	Os
 痰	Os
-鈄	Os
 哦什麼呀	OsmY
 哦什麼哦	OsmO
 哦什麼啊	OsmA
@@ -918636,20 +918235,13 @@ $y-$m-$d$20$h:$mi:$s	now=
 嘔吐噁心	OTex
 嘔吐嚴重	OTYZ
 偶同一飯論三益	OTyFLSy
-僵	OU
-鯉	OU
 卻	OU
-塸	Ov
 棺	Ov
 閘	Ov
-薊	Ov
 塸	Ov;=
 滯	OV
-蚓	OV
-逯	OV
 狹	Ow
 摹	Ow
-邴	Ow
 歐文主義	OwZy
 歐文電站	OwdZ
 哦爲什麼	Owsm
@@ -918668,7 +918260,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 區位勢能	Owsn
 掏	OW
 椒	OW
-逄	OW
 哦我看看	OWKK
 哦我沒有	OWmY
 哦我明天	OWmt
@@ -918753,8 +918344,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 偶先紅杏佔年芳	OxHxZnF
 偶向東湖更向東	OxDHgxD
 鹿	OX
-幌	OX
-蒯	OX
 偶尋陳跡到煙蘿	OXcL
 偶尋流水上崔嵬	OXlw
 偶尋陳跡到煙蘿	OXcjDYL
@@ -919323,9 +918912,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 歐洲復興開發銀行	OZFxKFH
 朋友	p'
 脣	p!
-鐮	p!
-鎳	p!
-嘮	p!
 皮	p,
 皮 .	p,
 皮	p,.=
@@ -920647,13 +920233,8 @@ $y-$m-$d$20$h:$mi:$s	now=
 轡靷	p?yj
 轡策	p?cQ
 稿	p`
-痹	p`
-獰	p`
-哧	p`
 姜	p~
-渙	p~
 涅	p~
-吭	p~
 婄	p<
 婄	p<y=
 怕呀	p4a=
@@ -923697,7 +923278,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 蓬而指之曰	pezzY
 昭	pE
 荔	pE
-螟	pE
 嘰	pE
 偏	pf
 憑 t	pf
@@ -927104,9 +926684,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 瞥裂	pilk
 瞥列	pilk
 摘	pI
-掄	pI
-拈	pI
-嗦	pI
 票	pj
 票 h	pj
 票	pjh=
@@ -937487,9 +937064,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 陂田荒盡豈嘗窺	ptHjqCK
 娉婷更欲向何人	ptgYxhr
 厭	pT
-嶇	pT
-霓	pT
-哆	pT
 配套辦法	pTBF
 平頭百姓	pTBx
 配套措施	pTCs
@@ -943497,7 +943071,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 普通	P'
 荊	P!
 酉	P!
-杼	P!
 頗	P,
 妑 m	P,
 妑	P,m=
@@ -943631,14 +943204,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 頗稜	P,lq
 頗梨	P,lq
 壺	P.
-鰭	P.
-笪	P.
 淋	P/
 囉	P/
-佟	P/
 搏	P:
 誨	P:
-豕	P:
 叵	P;
 尀 j	P;
 尀	P;j=
@@ -943655,29 +943224,11 @@ $y-$m-$d$20$h:$mi:$s	now=
 尀耐	P;Nk
 尀奈	P;Nk
 宛	P?
-淤	P?
-詁	P?
 魄	P`
-薯	P`
-彀	P`
 瞞	P~
 秤	P~
-誥	P~
 隙	P<
 鯉	P<
-菽	P<
-卸	P0
-槳	P0
-嬴	P0
-琪	P7
-蹋	P7
-羲	P7
-吼	P8
-嘹	P8
-嬴	P8
-崖	P9
-礫	P9
-廿	P9
 攴	Pa
 攴 .	Pa
 攴	Pa.=
@@ -954414,8 +953965,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 怕啦	PoLl
 怕臊	PoSd
 貸	PO
-檬	PO
-譙	PO
 僕區之法	POzF
 袍	Pp
 袍 t	Pp
@@ -980266,7 +979815,6 @@ E迅速錄	qE
 前疾	qijy
 前旌	qijy
 前五百	qiWB
-恰	qI
 其	qj
 期 d	qj
 期	qjd=
@@ -1000209,7 +999757,6 @@ E迅速錄	qE
 擒住	quZF
 搶救室	qujs
 搶景	qujs
-琴	qU
 牆	qv
 牆 j	qv
 牆	qvj=
@@ -1010725,7 +1010272,6 @@ E迅速錄	qE
 秦中自古帝王州	qZzGdWZ
 瓊中黎族苗族自治縣	qZlZmZzzx
 齊本克思	qbks
-卻	Q'
 勸	Q!
 勸 ,	Q!
 勸	Q!,=
@@ -1010927,13 +1010473,8 @@ E迅速錄	qE
 勸解者	Q!jz
 寨	Q,
 鉗	Q,
-癰	Q,
 焰	Q.
-吮	Q.
-蛹	Q.
 愉	Q/
-餾	Q/
-恿	Q/
 區	Q:
 輇 f	Q:
 輇	Q:f=
@@ -1011716,11 +1011257,8 @@ E迅速錄	qE
 驅動橋	Q?Dq
 驅動着	Q?Dz
 俠	Q`
-戌	Q`
-峪	Q`
 肖	Q~
 卯	Q~
-盂	Q~
 姾	Q<
 姾 f	Q<
 姾	Q<f=
@@ -1011730,19 +1011268,7 @@ E迅速錄	qE
 婘屬	Q<SN
 婘屬	Q<ZN
 婘婘	Q<Q<
-咽	Q0
-諄	Q0
-匝	Q0
 全部都	Q2
-盯	Q7
-蕉	Q7
-垣	Q7
-訝	Q8
-酵	Q8
-轅	Q8
-倚	Q9
-瀝	Q9
-鄖	Q9
 卻 '	Qa
 卻	Qa'=
 錢啊	Qa
@@ -1016888,7 +1016414,6 @@ E迅速錄	qE
 卻話家山夜雨	QHjSyY
 卻話巴山夜雨時	QHBSyYs
 乙	Qi
-畸	Qi
 繹	Qi
 前五百	Qi
 拳	QI
@@ -1020695,8 +1020220,6 @@ E迅速錄	qE
 屈座	QNZY
 羣族	QNZY
 乞	Qo
-滌	Qo
-翌	Qo
 悛	QO
 悛 .	QO
 悛	QO.=
@@ -1021965,7 +1021488,6 @@ E迅速錄	qE
 趨人之急	Qrzj
 契	QR
 宦	QR
-臃	QR
 全然不顧	QRBG
 全然不同	QRBT
 全然不知	QRBz
@@ -1023491,7 +1023013,6 @@ E迅速錄	qE
 闕亡	QUWy
 闕忘	QUWy
 芒	Qv
-卉	Qv
 蠅	Qv
 趣	QV
 卻 m	QV
@@ -1028095,9 +1027616,6 @@ E迅速錄	qE
 卻坐促弦弦轉急	QZCxxZj
 區區將將	QOjj
 襲	r!
-窖	r!
-抉	r!
-惺	r!
 趣	r,
 擊	r.
 馹	r/
@@ -1028425,9 +1027943,6 @@ E迅速錄	qE
 熱門	r7
 熱鬧	r8
 撥	ra
-熄	ra
-靳	ra
-漳	ra
 人民	ra'=
 熱愛	rA
 熱愛國家	rAGj
@@ -1033887,9 +1033402,6 @@ E迅速錄	qE
 潦	ri
 我覺得	ri
 裂	rI
-祟	rI
-痙	rI
-冽	rI
 人間	rj
 人際	rj
 日記	rj*=
@@ -1034521,9 +1034033,6 @@ E迅速錄	qE
 人倦如何度	rJRhD
 人且偃然寢於巨室	rJYRqYs
 搜	rk
-蝴	rk
-燼	rk
-漣	rk
 認可程度	rkcD
 認可模型	rkMx
 任課教師	rkjs
@@ -1034597,9 +1034106,6 @@ E迅速錄	qE
 認可樣品	rkYp
 熱可炙手	rkzS
 搬	rK
-瞭	rK
-疚	rK
-悸	rK
 人口比例	rKbl
 人口出生率	rKCL
 人口稠密	rKCm
@@ -1039046,9 +1038552,6 @@ E迅速錄	qE
 人生苦短及時行樂	rsKDjsy
 人生自古誰無死留取丹心照汗青	rszGSWslQDxZHq
 鞋	rS
-拴	rS
-廄	rS
-惋	rS
 人所共知	rSGz
 人壽年豐	rSnf
 人山人海	rSrH
@@ -1040481,9 +1039984,6 @@ E迅速錄	qE
 熱彈性	rUDx
 熱血	rUXW
 踏	rV
-椿	rV
-攫	rV
-憚	rV
 人爲	rw
 人文奧運	rwAY
 人文地理	rwdl
@@ -1043147,9 +1042647,6 @@ E迅速錄	qE
 人之有是四端也	rzYssDy
 人自傷心水自流	rzSxSzl
 駕	rZ
-鸚	rZ
-撅	rZ
-愜	rZ
 熱重分析	rZfx
 熱軋板卷	rZBJ
 熱軋帶鋼	rZDG
@@ -1046000,13 +1045497,9 @@ E迅速錄	qE
 如果有	R<GY
 如果要	R<GY
 如果在	R<GZ
-哄	R7
-硝	R7
-嵇	R7
 如何	R8
 哼	Ra
 柑	Ra
-鬃	Ra
 如果	Ra'=
 睿	RA
 睿 g	RA
@@ -1049179,7 +1048672,6 @@ E迅速錄	qE
 然而夜半有力者負之而走	ReyBYlZ
 晰	RE
 餡	RE
-詛	RE
 傛	Rf
 傛 o	Rf
 傛	Rfo=
@@ -1059657,7 +1059149,6 @@ E迅速錄	qE
 壤童	RvTy
 妮	RV
 氯	RV
-纂	RV
 肉味	Rw
 入圍作品	RwZp
 攘爲己有	RwjY
@@ -1101173,8 +1100664,6 @@ E迅速錄	qE
 十日一水五日一石	srySWrys
 扮	sR
 堰	sR
-硼	sR
-咚	sR
 蔘茸鞭丸	sRbW
 石蕊牛奶	sRnN
 石蕊凍原	sRDY
@@ -1120603,7 +1120092,6 @@ E迅速錄	qE
 輸入國	S:RG
 輸入端	S:RD
 輸入帶	S:RD
-塞	S;
 書	S?
 縮 o	S?
 縮	S?o=
@@ -1186371,9 +1185859,6 @@ E迅速錄	qE
 埽門	SvmU
 條件	t'
 賈	t!
-雹	t!
-籬	t!
-椽	t!
 婷	t,
 迢 p	t,
 迢	t,p=
@@ -1186417,7 +1185902,6 @@ E迅速錄	qE
 媞媞	t,t,
 嬥嬥	t,t,
 蒼	t.
-募	t.
 釐	t.
 札	t.
 綈	t/
@@ -1186533,14 +1186017,7 @@ E迅速錄	qE
 忒提斯	t;ts
 忒兒	t;eT
 慕	t?
-叼	t?
-傈	t?
-榛	t?
 田地	t`
-曹	t<
-賂	t<
-離	t<
-楔	t<
 提醒	t0
 天天都	t2
 天時地利	t4
@@ -1190028,9 +1189505,6 @@ E迅速錄	qE
 天兒真冷	tezl
 亭兒名亦好	temyH
 孝	tE
-帷	tE
-倔	tE
-恫	tE
 體	tf
 停 y	tf
 停	tfy=
@@ -1199577,9 +1199051,6 @@ E迅速錄	qE
 窕窕	toto
 怗怗	toto
 仇	tO
-汞	tO
-儈	tO
-檄	tO
 特區財會	tOCH
 特區財會	tOCK
 特區城市	tOcs
@@ -1200420,9 +1199891,6 @@ E迅速錄	qE
 天平山上白雲泉	tpSSBYQ
 調調	tpdp
 宅	tP
-貽	tP
-婪	tP
-橇	tP
 特派記者	tPjz
 貼坡排水	tPPS
 綈袍之義	tPzy
@@ -1206661,9 +1206129,6 @@ E迅速錄	qE
 提肛	tuGd
 挺高的	tuGd
 嘉	tU
-餌	tU
-吭	tU
-枷	tU
 填	tv
 圢	tvj=
 填 j	tv
@@ -1206991,9 +1206456,6 @@ E迅速錄	qE
 填補五	tvBW
 填	tvjr
 嫁	tV
-諺	tV
-讕	tV
-檁	tV
 躰 j	tw
 躰	twj=
 天文	tw
@@ -1254563,73 +1254025,38 @@ E迅速錄	qE
 太難打	TkND
 覺得	u'
 南	u!
-假	u,
 ……	u.
 紀	u/
 西	u:
 東	u;
 北	u?
 霞	u`
-蜒	u`
 琉	u`
-篙	u`
 鑑	u~
-跤	u~
-賃	u~
-箋	u~
 右	u<
-療	u0
-磷	u0
-擄	u0
-磺	u0
-豈	u7
-繮	u7
-瘤	u7
-箔	u7
-稀	u8
-稠	u8
-嚨	u8
-氨	u8
-抖	u9
-猖	u9
-顱	u9
-墒	u9
 睛	ua
 凸	uA
 必	ub
-播	uB
 重	uc
 辯	uC
 榴	uC
-鱗	uC
 侈	uC
 除下	uC
-第	ud
-東	uD
 急	ue
-角	uE
-會	uf
 放	uF
 貴	ug
 故	uG
 哈	uh
 漢	uH
-角	ui
 慘	uI
-吝	uI
-鐐	uI
-佯	uI
 加	uj
-濟	uJ
 考	uk
 空間	uK
-裏	ul
 老實	uL
 迷	um
 目前	uM
 奶	un
 真	uo
-爾	uO
 破	up
 跑步	uP
 妻	uq
@@ -1254641,20 +1254068,12 @@ E迅速錄	qE
 停	ut
 同在	uT
 羽	uU
-鱷	uU
-潦	uU
-偎	uU
 元	uv
 德	uV
 舞	uw
 浩	uW
-徙	uW
-燎	uW
-奄	uW
-於	ux
 亦	uy
 眼	uY
-正	uz
 整	uZ
 ‘	U'
 ”！	U!
@@ -1254703,7 +1254122,6 @@ E迅速錄	qE
 中國	Uz
 民主	UZ
 '	v'
-者	v!
 《	v,
 》	v.
 ～	v/
@@ -1254712,14 +1254130,7 @@ E迅速錄	qE
 ~	v?
 民族	v`
 工人	v~
-振	v<
 _	v0
-掘	v7
-耘	v7
-鍁	v7
-豫	v8
-嶼	v8
-舷	v8
 +	v9
 ‰	va
 @	vA
@@ -1254729,12 +1254140,8 @@ _	v0
 $	vC
 °	vd
 欽	vD
-屹	vD
-硒	vD
 】	ve
 拓	vE
-茉	vE
-濰	vE
 ［	vf
 [	vf
 ｛	vF
@@ -1254746,14 +1254153,10 @@ $	vC
 厚	vH
 ——	vi
 侍	vI
-礫	vI
-撾	vI
 （	vj
 聚餐	vJ
 ）	vk
 械	vK
-餃	vK
-矽	vK
 ！	vl
 竊	vL
 蝙	vL
@@ -1254764,7 +1254167,6 @@ $	vC
 ‘	vN
 ·	vo
 獸	vO
-隋	vO
 渦	vO
 蝶	vp
 峭	vp
@@ -1254961,8 +1254363,6 @@ $	vC
 ⊕ z	vr
 ⊕	vrz=
 儲	vR
-喳	vR
-渭	vR
 謙	vs
 鰭	vs
 捅	vs
@@ -1255154,57 +1254554,29 @@ $	vC
 ǜ	vuv=
 顫	vU
 茬	vU
-嗡	vU
 ？	vv
 宰	vV
-誨	vV
-檄	vV
 【	vw
 潘	vW
-匈	vW
-惋	vW
 ※	vx
-獻	vx
 裕	vX
-褂	vX
-汐	vX
 ∶	vy
 √	vz
 展	vZ
 ”	V'
 湧	V!
-津	V!
 宙	V,
-嶇	V,
-癲	V,
 襟	V:
 蘑	V:
-繹	V:
 倡	V`
 喳	V`
 靚	V`
 坎	V~
-蚣	V~
 腮	V~
 斌	V<
-滷	V<
 逍	V<
-諧	V0
-舀	V0
-耬	V0
-蝕	V7
-睬	V7
-贖	V7
-傍	V8
-柑	V8
-覲	V8
-罐	V9
-荔	V9
-汰	V9
 這點	Va
 塘	VA
-瘩	VA
-蠅	VA
 這不	Vb
 俏	VB
 窖	VB
@@ -1255212,44 +1254584,28 @@ $	vC
 這次	Vc
 風險	VC
 匠	Vd
-粟	Vd
 螞	Vd
 鴨	VD
-挎	VD
-鱔	VD
 劑	Ve
-寅	Ve
-茗	Ve
 輿	VE
-賂	VE
-蛉	VE
 麟	Vf
 淆	Vf
-蟥	Vf
 頰	VF
 鸚	VF
 蟒	VF
 這個	Vg
-祈	VG
-秸	VG
 腺	VG
 這時	Vh
 勳	VH
 隋	VH
-獺	VH
 這件	Vi
 栗	VI
 堰	VI
-蚜	VI
 這就	Vj
 這可	Vk
 稚	VK
-啄	VK
-袒	VK
 這裏	Vl
 禽	VL
-硯	VL
-諂	VL
 這麼	Vm
 這你	Vn
 怎能	VN
@@ -1255261,18 +1254617,13 @@ $	vC
 蛹	VO
 彥	Vp
 煽	Vp
-楂	Vp
 葡萄	VP
-恰	Vq
 恍	VQ
-蠍	VQ
-蛛	VQ
 這人	Vr
 巫	VR
 諺	VR
 鳩	VR
 這是	Vs
-授	VS
 ⿰	Vt
 ⿱	Vt
 ⿲	Vt
@@ -1255287,18 +1254638,14 @@ $	vC
 ⿻	Vt
 爍	VT
 癬	VT
-鮎	VT
 躁	VU
 諄	VU
-蛙	VU
 這下	Vv
 攏	VV
-犁	VV
 緘	VV
 這我	Vw
 耽	VW
 鵑	VW
-螟	VW
 這些	Vx
 譁	VX
 螢	VX
@@ -1255308,26 +1254655,12 @@ $	vC
 這隻	Vz
 這種	VZ
 因爲	w'
-刑	w!
-贓	w!
-枷	w!
-訖	w!
 瞧	w,
 繆	w,
-薊	w,
-謅	w,
 仲	w.
 稟	w.
-伎	w.
-誅	w.
-滑	w/
-憋	w/
-悸	w/
-詼	w/
 拔	w:
 煎	w:
-莢	w:
-蕃	w:
 維	w?
 維 f	w?
 維	w?f=
@@ -1256051,7 +1255384,6 @@ $	vC
 紋影法	w?yF
 我at	w@
 文件夾	w`
-輝	w~
 汲	w~
 箋	w~
 蘸	w~
@@ -1264649,10 +1263981,8 @@ $w	week
 爲虺弗摧爲蛇若何	wHFCwsh
 爲虺弗摧爲蛇若何	wHFCwyh
 未展	wHZn
-徑	wi
 奚	wi
 燴	wi
-矚	wi
 我這樣	wi
 爲	wI
 煨 g	wI
@@ -1270511,7 +1269841,6 @@ $w	week
 爲女民兵題照	wNmbtZ
 穩耐風波願始從	wNfBYsC
 唯女子與小人爲難養也	wNzYxry
-佳	wo
 轍	wo
 晦	wo
 瞽	wo
@@ -1280676,7 +1280005,6 @@ Android	wo
 婐婉	W,W,
 尪尪	W,W,
 罩	W.
-蚣	W.
 渣	W.
 紈	W/
 綰 o	W/
@@ -1282307,11 +1281635,8 @@ Android	wo
 毋望	W?Wy
 我個人	W@
 倘	W`
-淆	W`
 輾	W`
 瓊	W~
-稈	W~
-札	W~
 我現在	W~
 嫵	W<
 嫵 h	W<
@@ -1339556,7 +1338881,6 @@ Android	wo
 小兒誤喜朱顏在	xeWxZYZ
 笑而不答心自閒	xeBDxzx
 秀而不實者有矣夫	xeBszYF
-享	xE
 像	xf
 信 y	xf
 信	xfy=
@@ -1390753,17 +1390077,12 @@ Android	wo
 下午	xW*=
 細敘別情	xXbq
 涯	X!
-撬	X!
-蒜	X!
 簇	X,
 拴	X,
-躚	X,
 眸	X.
 瘓	X.
 莢	X.
 捏	X/
-芋	X/
-馥	X/
 軒	X:
 軒 h	X:
 軒	X:h=
@@ -1391724,9 +1391043,6 @@ Android	wo
 嬛嬛	X<X<
 旭旭	X<X<
 姁姁	X<X<
-笛	X0
-瓢	X0
-茴	X0
 學習	X7
 迅	Xa
 虛	XA
@@ -1397471,8 +1396787,6 @@ Android	wo
 懸掛系統	XGxT
 血管收縮	XGSS
 靖	Xh
-饞	Xh
-薔	Xh
 懸河瀉水	XhxS
 懸河注水	XhZS
 懸河注火	XhZH
@@ -1398092,7 +1397406,6 @@ Android	wo
 雪花飛向釣魚臺	XHfxdYT
 循化撒拉族自治縣	XHSLZzzx
 學好科學	XHkX
-詢	Xi
 炫	XI
 炫 y	XI
 炫	XIy=
@@ -1442532,8 +1441845,6 @@ $y	year
 怡懌	yoyo
 懌懌	yoyo
 彎	yO
-巳	yO
-漣	yO
 橡	yO
 印歐語系	yOYx
 一歐電阻	yOdZ
@@ -1452490,9 +1451801,6 @@ $y	year
 垠鄂	yveL
 圻鄂	yveL
 糾	yV
-樟	yV
-撩	yV
-琉	yV
 劓	yw
 劓 s	yw
 劓	yws=
@@ -1537786,7 +1537094,6 @@ $y	year
 有中國特色的社會主義	YZGtsdsHZy
 養軍千日用在一時	YJqrYZys
 座	z'
-莊	z!
 姊	z,
 姪 ;	z,
 姪	z,;=
@@ -1661845,3 +1661152,50 @@ $y	year
 局外	wj
 句子	x<
 可多	x0
+事	VS
+果	Ig
+相	ux
+期	EJ
+常	IC
+解	IJ
+計	uJ
+直	uz
+安	Ga
+球	IQ
+帶	uD
+呵	Ha
+求	Vq
+聯	ul
+達	ud
+版	IB
+背	iB
+班	uB
+牛	iN
+什	!v
+化	8f
+意	AI
+平	F.
+基	Ie
+接	Iu
+信	Ja
+系	S;
+單	Xi
+臺	fv
+交	g;
+何	iE
+術	oA
+建	qI
+運	qU
+音	t<
+覺	u,
+視	uE
+政	uO
+思	uf
+級	ui
+界	v!
+形	v<
+及	w!
+立	w/
+戲	xE
+寫	z!
+投	Q'
