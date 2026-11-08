@@ -37,15 +37,12 @@ pub fn load_pinyin_map(path: &Path) -> Option<PinyinMap> {
     Some(map)
 }
 
-/// 自动查找系统 luna_pinyin.dict.yaml（Arch: /usr/share/rime-data）
+/// 自动查找 luna_pinyin.dict.yaml：优先 XSIME 当前方案包，其次系统 Rime 共享目录。
 pub fn find_luna_pinyin() -> Option<PathBuf> {
-    for c in [
-        "/usr/share/rime-data/luna_pinyin.dict.yaml",
-        "/usr/share/rime-data/luna_pinyin.dict.yaml",
-    ] {
-        if Path::new(c).exists() {
-            return Some(PathBuf::from(c));
-        }
+    let mut candidates = Vec::new();
+    if let Some(x) = crate::deploy::detect() {
+        candidates.push(x.resources.join("luna_pinyin.dict.yaml"));
     }
-    None
+    candidates.push(PathBuf::from("/usr/share/rime-data/luna_pinyin.dict.yaml"));
+    candidates.into_iter().find(|p| p.is_file())
 }

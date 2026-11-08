@@ -23,3 +23,11 @@ _Avoid_: 确认框, 弹框
 **墓碑标记 (Tombstone)**:
 内存中用于标记已删除条目的状态，保障在超大词库（百万级条目）下的 O(1) 瞬时删除性能并在写盘时自动过滤。
 _Avoid_: 假删除, 逻辑删除
+
+**方案包 (Scheme Package)**:
+XSIME 中导入方案后生成的共享资源目录 `~/.local/share/rimes/schemes/packages/<id>/`，是运行时实际读取词库与方案配置的位置；`schemes/active.yaml` 指向当前生效的包。
+_Avoid_: 方案目录, 数据目录
+
+**学习目录 (Learning Directory)**:
+方案包对应的用户数据目录 `~/.local/share/rimes/schemes/learning/<id>/`，存放编译产物、用户词库与运行期锁文件。
+_Avoid_: 用户目录, 缓存目录

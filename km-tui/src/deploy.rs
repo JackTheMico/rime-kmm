@@ -1,154 +1,151 @@
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
-/// 探测 Rime 用户数据目录（默认通常为 ~/.local/share/fcitx5/rime）
-pub fn detect_rime_dir() -> Option<PathBuf> {
-    if let Some(data) = dirs::data_dir() {
-        let p = data.join("fcitx5/rime");
-        if p.exists() && p.is_dir() {
-            return Some(p);
-        }
-    }
-    if let Some(home) = dirs::home_dir() {
-        let p = home.join(".local/share/fcitx5/rime");
-        if p.exists() && p.is_dir() {
-            return Some(p);
-        }
-        let p2 = home.join(".config/fcitx5/rime");
-        if p2.exists() && p2.is_dir() {
-            return Some(p2);
-        }
-        let p3 = home.join(".local/share/rime");
-        if p3.exists() && p3.is_dir() {
-            return Some(p3);
-        }
-    }
-    None
+/// XSIME（犀术IME）在 Linux 上的运行时目录布局。
+///
+/// `resources`：当前生效的共享数据目录（导入方案包时是方案包目录，否则为内置 `data`）。
+pub struct XSIME {
+    pub resources: PathBuf,
+    pub schema: Option<String>,
 }
 
-/// 探测 Rime 共享预设目录（/usr/share/rime-data 等）
-pub fn detect_shared_dir() -> Option<PathBuf> {
-    for path in [
-        "/usr/share/rime-data",
-        "/usr/local/share/rime-data",
-        "/usr/share/rime",
-    ] {
-        let p = PathBuf::from(path);
-        if p.exists() && p.is_dir() {
-            return Some(p);
+/// 探测 XSIME 当前生效的资源目录与用户目录。
+/// 优先读取 `~/.local/share/rimes/schemes/active.yaml` 指向的导入方案包。
+pub fn detect() -> Option<XSIME> {
+    let user_root = std::env::var("RIMES_USER_DIR")
+        .ok()
+        .filter(|p| p.starts_with('/'))
+        .map(PathBuf::from)
+        .or_else(|| dirs::data_dir().map(|d| d.join("rimes")))?;
+    if !user_root.is_dir() {
+        return None;
+    }
+
+    let text = std::fs::read_to_string(user_root.join("schemes/active.yaml")).unwrap_or_default();
+    let (package, schema) = parse_active(&text);
+
+    if let Some(id) = package {
+        let resources = user_root.join("schemes/packages").join(&id);
+        if resources.is_dir() {
+            return Some(XSIME { resources, schema });
         }
     }
-    None
+
+    // 未导入方案包时使用内置数据目录
+    let resources = user_root.join("data");
+    resources.is_dir().then_some(XSIME { resources, schema })
 }
 
-/// 探测并选择一个可用的部署命令。
-/// 顺序：用户覆盖 > rime_deployer > fcitx5-remote -r > fcitx5 -r
-pub fn detect_deploy_cmd(override_cmd: Option<String>) -> String {
-    if let Some(c) = override_cmd {
-        return c;
-    }
-    for c in ["rime_deployer", "fcitx5-remote -r", "fcitx5 -r"] {
-        let base = c.split_whitespace().next().unwrap_or(c);
-        let probe = format!("command -v {base}");
-        if Command::new("sh")
-            .arg("-c")
-            .arg(probe)
-            .output()
-            .map(|o| o.status.success())
-            .unwrap_or(false)
-        {
-            return c.to_string();
+fn parse_active(text: &str) -> (Option<String>, Option<String>) {
+    let mut package = None;
+    let mut schema = None;
+    for line in text.lines() {
+        let line = line.trim();
+        if let Some(v) = line.strip_prefix("package:") {
+            let v = v.trim();
+            if !v.is_empty() {
+                package = Some(v.to_string());
+            }
+        } else if let Some(v) = line.strip_prefix("schema:") {
+            let v = v.trim();
+            if !v.is_empty() {
+                schema = Some(v.to_string());
+            }
         }
     }
-    "fcitx5-remote -r".to_string()
+    (package, schema)
 }
 
-/// 同步外部词库到 Rime 目录并执行重新部署
+/// 把词库同步到 XSIME 当前方案包，再重启 fcitx5 让 XSIME 重新编译词库。
 pub fn sync_and_deploy(dict_path: &Path, override_cmd: Option<&str>) -> String {
     let mut log = String::new();
-    let rime_dir = detect_rime_dir();
+    let Some(x) = detect() else {
+        log.push_str("✖ 未检测到 XSIME 目录（~/.local/share/rimes），请确认已安装犀术IME\n");
+        return log;
+    };
 
-    // 1. 同步词库文件（若不在 Rime 用户目录下）
-    if let Some(r_dir) = &rime_dir {
-        if let Some(file_name) = dict_path.file_name() {
-            let target_path = r_dir.join(file_name);
-            let need_sync = match (dict_path.canonicalize(), target_path.canonicalize()) {
-                (Ok(p1), Ok(p2)) => p1 != p2,
-                _ => true,
-            };
-
-            if need_sync && dict_path.exists() {
-                match std::fs::copy(dict_path, &target_path) {
-                    Ok(bytes) => {
-                        log.push_str(&format!(
-                            "✔ 同步词库到 Rime 目录：{} ({:.2} MB)\n",
-                            target_path.display(),
-                            bytes as f64 / 1_048_576.0
-                        ));
-                    }
-                    Err(e) => {
-                        log.push_str(&format!("✖ 同步词库失败：{e}\n"));
-                    }
-                }
-            }
+    // 1. 同步词库到方案包（若当前编辑的已经就在方案目录内则跳过）
+    let Some(name) = dict_path.file_name() else {
+        log.push_str("✖ 词库路径缺少文件名，无法同步\n");
+        return log;
+    };
+    let target = x.resources.join(name);
+    let same = matches!(
+        (dict_path.canonicalize(), target.canonicalize()),
+        (Ok(a), Ok(b)) if a == b
+    );
+    if same {
+        log.push_str("ℹ 词库已在 XSIME 方案目录内，无需同步\n");
+    } else if dict_path.exists() {
+        match std::fs::copy(dict_path, &target) {
+            Ok(bytes) => log.push_str(&format!(
+                "✔ 同步词库到 XSIME 方案目录：{} ({:.2} MB)\n",
+                target.display(),
+                bytes as f64 / 1_048_576.0
+            )),
+            Err(e) => log.push_str(&format!("✖ 同步词库失败：{e}\n")),
         }
     } else {
-        log.push_str("ℹ 未检测到独立的 Rime 用户目录，跳过文件同步\n");
+        log.push_str(&format!("✖ 词库不存在：{}\n", dict_path.display()));
     }
 
-    // 2. 执行编译与重载命令
-    // 如果存在 rime_deployer，优先使用 rime_deployer 进行构建
-    if let Some(r_dir) = &rime_dir {
-        let has_deployer = Command::new("sh")
-            .arg("-c")
-            .arg("command -v rime_deployer")
-            .output()
-            .map(|o| o.status.success())
-            .unwrap_or(false);
+    // 2. 触发 XSIME 重新编译：默认重启 fcitx5，插件启动时自动部署
+    let cmd = override_cmd.unwrap_or("fcitx5 -r");
+    log.push_str(&format!(
+        "⚙ 目标方案：{}（schema: {}）\n",
+        x.resources.display(),
+        x.schema.as_deref().unwrap_or("未知")
+    ));
+    log.push_str(&format!("⚙ 重新加载：{cmd}\n"));
 
-        if has_deployer {
-            let shared_arg = match detect_shared_dir() {
-                Some(s) => format!(" \"{}\"", s.display()),
-                None => String::new(),
-            };
-            let cmd_str = format!("rime_deployer --build \"{}\"{}", r_dir.display(), shared_arg);
-            log.push_str(&format!("⚙ 执行：{cmd_str}\n"));
-            match Command::new("sh").arg("-c").arg(&cmd_str).output() {
-                Ok(o) => {
-                    let out = String::from_utf8_lossy(&o.stdout);
-                    let err = String::from_utf8_lossy(&o.stderr);
-                    if o.status.success() {
-                        log.push_str("✔ Rime 部署构建成功\n");
-                    } else {
-                        log.push_str(&format!("✖ 部署构建返回异常码：{:?}\n{out}{err}\n", o.status.code()));
-                    }
-                }
-                Err(e) => {
-                    log.push_str(&format!("✖ 执行 rime_deployer 出错：{e}\n"));
+    if is_fcitx5_restart(cmd) {
+        if spawn_detached(cmd) {
+            log.push_str("✔ 已请求重启 fcitx5；XSIME 启动时会在后台重编译词库\n");
+            log.push_str("ℹ 编译完成前候选仍为旧内容，状态栏显示 Deploying 时请稍候\n");
+        } else {
+            log.push_str("✖ 无法启动 fcitx5，请手动重启输入法\n");
+        }
+    } else {
+        match run_captured(cmd) {
+            Ok(o) => {
+                let out = String::from_utf8_lossy(&o.stdout);
+                let err = String::from_utf8_lossy(&o.stderr);
+                if o.status.success() {
+                    log.push_str("✔ 自定义重载命令执行成功\n");
+                } else {
+                    log.push_str(&format!(
+                        "⚠ 自定义重载命令返回异常码：{:?}\n{out}{err}\n",
+                        o.status.code()
+                    ));
                 }
             }
-        }
-    }
-
-    // 3. 通知 fcitx5 重新加载 (fcitx5-remote -r)
-    let reload_cmd = override_cmd.unwrap_or("fcitx5-remote -r");
-    log.push_str(&format!("⚙ 重新加载：{reload_cmd}\n"));
-    match Command::new("sh").arg("-c").arg(reload_cmd).output() {
-        Ok(o) => {
-            let out = String::from_utf8_lossy(&o.stdout);
-            let err = String::from_utf8_lossy(&o.stderr);
-            if o.status.success() {
-                log.push_str("✔ fcitx5 重新加载信号发送成功\n");
-            } else {
-                log.push_str(&format!("⚠ 重新加载异常：{:?}\n{out}{err}\n", o.status.code()));
-            }
-        }
-        Err(e) => {
-            log.push_str(&format!("✖ 执行加载命令失败：{e}\n"));
+            Err(e) => log.push_str(&format!("✖ 执行重载命令失败：{e}\n")),
         }
     }
 
     log
+}
+
+/// `fcitx5 -r` 会接管前台进程，必须脱离终端后台启动，否则会一直占用输出管道。
+fn is_fcitx5_restart(cmd: &str) -> bool {
+    cmd.split_whitespace()
+        .next()
+        .and_then(|bin| Path::new(bin).file_name())
+        .and_then(|s| s.to_str())
+        == Some("fcitx5")
+}
+
+fn spawn_detached(cmd: &str) -> bool {
+    Command::new("sh")
+        .arg("-c")
+        .arg(format!("setsid {cmd} </dev/null >/dev/null 2>&1 &"))
+        .status()
+        .map(|s| s.success())
+        .unwrap_or(false)
+}
+
+fn run_captured(cmd: &str) -> std::io::Result<std::process::Output> {
+    Command::new("sh").arg("-c").arg(cmd).output()
 }
 
 #[cfg(test)]
@@ -156,10 +153,22 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_detect_dirs() {
-        let rime_dir = detect_rime_dir();
-        assert!(rime_dir.is_some());
-        let shared_dir = detect_shared_dir();
-        assert!(shared_dir.is_some());
+    fn test_parse_active() {
+        let text = "package: 75f1c5dc30f81cbd685ed329027693c3\nschema: kongmingmas\n";
+        let (package, schema) = parse_active(text);
+        assert_eq!(package.as_deref(), Some("75f1c5dc30f81cbd685ed329027693c3"));
+        assert_eq!(schema.as_deref(), Some("kongmingmas"));
+    }
+
+    #[test]
+    fn test_parse_active_empty() {
+        assert_eq!(parse_active(""), (None, None));
+    }
+
+    #[test]
+    fn test_is_fcitx5_restart() {
+        assert!(is_fcitx5_restart("fcitx5 -r"));
+        assert!(is_fcitx5_restart("/usr/bin/fcitx5 --replace"));
+        assert!(!is_fcitx5_restart("fcitx5-remote -r"));
     }
 }

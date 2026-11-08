@@ -602,7 +602,7 @@ fn draw_confirm_deploy_popup(frame: &mut Frame, on_exit: bool) {
 
     let text = if on_exit {
         vec![
-            Line::from("检测到词库有修改。是否同步并重新部署 fcitx5-rime？"),
+            Line::from("检测到词库有修改。是否同步到 XSIME 并重启 fcitx5？"),
             Line::from(""),
             Line::from(vec![
                 Span::styled("  [Y / Enter] ", Style::new().bold().green()),
@@ -619,7 +619,7 @@ fn draw_confirm_deploy_popup(frame: &mut Frame, on_exit: bool) {
         ]
     } else {
         vec![
-            Line::from("是否立即同步当前词库并重新部署 fcitx5-rime？"),
+            Line::from("是否立即同步当前词库到 XSIME 并重启 fcitx5？"),
             Line::from(""),
             Line::from(vec![
                 Span::styled("  [Y / Enter] ", Style::new().bold().green()),
@@ -701,7 +701,7 @@ fn draw_deploy_log_popup(frame: &mut Frame, log: &str) {
     frame.render_widget(Clear, area);
 
     let block = Block::bordered()
-        .title(" fcitx5-rime 部署与重载输出 ")
+        .title(" XSIME 部署与重载输出 ")
         .border_style(Style::new().bold().cyan());
     frame.render_widget(block, area);
 
@@ -825,7 +825,7 @@ fn draw_help_popup(frame: &mut Frame) {
         Line::from("  L (Shift+L)        同码候选项直接置底为末选"),
         Line::from("  w 或 Ctrl+s        立即落盘保存当前修改（平时自动 300ms 异步防抖写盘）"),
         Line::from("  o                  唤出词库切换抽屉，快速切换其它 .dict.yaml"),
-        Line::from("  d 或 Ctrl+r        重新部署并同步词库至 fcitx5-rime"),
+        Line::from("  d 或 Ctrl+r        同步词库到 XSIME 并重启 fcitx5 重新编译"),
         Line::from("  Ctrl+q (或 Ctrl+c) 退出程序（检测到修改时弹出部署确认）"),
         Line::from(""),
         Line::from(Span::styled("【实时写盘与备份】", Style::new().bold().yellow())),

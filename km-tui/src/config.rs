@@ -3,13 +3,16 @@ use std::path::PathBuf;
 
 /// 用户配置，持久化到 ~/.config/km-tui/config.json
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]
+#[serde(default)]
 pub struct Config {
     /// 上次成功打开词库所在的目录（下次启动目录树以此为根）
     pub last_dir: Option<String>,
-    /// 用户覆盖的重新部署命令
+    /// 用户覆盖的重新加载命令（默认 `fcitx5 -r`）
     pub deploy_cmd: Option<String>,
     /// luna_pinyin.dict.yaml 的显式路径
     pub pinyin_path: Option<String>,
+    /// 空明码主库所在目录（默认取 km-tui 仓库根目录）
+    pub master_dir: Option<String>,
 }
 
 impl Config {
