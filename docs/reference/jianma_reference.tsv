@@ -1,0 +1,4680 @@
+code	tier	word	freq	candidates	pattern	marker
+!'	zero	泻	1280	3	前缀	!
+!'	zero	锭	1013	3	前缀	!
+!'	zero	嚎	860	3	前缀	!
+!<	auto	改	28283	1	前缀	!
+!=	auto	（	0	1	空格并击	=
+!B	auto	宝宝	15598	1	前缀	!
+!C	zero	畅	1339	2	前缀	!
+!C	zero	裁	1264	2	前缀	!
+!D	auto	刚	34235	1	前缀	!
+!G	auto	相信	35919	1	前缀	!
+!H	auto	好像	59823	1	前缀	!
+!J	auto	网	22345	1	前缀	!
+!L	auto	劳动	6105	1	前缀	!
+!M	auto	帽子	5897	1	前缀	!
+!N	auto	农民	13047	1	前缀	!
+!P	auto	构成	16391	1	前缀	!
+!Q	auto	确实	72660	1	前缀	!
+!R	auto	容易	50722	1	前缀	!
+!S	auto	搜索	63196	1	前缀	!
+!T	auto	请	57002	1	前缀	!
+!V	auto	’	0	1	前缀	!
+!W	auto	大多数	35507	1	前缀	!
+!X	auto	谁	54727	1	前缀	!
+!Y	zero	幽	2408	2	前缀	!
+!Y	zero	掩	1087	2	前缀	!
+!Z	auto	送	20106	1	前缀	!
+!b	auto	注意	46573	1	前缀	!
+!c	auto	完	24942	1	前缀	!
+!d	auto	至	18700	1	前缀	!
+!e	auto	换	33491	1	前缀	!
+!g	auto	学历	45700	1	前缀	!
+!i	auto	花	24645	1	前缀	!
+!j	zero	洁	2086	3	前缀	!
+!j	zero	截	1859	3	前缀	!
+!j	zero	疾	1401	3	前缀	!
+!l	auto	偶	25662	1	前缀	!
+!q	zero	琴	3542	3	前缀	!
+!q	zero	旗	2655	3	前缀	!
+!q	zero	潜	1638	3	前缀	!
+!r	auto	任何	63026	1	前缀	!
+!s	auto	生命	33456	1	前缀	!
+!t	auto	贴	11493	1	前缀	!
+!v	auto	聊	16780	1	前缀	!
+!x	zero	鲜	2376	3	前缀	!
+!x	zero	协	1682	3	前缀	!
+!x	zero	析	995	3	前缀	!
+!y	auto	香港	26427	1	前缀	!
+!z	auto	支持	71344	1	前缀	!
+"	auto	”“	0	1	前缀	"
+*	ext	*	0	1	前缀	*
+*=	auto	*	0	1	空格并击	=
+*A	auto	还有一个	19220	1	前缀	*
+*B	auto	绝大多数	15075	1	前缀	*
+*G	auto	产品经理	25663	1	前缀	*
+*M	auto	有什么区别	6895	1	前缀	*
+*Q	auto	这是一个	20209	1	前缀	*
+*S	auto	这个问题	76322	1	前缀	*
+*T	auto	作为一个	33774	1	前缀	*
+*W	auto	其实就是	15761	1	前缀	*
+*Y	auto	这个时候	26529	1	前缀	*
+*Z	auto	账号	16414	1	前缀	*
+*c	auto	吧	385554	1	前缀	*
+*d	auto	这种情况	16970	1	前缀	*
+*f	zero	丛	1297	2	前缀	*
+*f	zero	嗡	728	2	前缀	*
+*j	auto	没有什么	16057	1	前缀	*
+*l	auto	另一方面	19661	1	前缀	*
+*m	auto	最重要的	15197	1	前缀	*
+*r	auto	保险公司	15815	1	前缀	*
+*s	auto	越来越多	19709	1	前缀	*
+*v	auto	各	29921	1	前缀	*
+*w	auto	也就是说	33393	1	前缀	*
+*x	auto	为什么要	20281	1	前缀	*
+*z	auto	很多时候	16155	1	前缀	*
+,	ext	，	0	1	前缀	,
+,=	auto	,	0	1	空格并击	=
+,B	auto	大众	24148	1	前缀	,
+,C	auto	参加	24129	1	前缀	,
+,D	auto	导航	4589	1	前缀	,
+,F	auto	都是	383549	1	前缀	,
+,G	auto	高手	11753	1	前缀	,
+,H	auto	环境	52953	1	前缀	,
+,J	auto	类	20207	1	前缀	,
+,S	auto	成功	55885	1	前缀	,
+,T	auto	投入	23131	1	前缀	,
+,W	auto	网络	35641	1	前缀	,
+,Y	auto	可能性	20389	1	前缀	,
+,Z	auto	成就	16379	1	前缀	,
+,f	auto	杂志	24150	1	前缀	,
+,g	auto	更多	60096	1	前缀	,
+,j	auto	教程	15176	1	前缀	,
+,l	auto	候	1669	1	前缀	,
+,q	auto	千万	5906	1	前缀	,
+,r	auto	利润	23259	1	前缀	,
+,s	auto	世界	84532	1	前缀	,
+,w	auto	文化	48257	1	前缀	,
+,x	auto	有可能	22533	1	前缀	,
+,y	auto	一直	85173	1	前缀	,
+,z	auto	一方面	19414	1	前缀	,
+.	ext	。	0	1	前缀	.
+.=	auto	.	0	1	空格并击	=
+.B	auto	包括	100006	1	前缀	.
+.C	auto	难道	18907	1	前缀	.
+.D	auto	东西	126783	1	前缀	.
+.F	auto	基础上	17723	1	前缀	.
+.G	auto	感动	7830	1	前缀	.
+.J	auto	听	32332	1	前缀	.
+.S	auto	首先	101593	1	前缀	.
+.W	auto	网站	55508	1	前缀	.
+.Y	auto	是一种	42500	1	前缀	.
+.Z	auto	心里	24099	1	前缀	.
+.g	auto	革命	8022	1	前缀	.
+.j	auto	程序员	17192	1	前缀	.
+.l	auto	理论	54594	1	前缀	.
+.q	auto	奇怪	9089	1	前缀	.
+.r	auto	认真	21923	1	前缀	.
+.s	auto	不得不	15122	1	前缀	.
+.t	auto	家庭	37642	1	前缀	.
+.x	auto	现状	10138	1	前缀	.
+.y	auto	指出	13273	1	前缀	.
+.z	auto	不需要	45377	1	前缀	.
+/	ext	、	0	1	前缀	/
+/=	auto	/	0	1	空格并击	=
+/B	auto	你可以	45980	1	前缀	/
+/C	auto	参数	14111	1	前缀	/
+/D	auto	陷入	11735	1	前缀	/
+/F	auto	青春	10571	1	前缀	/
+/G	auto	广告	41722	1	前缀	/
+/H	auto	好吃	8112	1	前缀	/
+/J	auto	刷	15120	1	前缀	/
+/M	auto	满足	28952	1	前缀	/
+/P	auto	判断	35462	1	前缀	/
+/R	auto	如今	27163	1	前缀	/
+/S	auto	但是	567022	1	前缀	/
+/T	auto	可能会	47771	1	前缀	/
+/W	auto	完全	87086	1	前缀	/
+/Y	auto	不好意思	9506	1	前缀	/
+/Z	auto	状态	66733	1	前缀	/
+/b	auto	编程	14746	1	前缀	/
+/d	auto	等等	110760	1	前缀	/
+/g	auto	改革	10009	1	前缀	/
+/h	auto	心脏	9907	1	前缀	/
+/j	auto	加班	14214	1	前缀	/
+/l	auto	厉害	14165	1	前缀	/
+/m	auto	取消	9826	1	前缀	/
+/n	auto	能量	28407	1	前缀	/
+/q	auto	有的	47634	1	前缀	/
+/r	auto	日常	30070	1	前缀	/
+/s	auto	社区	16406	1	前缀	/
+/w	auto	味道	30155	1	前缀	/
+/x	auto	细节	42236	1	前缀	/
+/y	auto	一共	13230	1	前缀	/
+/z	auto	挑选	9497	1	前缀	/
+0	ext	0	0	1	前缀	0
+0=	auto	0	0	1	空格并击	=
+0A	auto	其他	141365	1	前缀	0
+0B	auto	影	4071	1	前缀	0
+0C	auto	主要	92763	1	前缀	0
+0D	auto	能力	137141	1	前缀	0
+0E	auto	觉	4479	1	前缀	0
+0F	auto	设	4679	1	前缀	0
+0G	auto	时间	130635	1	前缀	0
+0H	auto	据	15361	1	前缀	0
+0I	auto	论	7224	1	前缀	0
+0J	auto	结果	128974	1	前缀	0
+0K	auto	选	14623	1	前缀	0
+0L	auto	证	6418	1	前缀	0
+0M	auto	习	1426	1	前缀	0
+0N	auto	当时	121452	1	前缀	0
+0O	auto	这里	120204	1	前缀	0
+0P	auto	以上	120185	1	前缀	0
+0Q	auto	那个	118070	1	前缀	0
+0R	auto	里面	117698	1	前缀	0
+0S	auto	程	3991	1	前缀	0
+0T	auto	学生	114814	1	前缀	0
+0U	auto	场	6601	1	前缀	0
+0V	auto	目	2814	1	前缀	0
+0W	auto	两个	106330	1	前缀	0
+0X	auto	以后	106103	1	前缀	0
+0Y	auto	有没有	44371	1	前缀	0
+0Z	auto	资	1988	1	前缀	0
+0a	auto	所以	531858	1	前缀	0
+0b	auto	的时候	429078	1	前缀	0
+0c	auto	我们	479209	1	前缀	0
+0d	auto	因为	474154	1	前缀	0
+0e	auto	那么	236939	1	前缀	0
+0f	auto	如果	448056	1	前缀	0
+0g	auto	的话	222801	1	前缀	0
+0h	auto	自己	444292	1	前缀	0
+0i	auto	这样	146876	1	前缀	0
+0j	auto	认	3231	1	前缀	0
+0k	auto	通过	205273	1	前缀	0
+0l	auto	以及	201551	1	前缀	0
+0m	auto	可能	195401	1	前缀	0
+0n	auto	进行	187596	1	前缀	0
+0o	auto	数	14210	1	前缀	0
+0p	auto	件	8211	1	前缀	0
+0q	auto	大家	167401	1	前缀	0
+0r	auto	一下	161487	1	前缀	0
+0s	auto	金	16064	1	前缀	0
+0t	auto	来说	157832	1	前缀	0
+0u	auto	只有	157451	1	前缀	0
+0v	auto	专	3509	1	前缀	0
+0w	auto	怎	2714	1	前缀	0
+0x	auto	回来	47825	1	前缀	0
+0y	auto	保	5381	1	前缀	0
+0z	auto	只是	145013	1	前缀	0
+1	ext	1	0	1	前缀	1
+1q	auto	`	0	1	前缀	1
+1~	zero	壹	1572	2	前缀	1
+1~	zero	1、	0	2	前缀	1
+2	ext	2	0	1	前缀	2
+2~	zero	贰	1150	2	前缀	2
+2~	zero	2、	0	2	前缀	2
+3	ext	3	0	1	前缀	3
+3~	zero	叁	1170	2	前缀	3
+3~	zero	3、	0	2	前缀	3
+4	ext	4	0	1	前缀	4
+4~	zero	肆	1043	2	前缀	4
+4~	zero	4、	0	2	前缀	4
+5	ext	5	0	1	前缀	5
+5~	zero	伍	1830	2	前缀	5
+5~	zero	5、	0	2	前缀	5
+6	ext	7	0	1	前缀	6
+6~	zero	陸	0	2	前缀	6
+6~	zero	6、	0	2	前缀	6
+7	ext	7	0	1	前缀	7
+70	auto	*	0	1	前缀	7
+78	auto	`	0	1	前缀	7
+79	auto	@	0	1	前缀	7
+7=	auto	7	0	1	空格并击	=
+7A	auto	凹凸	1032	1	前缀	7
+7B	auto	模糊	4175	1	前缀	7
+7C	auto	产生	69306	1	前缀	7
+7D	auto	全体	4166	1	前缀	7
+7E	auto	生产力	4070	1	前缀	7
+7F	auto	喜剧	3977	1	前缀	7
+7G	auto	各种	142524	1	前缀	7
+7H	auto	年均	1018	1	前缀	7
+7I	auto	水平	66967	1	前缀	7
+7J	auto	具有	53030	1	前缀	7
+7K	auto	情报	3490	1	前缀	7
+7L	auto	安装	20247	1	前缀	7
+7N	auto	农业	7921	1	前缀	7
+7R	auto	技术上	3338	1	前缀	7
+7S	auto	虽然	195165	1	前缀	7
+7T	auto	统一	18875	1	前缀	7
+7U	auto	意义	28443	1	前缀	7
+7W	auto	往往	42641	1	前缀	7
+7X	auto	另外	101601	1	前缀	7
+7Y	auto	永远	28325	1	前缀	7
+7Z	auto	农民工	3249	1	前缀	7
+7`	auto	离谱	4249	1	前缀	7
+7a	auto	爱情	23085	1	前缀	7
+7b	auto	别人	67379	1	前缀	7
+7c	auto	测试	36183	1	前缀	7
+7d	auto	地区	22033	1	前缀	7
+7e	auto	欧盟	4153	1	前缀	7
+7f	auto	分数	23544	1	前缀	7
+7g	auto	感情	23914	1	前缀	7
+7h	auto	听见	3810	1	前缀	7
+7i	auto	什么时候	11090	1	前缀	7
+7j	auto	苦难	3526	1	前缀	7
+7k	auto	肯定	48286	1	前缀	7
+7l	auto	历史	61565	1	前缀	7
+7m	auto	人生	48886	1	前缀	7
+7n	auto	能够	121192	1	前缀	7
+7p	auto	平时	42042	1	前缀	7
+7q	auto	起来	49026	1	前缀	7
+7r	auto	认识	27551	1	前缀	7
+7s	auto	事情	51952	1	前缀	7
+7t	auto	现代化	3330	1	前缀	7
+7v	auto	达到	48708	1	前缀	7
+7w	auto	方面	86110	1	前缀	7
+7x	auto	信仰	9627	1	前缀	7
+7y	auto	职务	3317	1	前缀	7
+7z	auto	空中	3259	1	前缀	7
+7~	zero	柒	922	2	前缀	7
+7~	zero	7、	0	2	前缀	7
+8	ext	8	0	1	前缀	8
+89	auto	~	0	1	前缀	8
+8=	auto	8	0	1	空格并击	=
+8A	auto	才是	55123	1	前缀	8
+8B	auto	农产品	3083	1	前缀	8
+8C	auto	存在	104597	1	前缀	8
+8D	auto	单位	29826	1	前缀	8
+8E	auto	比较	165124	1	前缀	8
+8F	auto	法律	27950	1	前缀	8
+8G	auto	刚刚	24127	1	前缀	8
+8H	auto	爱国主义	996	1	前缀	8
+8I	auto	内容	152208	1	前缀	8
+8J	auto	具备	20167	1	前缀	8
+8K	auto	复	2961	1	前缀	8
+8L	auto	老婆	30451	1	前缀	8
+8N	auto	电	7672	1	前缀	8
+8R	auto	国家	87668	1	前缀	8
+8S	auto	都有	88443	1	前缀	8
+8T	auto	统治	8087	1	前缀	8
+8U	auto	几	4639	1	前缀	8
+8W	auto	量	12025	1	前缀	8
+8X	zero	佰	973	3	前缀	8
+8X	zero	梭	880	3	前缀	8
+8X	zero	糙	822	3	前缀	8
+8Y	auto	只要	89124	1	前缀	8
+8Z	auto	老板	91300	1	前缀	8
+8a	auto	品	5638	1	前缀	8
+8b	auto	中华人民共和国	3159	1	前缀	8
+8c	auto	我爱	3011	1	前缀	8
+8d	auto	直接	167731	1	前缀	8
+8e	auto	而且	250274	1	前缀	8
+8f	auto	化	12825	1	前缀	8
+8g	auto	感觉	76480	1	前缀	8
+8h	auto	也会	84581	1	前缀	8
+8i	auto	也就	52872	1	前缀	8
+8j	auto	需	7257	1	前缀	8
+8k	auto	可怜	9259	1	前缀	8
+8l	auto	仁义	859	1	前缀	8
+8m	auto	明白	20825	1	前缀	8
+8n	auto	才能	89512	1	前缀	8
+8p	auto	平均	23295	1	前缀	8
+8q	auto	情况	58703	1	前缀	8
+8r	auto	所谓	36304	1	前缀	8
+8s	auto	思想	29686	1	前缀	8
+8t	auto	入	11468	1	前缀	8
+8v	auto	改变	44174	1	前缀	8
+8w	auto	位置	59638	1	前缀	8
+8x	auto	信心	7588	1	前缀	8
+8y	auto	一件	11394	1	前缀	8
+8z	auto	值得	16807	1	前缀	8
+8~	zero	捌	791	2	前缀	8
+8~	zero	8、	0	2	前缀	8
+9	ext	9	0	1	前缀	9
+90	auto	_	0	1	前缀	9
+9=	auto	9	0	1	空格并击	=
+9A	auto	艾灸	834	1	前缀	9
+9B	auto	不仅	43711	1	前缀	9
+9C	auto	了解	102052	1	前缀	9
+9D	auto	有些	92023	1	前缀	9
+9F	auto	范围	24146	1	前缀	9
+9G	auto	感	8365	1	前缀	9
+9H	auto	知乎	71592	1	前缀	9
+9J	auto	拒绝	19581	1	前缀	9
+9K	auto	考虑	50289	1	前缀	9
+9L	auto	论坛	25105	1	前缀	9
+9N	auto	理解	92925	1	前缀	9
+9R	auto	也有	94837	1	前缀	9
+9S	auto	出现	98323	1	前缀	9
+9T	auto	不要	98959	1	前缀	9
+9U	auto	就会	99483	1	前缀	9
+9W	auto	物质	21479	1	前缀	9
+9X	auto	距离	35945	1	前缀	9
+9Y	auto	愉快	4110	1	前缀	9
+9Z	auto	状况	12673	1	前缀	9
+9b	auto	变化	56107	1	前缀	9
+9c	auto	个人	102677	1	前缀	9
+9d	auto	发展	91754	1	前缀	9
+9e	auto	电影	103460	1	前缀	9
+9f	auto	不断	52510	1	前缀	9
+9g	auto	跟风	3469	1	前缀	9
+9h	auto	形势	4651	1	前缀	9
+9i	auto	我们的	933	1	前缀	9
+9j	auto	继续	71812	1	前缀	9
+9k	auto	可惜	16495	1	前缀	9
+9l	auto	系列	49671	1	前缀	9
+9m	auto	命令	8769	1	前缀	9
+9n	auto	国内	92415	1	前缀	9
+9p	auto	贫穷	3116	1	前缀	9
+9q	auto	企业	99836	1	前缀	9
+9r	auto	认为	83684	1	前缀	9
+9s	auto	似乎	37952	1	前缀	9
+9t	auto	提高	50087	1	前缀	9
+9v	auto	实验	25647	1	前缀	9
+9w	auto	问问	11364	1	前缀	9
+9x	auto	形成	50721	1	前缀	9
+9y	auto	应该	98472	1	前缀	9
+9z	auto	部分	101065	1	前缀	9
+9~	zero	玖	1043	2	前缀	9
+9~	zero	9、	0	2	前缀	9
+:	ext	：	0	1	前缀	:
+::	auto	忙	30469	1	前缀	:
+:=	auto	！	0	1	空格并击	=
+:B	auto	秘密	8925	1	前缀	:
+:C	auto	产品	174020	1	前缀	:
+:D	auto	打开	36544	1	前缀	:
+:F	auto	反正	30852	1	前缀	:
+:G	auto	制作	66002	1	前缀	:
+:H	auto	活动	53250	1	前缀	:
+:J	auto	旧	6348	1	前缀	:
+:K	auto	这就是	49412	1	前缀	:
+:M	auto	目标	50084	1	前缀	:
+:Q	auto	群众	9122	1	前缀	:
+:R	auto	如何	164630	1	前缀	:
+:S	auto	数据	128574	1	前缀	:
+:T	auto	痛苦	18936	1	前缀	:
+:W	auto	忘记	11797	1	前缀	:
+:X	auto	许多	44153	1	前缀	:
+:Y	auto	尤其是	54919	1	前缀	:
+:Z	auto	罗马	6769	1	前缀	:
+:b	auto	并且	112978	1	前缀	:
+:c	auto	程序	23178	1	前缀	:
+:g	auto	各自	10412	1	前缀	:
+:j	auto	今天	110731	1	前缀	:
+:k	auto	这也是	32807	1	前缀	:
+:m	auto	梦想	16382	1	前缀	:
+:q	auto	期待	22839	1	前缀	:
+:r	auto	相处	7564	1	前缀	:
+:s	auto	实际	40955	1	前缀	:
+:t	auto	特殊	23412	1	前缀	:
+:w	auto	期货	7293	1	前缀	:
+:x	auto	幸福	17267	1	前缀	:
+:y	auto	小区	7270	1	前缀	:
+:z	auto	自由	29136	1	前缀	:
+;	ext	；	0	1	前缀	;
+;0	auto	)	0	1	前缀	;
+;6	auto	^	0	1	前缀	;
+;7	auto	&	0	1	前缀	;
+;8	auto	*	0	1	前缀	;
+;9	auto	(	0	1	前缀	;
+;=	auto	;	0	1	空格并击	=
+;B	auto	基本上	56232	1	前缀	;
+;C	auto	参考	26598	1	前缀	;
+;D	auto	权益	6513	1	前缀	;
+;F	auto	框架	24086	1	前缀	;
+;G	auto	刚才	38675	1	前缀	;
+;H	auto	应该是	58281	1	前缀	;
+;J	auto	图	21562	1	前缀	;
+;K	auto	考试	62877	1	前缀	;
+;L	auto	旅游	12438	1	前缀	;
+;M	auto	满意	7364	1	前缀	;
+;P	auto	普及	10022	1	前缀	;
+;Q	auto	趋势	23466	1	前缀	;
+;R	auto	入门	29506	1	前缀	;
+;S	auto	手机	69334	1	前缀	;
+;T	auto	太多	45895	1	前缀	;
+;W	auto	完成	59091	1	前缀	;
+;X	auto	选择	216102	1	前缀	;
+;Y	auto	权限	5894	1	前缀	;
+;Z	auto	找到	65533	1	前缀	;
+;a	auto	影响	113623	1	前缀	;
+;b	auto	效果	94151	1	前缀	;
+;c	auto	吃饭	31690	1	前缀	;
+;d	auto	不同的	57357	1	前缀	;
+;f	auto	非常	129032	1	前缀	;
+;g	auto	操作	63889	1	前缀	;
+;j	auto	经验	61006	1	前缀	;
+;k	auto	哪儿	6091	1	前缀	;
+;l	auto	练习	50794	1	前缀	;
+;m	auto	命运	15697	1	前缀	;
+;n	auto	斗争	5405	1	前缀	;
+;q	auto	确定	36001	1	前缀	;
+;r	auto	关注	76718	1	前缀	;
+;s	auto	身体	60877	1	前缀	;
+;t	auto	早期	24093	1	前缀	;
+;w	auto	微信	31877	1	前缀	;
+;x	auto	心情	16032	1	前缀	;
+;y	auto	甚至	158377	1	前缀	;
+;z	auto	自动	18996	1	前缀	;
+<=	auto	“	0	1	空格并击	=
+<B	auto	汗	14099	1	前缀	<
+<C	auto	算	30805	1	前缀	<
+<D	auto	倒	14478	1	前缀	<
+<E	auto	拿	39456	1	前缀	<
+<F	auto	睡	22070	1	前缀	<
+<G	auto	晕	36316	1	前缀	<
+<H	zero	混	8341	3	前缀	<
+<H	zero	辉	3105	3	前缀	<
+<H	zero	滑	2278	3	前缀	<
+<J	zero	奖	5629	2	前缀	<
+<J	zero	井	2864	2	前缀	<
+<K	auto	总	29524	1	前缀	<
+<L	auto	涨	12564	1	前缀	<
+<M	auto	哦	21790	1	前缀	<
+<N	auto	跟	75463	1	前缀	<
+<Q	auto	怪	14584	1	前缀	<
+<R	auto	爱	32742	1	前缀	<
+<S	auto	区	26394	1	前缀	<
+<V	auto	‘	0	1	前缀	<
+<W	auto	啊	84662	1	前缀	<
+<X	auto	股	17578	1	前缀	<
+<Y	zero	燕	3081	3	前缀	<
+<Y	zero	愈	2801	3	前缀	<
+<Y	zero	犹	1664	3	前缀	<
+<Z	auto	干	25849	1	前缀	<
+<a	auto	"	0	1	前缀	<
+<b	auto	病	9001	1	前缀	<
+<c	auto	张	28350	1	前缀	<
+<d	auto	找	78886	1	前缀	<
+<e	auto	咋	13090	1	前缀	<
+<f	auto	住	22827	1	前缀	<
+<g	auto	格	13856	1	前缀	<
+<h	auto	怕	23660	1	前缀	<
+<i	auto	快	48871	1	前缀	<
+<j	zero	假	8983	2	前缀	<
+<j	zero	佳	3831	2	前缀	<
+<k	auto	称	14772	1	前缀	<
+<l	auto	叫	56532	1	前缀	<
+<m	auto	拍	19173	1	前缀	<
+<n	auto	啥	41314	1	前缀	<
+<q	zero	巧	2802	3	前缀	<
+<q	zero	弃	2069	3	前缀	<
+<q	zero	侵	1082	3	前缀	<
+<r	auto	赚	11857	1	前缀	<
+<s	auto	神	10317	1	前缀	<
+<t	auto	挺	21586	1	前缀	<
+<u	auto	店	12541	1	前缀	<
+<v	auto	才	71528	1	前缀	<
+<x	zero	仙	3611	3	前缀	<
+<x	zero	斜	2109	3	前缀	<
+<x	zero	刑	1561	3	前缀	<
+<y	zero	伊	4667	2	前缀	<
+<y	zero	印	3957	2	前缀	<
+<z	auto	是什么	60113	1	前缀	<
+=!	auto	）	0	1	空格并击	=
+=,	auto	，	0	1	空格并击	=
+=.	auto	。	0	1	空格并击	=
+=/	auto	、	0	1	空格并击	=
+=:	auto	？	0	1	空格并击	=
+=;	auto	；	0	1	空格并击	=
+=<	auto	”	0	1	空格并击	=
+=?	auto	》	0	1	空格并击	=
+=A	auto	定	15769	1	空格并击	=
+=B	auto	把	166222	1	空格并击	=
+=C	auto	从	128082	1	空格并击	=
+=D	auto	得	90228	1	空格并击	=
+=E	auto	儿	16866	1	空格并击	=
+=F	auto	分	29738	1	空格并击	=
+=G	auto	工	6336	1	空格并击	=
+=H	auto	行	39910	1	空格并击	=
+=I	auto	主	11740	1	空格并击	=
+=J	auto	进	25597	1	空格并击	=
+=K	auto	但	116404	1	空格并击	=
+=L	auto	力	9926	1	空格并击	=
+=M	auto	面	15762	1	空格并击	=
+=N	auto	内	41913	1	空格并击	=
+=O	auto	者	30711	1	空格并击	=
+=P	auto	十	6899	1	空格并击	=
+=Q	auto	其	59071	1	空格并击	=
+=R	auto	如	38846	1	空格并击	=
+=S	auto	时	119072	1	空格并击	=
+=T	auto	她	204714	1	空格并击	=
+=U	auto	第	25378	1	空格并击	=
+=V	auto	使	35310	1	空格并击	=
+=W	auto	外	21373	1	空格并击	=
+=X	auto	现	7952	1	空格并击	=
+=Y	auto	因	20789	1	空格并击	=
+=Z	auto	着	94513	1	空格并击	=
+=_A	auto	代	6407	1	空格并击	=
+=_B	auto	比	69515	1	空格并击	=
+=_C	auto	产	3494	1	空格并击	=
+=_D	auto	动	10386	1	空格并击	=
+=_E	auto	信	12195	1	空格并击	=
+=_F	auto	化	12825	1	空格并击	=
+=_G	auto	合	7852	1	空格并击	=
+=_H	auto	话	58786	1	空格并击	=
+=_I	auto	给	192996	1	空格并击	=
+=_J	auto	间	11649	1	空格并击	=
+=_K	auto	世	4115	1	空格并击	=
+=_L	auto	立	5812	1	空格并击	=
+=_M	auto	门	15692	1	空格并击	=
+=_N	auto	次	22258	1	空格并击	=
+=_O	auto	度	12390	1	空格并击	=
+=_P	auto	常	8505	1	空格并击	=
+=_Q	auto	全	26794	1	空格并击	=
+=_R	auto	先	85126	1	空格并击	=
+=_S	auto	实	3966	1	空格并击	=
+=_T	auto	特	10383	1	空格并击	=
+=_U	auto	海	13336	1	空格并击	=
+=_V	auto	通	9293	1	空格并击	=
+=_W	auto	位	14967	1	空格并击	=
+=_X	auto	想	142577	1	空格并击	=
+=_Y	auto	又	133689	1	空格并击	=
+=_Z	auto	种	14013	1	空格并击	=
+=_a	auto	由	47431	1	空格并击	=
+=_b	auto	被	138923	1	空格并击	=
+=_c	auto	此	18152	1	空格并击	=
+=_d	auto	都	407808	1	空格并击	=
+=_e	auto	最	66766	1	空格并击	=
+=_f	auto	手	17113	1	空格并击	=
+=_g	auto	高	46097	1	空格并击	=
+=_h	auto	很	160978	1	空格并击	=
+=_i	auto	应	21211	1	空格并击	=
+=_j	auto	机	26648	1	空格并击	=
+=_k	auto	战	4900	1	空格并击	=
+=_l	auto	利	5815	1	空格并击	=
+=_m	auto	明	10778	1	空格并击	=
+=_n	auto	向	53695	1	空格并击	=
+=_o	auto	政	2249	1	空格并击	=
+=_p	auto	相	13259	1	空格并击	=
+=_q	auto	只	38354	1	空格并击	=
+=_r	auto	任	8722	1	空格并击	=
+=_s	auto	所	44995	1	空格并击	=
+=_t	auto	头	21237	1	空格并击	=
+=_u	auto	见	27521	1	空格并击	=
+=_v	auto	什	1847	1	空格并击	=
+=_w	auto	物	6513	1	空格并击	=
+=_x	auto	些	22871	1	空格并击	=
+=_y	auto	与	204064	1	空格并击	=
+=_z	auto	之	50505	1	空格并击	=
+=a	auto	；	0	1	空格并击	=
+=b	auto	不	590801	1	空格并击	=
+=c	auto	，	0	1	空格并击	=
+=d	auto	的	4822928	1	空格并击	=
+=e	auto	到	297457	1	空格并击	=
+=f	auto	发	71269	1	空格并击	=
+=g	auto	个	247763	1	空格并击	=
+=h	auto	和	665031	1	空格并击	=
+=i	auto	有	613999	1	空格并击	=
+=j	auto	就	558574	1	空格并击	=
+=k	auto	可	69815	1	空格并击	=
+=l	auto	了	1512483	1	空格并击	=
+=m	auto	们	66889	1	空格并击	=
+=n	auto	你	972978	1	空格并击	=
+=o	auto	多	154899	1	空格并击	=
+=p	auto	年	106172	1	空格并击	=
+=q	auto	去	331354	1	空格并击	=
+=r	auto	人	250956	1	空格并击	=
+=s	auto	是	1180106	1	空格并击	=
+=t	auto	他	344401	1	空格并击	=
+=u	auto	用	168923	1	空格并击	=
+=v	auto	这	181776	1	空格并击	=
+=w	auto	我	1191912	1	空格并击	=
+=x	auto	。	0	1	空格并击	=
+=y	auto	一	135314	1	空格并击	=
+=z	auto	、	0	1	空格并击	=
+?	ext	？	0	1	前缀	?
+?=	auto	《	0	1	空格并击	=
+?B	auto	爸爸	16688	1	前缀	?
+?C	auto	常常	12511	1	前缀	?
+?D	auto	显卡	5819	1	前缀	?
+?F	auto	负责	31710	1	前缀	?
+?G	auto	好好	24197	1	前缀	?
+?H	auto	一步	5813	1	前缀	?
+?J	auto	说说	20554	1	前缀	?
+?K	auto	伤心	5661	1	前缀	?
+?M	auto	妈妈	27749	1	前缀	?
+?N	auto	奶奶	6727	1	前缀	?
+?P	auto	嘿嘿	30819	1	前缀	?
+?Q	auto	权力	12947	1	前缀	?
+?S	auto	叔叔	4714	1	前缀	?
+?W	auto	学期	4889	1	前缀	?
+?X	auto	学校	82508	1	前缀	?
+?Y	auto	价值	52342	1	前缀	?
+?Z	auto	主义	5199	1	前缀	?
+?a	auto	想想	18031	1	前缀	?
+?b	auto	受到	26727	1	前缀	?
+?c	auto	试试	11659	1	前缀	?
+?d	auto	弟弟	11308	1	前缀	?
+?g	auto	哥哥	12131	1	前缀	?
+?h	auto	天天	25657	1	前缀	?
+?j	auto	姐姐	13128	1	前缀	?
+?l	auto	全文	5445	1	前缀	?
+?m	auto	妹妹	10889	1	前缀	?
+?n	auto	仅仅	16431	1	前缀	?
+?p	auto	谢谢	48389	1	前缀	?
+?q	auto	慢慢	37783	1	前缀	?
+?r	auto	谁能	5344	1	前缀	?
+?s	auto	看看	60666	1	前缀	?
+?t	auto	流水	4971	1	前缀	?
+?w	auto	伟大	7863	1	前缀	?
+?y	auto	爷爷	9964	1	前缀	?
+?z	auto	之间	95374	1	前缀	?
+@	ext	@	0	1	前缀	@
+@=	auto	@	0	1	空格并击	=
+@A	auto	安利	5196	1	前缀	@
+@B	auto	不一定	17903	1	前缀	@
+@C	auto	差不多	40313	1	前缀	@
+@D	auto	大部分	74867	1	前缀	@
+@F	auto	可能是	49238	1	前缀	@
+@G	auto	主要是	47939	1	前缀	@
+@J	auto	最重要的是	10381	1	前缀	@
+@K	auto	醒来	4647	1	前缀	@
+@M	auto	一定要	68928	1	前缀	@
+@N	auto	那时候	22756	1	前缀	@
+@Q	auto	还可以	40902	1	前缀	@
+@S	auto	并没有	46420	1	前缀	@
+@T	auto	同学们	15099	1	前缀	@
+@W	auto	我知道	15218	1	前缀	@
+@Y	auto	越来越	24920	1	前缀	@
+@Z	auto	也就是	75387	1	前缀	@
+@b	auto	并不是	60137	1	前缀	@
+@e	auto	就可以	82113	1	前缀	@
+@g	auto	有一个	55284	1	前缀	@
+@h	auto	也可以	80101	1	前缀	@
+@i	auto	有时候	35980	1	前缀	@
+@j	auto	进一步	20588	1	前缀	@
+@k	ext	可以说	29848	1	前缀	@
+@l	auto	历史上	14686	1	前缀	@
+@o	auto	怎么样	30725	1	前缀	@
+@p	auto	也没有	46256	1	前缀	@
+@q	auto	情况下	72567	1	前缀	@
+@r	auto	第一次	47985	1	前缀	@
+@s	auto	是不是	69164	1	前缀	@
+@t	auto	是一个	88325	1	前缀	@
+@u	auto	计算机	21021	1	前缀	@
+@w	auto	唯一的	14110	1	前缀	@
+@x	auto	消费者	32829	1	前缀	@
+@y	auto	一部分	40293	1	前缀	@
+@z	auto	这时候	30700	1	前缀	@
+A'	auto	安全	28320	1	后缀	'
+A,	ext	嫒	691	1	后缀	,
+A.	ext	欸	74	1	后缀	.
+A=	auto	性	25403	1	空格并击	=
+AB	ext	安保	1104	1	纯字母	
+AC	ext	暗藏	931	1	纯字母	
+AD	ext	挨打	2966	1	纯字母	
+AE	auto	耳科	467	1	纯字母	
+AF	ext	阿富汗	1474	1	纯字母	
+AG	ext	账	1552	1	纯字母	
+AH	ext	爱好	9517	1	纯字母	
+AI	auto	毕竟	100312	1	纯字母	
+AJ	ext	安居	897	1	纯字母	
+AK	ext	宠	1948	1	纯字母	
+AL	ext	阿拉伯	1841	4	纯字母	
+AL	ext	啸	1345	4	纯字母	
+AL	ext	甥	544	4	纯字母	
+AL	ext	妪	519	4	纯字母	
+AM	ext	按摩	4783	1	纯字母	
+AN	ext	懊恼	911	1	纯字母	
+AO	ext	啊哦	1	1	纯字母	
+AP	ext	安排	26960	1	纯字母	
+AQ	ext	恶狠	388	1	纯字母	
+AR	ext	安然	1157	1	纯字母	
+AS	ext	昂首	643	1	纯字母	
+AT	ext	耳鸣	1191	1	纯字母	
+AU	zero	拱	1201	2	纯字母	
+AU	zero	鳞	921	2	纯字母	
+AV	zero	胀	1117	2	纯字母	
+AV	zero	蝠	662	2	纯字母	
+AW	ext	爱我	2045	1	纯字母	
+AX	ext	傲雪	13	1	纯字母	
+AY	ext	奥运	6559	1	纯字母	
+A_=	auto	教	11050	1	空格并击	=
+Ab	ext	艾	3431	1	纯字母	
+Ac	ext	澳	1670	1	纯字母	
+Ad	ext	胺	1065	1	纯字母	
+Ae	ext	阿尔法	1250	4	纯字母	
+Ae	ext	梳	1169	4	纯字母	
+Ae	ext	霓	785	4	纯字母	
+Ae	ext	殃	666	4	纯字母	
+Af	ext	俺	17692	1	纯字母	
+Ag	ext	岸	1801	1	纯字母	
+Ah	ext	敖	1083	1	纯字母	
+Ai	ext	焥	185	1	纯字母	
+Aj	ext	案件	11739	2	纯字母	
+Aj	ext	鞍	1249	2	纯字母	
+Ak	ext	碍	968	1	纯字母	
+An	ext	爱你	4847	1	纯字母	
+Ao	ext	案	5662	1	纯字母	
+Ap	ext	谙	699	1	纯字母	
+Aq	ext	矮	1792	1	纯字母	
+As	ext	暗	4213	1	纯字母	
+At	ext	犴	481	1	纯字母	
+Av	ext	埃	1508	1	纯字母	
+Aw	ext	奥	6680	1	纯字母	
+Ax	ext	桉	642	1	纯字母	
+Ay	ext	熬夜	8386	2	纯字母	
+Ay	ext	哀	1290	2	纯字母	
+Az	ext	癌症	9817	2	纯字母	
+Az	ext	铵	836	2	纯字母	
+B!	auto	现在	283910	1	后缀	!
+B'	auto	检查	24100	1	后缀	'
+B*	auto	回家	24099	1	后缀	*
+B,	ext	办	18422	1	后缀	,
+B.	auto	线	18479	1	后缀	.
+B/	ext	绑	1781	1	后缀	/
+B:	auto	按照	66662	1	后缀	:
+B;	auto	唔	13475	1	后缀	;
+B=	auto	本	25841	1	空格并击	=
+B?	auto	跑	22665	1	后缀	?
+B@	auto	帮助	50819	1	后缀	@
+BA	ext	步	4821	1	纯字母	
+BC	ext	保存	12381	1	纯字母	
+BE	auto	潭	1350	1	纯字母	
+BF	ext	卜	2169	1	纯字母	
+BG	ext	不过	169774	2	纯字母	
+BG	ext	峬	267	2	纯字母	
+BH	ext	不会	96306	2	纯字母	
+BH	ext	立案	1676	2	纯字母	
+BI	zero	莹	1595	2	纯字母	
+BI	zero	涤	816	2	纯字母	
+BJ	ext	布局	27698	2	纯字母	
+BJ	ext	逋	562	2	纯字母	
+BK	ext	布	6349	1	纯字母	
+BL	ext	不论	9399	2	纯字母	
+BL	ext	哺	697	2	纯字母	
+BM	ext	不满	8419	1	纯字母	
+BN	ext	不难	6542	1	纯字母	
+BO	ext	怖	700	1	纯字母	
+BP	ext	补	7924	1	纯字母	
+BQ	ext	版权	14048	2	纯字母	
+BQ	ext	簿	1034	2	纯字母	
+BS	ext	不少	45377	2	纯字母	
+BS	ext	晡	514	2	纯字母	
+BT	ext	不同	106844	4	纯字母	
+BT	ext	阎	1366	4	纯字母	
+BT	ext	馍	827	4	纯字母	
+BT	ext	麸	553	4	纯字母	
+BU	ext	捕	1137	1	纯字母	
+BV	ext	埠	977	1	纯字母	
+BW	ext	把我	13340	3	纯字母	
+BW	ext	豹	1193	3	纯字母	
+BW	ext	谍	772	3	纯字母	
+BX	ext	暴雪	5732	2	纯字母	
+BX	ext	柨	320	2	纯字母	
+BZ	ext	不足	25511	2	纯字母	
+BZ	ext	钚	693	2	纯字母	
+B_	ext	帮忙	12341	1	后缀	_
+B_=	auto	表	19775	1	空格并击	=
+B`	auto	不懂	16737	1	后缀	`
+Ba	ext	龅	633	1	纯字母	
+Bb	ext	薄	3023	1	纯字母	
+Bc	ext	波	6249	1	纯字母	
+Bd	ext	不得	10671	2	纯字母	
+Bd	ext	胞	941	2	纯字母	
+Be	ext	般	5441	1	纯字母	
+Bg	ext	败	2295	1	纯字母	
+Bi	ext	半	14082	1	纯字母	
+Bj	ext	博	5881	1	纯字母	
+Bk	ext	百	5457	1	纯字母	
+Bm	ext	巴	4016	1	纯字母	
+Bn	ext	不能	104301	2	纯字母	
+Bn	ext	剥	1241	2	纯字母	
+Bo	ext	宝	6505	1	纯字母	
+Bp	ext	谤	639	1	纯字母	
+Bq	ext	拜	2797	1	纯字母	
+Bs	ext	不是	213981	2	纯字母	
+Bs	ext	暴	2626	2	纯字母	
+Bt	ext	包	16275	1	纯字母	
+Bv	ext	坝	1862	1	纯字母	
+Bw	ext	白	16134	1	纯字母	
+Bx	ext	板	6568	1	纯字母	
+By	ext	不易	9245	2	纯字母	
+By	ext	瓣	1122	2	纯字母	
+Bz	ext	不知	13482	2	纯字母	
+Bz	ext	钵	1419	2	纯字母	
+B~	auto	机会	58027	1	后缀	~
+C!	ext	翠	1907	1	后缀	!
+C'	auto	公司	234244	1	后缀	'
+C*	auto	要说	15375	1	后缀	*
+C,	ext	娼	737	1	后缀	,
+C.	ext	参	2579	1	后缀	.
+C/	ext	缠	1476	1	后缀	/
+C:	ext	辍	652	1	后缀	:
+C;	ext	辏	552	1	后缀	;
+C<	ext	刅	417	1	后缀	<
+C=	auto	出	57211	1	空格并击	=
+C?	ext	纯	5317	1	后缀	?
+C@	auto	充满	14249	1	后缀	@
+CA	ext	龊	596	1	纯字母	
+CB	ext	出版	14005	2	纯字母	
+CB	ext	芚	287	2	纯字母	
+CC	ext	纯粹	16752	2	纯字母	
+CC	ext	淳	1028	2	纯字母	
+CD	ext	长度	9097	2	纯字母	
+CD	ext	脆	1309	2	纯字母	
+CE	ext	船	4964	1	纯字母	
+CF	ext	传	15742	1	纯字母	
+CG	ext	串	2189	1	纯字母	
+CH	ext	春	6126	1	纯字母	
+CI	ext	粗	2966	1	纯字母	
+CJ	ext	寸	3910	1	纯字母	
+CK	ext	存	5798	1	纯字母	
+CL	ext	吹	5974	1	纯字母	
+CN	ext	采纳	2888	1	纯字母	
+CO	ext	穿	15112	1	纯字母	
+CP	ext	初	5642	1	纯字母	
+CQ	ext	出去	26806	2	纯字母	
+CQ	ext	垂	1537	2	纯字母	
+CR	ext	插入	6140	2	纯字母	
+CR	ext	汆	234	2	纯字母	
+CS	ext	厂商	13521	2	纯字母	
+CS	ext	噪	1537	2	纯字母	
+CT	ext	处	14701	1	纯字母	
+CU	ext	措	1301	1	纯字母	
+CV	ext	堾	287	1	纯字母	
+CW	ext	川	3703	1	纯字母	
+CX	ext	村	12010	1	纯字母	
+CY	ext	床	5568	1	纯字母	
+C_	ext	财富	15573	1	后缀	_
+C_=	auto	重	11822	1	空格并击	=
+C`	auto	主角	24115	1	后缀	`
+Ca	ext	餐	2071	1	纯字母	
+Cb	ext	草	8713	1	纯字母	
+Cc	ext	潮	2201	1	纯字母	
+Cd	ext	出的	10148	2	纯字母	
+Cd	ext	肠	1662	2	纯字母	
+Ce	ext	从而	41438	2	纯字母	
+Ce	ext	舱	1326	2	纯字母	
+Cg	ext	财	2745	1	纯字母	
+Ch	ext	蚕	993	1	纯字母	
+Ci	ext	差	18144	1	纯字母	
+Cl	ext	唱	8606	1	纯字母	
+Cm	ext	丑	4662	1	纯字母	
+Cn	ext	常年	6845	2	纯字母	
+Cn	ext	孱	512	2	纯字母	
+Co	ext	察	1222	1	纯字母	
+Cp	ext	曹丕	6941	2	纯字母	
+Cp	ext	禅	1427	2	纯字母	
+Cq	ext	长	24093	1	纯字母	
+Cr	ext	采	4920	1	纯字母	
+Cs	ext	昌	2523	1	纯字母	
+Ct	ext	猜	4668	1	纯字母	
+Cu	ext	操	8251	1	纯字母	
+Cw	ext	臭	3381	1	纯字母	
+Cx	ext	查	14206	1	纯字母	
+Cy	ext	产	3494	1	纯字母	
+Cz	ext	材质	13894	2	纯字母	
+Cz	ext	钞	915	2	纯字母	
+C~	auto	有个	57088	1	后缀	~
+D'	auto	结论	25549	1	后缀	'
+D.	ext	怠	723	1	后缀	.
+D/	ext	骀	486	1	后缀	/
+D:	ext	顿	2676	1	后缀	:
+D<	ext	妒	804	1	后缀	<
+D=	auto	对	280800	1	空格并击	=
+D?	ext	缎	753	1	后缀	?
+DA	ext	督	967	1	纯字母	
+DB	ext	豆瓣	12293	2	纯字母	
+DB	ext	厾	563	2	纯字母	
+DC	ext	单纯	25230	2	纯字母	
+DC	ext	渡	1882	2	纯字母	
+DD	ext	大多	20010	2	纯字母	
+DD	ext	肚	1291	2	纯字母	
+DE	ext	盾	2255	1	纯字母	
+DF	ext	对方	54379	2	纯字母	
+DF	ext	伅	475	2	纯字母	
+DG	ext	赌	2705	1	纯字母	
+DH	ext	毒	4636	1	纯字母	
+DI	ext	断	5782	1	纯字母	
+DJ	ext	都	407808	1	纯字母	
+DK	ext	对抗	15835	2	纯字母	
+DK	ext	夺	1883	2	纯字母	
+DL	ext	吨	3059	1	纯字母	
+DM	ext	队	11299	1	纯字母	
+DN	ext	大脑	25734	1	纯字母	
+DO	ext	惇	534	1	纯字母	
+DP	ext	读	13661	1	纯字母	
+DQ	ext	短	6094	1	纯字母	
+DR	ext	当然	176920	2	纯字母	
+DR	ext	跌宕	656	2	纯字母	
+DS	ext	多少	55907	1	纯字母	
+DU	ext	掇	562	1	纯字母	
+DV	ext	堆	2999	1	纯字母	
+DW	ext	段	8894	1	纯字母	
+DX	ext	杜	4258	1	纯字母	
+DY	ext	对于	258188	2	纯字母	
+DY	ext	度	12390	2	纯字母	
+DZ	ext	都在	42973	2	纯字母	
+DZ	ext	锻	813	2	纯字母	
+D_	ext	都知道	10040	1	后缀	_
+D_=	auto	当	54631	1	空格并击	=
+D`	zero	都可以	43981	4	后缀	`
+D`	zero	淘	1713	4	后缀	`
+D`	zero	篆	699	4	后缀	`
+D`	zero	畸	670	4	后缀	`
+Da	auto	袋	2474	1	纯字母	
+Db	ext	荡	2095	1	纯字母	
+Dc	ext	淡	2800	1	纯字母	
+Dd	ext	到底	35869	2	纯字母	
+Dd	ext	胆	1940	2	纯字母	
+De	ext	待	7769	1	纯字母	
+Dg	ext	多个	23965	2	纯字母	
+Dg	ext	眈	444	2	纯字母	
+Dh	ext	动	10386	1	纯字母	
+Di	ext	道	17091	1	纯字母	
+Dl	ext	呆	6375	1	纯字母	
+Dm	ext	蛋	3617	1	纯字母	
+Dn	ext	导	2847	1	纯字母	
+Do	ext	斗	4133	1	纯字母	
+Dp	ext	搭配	26697	2	纯字母	
+Dp	ext	诞	778	2	纯字母	
+Dq	ext	答	3895	1	纯字母	
+Dr	ext	担任	10354	3	纯字母	
+Dr	ext	荫	1556	3	纯字母	
+Dr	ext	榴	681	3	纯字母	
+Ds	ext	旦	1150	1	纯字母	
+Dt	ext	冬	2792	1	纯字母	
+Dv	ext	垌	575	1	纯字母	
+Dw	ext	到位	8011	2	纯字母	
+Dw	ext	兜	1492	2	纯字母	
+Dx	ext	档	3700	1	纯字母	
+Dy	ext	盗	2434	1	纯字母	
+Dz	ext	豆	2677	1	纯字母	
+D~	zero	贻	776	3	后缀	~
+D~	zero	楹	651	3	后缀	~
+D~	zero	都以为	0	3	后缀	~
+E!	zero	骆	1229	3	后缀	!
+E!	zero	辫	776	3	后缀	!
+E!	zero	诌	548	3	后缀	!
+E,	zero	泣	1024	2	后缀	,
+E,	zero	峙	705	2	后缀	,
+E.	auto	再	121531	1	后缀	.
+E/	auto	哪	33103	1	后缀	/
+E:	zero	僧	1527	2	后缀	:
+E:	zero	诛	1016	2	后缀	:
+E<	zero	茂	1689	3	后缀	<
+E<	zero	唧	708	3	后缀	<
+E<	zero	蛛	701	3	后缀	<
+E=	auto	二	21289	1	空格并击	=
+E?	zero	蒋	3297	3	后缀	?
+E?	zero	捻	1007	3	后缀	?
+E?	zero	瞩	633	3	后缀	?
+EA	auto	安卓	8404	1	纯字母	
+EB	auto	今年	54772	1	纯字母	
+EC	zero	颖	1752	3	纯字母	
+EC	zero	薯	811	3	纯字母	
+EC	zero	拯	651	3	纯字母	
+ED	zero	焉	1337	3	纯字母	
+ED	zero	瓢	854	3	纯字母	
+ED	zero	蛰	658	3	纯字母	
+EE	auto	称王	835	1	纯字母	
+EF	auto	房价	8576	1	纯字母	
+EG	auto	故意	11429	1	纯字母	
+EH	auto	相貌	1393	1	纯字母	
+EI	auto	言论	10978	1	纯字母	
+EJ	auto	期	10701	1	纯字母	
+EK	zero	淮	1120	2	纯字母	
+EK	zero	桨	805	2	纯字母	
+EL	auto	相对	63684	1	纯字母	
+EM	ext	抠	1151	3	纯字母	
+EM	ext	骄	884	3	纯字母	
+EM	ext	🇨🇳	0	3	纯字母	
+EN	auto	女人	33977	1	纯字母	
+EO	auto	言语	4270	1	纯字母	
+EP	auto	排序	6859	1	纯字母	
+EQ	auto	亲戚	7321	1	纯字母	
+ER	auto	容量	7880	1	纯字母	
+ES	auto	赏	1770	1	纯字母	
+ET	auto	团队	59868	1	纯字母	
+EU	zero	酬	904	2	纯字母	
+EU	zero	沼	756	2	纯字母	
+EV	auto	不好用	1311	1	纯字母	
+EW	auto	完善	13660	1	纯字母	
+EX	auto	乾	0	1	纯字母	
+EY	auto	矢	953	1	纯字母	
+EZ	auto	造成	46076	1	纯字母	
+E_=	auto	原	12104	1	空格并击	=
+E`	auto	案例	26997	1	后缀	`
+Ea	auto	恶名	585	1	纯字母	
+Eb	auto	必须	53655	1	纯字母	
+Ec	auto	曾经	39759	1	纯字母	
+Ed	auto	地址	19387	1	纯字母	
+Ee	auto	意识	18588	1	纯字母	
+Ef	auto	模范	1409	1	纯字母	
+Eg	auto	根本	27710	1	纯字母	
+Eh	auto	荐	1763	1	纯字母	
+Ei	zero	你这样	1172	4	纯字母	
+Ei	zero	竭	854	4	纯字母	
+Ei	zero	鲨	820	4	纯字母	
+Ei	zero	漳	725	4	纯字母	
+Ej	auto	教育	40125	1	纯字母	
+Ek	auto	科学	31370	1	纯字母	
+El	auto	力量	40643	1	纯字母	
+Em	auto	明显	34888	1	纯字母	
+En	auto	溺爱	816	1	纯字母	
+Eo	auto	组织	38108	1	纯字母	
+Ep	auto	苹果	36282	1	纯字母	
+Eq	auto	妻子	14743	1	纯字母	
+Er	auto	仍然	26909	1	纯字母	
+Es	auto	爱说	631	1	纯字母	
+Et	zero	尹	2245	3	纯字母	
+Et	zero	矗	694	3	纯字母	
+Et	zero	崭	677	3	纯字母	
+Eu	auto	睡觉	23853	1	纯字母	
+Ev	auto	违章	1355	1	纯字母	
+Ew	auto	违反	4809	1	纯字母	
+Ex	auto	就像	60028	1	纯字母	
+Ey	auto	一般	138040	1	纯字母	
+Ez	auto	知识	65887	1	纯字母	
+E~	auto	分钟	57074	1	后缀	~
+F!	ext	翇	190	1	后缀	!
+F'	auto	方案	31378	1	后缀	'
+F.	auto	平	8888	1	后缀	.
+F/	ext	纺	979	1	后缀	/
+F:	ext	辅	1319	1	后缀	:
+F;	auto	放心	8799	1	后缀	;
+F<	ext	妇	1397	1	后缀	<
+F=	auto	法	19425	1	空格并击	=
+F?	ext	缚	845	1	后缀	?
+FA	ext	虙	305	1	纯字母	
+FB	ext	反驳	7114	2	纯字母	
+FB	ext	芙	1050	2	纯字母	
+FC	ext	付出	15731	2	纯字母	
+FC	ext	浮	1774	2	纯字母	
+FD	ext	服	5496	1	纯字母	
+FE	ext	彿	0	1	纯字母	
+FF	ext	付	6901	1	纯字母	
+FG	ext	法国	24265	2	纯字母	
+FG	ext	幅	1755	2	纯字母	
+FH	ext	夫	3553	1	纯字母	
+FI	ext	炥	210	1	纯字母	
+FJ	ext	覆	2340	1	纯字母	
+FK	ext	反馈	15691	2	纯字母	
+FK	ext	砆	319	2	纯字母	
+FL	ext	泛滥	8706	2	纯字母	
+FL	ext	咐	543	2	纯字母	
+FM	ext	附	2422	1	纯字母	
+FN	ext	弗	1370	1	纯字母	
+FO	ext	富	4370	1	纯字母	
+FP	ext	福	4741	1	纯字母	
+FR	ext	父	2565	1	纯字母	
+FS	ext	防守	21629	2	纯字母	
+FS	ext	黻	470	2	纯字母	
+FT	ext	负	3705	1	纯字母	
+FU	ext	扶	1884	1	纯字母	
+FV	ext	赴	2996	1	纯字母	
+FW	ext	阜	939	1	纯字母	
+FX	ext	法学	10788	2	纯字母	
+FX	ext	枹	429	2	纯字母	
+FY	ext	府	2576	1	纯字母	
+FZ	ext	副	17939	1	纯字母	
+F_=	auto	东	9642	1	空格并击	=
+F`	auto	反映	11138	1	后缀	`
+Fa	auto	废品	926	1	纯字母	
+Fb	ext	范	4457	1	纯字母	
+Fd	ext	否定	8618	2	纯字母	
+Fd	ext	肪	632	2	纯字母	
+Fe	ext	反	7834	1	纯字母	
+Ff	ext	仿	1664	1	纯字母	
+Fg	ext	罚	2113	1	纯字母	
+Fh	ext	符合	26824	2	纯字母	
+Fh	ext	璠	530	2	纯字母	
+Fi	ext	烦	7711	1	纯字母	
+Fj	ext	附近	22285	2	纯字母	
+Fj	ext	髣	354	2	纯字母	
+Fk	ext	否	4707	1	纯字母	
+Fl	ext	福利	11788	2	纯字母	
+Fl	ext	蹯	394	2	纯字母	
+Fm	ext	防	5330	1	纯字母	
+Fn	ext	放牛	624	1	纯字母	
+Fo	ext	憣	267	1	纯字母	
+Fp	ext	房	8348	1	纯字母	
+Fq	ext	放弃	28442	2	纯字母	
+Fq	ext	繁	1454	2	纯字母	
+Fr	ext	翻	6606	1	纯字母	
+Fs	ext	发生	37947	2	纯字母	
+Fs	ext	昉	575	2	纯字母	
+Ft	ext	饭	12079	1	纯字母	
+Fu	ext	阀	1357	1	纯字母	
+Fv	ext	坊	2307	1	纯字母	
+Fx	ext	发现	125666	2	纯字母	
+Fx	ext	梵	970	2	纯字母	
+Fz	ext	否则	29734	2	纯字母	
+Fz	ext	钫	1008	2	纯字母	
+F~	auto	球员	37730	1	后缀	~
+G!	ext	观	4196	1	后缀	!
+G'	auto	根据	102983	1	后缀	'
+G*	auto	恭喜	4721	1	后缀	*
+G,	ext	旮	551	1	后缀	,
+G.	ext	羾	266	1	后缀	.
+G/	ext	纲	1157	1	后缀	/
+G:	ext	轨	1188	1	后缀	:
+G;	ext	轧	904	1	后缀	;
+G<	ext	姑	1305	1	后缀	<
+G=	auto	公	5893	1	空格并击	=
+G?	ext	贯	1124	1	后缀	?
+G@	auto	证明	72756	1	后缀	@
+GA	ext	公安	2685	1	纯字母	
+GB	ext	公布	20704	2	纯字母	
+GB	ext	菇	958	2	纯字母	
+GC	ext	滚	4727	1	纯字母	
+GD	ext	归	4615	1	纯字母	
+GE	ext	瓜	2391	1	纯字母	
+GF	ext	光	13217	1	纯字母	
+GH	ext	规划	22839	2	纯字母	
+GH	ext	规	1849	2	纯字母	
+GI	ext	关	12580	1	纯字母	
+GK	ext	顾	3878	1	纯字母	
+GL	ext	过来	32067	2	纯字母	
+GL	ext	跪	1288	2	纯字母	
+GM	ext	购买	47249	2	纯字母	
+GM	ext	孤	1856	2	纯字母	
+GN	ext	彉	375	1	纯字母	
+GO	ext	官	5284	1	纯字母	
+GP	ext	冠	2237	1	纯字母	
+GQ	ext	管	15911	1	纯字母	
+GR	ext	谷	4186	1	纯字母	
+GS	ext	感受	41842	2	纯字母	
+GS	ext	晷	533	2	纯字母	
+GT	ext	馆	3251	1	纯字母	
+GU	ext	挂	13672	1	纯字母	
+GV	ext	卦	1355	1	纯字母	
+GW	ext	鬼	7507	1	纯字母	
+GX	ext	桂	2041	1	纯字母	
+GY	ext	关于	118727	2	纯字母	
+GY	ext	广	5320	2	纯字母	
+GZ	ext	工作	177744	2	纯字母	
+GZ	ext	锅	2726	2	纯字母	
+G_=	auto	果	5384	1	空格并击	=
+G`	auto	关心	10725	1	后缀	`
+Ga	auto	安	12474	1	纯字母	
+Gb	ext	关闭	8862	2	纯字母	
+Gb	ext	芉	450	2	纯字母	
+Gc	ext	沟	2652	1	纯字母	
+Gd	ext	肝	2309	1	纯字母	
+Ge	ext	感恩	3307	1	纯字母	
+Gf	ext	供	5671	1	纯字母	
+Gi	ext	盖	5104	1	纯字母	
+Gj	ext	功	2912	1	纯字母	
+Gl	ext	嘎	4357	1	纯字母	
+Gm	ext	共鸣	5970	2	纯字母	
+Gm	ext	陔	546	2	纯字母	
+Go	ext	宫	3707	1	纯字母	
+Gq	ext	告	3325	1	纯字母	
+Gs	ext	公式	16809	2	纯字母	
+Gs	ext	杲	585	2	纯字母	
+Gt	ext	够	16040	1	纯字母	
+Gv	ext	赶	4747	1	纯字母	
+Gw	ext	岗位	39563	2	纯字母	
+Gw	ext	躬	825	2	纯字母	
+Gx	ext	概	1080	1	纯字母	
+Gy	ext	高	46097	1	纯字母	
+Gz	ext	钢	3304	1	纯字母	
+G~	auto	运营	56750	1	后缀	~
+H!	ext	欢	2129	1	后缀	!
+H'	auto	生活	85344	1	后缀	'
+H*	auto	有时	16379	1	后缀	*
+H.	ext	翭	381	1	后缀	.
+H/	ext	红	13909	1	后缀	/
+H:	ext	或	84145	1	后缀	:
+H;	ext	轰	1320	1	后缀	;
+H<	ext	婚	2226	1	后缀	<
+H=	auto	后	138921	1	空格并击	=
+H?	ext	缓	1684	1	后缀	?
+HA	ext	虎	3753	1	纯字母	
+HC	ext	活	9606	1	纯字母	
+HD	ext	回到	29925	2	纯字母	
+HD	ext	臛	346	2	纯字母	
+HE	ext	徽	1118	1	纯字母	
+HG	ext	回	33179	1	纯字母	
+HH	ext	环	3942	1	纯字母	
+HI	ext	火	8325	1	纯字母	
+HJ	ext	黄	17102	1	纯字母	
+HK	ext	灰	3280	1	纯字母	
+HL	ext	后来	123568	2	纯字母	
+HL	ext	呼	2706	2	纯字母	
+HM	ext	号码	11892	2	纯字母	
+HM	ext	隍	509	2	纯字母	
+HN	ext	弧	937	1	纯字母	
+HO	ext	怀	2796	1	纯字母	
+HP	ext	话	58786	1	纯字母	
+HQ	ext	获取	27204	2	纯字母	
+HQ	ext	簧	754	2	纯字母	
+HR	ext	乎	2093	1	纯字母	
+HS	ext	晃	2109	1	纯字母	
+HT	ext	忽	1729	1	纯字母	
+HU	ext	护	1984	1	纯字母	
+HV	ext	坏	11402	1	纯字母	
+HW	ext	皇	2009	1	纯字母	
+HX	ext	或许	33712	2	纯字母	
+HX	ext	桦	993	2	纯字母	
+HY	ext	还有	235076	2	纯字母	
+HY	ext	麾	556	2	纯字母	
+HZ	ext	画	10303	1	纯字母	
+H_=	auto	或	84145	1	空格并击	=
+H`	auto	汉字	8371	1	后缀	`
+Ha	auto	呵	4511	1	纯字母	
+Hb	ext	会被	17105	2	纯字母	
+Hb	ext	菡	709	2	纯字母	
+Hc	ext	海	13336	1	纯字母	
+Hd	ext	好的	57593	2	纯字母	
+Hd	ext	肣	311	2	纯字母	
+Hg	ext	虹	1820	1	纯字母	
+Hh	ext	回合	10624	2	纯字母	
+Hh	ext	耗	1832	2	纯字母	
+Hi	ext	烘	814	1	纯字母	
+Hj	ext	韩	5175	1	纯字母	
+Hk	ext	还	286212	1	纯字母	
+Hm	ext	后面	65923	2	纯字母	
+Hm	ext	孩	1592	2	纯字母	
+Hn	ext	还能	50769	2	纯字母	
+Hn	ext	弘	1551	2	纯字母	
+Ho	ext	害	3678	1	纯字母	
+Hp	ext	罕	874	1	纯字母	
+Hq	ext	后期	35037	2	纯字母	
+Hq	ext	氦	661	2	纯字母	
+Hr	ext	湖人	6539	2	纯字母	
+Hr	ext	谼	338	2	纯字母	
+Hs	ext	还是	419427	2	纯字母	
+Hs	ext	旱	1057	2	纯字母	
+Ht	ext	话题	22503	2	纯字母	
+Ht	ext	猴	1649	2	纯字母	
+Hu	ext	捍	1142	1	纯字母	
+Hv	ext	壕	671	1	纯字母	
+Hw	ext	华为	22093	2	纯字母	
+Hw	ext	鼾	597	2	纯字母	
+Hx	ext	互相	17901	2	纯字母	
+Hx	ext	杭	1400	2	纯字母	
+Hy	ext	毫	1083	1	纯字母	
+Hz	ext	或者	316870	2	纯字母	
+Hz	ext	镐	763	2	纯字母	
+H~	zero	火车站	2912	4	后缀	~
+H~	zero	冈	1194	4	后缀	~
+H~	zero	榭	741	4	后缀	~
+H~	zero	峭	675	4	后缀	~
+I'	auto	市场	96639	1	后缀	'
+I=	auto	知	7594	1	空格并击	=
+IB	auto	版	18059	1	纯字母	
+IC	auto	常	8505	1	纯字母	
+ID	auto	代	6407	1	纯字母	
+IF	auto	风热	354	1	纯字母	
+IG	auto	访问	11311	1	纯字母	
+IJ	auto	解	6422	1	纯字母	
+IM	auto	吗？	0	1	纯字母	
+IQ	auto	球	9625	1	纯字母	
+IS	auto	说：“	0	1	纯字母	
+IW	auto	碗	2641	1	纯字母	
+IX	auto	雪	8021	1	纯字母	
+IY	auto	易	7012	1	纯字母	
+IZ	auto	届	3321	1	纯字母	
+I_=	auto	声	8130	1	空格并击	=
+I`	auto	基础	75663	1	后缀	`
+Ia	auto	下午	27667	1	纯字母	
+Ib	auto	鄙	715	1	纯字母	
+Ic	auto	齿	1465	1	纯字母	
+Id	auto	学习	177616	1	纯字母	
+Ie	auto	基	4536	1	纯字母	
+If	auto	妃	1572	1	纯字母	
+Ig	auto	中国	174824	1	纯字母	
+Ih	auto	鹤	1699	1	纯字母	
+Ii	auto	所有制	975	1	纯字母	
+Ij	auto	己	2271	1	纯字母	
+Il	auto	李	15468	1	纯字母	
+Im	auto	么？	0	1	纯字母	
+In	auto	呢？	0	1	纯字母	
+Iq	auto	轻	6127	1	纯字母	
+Ir	auto	创新性	966	1	纯字母	
+Is	auto	石	7104	1	纯字母	
+It	auto	繁体	1828	1	纯字母	
+Iu	auto	接	18638	1	纯字母	
+Iw	auto	新的	50014	1	纯字母	
+Ix	auto	角	3936	1	纯字母	
+Iy	auto	引	5015	1	纯字母	
+Iz	auto	照	10565	1	纯字母	
+I~	auto	明天	58948	1	后缀	~
+J!	ext	矞	436	1	后缀	!
+J'	auto	决定	53056	1	后缀	'
+J,	auto	剑	6433	1	后缀	,
+J.	auto	借	6998	1	后缀	.
+J/	auto	死	37593	1	后缀	/
+J:	ext	巨	3905	1	后缀	:
+J;	auto	按	26702	1	后缀	;
+J<	ext	娟	1743	1	后缀	<
+J=	auto	经	14255	1	空格并击	=
+J?	ext	绝	3277	1	后缀	?
+JA	ext	歫	331	1	纯字母	
+JB	ext	举报	7766	2	纯字母	
+JB	ext	菊	1802	2	纯字母	
+JC	ext	沮	606	1	纯字母	
+JD	ext	绝对	41656	2	纯字母	
+JD	ext	腃	378	2	纯字母	
+JE	ext	艍	0	1	纯字母	
+JF	ext	俊	3228	1	纯字母	
+JG	ext	具	3189	1	纯字母	
+JH	ext	珏	859	1	纯字母	
+JI	ext	卷	5569	1	纯字母	
+JK	ext	厥	784	1	纯字母	
+JL	ext	距	5320	1	纯字母	
+JM	ext	陖	239	1	纯字母	
+JN	ext	局	8620	1	纯字母	
+JO	ext	举	2981	1	纯字母	
+JP	ext	军	6699	1	纯字母	
+JQ	ext	矩	1030	1	纯字母	
+JR	ext	居然	20397	2	纯字母	
+JR	ext	爵	1002	2	纯字母	
+JS	ext	决赛	7224	2	纯字母	
+JS	ext	晙	397	2	纯字母	
+JT	ext	句	4902	1	纯字母	
+JV	ext	均	10706	1	纯字母	
+JW	ext	绝望	10359	2	纯字母	
+JW	ext	据我	1205	2	纯字母	
+JX	ext	桔	936	1	纯字母	
+JY	ext	均匀	6494	2	纯字母	
+JY	ext	决	1765	2	纯字母	
+JZ	ext	锯	931	1	纯字母	
+J_=	auto	将	120425	1	空格并击	=
+J`	auto	时代	58133	1	后缀	`
+Ja	auto	信	12195	1	纯字母	
+Jc	ext	决策	11904	1	纯字母	
+Je	ext	巨额	4412	1	纯字母	
+Jf	ext	绝非	1977	1	纯字母	
+Jg	ext	举个	3198	1	纯字母	
+Jh	ext	均衡	6426	1	纯字母	
+Ji	zero	我感觉	11724	4	纯字母	
+Ji	zero	迭	885	4	纯字母	
+Ji	zero	墅	835	4	纯字母	
+Ji	zero	箕	670	4	纯字母	
+Jj	ext	聚集	3388	1	纯字母	
+Jk	ext	杰	4556	1	纯字母	
+Jl	ext	举例	10476	1	纯字母	
+Jm	ext	居民	8494	1	纯字母	
+Jn	ext	拘泥	807	1	纯字母	
+Jo	auto	竟	5305	1	纯字母	
+Jp	ext	佑	1357	3	纯字母	
+Jp	ext	涣	684	3	纯字母	
+Jp	ext	荜	534	3	纯字母	
+Jq	ext	剧情	50748	1	纯字母	
+Jr	ext	巨人	5839	2	纯字母	
+Jr	ext	冷暖	939	2	纯字母	
+Js	ext	军事	9673	1	纯字母	
+Jt	ext	具体	82960	1	纯字母	
+Ju	auto	据说	16815	1	纯字母	
+Jv	zero	继	3499	2	纯字母	
+Jv	zero	剧	3185	2	纯字母	
+Jw	ext	军委	862	1	纯字母	
+Jx	ext	举行	10477	1	纯字母	
+Jy	ext	军医	815	1	纯字母	
+Jz	ext	君子	2290	1	纯字母	
+J~	auto	跟随	6129	1	后缀	~
+K!	ext	戣	481	1	后缀	!
+K'	auto	开始	195561	1	后缀	'
+K*	auto	作者	59485	1	后缀	*
+K,	ext	嫝	386	1	后缀	,
+K.	zero	敛	901	3	后缀	.
+K.	zero	宕	665	3	后缀	.
+K.	zero	蟆	597	3	后缀	.
+K/	zero	淌	962	2	后缀	/
+K/	zero	绸	781	2	后缀	/
+K:	ext	匡	994	1	后缀	:
+K;	ext	攷	113	1	后缀	;
+K<	ext	馗	632	1	后缀	<
+K=	auto	开	55943	1	空格并击	=
+K?	ext	绔	523	1	后缀	?
+K@	auto	是因为	48206	1	后缀	@
+KA	ext	抗癌	1177	1	纯字母	
+KB	ext	苦	5885	1	纯字母	
+KC	ext	考察	13321	2	纯字母	
+KC	ext	溃	884	2	纯字母	
+KD	ext	看到	136086	2	纯字母	
+KD	ext	胯	752	2	纯字母	
+KE	zero	尧	1455	2	纯字母	
+KE	zero	拌	1370	2	纯字母	
+KG	ext	困	5362	1	纯字母	
+KH	ext	亏	6228	1	纯字母	
+KI	ext	夔	656	1	纯字母	
+KJ	ext	款	7599	1	纯字母	
+KK	ext	夸	2988	1	纯字母	
+KL	ext	哭	9948	1	纯字母	
+KM	ext	开幕	2420	1	纯字母	
+KN	ext	困难	15121	1	纯字母	
+KP	ext	靠谱	19693	2	纯字母	
+KP	ext	裤	1724	2	纯字母	
+KQ	ext	筐	920	1	纯字母	
+KR	ext	宽容	2843	1	纯字母	
+KS	ext	昆	2172	1	纯字母	
+KT	ext	狂	5044	1	纯字母	
+KU	ext	括	849	1	纯字母	
+KV	ext	块	17455	1	纯字母	
+KW	ext	看完	23020	2	纯字母	
+KW	ext	魁	995	2	纯字母	
+KX	ext	框	2631	1	纯字母	
+KY	ext	况	1720	1	纯字母	
+KZ	ext	枯燥	4521	2	纯字母	
+KZ	ext	锟	715	2	纯字母	
+K_	ext	看一看	4743	1	后缀	_
+K_=	auto	提	9436	1	空格并击	=
+K`	auto	空明码	0	1	后缀	`
+Kb	ext	口碑	12994	2	纯字母	
+Kb	ext	蔻	680	2	纯字母	
+Kc	ext	堪称	6145	2	纯字母	
+Kc	ext	漮	287	2	纯字母	
+Kd	ext	看的	18532	2	纯字母	
+Kd	ext	胩	514	2	纯字母	
+Ke	ext	劶	196	1	纯字母	
+Kf	ext	咖啡	23532	2	纯字母	
+Kf	ext	侃	1234	2	纯字母	
+Kg	ext	凯	2785	1	纯字母	
+Ki	ext	烤	2336	1	纯字母	
+Kk	ext	砍	3510	1	纯字母	
+Km	ext	孔	3913	1	纯字母	
+Kn	ext	看你	10103	2	纯字母	
+Kn	ext	尻	729	2	纯字母	
+Ko	ext	空	11899	1	纯字母	
+Kp	ext	卡片	5890	2	纯字母	
+Kp	ext	冚	121	2	纯字母	
+Kr	ext	抗日	1680	1	纯字母	
+Ks	ext	考生	21461	2	纯字母	
+Ks	ext	暟	432	2	纯字母	
+Kt	ext	敂	329	1	纯字母	
+Ku	ext	抗	4820	1	纯字母	
+Kv	ext	堪	1276	1	纯字母	
+Kw	ext	口味	13016	2	纯字母	
+Kw	ext	衉	256	2	纯字母	
+Kx	ext	开心	12829	2	纯字母	
+Kx	ext	楷	888	2	纯字母	
+Ky	ext	康	4220	1	纯字母	
+Kz	ext	控制	43858	2	纯字母	
+Kz	ext	铠	751	2	纯字母	
+K~	auto	空明码并击	0	1	后缀	~
+L!	ext	戮	709	1	后缀	!
+L'	auto	老师	142562	1	后缀	'
+L,	ext	姥	679	1	后缀	,
+L.	ext	翋	426	1	后缀	.
+L/	ext	缆	798	1	后缀	/
+L:	ext	轮	3859	1	后缀	:
+L<	ext	娽	279	1	后缀	<
+L=	auto	理	8676	1	空格并击	=
+L?	ext	绿	5579	1	后缀	?
+LA	ext	虑	990	1	纯字母	
+LB	ext	落	6145	1	纯字母	
+LC	ext	洛	2605	1	纯字母	
+LD	ext	来到	15892	2	纯字母	
+LD	ext	膟	221	2	纯字母	
+LE	ext	律	1510	1	纯字母	
+LF	ext	伦	2150	1	纯字母	
+LG	ext	罗	8706	1	纯字母	
+LH	ext	落后	7130	2	纯字母	
+LH	ext	璐	1060	2	纯字母	
+LI	ext	炉	1823	1	纯字母	
+LJ	ext	醁	369	1	纯字母	
+LK	ext	来看	62894	2	纯字母	
+LK	ext	碌	724	2	纯字母	
+LM	ext	浪漫	7798	2	纯字母	
+LM	ext	陆	4060	2	纯字母	
+LN	ext	录	3595	1	纯字母	
+LO	ext	鄂	1300	2	纯字母	
+LO	ext	厢	1103	2	纯字母	
+LQ	ext	乱	13475	1	纯字母	
+LR	ext	输入	16895	2	纯字母	
+LR	ext	寽	347	2	纯字母	
+LS	ext	楼上	9856	1	纯字母	
+LT	ext	鲁	3204	1	纯字母	
+LU	ext	掠	960	1	纯字母	
+LV	ext	趢	197	1	纯字母	
+LW	ext	躶	301	1	纯字母	
+LX	ext	橹	671	1	纯字母	
+LY	ext	率	7531	1	纯字母	
+LZ	ext	铝	2149	1	纯字母	
+L_=	auto	老	40818	1	空格并击	=
+L`	zero	姬	1838	2	后缀	`
+L`	zero	鳖	915	2	后缀	`
+La	zero	耍	6036	2	纯字母	
+La	zero	馏	557	2	纯字母	
+Lb	ext	劳	1896	1	纯字母	
+Lc	ext	浪	2906	1	纯字母	
+Ld	ext	来的	21685	2	纯字母	
+Ld	ext	腊	1550	2	纯字母	
+Le	ext	徕	638	1	纯字母	
+Lf	ext	浪费	11455	2	纯字母	
+Lf	ext	佬	1424	2	纯字母	
+Lg	ext	蜡	1713	1	纯字母	
+Li	ext	兰	5072	1	纯字母	
+Lj	ext	老	40818	1	纯字母	
+Lk	ext	龙	10914	1	纯字母	
+Lm	ext	隆	2287	1	纯字母	
+Ln	ext	屚	318	1	纯字母	
+Lo	ext	懒	3877	1	纯字母	
+Lp	ext	郎	2599	1	纯字母	
+Lq	ext	篮球	10472	2	纯字母	
+Lq	ext	篮	1238	2	纯字母	
+Lr	ext	老人	16769	2	纯字母	
+Lr	ext	顷	758	2	纯字母	
+Ls	ext	律师	22726	2	纯字母	
+Ls	ext	览	1082	2	纯字母	
+Lt	ext	狼	5078	1	纯字母	
+Lv	ext	垃	607	1	纯字母	
+Lw	ext	论文	32235	2	纯字母	
+Lw	ext	躴	241	2	纯字母	
+Lx	ext	楼	13720	1	纯字母	
+Ly	ext	辣	2401	1	纯字母	
+Lz	ext	来自	44389	2	纯字母	
+Lz	ext	镂	654	2	纯字母	
+L~	zero	嵌	1024	3	后缀	~
+L~	zero	吆	687	3	后缀	~
+L~	zero	湃	614	3	后缀	~
+M'	auto	目的	31011	1	后缀	'
+M,	ext	妈	10749	1	后缀	,
+M.	ext	矛	1066	1	后缀	.
+M/	ext	马	13469	1	后缀	/
+M:	auto	嘛	71478	1	后缀	:
+M;	ext	迈	1907	1	后缀	;
+M<	ext	姆	1475	1	后缀	<
+M=	auto	没	296233	1	空格并击	=
+M?	ext	母	3443	1	后缀	?
+MA	ext	母爱	1080	1	纯字母	
+MB	ext	模板	14674	2	纯字母	
+MB	ext	幕	1443	2	纯字母	
+MC	ext	卖出	9522	2	纯字母	
+MC	ext	沐	1178	2	纯字母	
+MD	ext	矛盾	19588	2	纯字母	
+MD	ext	胟	255	2	纯字母	
+ME	ext	艒	358	1	纯字母	
+MF	ext	模仿	11205	2	纯字母	
+MF	ext	仫	501	2	纯字母	
+MH	ext	漫画	24744	1	纯字母	
+MI	ext	炑	343	1	纯字母	
+MJ	ext	模具	2059	2	纯字母	
+MJ	ext	畞	366	2	纯字母	
+MK	ext	模块	10290	2	纯字母	
+MK	ext	砪	249	2	纯字母	
+ML	ext	呒	709	1	纯字母	
+MM	ext	盲目	7018	1	纯字母	
+MN	ext	母女	1123	1	纯字母	
+MO	ext	木偶	916	1	纯字母	
+MP	ext	冒泡	853	1	纯字母	
+MQ	ext	牧	1499	1	纯字母	
+MR	ext	苑	2189	2	纯字母	
+MR	ext	痹	762	2	纯字母	
+MS	ext	马上	18883	1	纯字母	
+MT	ext	馒头	3271	1	纯字母	
+MU	ext	拇	719	1	纯字母	
+MV	ext	坶	401	1	纯字母	
+MW	ext	目无	63	1	纯字母	
+MX	ext	木	7336	1	纯字母	
+MY	ext	亩	2028	1	纯字母	
+MZ	ext	某种	13776	2	纯字母	
+MZ	ext	钼	836	2	纯字母	
+M_=	auto	美	18573	1	空格并击	=
+M`	auto	表现	55348	1	后缀	`
+Ma	zero	渗	1012	2	纯字母	
+Ma	zero	酪	693	2	纯字母	
+Mc	ext	满	12975	1	纯字母	
+Md	ext	膜	3077	1	纯字母	
+Me	ext	摩尔	1143	1	纯字母	
+Mf	ext	满分	6596	2	纯字母	
+Mf	ext	侔	546	2	纯字母	
+Mg	ext	默	1595	1	纯字母	
+Mh	ext	末	3329	1	纯字母	
+Mi	ext	糢	507	1	纯字母	
+Mj	ext	某	13507	1	纯字母	
+Mk	ext	码	4917	1	纯字母	
+Mm	ext	陌	937	1	纯字母	
+Mn	ext	模拟	12602	1	纯字母	
+Mp	ext	谋	1861	1	纯字母	
+Mq	ext	毛	11849	1	纯字母	
+Mr	ext	默认	7572	2	纯字母	
+Mr	ext	貌	1102	2	纯字母	
+Ms	ext	冒	4098	1	纯字母	
+Mu	ext	摸	4449	1	纯字母	
+Mv	ext	埋	2820	1	纯字母	
+Mw	ext	劰	229	1	纯字母	
+Mx	ext	模	2521	1	纯字母	
+My	ext	麻	3420	1	纯字母	
+Mz	ext	锚	814	1	纯字母	
+M~	zero	淹	957	2	后缀	~
+M~	zero	茉	762	2	后缀	~
+N!	auto	钱	56657	1	后缀	!
+N'	auto	南方	9976	1	后缀	'
+N,	ext	乃	4485	1	后缀	,
+N.	ext	难	16589	1	后缀	.
+N/	ext	纳	2923	1	后缀	/
+N:	zero	募	995	2	后缀	:
+N:	zero	暇	868	2	后缀	:
+N=	auto	那	270779	1	空格并击	=
+N?	auto	恩	162561	1	后缀	?
+N@	auto	男孩	7577	1	后缀	@
+NA	ext	虐	1449	1	纯字母	
+NB	ext	逽	303	1	纯字母	
+NC	ext	农村	12746	1	纯字母	
+ND	ext	难度	29178	1	纯字母	
+NE	zero	甩	2465	2	纯字母	
+NE	zero	匈	626	2	纯字母	
+NF	ext	傉	395	1	纯字母	
+NG	ext	囡	832	2	纯字母	
+NG	ext	那该	752	2	纯字母	
+NH	ext	南海	2021	1	纯字母	
+NI	ext	糯	790	1	纯字母	
+NJ	ext	撕	1389	1	纯字母	
+NK	ext	恧	432	1	纯字母	
+NL	ext	拿来	10485	1	纯字母	
+NM	ext	医生	51482	1	纯字母	
+NN	ext	男女	5523	1	纯字母	
+NO	ext	懦	619	1	纯字母	
+NP	ext	诺	3046	1	纯字母	
+NQ	ext	女权	1267	1	纯字母	
+NR	ext	纳入	4326	1	纯字母	
+NS	ext	暖	2273	1	纯字母	
+NT	ext	难逃	908	1	纯字母	
+NU	ext	挪	1392	1	纯字母	
+NV	zero	蓑	1098	3	纯字母	
+NV	zero	妓	891	3	纯字母	
+NV	zero	痢	677	3	纯字母	
+NW	ext	那我	9765	2	纯字母	
+NW	ext	衄	534	2	纯字母	
+NX	ext	榒	212	1	纯字母	
+NY	ext	哪有	4899	2	纯字母	
+NY	ext	疟	651	2	纯字母	
+NZ	ext	那种	76809	2	纯字母	
+NZ	ext	钕	731	2	纯字母	
+N_	ext	女孩	17624	1	后缀	_
+N_=	auto	及	78069	1	空格并击	=
+N`	auto	飞机	15300	1	后缀	`
+Na	auto	泳	1087	1	纯字母	
+Nb	ext	那边	18628	2	纯字母	
+Nb	ext	艿	622	2	纯字母	
+Nc	ext	浓	2310	1	纯字母	
+Nd	ext	脑	3111	1	纯字母	
+Ne	ext	女儿	22094	1	纯字母	
+Ng	ext	男	17698	1	纯字母	
+Ni	ext	煵	0	1	纯字母	
+Nk	ext	耐	3321	1	纯字母	
+Nm	ext	乸	519	1	纯字母	
+No	ext	恼	990	1	纯字母	
+Np	ext	农	3178	1	纯字母	
+Nq	ext	氖	741	1	纯字母	
+Nr	ext	豽	251	1	纯字母	
+Ns	ext	女生	33840	2	纯字母	
+Ns	ext	暔	362	2	纯字母	
+Nt	ext	那天	13378	2	纯字母	
+Nt	ext	猱	484	2	纯字母	
+Nu	ext	闹	5311	1	纯字母	
+Nv	ext	赧	503	1	纯字母	
+Nw	ext	那位	8155	2	纯字母	
+Nw	ext	齉	309	2	纯字母	
+Nx	ext	那些	118325	2	纯字母	
+Nx	ext	楠	1464	2	纯字母	
+Ny	ext	难以	18687	2	纯字母	
+Ny	ext	疓	296	2	纯字母	
+Nz	ext	乃至	11863	2	纯字母	
+Nz	ext	钠	1341	2	纯字母	
+N~	auto	男人	31932	1	后缀	~
+O!	auto	卡	31731	1	后缀	!
+O'	auto	偶尔	23566	1	后缀	'
+O,	zero	株	1508	3	后缀	,
+O,	zero	韭	631	3	后缀	,
+O,	zero	辕	628	3	后缀	,
+O.	auto	离	10990	1	后缀	.
+O/	auto	该	49284	1	后缀	/
+O:	ext	锦	2466	1	后缀	:
+O;	ext	欧	3900	1	后缀	;
+O<	zero	皆	3558	3	后缀	<
+O<	zero	洪	3124	3	后缀	<
+O<	zero	帐	2934	3	后缀	<
+O=	auto	三	27727	1	空格并击	=
+O?	zero	涉	1434	2	后缀	?
+O?	zero	臂	1431	2	后缀	?
+OA	ext	秤	1017	2	纯字母	
+OA	ext	俯	871	2	纯字母	
+OB	ext	榜	3312	1	纯字母	
+OC	ext	硕	1316	1	纯字母	
+OD	ext	殴打	1652	1	纯字母	
+OE	auto	浴	1962	1	纯字母	
+OF	ext	偶发	570	1	纯字母	
+OG	ext	丫	6079	2	纯字母	
+OG	ext	暨	2326	2	纯字母	
+OH	ext	歹	694	1	纯字母	
+OI	auto	妆	1668	1	纯字母	
+OJ	ext	迹	2377	1	纯字母	
+OK	ext	饥	1437	2	纯字母	
+OK	ext	萤	720	2	纯字母	
+OL	ext	漆	1821	2	纯字母	
+OL	ext	渝	1547	2	纯字母	
+OM	ext	欧姆	613	1	纯字母	
+ON	ext	凄	1489	1	纯字母	
+OO	ext	哦哦	1976	1	纯字母	
+OP	ext	欧普	0	1	纯字母	
+OQ	ext	斑	1748	2	纯字母	
+OQ	ext	椎	846	2	纯字母	
+OR	ext	偶然	4888	1	纯字母	
+OS	ext	偶数	755	1	纯字母	
+OT	ext	呕吐	2613	1	纯字母	
+OU	auto	卻	0	1	纯字母	
+OV	auto	滞	1022	1	纯字母	
+OW	ext	掏	1646	2	纯字母	
+OW	ext	椒	927	2	纯字母	
+OX	ext	鹿	1708	1	纯字母	
+OY	ext	欧阳	1904	1	纯字母	
+OZ	ext	欧洲	27887	1	纯字母	
+O_=	auto	员	4988	1	空格并击	=
+O`	auto	吗	221081	1	后缀	`
+Oa	zero	趟	2339	3	纯字母	
+Oa	zero	捶	911	3	纯字母	
+Oa	zero	栾	872	3	纯字母	
+Ob	ext	藕	1203	1	纯字母	
+Oc	ext	沤	649	1	纯字母	
+Od	ext	腢	303	2	纯字母	
+Od	ext	腢	303	2	纯字母	
+Oe	ext	何时	3449	1	纯字母	
+Og	ext	机制	42650	1	纯字母	
+Oh	ext	耦	641	1	纯字母	
+Oi	ext	肉食	819	1	纯字母	
+Oj	ext	偶见	559	1	纯字母	
+Ok	ext	啼	907	2	纯字母	
+Ok	ext	搔	761	2	纯字母	
+Om	ext	欧美	10898	2	纯字母	
+Om	ext	𠙶	0	2	纯字母	
+On	ext	佐	2661	1	纯字母	
+Oo	ext	怄	497	1	纯字母	
+Op	ext	讴	521	1	纯字母	
+Oq	ext	筽	330	1	纯字母	
+Or	ext	钾	1213	2	纯字母	
+Or	ext	茅	1184	2	纯字母	
+Os	ext	巷	1629	2	纯字母	
+Os	ext	痰	1335	2	纯字母	
+Ot	ext	雁	1662	3	纯字母	
+Ot	ext	礁	825	3	纯字母	
+Ot	ext	郗	621	3	纯字母	
+Ou	auto	之类	51231	1	纯字母	
+Ov	ext	闸	1265	2	纯字母	
+Ov	ext	棺	941	2	纯字母	
+Ow	ext	狭	787	2	纯字母	
+Ow	ext	摹	746	2	纯字母	
+Ox	ext	偶像	7560	1	纯字母	
+Oy	ext	偶遇	1526	1	纯字母	
+Oz	ext	制度	14636	1	纯字母	
+O~	zero	喉	1225	2	后缀	~
+O~	zero	芋	727	2	后缀	~
+P!	zero	荆	1139	2	后缀	!
+P!	zero	酉	776	2	后缀	!
+P'	auto	普通	52398	1	后缀	'
+P,	ext	颇	1849	1	后缀	,
+P.	auto	讲	23574	1	后缀	.
+P/	zero	淋	1524	2	后缀	/
+P/	zero	啰	877	2	后缀	/
+P:	zero	搏	1177	2	后缀	:
+P:	zero	诲	683	2	后缀	:
+P;	ext	叵	625	1	后缀	;
+P<	zero	隙	836	2	后缀	<
+P<	zero	鲤	759	2	后缀	<
+P=	auto	点	138948	1	空格并击	=
+P?	auto	让	99107	1	后缀	?
+PA	ext	拍案	644	1	纯字母	
+PB	ext	排版	9817	2	纯字母	
+PB	ext	葡	845	2	纯字母	
+PC	ext	排除	7797	2	纯字母	
+PC	ext	浦	1535	2	纯字母	
+PD	ext	跑到	8972	2	纯字母	
+PD	ext	脯	676	2	纯字母	
+PE	auto	婆	1792	1	纯字母	
+PF	ext	仆	1498	1	纯字母	
+PG	ext	曝光	7839	2	纯字母	
+PG	ext	圃	780	2	纯字母	
+PH	ext	徘徊	2189	2	纯字母	
+PH	ext	璞	784	2	纯字母	
+PI	ext	普	3076	1	纯字母	
+PJ	ext	酺	409	1	纯字母	
+PK	ext	抛开	5991	2	纯字母	
+PK	ext	比比	992	2	纯字母	
+PL	ext	噗	859	1	纯字母	
+PM	ext	拍卖	3253	1	纯字母	
+PN	ext	跑哪	0	1	纯字母	
+PO	ext	贷	2020	1	纯字母	
+PP	ext	拍拍	1778	2	纯字母	
+PP	ext	谱	1725	2	纯字母	
+PQ	ext	氆	306	1	纯字母	
+PR	ext	骗人	2448	1	纯字母	
+PS	ext	曝	1126	1	纯字母	
+PT	ext	匍	480	1	纯字母	
+PU	ext	扑	2304	1	纯字母	
+PV	ext	埔	781	1	纯字母	
+PW	ext	盼望	1574	1	纯字母	
+PX	ext	朴	2217	1	纯字母	
+PY	ext	痡	304	1	纯字母	
+PZ	ext	铺	3195	1	纯字母	
+P_=	auto	解	6422	1	空格并击	=
+P`	auto	买	101135	1	后缀	`
+Pa	ext	攴	627	1	纯字母	
+Pb	ext	普遍	23852	2	纯字母	
+Pb	ext	蔢	486	2	纯字母	
+Pc	ext	泼	1371	1	纯字母	
+Pd	ext	胖	5537	1	纯字母	
+Pe	ext	盘	11414	1	纯字母	
+Pf	ext	堡	1712	1	纯字母	
+Pg	ext	盼	1863	1	纯字母	
+Ph	ext	耙	771	1	纯字母	
+Pi	ext	判	1948	1	纯字母	
+Pj	ext	不用	45534	1	纯字母	
+Pm	ext	爿	565	1	纯字母	
+Pn	ext	叛逆	2049	1	纯字母	
+Pp	ext	袍	1025	1	纯字母	
+Pq	ext	抛弃	6433	2	纯字母	
+Pq	ext	馞	298	2	纯字母	
+Pr	ext	鄱	536	1	纯字母	
+Ps	ext	拍摄	29925	1	纯字母	
+Pt	ext	刨	1001	1	纯字母	
+Pu	ext	排	6824	1	纯字母	
+Pv	ext	坡	1917	1	纯字母	
+Pw	ext	牌	6625	1	纯字母	
+Px	ext	攀	1252	1	纯字母	
+Py	ext	旁	3322	1	纯字母	
+Pz	ext	牌子	8310	2	纯字母	
+Pz	ext	钯	664	2	纯字母	
+P~	auto	瞒	1117	1	后缀	~
+Q!	ext	劝	2932	1	后缀	!
+Q'	auto	却	44630	1	后缀	'
+Q,	zero	寨	1493	2	后缀	,
+Q,	zero	钳	910	2	后缀	,
+Q.	auto	呀	79996	1	后缀	.
+Q/	auto	呢	242959	1	后缀	/
+Q<	ext	姾	292	1	后缀	<
+Q=	auto	起	30341	1	空格并击	=
+Q?	ext	驱	1320	1	后缀	?
+QA	ext	觑	682	1	纯字母	
+QB	ext	全部	55392	2	纯字母	
+QB	ext	蕖	528	2	纯字母	
+QC	ext	全场	6174	2	纯字母	
+QC	ext	渠	1404	2	纯字母	
+QD	ext	渠道	28798	2	纯字母	
+QD	ext	雀	1176	2	纯字母	
+QE	ext	衢	664	1	纯字母	
+QF	ext	全	26794	1	纯字母	
+QG	ext	曲	4837	1	纯字母	
+QH	ext	璩	580	1	纯字母	
+QI	ext	拳	1877	1	纯字母	
+QK	ext	确	2488	1	纯字母	
+QL	ext	躣	308	1	纯字母	
+QM	ext	去买	6277	2	纯字母	
+QM	ext	阹	355	2	纯字母	
+QO	ext	悛	467	1	纯字母	
+QP	ext	裙	1526	1	纯字母	
+QQ	ext	缺	4801	1	纯字母	
+QR	ext	契	1003	2	纯字母	
+QR	ext	宦	767	2	纯字母	
+QS	ext	券商	12853	2	纯字母	
+QS	ext	泉水	1150	2	纯字母	
+QT	ext	劬	565	1	纯字母	
+QU	ext	阙	925	1	纯字母	
+QV	ext	趣	1404	1	纯字母	
+QW	ext	泉	2696	1	纯字母	
+QX	ext	权	6635	1	纯字母	
+QY	ext	却又	7943	2	纯字母	
+QY	ext	痊	510	2	纯字母	
+QZ	ext	去做	22948	2	纯字母	
+QZ	ext	铨	681	2	纯字母	
+Q_=	auto	情	7288	1	空格并击	=
+Q`	auto	搞	40736	1	后缀	`
+Qa	ext	钱啊	529	1	纯字母	
+Qb	ext	区别	38293	1	纯字母	
+Qc	ext	全程	11664	1	纯字母	
+Qd	ext	取得	14099	1	纯字母	
+Qe	ext	全额	1499	1	纯字母	
+Qf	ext	区分	12505	1	纯字母	
+Qg	ext	微分	776	1	纯字母	
+Qh	ext	权衡	2568	1	纯字母	
+Qi	zero	乙	2457	3	纯字母	
+Qi	zero	绎	620	3	纯字母	
+Qi	zero	前五百	0	3	纯字母	
+Qj	ext	区间	7587	1	纯字母	
+Qk	ext	全科	522	1	纯字母	
+Ql	ext	权利	13422	1	纯字母	
+Qm	ext	全民	3722	1	纯字母	
+Qn	ext	去年	26290	2	纯字母	
+Qn	ext	合起来	774	2	纯字母	
+Qo	auto	乞	858	1	纯字母	
+Qp	ext	全票	587	1	纯字母	
+Qq	ext	全球	35753	1	纯字母	
+Qr	ext	确认	17245	1	纯字母	
+Qs	ext	全身	9145	1	纯字母	
+Qt	ext	群体	21295	1	纯字母	
+Qu	auto	规定	27328	1	纯字母	
+Qv	zero	芒	1194	2	纯字母	
+Qv	zero	蝇	884	2	纯字母	
+Qw	ext	权威	6569	1	纯字母	
+Qx	ext	全新	10340	1	纯字母	
+Qy	ext	区域	27153	1	纯字母	
+Qz	ext	全职	4408	1	纯字母	
+Q~	zero	肖	3397	2	后缀	~
+Q~	zero	卯	859	2	后缀	~
+R!	ext	叒	540	1	后缀	!
+R'	auto	如何看待	62548	1	后缀	'
+R,	ext	媃	384	1	后缀	,
+R.	ext	柔	1991	1	后缀	.
+R/	ext	绕	3038	1	后缀	/
+R:	ext	软	4276	1	后缀	:
+R;	ext	戎	928	1	后缀	;
+R=	auto	然	5144	1	空格并击	=
+R?	ext	缛	529	1	后缀	?
+RA	ext	睿	1239	1	纯字母	
+RB	ext	若	12123	1	纯字母	
+RC	ext	润	2250	1	纯字母	
+RD	ext	朊	572	1	纯字母	
+RE	zero	馅	1166	2	纯字母	
+RE	zero	晰	696	2	纯字母	
+RF	ext	儒	1567	1	纯字母	
+RG	ext	蠕	530	1	纯字母	
+RH	ext	然后	272554	2	纯字母	
+RH	ext	瑞	3202	2	纯字母	
+RI	ext	焫	319	1	纯字母	
+RJ	ext	醹	234	1	纯字母	
+RK	ext	入口	8742	2	纯字母	
+RK	ext	辱	956	2	纯字母	
+RL	ext	颥	308	1	纯字母	
+RM	ext	阮	1423	1	纯字母	
+RN	ext	弱	4074	1	纯字母	
+RO	ext	入欧	0	1	纯字母	
+RP	ext	褥	574	1	纯字母	
+RQ	ext	箬	617	1	纯字母	
+RS	ext	燃烧	6796	1	纯字母	
+RT	ext	让他	28989	2	纯字母	
+RT	ext	獳	353	2	纯字母	
+RU	ext	闰	695	1	纯字母	
+RV	zero	妮	1922	2	纯字母	
+RV	zero	氯	1148	2	纯字母	
+RW	ext	让我	65981	1	纯字母	
+RX	ext	入学	5723	2	纯字母	
+RX	ext	檽	358	2	纯字母	
+RY	ext	荣誉	6292	1	纯字母	
+RZ	ext	锐	1473	1	纯字母	
+R_=	auto	水	28524	1	空格并击	=
+R`	zero	软件开发	2277	4	后缀	`
+R`	zero	峻	1002	4	后缀	`
+R`	zero	邬	875	4	后缀	`
+R`	zero	疹	746	4	后缀	`
+Ra	ext	哼	4893	2	纯字母	
+Ra	ext	柑	752	2	纯字母	
+Rb	ext	荣	4079	1	纯字母	
+Rc	ext	染	2069	1	纯字母	
+Rd	ext	肰	271	1	纯字母	
+Re	ext	然而	73164	2	纯字母	
+Re	ext	对哦	122	2	纯字母	
+Rf	ext	傛	528	1	纯字母	
+Rg	ext	肉	7258	1	纯字母	
+Rh	ext	融合	11469	2	纯字母	
+Rh	ext	瑈	360	2	纯字母	
+Ri	ext	燃	1319	1	纯字母	
+Rj	ext	鞣	586	1	纯字母	
+Rk	ext	入坑	5752	3	纯字母	
+Rk	ext	揍	1521	3	纯字母	
+Rk	ext	烛	1032	3	纯字母	
+Rl	ext	嚷	875	1	纯字母	
+Rm	ext	阶段	47840	1	纯字母	
+Rn	ext	让你	57071	1	纯字母	
+Ro	ext	容	3111	1	纯字母	
+Rq	ext	入侵	6002	2	纯字母	
+Rq	ext	毧	244	2	纯字母	
+Rr	ext	让人	48995	1	纯字母	
+Rs	ext	弱势	2608	1	纯字母	
+Ru	ext	扰	1151	1	纯字母	
+Rv	ext	壤	710	1	纯字母	
+Rw	ext	肉味	193	1	纯字母	
+Rx	ext	如下	32975	2	纯字母	
+Rx	ext	榕	981	2	纯字母	
+Ry	ext	瓤	652	1	纯字母	
+Rz	ext	融资	15737	2	纯字母	
+Rz	ext	融	1898	2	纯字母	
+R~	zero	宪	1270	4	后缀	~
+R~	zero	蝗	710	4	后缀	~
+R~	zero	柞	549	4	后缀	~
+R~	zero	让你感觉	0	4	后缀	~
+S!	ext	双	9793	1	后缀	!
+S'	auto	速度	35075	1	后缀	'
+S,	ext	嫂	1160	1	后缀	,
+S/	ext	绍	1446	1	后缀	/
+S:	ext	输	6108	1	后缀	:
+S;	auto	系	29791	1	后缀	;
+S<	ext	恕	907	1	后缀	<
+S=	auto	说	340374	1	空格并击	=
+S@	auto	顺天者昌	301	1	后缀	@
+SA	ext	上岸	7531	2	纯字母	
+SA	ext	叔	1935	2	纯字母	
+SB	ext	苏	5451	1	纯字母	
+SD	ext	帅	6908	1	纯字母	
+SE	ext	所	44995	1	纯字母	
+SF	ext	舒	2517	1	纯字母	
+SG	ext	岁	11146	1	纯字母	
+SJ	ext	酸	4320	1	纯字母	
+SK	ext	爽	11344	1	纯字母	
+SL	ext	虽	4919	1	纯字母	
+SM	ext	随	6606	1	纯字母	
+SO	ext	宿	1530	1	纯字母	
+SR	ext	收入	47757	2	纯字母	
+SR	ext	舜	1099	2	纯字母	
+SS	ext	手术	21300	2	纯字母	
+SS	ext	竖	1370	2	纯字母	
+ST	ext	殳	551	1	纯字母	
+SU	ext	损	1863	1	纯字母	
+SV	ext	趖	304	1	纯字母	
+SW	ext	顺	3868	1	纯字母	
+SX	ext	树	6862	1	纯字母	
+SY	ext	所有	110184	2	纯字母	
+SY	ext	衰	1945	2	纯字母	
+SZ	ext	锁	3955	1	纯字母	
+S_=	auto	事	39845	1	空格并击	=
+S`	auto	商品	25529	1	后缀	`
+Sb	ext	萨	2761	1	纯字母	
+Sc	ext	沙	4899	1	纯字母	
+Se	ext	艘	1377	1	纯字母	
+Sf	ext	伤	6467	1	纯字母	
+Sg	ext	山	11877	1	纯字母	
+Sj	ext	散	4416	1	纯字母	
+Sk	ext	上课	17687	2	纯字母	
+Sk	ext	厦	1135	2	纯字母	
+Sm	ext	收	17737	1	纯字母	
+Sn	ext	少年	17220	1	纯字母	
+So	ext	守	4104	1	纯字母	
+Sp	ext	扇	2256	1	纯字母	
+Sq	ext	稍	2689	1	纯字母	
+Sr	ext	受	16288	1	纯字母	
+Ss	ext	晒	3982	1	纯字母	
+St	ext	删	5261	1	纯字母	
+Sv	ext	埽	550	1	纯字母	
+Sw	ext	稍微	28120	2	纯字母	
+Sw	ext	叟	738	2	纯字母	
+Sx	ext	松	5488	1	纯字母	
+Sy	ext	商	6594	1	纯字母	
+Sz	ext	数字	27341	2	纯字母	
+Sz	ext	钐	540	2	纯字母	
+S~	auto	有哪些	77884	1	后缀	~
+T!	zero	甄	1085	3	后缀	!
+T!	zero	檀	847	3	后缀	!
+T!	zero	嘲	753	3	后缀	!
+T'	auto	退出	9480	1	后缀	'
+T.	ext	通	9293	1	后缀	.
+T/	ext	统	1530	1	后缀	/
+T:	ext	屯	1449	1	后缀	:
+T;	ext	拖	4454	1	后缀	;
+T<	ext	媠	300	1	后缀	<
+T=	auto	同	25573	1	空格并击	=
+T?	ext	驮	805	1	后缀	?
+TB	ext	淘宝	30121	2	纯字母	
+TB	ext	蓷	368	2	纯字母	
+TC	ext	涂	3410	1	纯字母	
+TD	ext	脱	3598	1	纯字母	
+TE	ext	徒	1380	1	纯字母	
+TF	ext	头发	14550	2	纯字母	
+TF	ext	途	1300	2	纯字母	
+TH	ext	他会	9094	2	纯字母	
+TH	ext	吞	1503	2	纯字母	
+TI	ext	煺	531	1	纯字母	
+TJ	ext	酴	447	1	纯字母	
+TK	ext	太空	7196	2	纯字母	
+TK	ext	砣	694	2	纯字母	
+TL	ext	吐	3614	1	纯字母	
+TM	ext	陀	1120	1	纯字母	
+TN	ext	退	8214	1	纯字母	
+TO	ext	突	1562	1	纯字母	
+TP	ext	突破	24558	2	纯字母	
+TP	ext	褪	906	2	纯字母	
+TQ	ext	秃	906	1	纯字母	
+TR	ext	突然	43913	2	纯字母	
+TR	ext	妥	1081	2	纯字母	
+TS	ext	他说	21100	2	纯字母	
+TS	ext	旽	326	2	纯字母	
+TT	ext	兔	2208	1	纯字母	
+TU	ext	推	6151	1	纯字母	
+TW	ext	台湾	15274	1	纯字母	
+TX	ext	同学	103089	2	纯字母	
+TX	ext	椭	600	2	纯字母	
+TY	ext	同样	73233	2	纯字母	
+TY	ext	凃	470	2	纯字母	
+TZ	ext	他在	22426	2	纯字母	
+TZ	ext	铊	634	2	纯字母	
+T_=	auto	体	6578	1	空格并击	=
+T`	auto	面临	16405	1	后缀	`
+Ta	ext	忐	435	1	纯字母	
+Tb	ext	图表	8669	2	纯字母	
+Tb	ext	萄	602	2	纯字母	
+Tc	ext	涛	2407	1	纯字母	
+Td	ext	他的	144754	2	纯字母	
+Td	ext	胎	1726	2	纯字母	
+Te	ext	舦	271	1	纯字母	
+Tf	ext	堂	4216	1	纯字母	
+Th	ext	泰	2900	1	纯字母	
+Ti	ext	糖	4379	1	纯字母	
+Tj	ext	统计	20885	2	纯字母	
+Tj	ext	酮	1083	2	纯字母	
+Tl	ext	叹	2463	1	纯字母	
+Tm	ext	他们	305176	2	纯字母	
+Tm	ext	陶	2513	2	纯字母	
+Tn	ext	弹	3393	1	纯字母	
+To	ext	头	21237	1	纯字母	
+Tp	ext	谈	14432	1	纯字母	
+Tq	ext	透	2585	1	纯字母	
+Tr	ext	逃	2923	1	纯字母	
+Ts	ext	同时	139189	2	纯字母	
+Ts	ext	昙	688	2	纯字母	
+Tt	ext	头疼	5862	2	纯字母	
+Tt	ext	饧	589	2	纯字母	
+Tu	ext	抬	2228	1	纯字母	
+Tv	ext	塔	4458	1	纯字母	
+Tw	ext	躺	2234	1	纯字母	
+Tx	ext	图像	11355	2	纯字母	
+Tx	ext	桃	1825	2	纯字母	
+Ty	ext	痛	7108	1	纯字母	
+Tz	ext	铜	3167	1	纯字母	
+T~	auto	就是	664963	1	后缀	~
+U!	auto	”！	0	1	后缀	!
+U'	auto	‘	0	1	后缀	'
+U,	auto	”。	0	1	后缀	,
+U.	auto	！”	0	1	后缀	.
+U/	auto	？”	0	1	后缀	/
+U;	auto	：“	0	1	后缀	;
+U<	auto	”，	0	1	后缀	<
+U=	auto	正	21431	1	空格并击	=
+U?	auto	。”	0	1	后缀	?
+UA	auto	不瞒	557	1	纯字母	
+UB	auto	不相信	3520	1	纯字母	
+UC	auto	抽	5633	1	纯字母	
+UD	auto	带来	52769	1	纯字母	
+UF	auto	缘分	2604	1	纯字母	
+UG	auto	国际	23778	1	纯字母	
+UH	auto	钦差	594	1	纯字母	
+UJ	auto	基本	114170	1	纯字母	
+UK	auto	领域	65569	1	纯字母	
+UM	auto	拜拜	3435	1	纯字母	
+UP	auto	跑路	3854	1	纯字母	
+UT	auto	不知道	65800	1	纯字母	
+UW	auto	我们要	11286	1	纯字母	
+UX	auto	需要	281927	1	纯字母	
+UY	auto	题主	71380	1	纯字母	
+UZ	auto	吓破	545	1	纯字母	
+U_=	auto	名	22727	1	空格并击	=
+U`	auto	增加	53937	1	后缀	`
+Ua	auto	替罪羊	698	1	纯字母	
+Ub	auto	属于	67100	1	纯字母	
+Uc	auto	做的	54374	1	纯字母	
+Ud	auto	它的	63903	1	纯字母	
+Ue	auto	毛泽东思想	676	1	纯字母	
+Uf	auto	分歧	2675	1	纯字母	
+Ug	auto	峥嵘	649	1	纯字母	
+Uh	auto	彷徨	1125	1	纯字母	
+Ui	auto	怎么	173763	1	纯字母	
+Uj	auto	擒拿	594	1	纯字母	
+Uk	auto	菊花茶	589	1	纯字母	
+Ul	auto	服务	61682	1	纯字母	
+Um	auto	判若	589	1	纯字母	
+Un	auto	饿死了	586	1	纯字母	
+Uo	auto	狂傲	584	1	纯字母	
+Up	auto	问题	171932	1	纯字母	
+Uq	auto	过程	64236	1	纯字母	
+Ur	auto	毛毛雨	562	1	纯字母	
+Us	auto	时候	144150	1	纯字母	
+Ut	auto	男权	560	1	纯字母	
+Uu	auto	经济	37668	1	纯字母	
+Uv	auto	政治	32044	1	纯字母	
+Uw	auto	方向	71146	1	纯字母	
+Ux	auto	正常	50565	1	纯字母	
+Uy	auto	快如	548	1	纯字母	
+Uz	auto	袅娜	548	1	纯字母	
+U~	auto	几个	79581	1	后缀	~
+V!	auto	少	32015	1	后缀	!
+V'	auto	”	0	1	后缀	'
+V,	auto	啦	103305	1	后缀	,
+V.	auto	几乎	49822	1	后缀	.
+V/	auto	系统	59583	1	后缀	/
+V:	zero	襟	826	2	后缀	:
+V:	zero	蘑	639	2	后缀	:
+V;	auto	有了	47961	1	后缀	;
+V<	zero	斌	2348	2	后缀	<
+V<	zero	逍	810	2	后缀	<
+V=	auto	业	6409	1	空格并击	=
+V?	auto	整体	50154	1	后缀	?
+VA	auto	塘	1828	1	纯字母	
+VB	zero	俏	1102	3	纯字母	
+VB	zero	窖	801	3	纯字母	
+VB	zero	攘	644	3	纯字母	
+VC	auto	风险	53427	1	纯字母	
+VD	auto	鸭	2068	1	纯字母	
+VE	auto	舆	748	1	纯字母	
+VF	zero	颊	822	3	纯字母	
+VF	zero	蟒	751	3	纯字母	
+VF	zero	鹦	562	3	纯字母	
+VG	auto	腺	1048	1	纯字母	
+VH	zero	勋	1836	2	纯字母	
+VH	zero	隋	1052	2	纯字母	
+VI	zero	栗	1524	2	纯字母	
+VI	zero	堰	941	2	纯字母	
+VJ	auto	更新	63482	1	纯字母	
+VK	auto	稚	814	1	纯字母	
+VL	auto	禽	1049	1	纯字母	
+VM	auto	剧本	15077	1	纯字母	
+VN	auto	怎能	1464	1	纯字母	
+VO	zero	叼	2570	3	纯字母	
+VO	zero	喃	2122	3	纯字母	
+VO	zero	蛹	735	3	纯字母	
+VP	auto	葡萄	3555	1	纯字母	
+VQ	auto	恍	777	1	纯字母	
+VR	zero	巫	1244	3	纯字母	
+VR	zero	鸠	841	3	纯字母	
+VR	zero	谚	630	3	纯字母	
+VS	auto	很大	51455	1	纯字母	
+VT	zero	癣	764	2	纯字母	
+VT	zero	烁	742	2	纯字母	
+VU	zero	躁	841	2	纯字母	
+VU	zero	谆	553	2	纯字母	
+VV	zero	拢	942	2	纯字母	
+VV	zero	缄	624	2	纯字母	
+VW	zero	鹃	829	2	纯字母	
+VW	zero	耽	669	2	纯字母	
+VX	zero	哗	1450	2	纯字母	
+VX	zero	悍	794	2	纯字母	
+VY	auto	怎样	59165	1	纯字母	
+VZ	auto	提升	120900	1	纯字母	
+V_=	auto	真	66098	1	空格并击	=
+V`	zero	靓	2329	3	后缀	`
+V`	zero	倡	788	3	后缀	`
+V`	zero	喳	641	3	后缀	`
+Va	auto	想要	75580	1	纯字母	
+Vb	auto	全拼	517	1	纯字母	
+Vc	auto	阿凡达	509	1	纯字母	
+Vd	zero	匠	957	2	纯字母	
+Vd	zero	蚂	554	2	纯字母	
+Ve	auto	剂	2593	1	纯字母	
+Vf	zero	麟	1276	2	纯字母	
+Vf	zero	淆	483	2	纯字母	
+Vg	auto	鹰犬	477	1	纯字母	
+Vh	auto	就能	82960	1	纯字母	
+Vi	auto	这件	3160	1	纯字母	
+Vj	auto	哪管	178	1	纯字母	
+Vk	auto	同情你	141	1	纯字母	
+Vl	auto	权钱	55	1	纯字母	
+Vm	auto	说好的	1	1	纯字母	
+Vn	auto	每天都	1	1	纯字母	
+Vo	zero	缰	1040	3	纯字母	
+Vo	zero	敞	721	3	纯字母	
+Vo	zero	槟	603	3	纯字母	
+Vp	zero	彦	1720	2	纯字母	
+Vp	zero	煽	713	2	纯字母	
+Vq	auto	求	7695	1	纯字母	
+Vr	auto	美媚	1	1	纯字母	
+Vs	auto	呵呵	250099	1	纯字母	
+Vt	zero	⿰	0	12	纯字母	
+Vt	zero	⿱	0	12	纯字母	
+Vt	zero	⿲	0	12	纯字母	
+Vt	zero	⿳	0	12	纯字母	
+Vt	zero	⿴	0	12	纯字母	
+Vt	zero	⿵	0	12	纯字母	
+Vt	zero	⿶	0	12	纯字母	
+Vt	zero	⿷	0	12	纯字母	
+Vt	zero	⿸	0	12	纯字母	
+Vt	zero	⿹	0	12	纯字母	
+Vt	zero	⿺	0	12	纯字母	
+Vt	zero	⿻	0	12	纯字母	
+Vu	auto	举世	794	1	纯字母	
+Vv	auto	游戏	190700	1	纯字母	
+Vw	auto	之前	148413	1	纯字母	
+Vx	auto	回答	146762	1	纯字母	
+Vy	auto	除了	133824	1	纯字母	
+Vz	auto	哈哈	122324	1	纯字母	
+V~	zero	坎	1370	2	后缀	~
+V~	zero	腮	896	2	后缀	~
+W!	ext	鹜	656	1	后缀	!
+W'	auto	建议	103828	1	后缀	'
+W*	auto	更为	13824	1	后缀	*
+W,	ext	娃	2622	1	后缀	,
+W.	zero	渣	1735	2	后缀	.
+W.	zero	罩	1546	2	后缀	.
+W/	ext	纨	570	1	后缀	/
+W:	auto	无线	5733	1	后缀	:
+W<	ext	妩	602	1	后缀	<
+W=	auto	无	33876	1	空格并击	=
+W?	ext	毋	870	1	后缀	?
+W@	auto	这样的	119107	1	后缀	@
+WA	ext	晚安	6804	1	纯字母	
+WB	ext	我不	11116	2	纯字母	
+WB	ext	芜	852	2	纯字母	
+WC	ext	我从	9029	2	纯字母	
+WC	ext	污	1668	2	纯字母	
+WD	ext	我对	18478	2	纯字母	
+WD	ext	无端	1031	2	纯字母	
+WE	auto	挖矿	1421	1	纯字母	
+WF	ext	无法	75447	1	纯字母	
+WG	ext	我国	28897	2	纯字母	
+WG	ext	蜈	629	2	纯字母	
+WI	ext	焐	608	1	纯字母	
+WJ	ext	五	13802	1	纯字母	
+WK	ext	我看	9310	2	纯字母	
+WK	ext	戊	875	2	纯字母	
+WL	ext	吴	8187	1	纯字母	
+WM	ext	我妈	15760	2	纯字母	
+WM	ext	阢	376	2	纯字母	
+WN	ext	屋	3264	1	纯字母	
+WO	ext	悟	1589	1	纯字母	
+WP	ext	误	2280	1	纯字母	
+WQ	ext	物	6513	1	纯字母	
+WR	ext	污染	5883	2	纯字母	
+WR	ext	㐅	1	2	纯字母	
+WS	ext	网上	29537	2	纯字母	
+WS	ext	晤	855	2	纯字母	
+WT	ext	务	1659	1	纯字母	
+WU	ext	捂	1333	1	纯字母	
+WV	ext	坞	844	1	纯字母	
+WW	ext	鼯	484	1	纯字母	
+WX	ext	无需	9232	2	纯字母	
+WX	ext	杇	1	2	纯字母	
+WY	ext	我要	20697	2	纯字母	
+WY	ext	於	0	2	纯字母	
+WZ	ext	我在	47522	2	纯字母	
+WZ	ext	钨	841	2	纯字母	
+W_	ext	黯然	1072	1	后缀	_
+W_=	auto	文	12104	1	空格并击	=
+W`	zero	倘	828	2	后缀	`
+W`	zero	辗	640	2	后缀	`
+Wa	ext	龌	585	1	纯字母	
+Wb	ext	无比	11458	2	纯字母	
+Wb	ext	蔓	993	2	纯字母	
+Wc	ext	湾	2256	1	纯字母	
+Wd	ext	我的	158176	2	纯字母	
+Wd	ext	腕	1072	2	纯字母	
+We	ext	往	11268	1	纯字母	
+Wf	ext	倭	808	1	纯字母	
+Wi	ext	烷	745	1	纯字母	
+Wj	ext	我就	61742	2	纯字母	
+Wj	ext	斡	628	2	纯字母	
+Wk	ext	歪	2109	1	纯字母	
+Wl	ext	哇	16583	1	纯字母	
+Wm	ext	卍	644	1	纯字母	
+Wn	ext	万能	3650	2	纯字母	
+Wn	ext	卐	630	2	纯字母	
+Wp	ext	物品	11310	2	纯字母	
+Wp	ext	袜	1070	2	纯字母	
+Wr	ext	万人	9593	2	纯字母	
+Wr	ext	兦	405	2	纯字母	
+Ws	ext	晚	12051	1	纯字母	
+Wu	ext	握	1861	1	纯字母	
+Wv	ext	劸	262	1	纯字母	
+Ww	ext	皖	1038	1	纯字母	
+Wx	ext	我想	42083	2	纯字母	
+Wx	ext	枉	893	2	纯字母	
+Wy	ext	望	4887	1	纯字母	
+Wz	ext	完整	29823	2	纯字母	
+Wz	ext	豌	486	2	纯字母	
+W~	zero	我现在	18615	2	后缀	~
+W~	zero	琼	1681	2	后缀	~
+X!	auto	您	45322	1	后缀	!
+X'	auto	出来	59967	1	后缀	'
+X,	zero	簇	960	2	后缀	,
+X,	zero	拴	942	2	后缀	,
+X.	zero	眸	990	3	后缀	.
+X.	zero	荚	677	3	后缀	.
+X.	zero	痪	631	3	后缀	.
+X/	auto	每	20025	1	后缀	/
+X:	ext	轩	2349	1	后缀	:
+X<	ext	絮	874	1	后缀	<
+X=	auto	学	29808	1	空格并击	=
+X?	ext	续	2189	1	后缀	?
+XA	ext	虚	2838	1	纯字母	
+XB	ext	蓄	1115	1	纯字母	
+XC	ext	宣传	15924	2	纯字母	
+XC	ext	汛	689	2	纯字母	
+XD	ext	学到	10186	2	纯字母	
+XD	ext	臐	228	2	纯字母	
+XE	ext	须	7112	1	纯字母	
+XF	ext	叙	1245	1	纯字母	
+XG	ext	选购	8078	2	纯字母	
+XG	ext	悬	1594	2	纯字母	
+XH	ext	学会	22768	2	纯字母	
+XH	ext	璇	1519	2	纯字母	
+XI	ext	炫	1373	1	纯字母	
+XJ	ext	靴	992	1	纯字母	
+XK	ext	殉	649	1	纯字母	
+XM	ext	逊	1086	1	纯字母	
+XN	ext	寻	3190	1	纯字母	
+XO	ext	宣	1845	1	纯字母	
+XP	ext	许	6018	1	纯字母	
+XR	ext	渲染	8076	2	纯字母	
+XR	ext	虚弱	1737	2	纯字母	
+XS	ext	迅速	20011	2	纯字母	
+XS	ext	煦	711	2	纯字母	
+XT	ext	旬	1035	1	纯字母	
+XU	ext	揟	301	1	纯字母	
+XV	ext	墟	745	1	纯字母	
+XW	ext	血	11425	1	纯字母	
+XX	ext	栩	627	1	纯字母	
+XY	ext	序	1629	1	纯字母	
+XZ	ext	寻找	23877	2	纯字母	
+XZ	ext	铉	780	2	纯字母	
+X_=	auto	心	21110	1	空格并击	=
+X`	auto	极其	16396	1	后缀	`
+Xa	auto	迅	1161	1	纯字母	
+Xb	ext	雪崩	976	2	纯字母	
+Xb	ext	苋	639	2	纯字母	
+Xc	ext	信息	89682	1	纯字母	
+Xd	ext	学的	11394	2	纯字母	
+Xd	ext	学弟	1406	2	纯字母	
+Xe	ext	政策	29030	1	纯字母	
+Xf	ext	学费	10268	1	纯字母	
+Xg	ext	寻根	726	1	纯字母	
+Xh	ext	靖	1376	1	纯字母	
+Xi	auto	单	13362	1	纯字母	
+Xj	ext	虚假	4857	1	纯字母	
+Xk	ext	学科	24596	1	纯字母	
+Xl	ext	训练	50467	1	纯字母	
+Xm	ext	选民	1337	1	纯字母	
+Xn	ext	虚拟	5249	1	纯字母	
+Xo	auto	希望	84561	1	纯字母	
+Xp	ext	削平	495	1	纯字母	
+Xq	ext	需求	75001	1	纯字母	
+Xr	ext	旭日	908	1	纯字母	
+Xs	ext	保证	88618	1	纯字母	
+Xt	ext	熏天	539	1	纯字母	
+Xu	auto	小心	10517	1	纯字母	
+Xv	auto	箱	4036	1	纯字母	
+Xw	ext	是否	83210	1	纯字母	
+Xx	ext	就算	40870	1	纯字母	
+Xy	ext	血液	10196	1	纯字母	
+Xz	ext	一年	45742	1	纯字母	
+X~	auto	形式	38844	1	后缀	~
+Y!	ext	预	2110	1	后缀	!
+Y'	auto	语言	53740	1	后缀	'
+Y,	ext	妖	2468	1	后缀	,
+Y/	ext	验	1465	1	后缀	/
+Y:	ext	与	204064	1	后缀	:
+Y;	ext	牙	4040	1	后缀	;
+Y<	ext	孕	1393	1	后缀	<
+Y=	auto	样	15769	1	空格并击	=
+Y?	ext	约	12423	1	后缀	?
+Y@	auto	有什么	41000	1	后缀	@
+YA	ext	虞	1245	1	纯字母	
+YB	ext	蕴	1053	1	纯字母	
+YC	ext	源	5288	1	纯字母	
+YE	ext	御	2373	2	纯字母	
+YE	ext	衏	270	2	纯字母	
+YF	ext	余	6333	1	纯字母	
+YG	ext	遇	2730	1	纯字母	
+YH	ext	远	13429	1	纯字母	
+YI	ext	煜	939	1	纯字母	
+YJ	ext	雨	8618	1	纯字母	
+YK	ext	原	12104	1	纯字母	
+YL	ext	员	4988	1	纯字母	
+YM	ext	院	4433	1	纯字母	
+YN	ext	熨	733	1	纯字母	
+YO	ext	宇	3335	1	纯字母	
+YP	ext	语	4387	1	纯字母	
+YQ	ext	有趣	11255	2	纯字母	
+YQ	ext	竽	577	2	纯字母	
+YR	ext	欲	6492	1	纯字母	
+YT	ext	鱼	10109	1	纯字母	
+YU	ext	阅	1419	1	纯字母	
+YV	ext	越	15072	1	纯字母	
+YW	ext	岳	2713	1	纯字母	
+YX	ext	允许	15406	2	纯字母	
+YX	ext	榆	874	2	纯字母	
+YY	ext	由于	98071	2	纯字母	
+YY	ext	育	1670	2	纯字母	
+YZ	ext	有着	32585	2	纯字母	
+YZ	ext	钰	1085	2	纯字母	
+Y_	ext	用什么	6454	1	后缀	_
+Y_=	auto	已	44260	1	空格并击	=
+Y`	auto	镜头	37679	1	后缀	`
+Ya	ext	鬳	290	1	纯字母	
+Yb	ext	药	9397	1	纯字母	
+Yc	ext	游	6849	1	纯字母	
+Yd	ext	腰	3402	1	纯字母	
+Ye	ext	衍	966	1	纯字母	
+Yf	ext	优	2913	1	纯字母	
+Yg	ext	由	47431	1	纯字母	
+Yh	ext	艳	2939	1	纯字母	
+Yi	ext	养	7927	1	纯字母	
+Yk	ext	友	4917	1	纯字母	
+Ym	ext	阳	6876	1	纯字母	
+Yn	ext	又能	7388	2	纯字母	
+Yn	ext	幼年	1039	2	纯字母	
+Yo	ext	忧	1763	1	纯字母	
+Yp	ext	永	3554	1	纯字母	
+Yq	ext	尤其	18210	2	纯字母	
+Yq	ext	氧	1533	2	纯字母	
+Yr	ext	有人	76133	2	纯字母	
+Yr	ext	遥	1500	2	纯字母	
+Ys	ext	于是	184738	2	纯字母	
+Ys	ext	晏	1020	2	纯字母	
+Yu	ext	扬	2758	1	纯字母	
+Yv	ext	盐	3011	1	纯字母	
+Yw	ext	原文	15375	2	纯字母	
+Yw	ext	延	1990	2	纯字母	
+Yy	ext	言	5336	1	纯字母	
+Yz	ext	验证	31036	2	纯字母	
+Yz	ext	铅	1344	2	纯字母	
+Y~	auto	有很多	57287	1	后缀	~
+Z!	auto	总有	7525	1	后缀	!
+Z'	auto	准	6180	1	后缀	'
+Z*	auto	专业	165885	1	后缀	*
+Z,	ext	杂	3344	1	后缀	,
+Z.	ext	翟	1276	1	后缀	.
+Z/	ext	终	2740	1	后缀	/
+Z:	ext	转	17525	1	后缀	:
+Z;	ext	暂	1820	1	后缀	;
+Z<	ext	妰	201	1	后缀	<
+Z=	auto	子	20680	1	空格并击	=
+Z@	auto	玩家	80098	1	后缀	@
+ZA	ext	卓	2133	1	纯字母	
+ZB	ext	著	4115	1	纯字母	
+ZC	ext	注	4353	1	纯字母	
+ZD	ext	最大	62824	2	纯字母	
+ZD	ext	朘	354	2	纯字母	
+ZE	ext	爪	1658	1	纯字母	
+ZF	ext	作	20186	1	纯字母	
+ZG	ext	助	2407	1	纯字母	
+ZH	ext	最后	212671	1	纯字母	
+ZJ	ext	醉	3307	1	纯字母	
+ZK	ext	左	8604	1	纯字母	
+ZL	ext	足	4333	1	纯字母	
+ZM	ext	阻	1386	1	纯字母	
+ZN	ext	属	5227	1	纯字母	
+ZO	ext	惴	555	1	纯字母	
+ZP	ext	祖	2424	1	纯字母	
+ZQ	ext	朱	7111	1	纯字母	
+ZR	ext	诸如	7462	3	纯字母	
+ZR	ext	载入	1332	3	纯字母	
+ZR	ext	爼	331	3	纯字母	
+ZS	ext	最	66766	1	纯字母	
+ZT	ext	猪	17139	1	纯字母	
+ZU	ext	抓	8872	1	纯字母	
+ZV	ext	圴	398	1	纯字母	
+ZW	ext	掌握	37217	2	纯字母	
+ZW	ext	追	6477	2	纯字母	
+ZX	ext	柱	2260	1	纯字母	
+ZZ	ext	钻	3091	1	纯字母	
+Z_	ext	再也	3924	1	后缀	_
+Z_=	auto	作	20186	1	空格并击	=
+Z`	auto	作品	100104	1	后缀	`
+Za	ext	战	4900	1	纯字母	
+Zb	ext	藏	3565	1	纯字母	
+Zc	ext	洲	2097	1	纯字母	
+Zd	ext	中的	122902	2	纯字母	
+Zd	ext	脏	3234	2	纯字母	
+Ze	ext	舟	1639	1	纯字母	
+Zf	ext	众	5079	1	纯字母	
+Zh	ext	组合	26235	2	纯字母	
+Zh	ext	奏	1373	2	纯字母	
+Zk	ext	丈	1033	1	纯字母	
+Zl	ext	咱	6321	1	纯字母	
+Zm	ext	专门	29485	2	纯字母	
+Zm	ext	障	948	2	纯字母	
+Zo	ext	窄	1661	1	纯字母	
+Zp	ext	照片	40732	2	纯字母	
+Zp	ext	诈	890	2	纯字母	
+Zq	ext	种	14013	1	纯字母	
+Zr	ext	兆	2294	1	纯字母	
+Zt	ext	周	18141	1	纯字母	
+Zw	ext	作为	175219	2	纯字母	
+Zw	ext	皂	1471	2	纯字母	
+Zx	ext	中心	22604	2	纯字母	
+Zx	ext	栈	922	2	纯字母	
+Zy	ext	站	14617	1	纯字母	
+Zz	ext	钟	6083	1	纯字母	
+Z~	auto	准备	60056	1	后缀	~
+_	ext	_	0	1	前缀	_
+_=	auto	_	0	1	空格并击	=
+`	ext	`	0	1	前缀	`
+`=	auto	`	0	1	空格并击	=
+a!	auto	!	0	1	后缀	!
+a'	auto	'	0	1	后缀	'
+a,	zero	,	0	2	后缀	,
+a,	zero	<	0	2	后缀	,
+a.	zero	.	0	2	后缀	.
+a.	zero	>	0	2	后缀	.
+a/	auto	/	0	1	后缀	/
+a7	auto	&	0	1	后缀	7
+a8	auto	*	0	1	后缀	8
+a9	auto	(	0	1	后缀	9
+a:	zero	;	0	2	后缀	:
+a:	zero	:	0	2	后缀	:
+a;	auto	_	0	1	后缀	;
+a<	auto	+	0	1	后缀	<
+a=	auto	地	137626	1	空格并击	=
+a?	auto	?	0	1	后缀	?
+aA	zero	A	0	2	纯字母	
+aA	zero	A	0	2	纯字母	
+aB	zero	B	0	2	纯字母	
+aB	zero	B	0	2	纯字母	
+aC	zero	C	0	2	纯字母	
+aC	zero	C	0	2	纯字母	
+aD	zero	D	0	2	纯字母	
+aD	zero	D	0	2	纯字母	
+aE	zero	E	0	2	纯字母	
+aE	zero	E	0	2	纯字母	
+aF	zero	F	0	2	纯字母	
+aF	zero	F	0	2	纯字母	
+aG	zero	G	0	2	纯字母	
+aG	zero	G	0	2	纯字母	
+aH	zero	H	0	2	纯字母	
+aH	zero	H	0	2	纯字母	
+aI	zero	I	0	2	纯字母	
+aI	zero	I	0	2	纯字母	
+aJ	zero	J	0	2	纯字母	
+aJ	zero	J	0	2	纯字母	
+aK	zero	K	0	2	纯字母	
+aK	zero	K	0	2	纯字母	
+aL	zero	L	0	2	纯字母	
+aL	zero	L	0	2	纯字母	
+aM	zero	M	0	2	纯字母	
+aM	zero	M	0	2	纯字母	
+aN	zero	N	0	2	纯字母	
+aN	zero	N	0	2	纯字母	
+aO	zero	O	0	2	纯字母	
+aO	zero	O	0	2	纯字母	
+aP	zero	P	0	2	纯字母	
+aP	zero	P	0	2	纯字母	
+aQ	zero	Q	0	2	纯字母	
+aQ	zero	Q	0	2	纯字母	
+aR	zero	R	0	2	纯字母	
+aR	zero	R	0	2	纯字母	
+aS	zero	S	0	2	纯字母	
+aS	zero	S	0	2	纯字母	
+aT	zero	T	0	2	纯字母	
+aT	zero	T	0	2	纯字母	
+aU	zero	U	0	2	纯字母	
+aU	zero	U	0	2	纯字母	
+aV	zero	V	0	2	纯字母	
+aV	zero	V	0	2	纯字母	
+aW	zero	W	0	2	纯字母	
+aW	zero	W	0	2	纯字母	
+aX	zero	X	0	2	纯字母	
+aX	zero	X	0	2	纯字母	
+aY	zero	Y	0	2	纯字母	
+aY	zero	Y	0	2	纯字母	
+aZ	zero	Z	0	2	纯字母	
+aZ	zero	Z	0	2	纯字母	
+a_=	auto	等	183329	1	空格并击	=
+aa	zero	a	0	2	纯字母	
+aa	zero	a	0	2	纯字母	
+ab	zero	b	0	2	纯字母	
+ab	zero	b	0	2	纯字母	
+ac	zero	c	0	2	纯字母	
+ac	zero	c	0	2	纯字母	
+ad	zero	d	0	2	纯字母	
+ad	zero	d	0	2	纯字母	
+ae	zero	e	0	2	纯字母	
+ae	zero	e	0	2	纯字母	
+af	zero	f	0	2	纯字母	
+af	zero	f	0	2	纯字母	
+ag	zero	g	0	2	纯字母	
+ag	zero	g	0	2	纯字母	
+ah	zero	h	0	2	纯字母	
+ah	zero	h	0	2	纯字母	
+ai	zero	i	0	2	纯字母	
+ai	zero	i	0	2	纯字母	
+aj	zero	j	0	2	纯字母	
+aj	zero	j	0	2	纯字母	
+ak	zero	k	0	2	纯字母	
+ak	zero	k	0	2	纯字母	
+al	zero	l	0	2	纯字母	
+al	zero	l	0	2	纯字母	
+am	zero	m	0	2	纯字母	
+am	zero	m	0	2	纯字母	
+an	zero	n	0	2	纯字母	
+an	zero	n	0	2	纯字母	
+ao	zero	o	0	2	纯字母	
+ao	zero	o	0	2	纯字母	
+ap	zero	p	0	2	纯字母	
+ap	zero	p	0	2	纯字母	
+aq	zero	q	0	2	纯字母	
+aq	zero	q	0	2	纯字母	
+ar	zero	r	0	2	纯字母	
+ar	zero	r	0	2	纯字母	
+as	zero	s	0	2	纯字母	
+as	zero	s	0	2	纯字母	
+at	zero	t	0	2	纯字母	
+at	zero	t	0	2	纯字母	
+au	zero	u	0	2	纯字母	
+au	zero	u	0	2	纯字母	
+av	zero	v	0	2	纯字母	
+av	zero	v	0	2	纯字母	
+aw	zero	w	0	2	纯字母	
+aw	zero	w	0	2	纯字母	
+ax	zero	x	0	2	纯字母	
+ax	zero	x	0	2	纯字母	
+ay	zero	y	0	2	纯字母	
+ay	zero	y	0	2	纯字母	
+az	zero	z	0	2	纯字母	
+az	zero	z	0	2	纯字母	
+b!	ext	畚	523	1	后缀	!
+b'	auto	北京	54109	1	后缀	'
+b,	ext	边	15276	1	后缀	,
+b.	ext	弁	622	1	后缀	.
+b/	ext	编	3777	1	后缀	/
+b:	auto	报	12275	1	后缀	:
+b;	ext	比	69515	1	后缀	;
+b<	zero	愚	1206	2	后缀	<
+b<	zero	橡	775	2	后缀	<
+b=	auto	部	14778	1	空格并击	=
+b?	ext	绷	884	1	后缀	?
+bB	ext	并不	43156	2	纯字母	
+bB	ext	苯	1408	2	纯字母	
+bC	ext	渀	559	1	纯字母	
+bD	ext	病毒	13300	1	纯字母	
+bE	auto	溜	1720	1	纯字母	
+bF	ext	倍	4220	1	纯字母	
+bG	ext	贝	2895	1	纯字母	
+bH	ext	背后	30421	2	纯字母	
+bH	ext	琲	500	2	纯字母	
+bI	ext	焙	759	1	纯字母	
+bK	ext	奔	2252	1	纯字母	
+bL	ext	本来	29325	2	纯字母	
+bL	ext	蹦	1382	2	纯字母	
+bM	ext	陂	736	1	纯字母	
+bN	ext	鐾	540	1	纯字母	
+bO	ext	悖	682	1	纯字母	
+bP	ext	被	138923	1	纯字母	
+bQ	ext	笨	6121	1	纯字母	
+bR	ext	比如	252143	2	纯字母	
+bR	ext	坌	505	2	纯字母	
+bS	ext	比赛	43689	2	纯字母	
+bS	ext	粒	1988	2	纯字母	
+bT	ext	备	2480	1	纯字母	
+bU	ext	揹	123	1	纯字母	
+bV	ext	埄	406	1	纯字母	
+bW	ext	比我	6475	2	纯字母	
+bW	ext	卑	1164	2	纯字母	
+bX	ext	杯	4662	1	纯字母	
+bY	ext	表演	18339	2	纯字母	
+bY	ext	痭	317	2	纯字母	
+bZ	ext	标注	16724	2	纯字母	
+bZ	ext	钡	760	2	纯字母	
+b_=	auto	并	81671	1	空格并击	=
+b`	auto	表格	8816	1	后缀	`
+ba	ext	彪	1526	1	纯字母	
+bb	ext	必备	9736	2	纯字母	
+bb	ext	蔽	790	2	纯字母	
+bc	ext	变成	41369	2	纯字母	
+bc	ext	滨	1410	2	纯字母	
+bd	ext	别的	32712	2	纯字母	
+bd	ext	膘	706	2	纯字母	
+be	ext	彼	1611	1	纯字母	
+bf	ext	便	17499	1	纯字母	
+bg	ext	变更	5603	2	纯字母	
+bg	ext	贬	965	2	纯字母	
+bh	ext	表	19775	1	纯字母	
+bi	ext	并	81671	1	纯字母	
+bj	ext	背景	34780	2	纯字母	
+bj	ext	丙	1420	2	纯字母	
+bk	ext	本科	37023	2	纯字母	
+bk	ext	飙	1143	2	纯字母	
+bm	ext	避免	31295	2	纯字母	
+bm	ext	陛	602	2	纯字母	
+bn	ext	避	1783	1	纯字母	
+bo	ext	宾	1558	1	纯字母	
+bp	ext	遍	4022	1	纯字母	
+bq	ext	笔	4124	1	纯字母	
+br	ext	本人	41483	1	纯字母	
+bt	ext	饼	2064	1	纯字母	
+bu	ext	闭	1668	1	纯字母	
+bv	ext	氷	615	1	纯字母	
+bw	ext	兵	5454	1	纯字母	
+bx	ext	标	3906	1	纯字母	
+by	ext	变	14174	1	纯字母	
+bz	ext	逼	4063	1	纯字母	
+b~	auto	并击助手	0	1	后缀	~
+c!	zero	催	3190	2	后缀	!
+c!	zero	汰	676	2	后缀	!
+c'	auto	除	9387	1	后缀	'
+c,	ext	媸	605	1	后缀	,
+c.	ext	辝	246	1	后缀	.
+c/	ext	驰	1228	1	后缀	/
+c<	ext	娍	427	1	后缀	<
+c=	auto	成	34039	1	空格并击	=
+c?	ext	骋	726	1	后缀	?
+cA	ext	龀	578	1	纯字母	
+cB	ext	莐	365	1	纯字母	
+cC	ext	测	4030	1	纯字母	
+cD	ext	尘	2302	1	纯字母	
+cE	ext	彻	1065	1	纯字母	
+cF	ext	侧	3046	1	纯字母	
+cG	ext	成果	11620	2	纯字母	
+cG	ext	岑	1041	2	纯字母	
+cH	ext	词汇	35412	2	纯字母	
+cH	ext	琛	962	2	纯字母	
+cI	ext	曾	14350	1	纯字母	
+cJ	ext	臣	2177	1	纯字母	
+cL	ext	呈	4380	1	纯字母	
+cM	ext	陈	13953	1	纯字母	
+cN	ext	层	7387	1	纯字母	
+cO	ext	恻	604	1	纯字母	
+cP	ext	诚	2364	1	纯字母	
+cR	ext	誓	1162	2	纯字母	
+cR	ext	峦	727	2	纯字母	
+cS	ext	晨	2307	1	纯字母	
+cT	ext	册	2273	1	纯字母	
+cU	ext	撤	2288	1	纯字母	
+cV	ext	城	8735	1	纯字母	
+cW	ext	吃完	4363	1	纯字母	
+cX	ext	持续	32145	2	纯字母	
+cX	ext	橙	1214	2	纯字母	
+cY	ext	持有	13158	2	纯字母	
+cY	ext	瘨	339	2	纯字母	
+cZ	ext	车主	7237	2	纯字母	
+cZ	ext	铖	618	2	纯字母	
+c_=	auto	长	24093	1	空格并击	=
+c`	zero	测试工程师	1291	5	后缀	`
+c`	zero	曦	1159	5	后缀	`
+c`	zero	硫	1101	5	后缀	`
+c`	zero	璃	769	5	后缀	`
+c`	zero	袒	609	5	后缀	`
+ca	ext	此	18152	1	纯字母	
+cb	ext	成本	55749	2	纯字母	
+cb	ext	茨	1154	2	纯字母	
+cc	ext	池	2786	1	纯字母	
+cd	ext	彻底	22084	2	纯字母	
+cd	ext	胵	317	2	纯字母	
+ce	ext	斥	996	1	纯字母	
+cf	ext	成分	17543	2	纯字母	
+cf	ext	伺	681	2	纯字母	
+cg	ext	赐	1372	1	纯字母	
+ch	ext	玼	357	1	纯字母	
+ci	ext	慈	1233	1	纯字母	
+cj	ext	翅	1123	1	纯字母	
+ck	ext	磁	1296	1	纯字母	
+cm	ext	层面	23949	2	纯字母	
+cm	ext	蚩	593	2	纯字母	
+cn	ext	迟	2718	1	纯字母	
+co	ext	恜	226	1	纯字母	
+cp	ext	词	6279	1	纯字母	
+cq	ext	此前	7714	2	纯字母	
+cq	ext	辞	1814	2	纯字母	
+cr	ext	承认	11224	2	纯字母	
+cr	ext	瓻	276	2	纯字母	
+cs	ext	城市	38332	2	纯字母	
+cs	ext	匙	860	2	纯字母	
+ct	ext	饬	662	1	纯字母	
+cu	ext	持	4624	1	纯字母	
+cv	ext	赤	1913	1	纯字母	
+cw	ext	成为	95999	2	纯字母	
+cw	ext	皉	305	2	纯字母	
+cx	ext	呈现	16116	2	纯字母	
+cx	ext	柅	357	2	纯字母	
+cy	ext	次	22258	1	纯字母	
+cz	ext	辞职	8508	2	纯字母	
+cz	ext	豉	590	2	纯字母	
+c~	zero	胁	829	5	后缀	~
+c~	zero	粱	707	5	后缀	~
+c~	zero	骧	565	5	后缀	~
+c~	zero	坍	562	5	后缀	~
+c~	zero	测试环境	371	5	后缀	~
+d!	ext	邓	3439	1	后缀	!
+d'	auto	相当	25471	1	后缀	'
+d,	ext	嫡	700	1	后缀	,
+d.	ext	叠	1559	1	后缀	.
+d/	ext	缔	675	1	后缀	/
+d:	auto	靠	31445	1	后缀	:
+d<	ext	嬁	344	1	后缀	<
+d=	auto	大	107094	1	空格并击	=
+d?	auto	页	25616	1	后缀	?
+dA	ext	提案	1798	1	纯字母	
+dB	ext	地步	6312	2	纯字母	
+dB	ext	点播	1298	2	纯字母	
+dD	ext	得到	44026	2	纯字母	
+dD	ext	日程	1518	2	纯字母	
+dF	ext	地方	51141	2	纯字母	
+dF	ext	僜	397	2	纯字母	
+dG	ext	德国	28496	2	纯字母	
+dG	ext	瞪	1236	2	纯字母	
+dI	ext	灯	5349	1	纯字母	
+dJ	ext	电锯	614	1	纯字母	
+dK	ext	磴	540	1	纯字母	
+dL	ext	登录	11567	2	纯字母	
+dL	ext	蹬	1088	2	纯字母	
+dM	ext	电鳗	500	1	纯字母	
+dN	ext	总结	52879	1	纯字母	
+dO	ext	斗殴	784	1	纯字母	
+dP	ext	店铺	19654	1	纯字母	
+dQ	ext	等	183329	1	纯字母	
+dR	ext	跌入	792	1	纯字母	
+dS	ext	第三	21458	2	纯字母	
+dS	ext	戥	451	2	纯字母	
+dT	ext	低头	3818	1	纯字母	
+dU	auto	署	1419	1	纯字母	
+dX	ext	滴血	856	1	纯字母	
+dY	ext	电源	5435	1	纯字母	
+dZ	ext	点赞	20889	2	纯字母	
+dZ	ext	镫	534	2	纯字母	
+d_=	auto	道	17091	1	空格并击	=
+d`	auto	被动	8298	1	后缀	`
+db	ext	荻	768	1	纯字母	
+dc	ext	滴	12639	1	纯字母	
+dd	ext	点的	8554	2	纯字母	
+dd	ext	腚	684	2	纯字母	
+de	ext	第二	37869	2	纯字母	
+de	ext	彽	458	2	纯字母	
+df	ext	低	16647	1	纯字母	
+dh	ext	玷	501	1	纯字母	
+di	ext	弟	1946	1	纯字母	
+dj	ext	顶	13651	1	纯字母	
+dk	ext	碟	2599	1	纯字母	
+dl	ext	跌	9582	1	纯字母	
+dm	ext	地面	8932	2	纯字母	
+dm	ext	阽	370	2	纯字母	
+dn	ext	等你	6130	2	纯字母	
+dn	ext	殿	1932	2	纯字母	
+dp	ext	订	4418	1	纯字母	
+dq	ext	丢	6453	1	纯字母	
+dr	ext	的人	51876	2	纯字母	
+dr	ext	爹	2246	2	纯字母	
+ds	ext	的事	12366	2	纯字母	
+ds	ext	旳	893	2	纯字母	
+dt	ext	雕	3172	1	纯字母	
+dv	ext	堤	1201	1	纯字母	
+dw	ext	定位	28618	2	纯字母	
+dw	ext	牒	645	2	纯字母	
+dx	ext	电信	8043	2	纯字母	
+dx	ext	棣	747	2	纯字母	
+dy	ext	底	6412	1	纯字母	
+dz	ext	电子	23727	2	纯字母	
+dz	ext	钓	1617	2	纯字母	
+d~	auto	动作	53363	1	后缀	~
+e!	zero	诗	5851	2	后缀	!
+e!	zero	烈	1792	2	后缀	!
+e'	auto	一个	635391	1	后缀	'
+e,	auto	组	23345	1	后缀	,
+e.	auto	孩子	104042	1	后缀	.
+e/	auto	拉	26133	1	后缀	/
+e<	ext	娥	1216	1	后缀	<
+e=	auto	而	136709	1	空格并击	=
+e?	zero	庄	4127	2	后缀	?
+e?	zero	介	1885	2	后缀	?
+eA	ext	恩爱	1044	1	纯字母	
+eB	ext	萼	676	2	纯字母	
+eB	ext	二〇〇八	556	2	纯字母	
+eC	ext	洱	608	1	纯字母	
+eD	ext	党	5967	2	纯字母	
+eD	ext	腭	700	2	纯字母	
+eE	auto	饿	9088	1	纯字母	
+eF	ext	俄	12323	1	纯字母	
+eG	ext	甘	10231	1	纯字母	
+eI	auto	渐	1834	1	纯字母	
+eJ	ext	恶	8477	2	纯字母	
+eJ	ext	纪	2304	2	纯字母	
+eK	ext	厄	2966	1	纯字母	
+eM	ext	阿	16273	3	纯字母	
+eM	ext	墨	2378	3	纯字母	
+eM	ext	摩	1721	3	纯字母	
+eN	ext	屙	651	1	纯字母	
+eO	ext	额	12881	1	纯字母	
+eP	ext	诶	4279	1	纯字母	
+eQ	ext	鹅	1619	1	纯字母	
+eR	ext	愕然	829	1	纯字母	
+eS	ext	速	2635	4	纯字母	
+eS	ext	遏	667	4	纯字母	
+eS	ext	二〇〇三	0	4	纯字母	
+eS	ext	二〇三〇	0	4	纯字母	
+eU	ext	扼	781	1	纯字母	
+eV	ext	堮	321	1	纯字母	
+eW	ext	额外	13184	1	纯字母	
+eX	ext	枙	399	1	纯字母	
+eY	ext	玉	6500	3	纯字母	
+eY	ext	右	4465	3	纯字母	
+eY	ext	研	2141	3	纯字母	
+eZ	ext	状	4018	3	纯字母	
+eZ	ext	族	3167	3	纯字母	
+eZ	ext	锇	591	3	纯字母	
+e_=	auto	新	78195	1	空格并击	=
+e`	auto	万	27689	1	后缀	`
+ea	auto	仅	7397	1	纯字母	
+eb	ext	币	3300	1	纯字母	
+ec	ext	二次	6161	2	纯字母	
+ec	ext	焦	1999	2	纯字母	
+ed	ext	哪来	1483	1	纯字母	
+ee	ext	耳	2562	3	纯字母	
+ee	ext	二〇二〇	0	3	纯字母	
+ee	ext	二〇〇二	0	3	纯字母	
+ef	ext	而非	13273	2	纯字母	
+ef	ext	同志们	1478	2	纯字母	
+eg	ext	贪污	1454	1	纯字母	
+eh	ext	恶狠狠	899	2	纯字母	
+eh	ext	弐	435	2	纯字母	
+ei	ext	粫	347	1	纯字母	
+ej	ext	既	9990	4	纯字母	
+ej	ext	京	3214	4	纯字母	
+ej	ext	技	1914	4	纯字母	
+ej	ext	二〇〇九	614	4	纯字母	
+ek	ext	儿科	948	1	纯字母	
+el	ext	刘	12412	2	纯字母	
+el	ext	二〇〇六	0	2	纯字母	
+em	ext	蛾眉	535	1	纯字母	
+en	ext	引起	22625	1	纯字母	
+eo	auto	呃	7963	1	纯字母	
+ep	ext	二批	144	1	纯字母	
+eq	ext	签	6061	4	纯字母	
+eq	ext	乔	2729	4	纯字母	
+eq	ext	勤	2176	4	纯字母	
+eq	ext	二〇〇七	0	4	纯字母	
+er	ext	二人	8230	2	纯字母	
+er	ext	恶人	1301	2	纯字母	
+es	ext	而是	102286	4	纯字母	
+es	ext	斯	4900	4	纯字母	
+es	ext	二〇〇四	0	4	纯字母	
+es	ext	二〇四〇	0	4	纯字母	
+et	ext	耳听	82	1	纯字母	
+eu	auto	耳朵	8218	1	纯字母	
+ev	auto	颓	762	1	纯字母	
+ew	ext	耳闻	789	1	纯字母	
+ex	ext	修	8137	2	纯字母	
+ex	ext	醒	4322	2	纯字母	
+ey	ext	洋	4386	4	纯字母	
+ey	ext	衣	3341	4	纯字母	
+ey	ext	二〇一〇	321	4	纯字母	
+ey	ext	二〇〇一	0	4	纯字母	
+ez	ext	儿子	25430	2	纯字母	
+ez	ext	职	1871	2	纯字母	
+e~	auto	撒	18783	1	后缀	~
+f!	ext	翂	292	1	后缀	!
+f'	auto	治疗	37685	1	后缀	'
+f,	auto	打	108710	1	后缀	,
+f.	auto	坐	12425	1	后缀	.
+f/	auto	玩	68448	1	后缀	/
+f:	ext	匪	1115	1	后缀	:
+f<	ext	飞	12411	1	后缀	<
+f=	auto	中	243870	1	空格并击	=
+f?	ext	纷	898	1	后缀	?
+fA	ext	非	18382	1	纯字母	
+fB	ext	芬	2058	1	纯字母	
+fC	ext	飞船	6370	2	纯字母	
+fC	ext	沸	891	2	纯字母	
+fD	ext	肥	3614	1	纯字母	
+fE	ext	艂	439	1	纯字母	
+fF	ext	份	7307	1	纯字母	
+fG	ext	峰	4929	1	纯字母	
+fH	ext	丰	3174	1	纯字母	
+fI	ext	粉	5189	1	纯字母	
+fJ	ext	酚	977	1	纯字母	
+fK	ext	疯狂	20304	2	纯字母	
+fK	ext	奋	1068	2	纯字母	
+fL	ext	吠	726	1	纯字母	
+fM	ext	陫	285	1	纯字母	
+fN	ext	费	11030	1	纯字母	
+fO	ext	愤	913	1	纯字母	
+fP	ext	诽	606	1	纯字母	
+fQ	ext	氛	610	1	纯字母	
+fR	ext	忿	673	1	纯字母	
+fS	ext	分散	6218	2	纯字母	
+fS	ext	昲	220	2	纯字母	
+fT	ext	风	13091	1	纯字母	
+fU	ext	摓	321	1	纯字母	
+fV	ext	封	7046	1	纯字母	
+fW	ext	鼢	397	1	纯字母	
+fX	ext	枫	2289	1	纯字母	
+fY	ext	废	2528	1	纯字母	
+fZ	ext	锋	2350	1	纯字母	
+f_=	auto	己	2271	1	空格并击	=
+f`	auto	分析	86422	1	后缀	`
+fa	auto	父亲	32100	1	纯字母	
+fb	ext	封闭	6276	1	纯字母	
+fc	ext	讽刺	7519	1	纯字母	
+fd	ext	逢低	986	1	纯字母	
+fe	ext	飞蛾	762	1	纯字母	
+ff	ext	纷纷	9967	1	纯字母	
+fg	ext	风格	62257	1	纯字母	
+fh	ext	风和	664	1	纯字母	
+fi	auto	废了	2128	1	纯字母	
+fj	ext	风景	7094	2	纯字母	
+fj	ext	覅	400	2	纯字母	
+fk	ext	起飞	2924	1	纯字母	
+fl	ext	分类	21863	1	纯字母	
+fm	ext	风靡	1261	1	纯字母	
+fn	ext	飞鸟	1164	1	纯字母	
+fo	zero	焦虑	14947	2	纯字母	
+fo	zero	FOMO	0	2	纯字母	
+fp	ext	分配	11796	1	纯字母	
+fq	ext	分期	2817	1	纯字母	
+fr	ext	逢人	71	1	纯字母	
+fs	ext	粉丝	43585	2	纯字母	
+fs	ext	封神	1561	2	纯字母	
+fu	auto	服了	981	1	纯字母	
+fv	auto	台	16538	1	纯字母	
+fw	ext	分为	23574	2	纯字母	
+fw	ext	绯闻	1625	2	纯字母	
+fx	ext	粉墨	604	1	纯字母	
+fy	ext	分页	1881	1	纯字母	
+fz	ext	分子	10637	2	纯字母	
+fz	ext	美美	1215	2	纯字母	
+f~	auto	分享	57173	1	后缀	~
+g!	ext	第四	9505	1	后缀	!
+g'	auto	更好	27717	1	后缀	'
+g*	auto	集团	16425	1	后缀	*
+g,	auto	咯	29715	1	后缀	,
+g.	auto	弄	26131	1	后缀	.
+g/	ext	赢	5931	1	后缀	/
+g:	ext	戈	1658	1	后缀	:
+g;	auto	交	15564	1	后缀	;
+g<	ext	哿	524	1	后缀	<
+g=	auto	国	11214	1	空格并击	=
+g?	ext	给	192996	1	后缀	?
+gA	ext	个案	1190	1	纯字母	
+gB	ext	葛	2190	1	纯字母	
+gC	ext	给出	20387	2	纯字母	
+gC	ext	浭	489	2	纯字母	
+gD	ext	更大	23982	2	纯字母	
+gD	ext	胳	517	2	纯字母	
+gE	ext	舸	672	1	纯字母	
+gG	ext	更高	26294	2	纯字母	
+gG	ext	骼	556	2	纯字母	
+gH	ext	更换	7865	2	纯字母	
+gH	ext	耕	1142	2	纯字母	
+gI	ext	羹	938	1	纯字母	
+gK	ext	更快	6914	2	纯字母	
+gK	ext	硌	638	2	纯字母	
+gM	ext	隔	2657	1	纯字母	
+gN	ext	艮	811	1	纯字母	
+gO	ext	割	2297	1	纯字母	
+gP	ext	袼	519	1	纯字母	
+gQ	ext	搿	522	1	纯字母	
+gR	ext	割肉	1272	1	纯字母	
+gS	ext	歌手	21556	1	纯字母	
+gU	ext	阁	2217	1	纯字母	
+gV	ext	埂	654	1	纯字母	
+gW	ext	给我	43556	2	纯字母	
+gW	ext	男儿	1163	2	纯字母	
+gX	ext	根	7696	1	纯字母	
+gY	ext	个月	30348	2	纯字母	
+gY	ext	庚	1437	2	纯字母	
+gZ	ext	哥	10243	1	纯字母	
+g_=	auto	关	12580	1	空格并击	=
+g`	auto	乖	19261	1	后缀	`
+ga	auto	歌	12288	1	纯字母	
+gc	ext	歌词	17012	2	纯字母	
+gc	ext	跟车	340	2	纯字母	
+gd	ext	更低	6297	1	纯字母	
+ge	ext	歌儿	582	1	纯字母	
+gg	ext	各个	26891	1	纯字母	
+gh	ext	以下	44499	1	纯字母	
+gi	auto	为什么	227552	1	纯字母	
+gj	ext	更加	59317	1	纯字母	
+gk	ext	更可	833	1	纯字母	
+gl	ext	各类	14802	1	纯字母	
+gn	ext	给你	49497	2	纯字母	
+gn	ext	庐山	1186	2	纯字母	
+go	auto	结合	41078	1	纯字母	
+gp	ext	各凭	442	1	纯字母	
+gq	ext	给钱	2512	1	纯字母	
+gr	ext	最终	70793	1	纯字母	
+gs	ext	格式	11867	1	纯字母	
+gt	ext	个体	12249	2	纯字母	
+gt	ext	前言	1183	2	纯字母	
+gv	auto	售	2228	1	纯字母	
+gw	ext	各位	27619	1	纯字母	
+gx	ext	更像	11051	2	纯字母	
+gx	ext	杚	236	2	纯字母	
+gy	ext	隔音	2245	1	纯字母	
+gz	ext	资料	42751	1	纯字母	
+g~	auto	号	71499	1	后缀	~
+h!	ext	翯	433	1	后缀	!
+h'	auto	基金	48733	1	后缀	'
+h,	auto	嗯	96536	1	后缀	,
+h.	auto	占	12158	1	后缀	.
+h/	ext	悠	1238	1	后缀	/
+h:	ext	隺	280	1	后缀	:
+h<	ext	贺	2363	1	后缀	<
+h=	auto	好	378951	1	空格并击	=
+h?	ext	纥	522	1	后缀	?
+hA	ext	黑暗	11663	2	纯字母	
+hA	ext	壑	717	2	纯字母	
+hB	ext	荷	2028	1	纯字母	
+hC	ext	河	4808	1	纯字母	
+hD	ext	很多	303301	2	纯字母	
+hD	ext	胻	318	2	纯字母	
+hE	ext	很	160978	1	纯字母	
+hF	ext	合	7852	1	纯字母	
+hG	ext	黑	15202	1	纯字母	
+hH	ext	很好	28501	2	纯字母	
+hH	ext	珩	665	2	纯字母	
+hI	ext	爀	406	1	纯字母	
+hJ	ext	鞎	452	1	纯字母	
+hK	ext	鸿	2059	2	纯字母	
+hK	ext	醛	793	2	纯字母	
+hL	ext	喝	16156	1	纯字母	
+hM	ext	河马	915	1	纯字母	
+hN	ext	很难	52601	1	纯字母	
+hO	ext	恨	4946	1	纯字母	
+hQ	ext	禾	1296	1	纯字母	
+hR	ext	貉	623	1	纯字母	
+hS	ext	很少	27897	2	纯字母	
+hS	ext	曷	562	2	纯字母	
+hT	ext	狠	4316	1	纯字母	
+hU	ext	阖	669	1	纯字母	
+hV	ext	赫	1595	1	纯字母	
+hW	ext	和我	11298	2	纯字母	
+hW	ext	募捐	1055	2	纯字母	
+hX	ext	核	3926	1	纯字母	
+hY	ext	很有	11272	2	纯字母	
+hY	ext	痕	1558	2	纯字母	
+hZ	ext	合作	35790	2	纯字母	
+hZ	ext	翮	542	2	纯字母	
+h_=	auto	还	286212	1	空格并击	=
+h`	auto	合适	9531	1	后缀	`
+ha	auto	励	911	1	纯字母	
+hb	ext	河北	4780	1	纯字母	
+hc	ext	合成	9661	2	纯字母	
+hc	ext	怒火	1110	2	纯字母	
+hd	ext	很低	9894	1	纯字母	
+he	ext	黑恶	48	1	纯字母	
+hf	ext	合肥	2944	1	纯字母	
+hg	ext	合格	7536	1	纯字母	
+hh	ext	相比	43367	1	纯字母	
+hi	auto	特务	1109	1	纯字母	
+hj	ext	很久	10942	1	纯字母	
+hk	ext	黑客	2767	1	纯字母	
+hl	ext	合理	14712	2	纯字母	
+hl	ext	全责	1104	2	纯字母	
+hm	ext	很美	2270	1	纯字母	
+hn	ext	和你	10351	2	纯字母	
+hn	ext	去中心化	1088	2	纯字母	
+ho	zero	逸	2074	2	纯字母	
+ho	zero	氰	720	2	纯字母	
+hp	ext	挣	3551	1	纯字母	
+hq	ext	很强	14373	2	纯字母	
+hq	ext	祸	1542	2	纯字母	
+hr	ext	黑人	7827	1	纯字母	
+hs	ext	黑色	13515	1	纯字母	
+ht	ext	繁体字	1063	1	纯字母	
+hu	auto	忽然	6106	1	纯字母	
+hv	auto	…	0	1	纯字母	
+hw	ext	恒温	901	1	纯字母	
+hx	ext	核心	31404	1	纯字母	
+hy	ext	患者	44144	1	纯字母	
+hz	ext	晶	2046	1	纯字母	
+h~	auto	个别	6039	1	后缀	~
+i'	auto	也许	41625	1	后缀	'
+i,	ext	刀	6269	2	后缀	,
+i,	ext	九	6115	2	后缀	,
+i.	ext	又	133689	3	后缀	.
+i.	ext	廴	652	3	后缀	.
+i.	ext	乄	629	3	后缀	.
+i/	ext	乜	3053	2	后缀	/
+i/	ext	巜	455	2	后缀	/
+i;	ext	七	7236	4	后缀	;
+i;	ext	匚	566	4	后缀	;
+i;	ext	丂	450	4	后缀	;
+i;	ext	匸	438	4	后缀	;
+i=	auto	以	101238	1	空格并击	=
+iA	auto	巾	988	1	纯字母	
+iB	auto	背	6464	1	纯字母	
+iC	auto	充	3678	1	纯字母	
+iD	auto	答案	79643	1	纯字母	
+iE	auto	何	7552	1	纯字母	
+iF	auto	佛	5688	1	纯字母	
+iG	auto	告诉	34519	1	纯字母	
+iH	auto	互	2008	1	纯字母	
+iJ	auto	聚	3090	1	纯字母	
+iL	auto	蓝	8584	1	纯字母	
+iM	auto	目录	7939	1	纯字母	
+iN	auto	牛	14597	1	纯字母	
+iO	auto	尔	3570	1	纯字母	
+iP	auto	排队	8519	1	纯字母	
+iQ	auto	群	15339	1	纯字母	
+iR	auto	时期	31484	1	纯字母	
+iS	auto	删除	11830	1	纯字母	
+iT	auto	太大	21575	1	纯字母	
+iW	auto	吾	5767	1	纯字母	
+iX	auto	各分	590	1	纯字母	
+iY	auto	规律	17592	1	纯字母	
+iZ	auto	做	154888	1	纯字母	
+i_=	auto	制	6580	1	空格并击	=
+ia	ext	丄	679	1	纯字母	
+ib	ext	艹	837	4	纯字母	
+ib	ext	乛	645	4	纯字母	
+ib	ext	乁	464	4	纯字母	
+ib	ext	乚	386	4	纯字母	
+ic	ext	水	28524	4	纯字母	
+ic	ext	丿	735	4	纯字母	
+ic	ext	氵	680	4	纯字母	
+ic	ext	氺	0	4	纯字母	
+id	ext	月	66349	1	纯字母	
+if	ext	亻	656	1	纯字母	
+ig	ext	冂	648	1	纯字母	
+ih	ext	评价	46534	1	纯字母	
+ii	ext	丷	595	1	纯字母	
+ij	ext	丁	4862	2	纯字母	
+ij	ext	丅	671	2	纯字母	
+ik	ext	厂	7608	2	纯字母	
+ik	ext	丆	610	2	纯字母	
+il	ext	口	9737	1	纯字母	
+im	ext	卩	597	4	纯字母	
+im	ext	阝	534	4	纯字母	
+im	ext	凵	534	4	纯字母	
+im	ext	丩	377	4	纯字母	
+in	ext	刁	1050	1	纯字母	
+ip	ext	讠	501	2	纯字母	
+ip	ext	冖	410	2	纯字母	
+ir	ext	八	7591	2	纯字母	
+ir	ext	乂	611	2	纯字母	
+is	ext	日	71052	2	纯字母	
+is	ext	刂	724	2	纯字母	
+it	ext	勹	492	1	纯字母	
+iu	ext	手	17113	2	纯字母	
+iu	ext	扌	657	2	纯字母	
+iv	ext	土	5940	3	纯字母	
+iv	ext	丶	900	3	纯字母	
+iv	ext	乀	497	3	纯字母	
+iw	ext	耕地	1561	1	纯字母	
+ix	ext	丨	829	3	纯字母	
+ix	ext	朩	537	3	纯字母	
+ix	ext	亅	536	3	纯字母	
+iy	ext	亠	493	2	纯字母	
+iy	ext	冫	476	2	纯字母	
+iz	ext	钅	580	2	纯字母	
+iz	ext	釒	0	2	纯字母	
+j!	ext	寄	5277	1	后缀	!
+j'	auto	解决	44882	1	后缀	'
+j*	auto	界面	14436	1	后缀	*
+j.	ext	劲	3590	1	后缀	.
+j:	auto	尽量	61362	1	后缀	:
+j;	ext	较	8349	1	后缀	;
+j<	auto	强	21401	1	后缀	<
+j=	auto	家	53957	1	空格并击	=
+j?	ext	价格	98790	1	后缀	?
+j@	auto	建立	28903	1	后缀	@
+jA	ext	骄傲	4826	1	纯字母	
+jB	ext	投资	70242	1	纯字母	
+jC	ext	经常	54755	2	纯字母	
+jC	ext	冥冥	961	2	纯字母	
+jE	auto	飞驰	869	1	纯字母	
+jF	ext	解放	3521	1	纯字母	
+jH	ext	部署	5289	1	纯字母	
+jI	auto	价	7312	1	纯字母	
+jJ	ext	家具	31020	1	纯字母	
+jK	ext	健康	31203	1	纯字母	
+jL	ext	记录	34625	2	纯字母	
+jL	ext	纹	1948	2	纯字母	
+jM	ext	寂寞	5765	1	纯字母	
+jN	ext	艰难	5390	1	纯字母	
+jO	ext	奇偶	646	1	纯字母	
+jP	ext	金牌	4156	1	纯字母	
+jQ	ext	郊区	2313	1	纯字母	
+jR	ext	金融	37987	1	纯字母	
+jS	ext	技术	116496	1	纯字母	
+jT	ext	交通	8684	1	纯字母	
+jU	auto	竞	1377	1	纯字母	
+jV	auto	健	2636	1	纯字母	
+jW	ext	今晚	7971	2	纯字母	
+jW	ext	鹰	1915	2	纯字母	
+jZ	ext	建筑	26494	1	纯字母	
+j_=	auto	军	6699	1	空格并击	=
+j`	auto	键盘	8552	1	后缀	`
+ja	ext	冀	1169	1	纯字母	
+jb	ext	节	6130	1	纯字母	
+jc	ext	江	6095	1	纯字母	
+jd	ext	脚	6559	1	纯字母	
+je	ext	近	15920	1	纯字母	
+jg	ext	见	27521	1	纯字母	
+ji	ext	精	4307	1	纯字母	
+jj	ext	教	11050	1	纯字母	
+jk	ext	歼	899	1	纯字母	
+jm	ext	际	1262	1	纯字母	
+jn	ext	即	18250	1	纯字母	
+jo	ext	究	955	1	纯字母	
+jp	ext	记	7304	1	纯字母	
+jq	ext	积	2135	1	纯字母	
+jr	ext	家人	16337	2	纯字母	
+jr	ext	比武	953	2	纯字母	
+js	ext	紧	5530	1	纯字母	
+ju	ext	间	11649	1	纯字母	
+jv	ext	境	1549	1	纯字母	
+jw	ext	较为	14111	2	纯字母	
+jw	ext	舅	907	2	纯字母	
+jx	ext	机	26648	1	纯字母	
+jy	ext	将	120425	1	纯字母	
+j~	auto	即使	50440	1	后缀	~
+k!	zero	睁	1092	3	后缀	!
+k!	zero	撬	890	3	后缀	!
+k!	zero	聆	725	3	后缀	!
+k'	auto	交易	52192	1	后缀	'
+k,	zero	颈	1554	2	后缀	,
+k,	zero	漱	767	2	后缀	,
+k.	auto	电视	15535	1	后缀	.
+k/	zero	衫	1764	2	后缀	/
+k/	zero	涧	960	2	后缀	/
+k:	ext	轲	677	1	后缀	:
+k;	auto	计划	91040	1	后缀	;
+k<	ext	娔	310	1	后缀	<
+k=	auto	看	245657	1	空格并击	=
+k?	ext	骒	391	1	后缀	?
+kA	ext	肯	3459	1	纯字母	
+kB	ext	苛	774	1	纯字母	
+kC	ext	渴	1129	1	纯字母	
+kD	ext	蝌蚪	798	1	纯字母	
+kE	auto	晋	1996	1	纯字母	
+kF	ext	客服	15420	2	纯字母	
+kF	ext	樖	281	2	纯字母	
+kG	ext	颗	2071	1	纯字母	
+kH	ext	科幻	8189	2	纯字母	
+kH	ext	珢	324	2	纯字母	
+kI	ext	炣	340	1	纯字母	
+kJ	ext	克	8621	1	纯字母	
+kK	ext	磕	1130	1	纯字母	
+kL	ext	咳	2195	1	纯字母	
+kM	ext	科目	16695	2	纯字母	
+kM	ext	阬	370	2	纯字母	
+kN	ext	恳	716	1	纯字母	
+kO	ext	客	4920	1	纯字母	
+kP	ext	课	8837	1	纯字母	
+kQ	ext	科	6641	1	纯字母	
+kR	ext	貇	382	1	纯字母	
+kS	ext	咳嗽	3413	1	纯字母	
+kT	ext	课堂	6018	2	纯字母	
+kT	ext	翗	302	2	纯字母	
+kU	ext	搕	319	1	纯字母	
+kV	ext	坑	2479	1	纯字母	
+kW	ext	渴望	8646	2	纯字母	
+kW	ext	辰	1608	2	纯字母	
+kX	ext	棵	1242	1	纯字母	
+kY	ext	刻	3229	1	纯字母	
+k_=	auto	身	6688	1	空格并击	=
+k`	zero	毅	1550	5	后缀	`
+k`	zero	栓	1170	5	后缀	`
+k`	zero	祗	740	5	后缀	`
+k`	zero	僳	644	5	后缀	`
+k`	zero	可爱的	1	5	后缀	`
+ka	auto	可爱	12597	1	纯字母	
+kb	ext	课本	7308	2	纯字母	
+kb	ext	可悲	1495	2	纯字母	
+kc	ext	课程	62998	1	纯字母	
+kd	ext	发布	60476	1	纯字母	
+ke	ext	克尔	718	1	纯字母	
+kf	ext	大学	69947	1	纯字母	
+kg	ext	可渴	0	1	纯字母	
+kh	ext	满口	905	1	纯字母	
+ki	ext	狱	968	2	纯字母	
+ki	ext	赎	817	2	纯字母	
+kj	ext	科技	26338	1	纯字母	
+kk	ext	豤	259	1	纯字母	
+kl	ext	不许	2955	1	纯字母	
+km	ext	都会	70250	1	纯字母	
+kn	ext	至少	63342	1	纯字母	
+ko	auto	变生	0	1	纯字母	
+kp	ext	可否	1831	1	纯字母	
+kq	ext	客气	5231	1	纯字母	
+kr	ext	客人	7641	1	纯字母	
+ks	ext	阅读	64984	1	纯字母	
+kt	ext	课题	5161	1	纯字母	
+ku	zero	吻	2640	3	纯字母	
+ku	zero	鲸	882	3	纯字母	
+ku	zero	噬	840	3	纯字母	
+kv	auto	昔	1077	1	纯字母	
+kw	ext	课文	3197	1	纯字母	
+kx	ext	可喜	974	1	纯字母	
+ky	ext	可以	483983	1	纯字母	
+kz	ext	克制	9284	1	纯字母	
+k~	zero	沪	2274	5	后缀	~
+k~	zero	骤	836	5	后缀	~
+k~	zero	嗽	683	5	后缀	~
+k~	zero	猷	597	5	后缀	~
+k~	zero	可怜的	1	5	后缀	~
+l!	ext	垒	1298	1	后缀	!
+l'	auto	流程	33425	1	后缀	'
+l*	auto	作用	57703	1	后缀	*
+l.	ext	翏	304	1	后缀	.
+l/	ext	练	9551	1	后缀	/
+l:	auto	则	29355	1	后缀	:
+l<	ext	嫘	550	1	后缀	<
+l=	auto	里	101043	1	空格并击	=
+l?	ext	缧	531	1	后缀	?
+l@	auto	领导	42309	1	后缀	@
+lA	ext	两岸	2840	1	纯字母	
+lB	ext	了吧	20407	2	纯字母	
+lB	ext	蕾	1553	2	纯字母	
+lC	ext	泪	4283	1	纯字母	
+lD	ext	乐队	17960	2	纯字母	
+lD	ext	肋	928	2	纯字母	
+lE	auto	遂	2350	1	纯字母	
+lF	ext	历法	6860	2	纯字母	
+lF	ext	儡	469	2	纯字母	
+lG	ext	累	14689	1	纯字母	
+lH	ext	灵魂	16257	2	纯字母	
+lH	ext	耒	591	2	纯字母	
+lJ	ext	勒	3927	1	纯字母	
+lK	ext	离开	27992	2	纯字母	
+lK	ext	磊	1661	2	纯字母	
+lL	ext	雷	5108	1	纯字母	
+lN	ext	两难	969	1	纯字母	
+lO	ext	愣	1134	1	纯字母	
+lP	ext	流派	4615	2	纯字母	
+lP	ext	诔	596	2	纯字母	
+lQ	ext	领取	8036	2	纯字母	
+lQ	ext	簕	458	2	纯字母	
+lR	ext	例如	57194	1	纯字母	
+lS	ext	脸上	10281	1	纯字母	
+lU	ext	擂	730	1	纯字母	
+lV	ext	塄	479	1	纯字母	
+lW	ext	两万	2319	1	纯字母	
+lX	ext	连续	24603	2	纯字母	
+lX	ext	棱	1467	2	纯字母	
+lY	ext	冷	7003	1	纯字母	
+lZ	ext	两种	26357	2	纯字母	
+lZ	ext	镭	790	2	纯字母	
+l_	ext	临时	8356	1	后缀	_
+l_=	auto	两	17606	1	空格并击	=
+l`	auto	例子	30825	1	后缀	`
+la	ext	龄	1338	1	纯字母	
+lb	ext	莲	2228	1	纯字母	
+lc	ext	流	7199	1	纯字母	
+ld	ext	脸	8259	1	纯字母	
+le	ext	衑	253	1	纯字母	
+lf	ext	领	4905	1	纯字母	
+li	ext	料	4360	1	纯字母	
+lj	ext	两	17606	1	纯字母	
+lk	ext	历	2630	1	纯字母	
+ll	ext	另	11734	1	纯字母	
+lm	ext	辽	1280	1	纯字母	
+ln	ext	灵	4614	1	纯字母	
+lo	ext	帘	1918	1	纯字母	
+lp	ext	礼	3112	1	纯字母	
+lq	ext	利	5815	1	纯字母	
+lr	ext	两人	24650	2	纯字母	
+lr	ext	嗠	332	2	纯字母	
+lt	ext	留	10482	1	纯字母	
+lu	ext	拎	1222	1	纯字母	
+lv	ext	坽	298	1	纯字母	
+lw	ext	两位	10627	2	纯字母	
+lw	ext	皊	403	2	纯字母	
+lx	ext	林	12983	1	纯字母	
+ly	ext	六	9029	1	纯字母	
+lz	ext	丽	4247	1	纯字母	
+l~	auto	不错	47595	1	后缀	~
+m!	zero	奸	1884	2	后缀	!
+m!	zero	璧	868	2	后缀	!
+m'	auto	一定	59827	1	后缀	'
+m,	ext	妙	2162	1	后缀	,
+m.	ext	毣	392	1	后缀	.
+m/	ext	绵	1094	1	后缀	/
+m:	auto	免费	31319	1	后缀	:
+m;	auto	呵成	0	1	后缀	;
+m<	ext	妹	3306	1	后缀	<
+m=	auto	么	114071	1	空格并击	=
+m?	zero	祭	1462	2	后缀	?
+m?	zero	砚	922	2	后缀	?
+mA	ext	苇	953	4	纯字母	
+mA	ext	煌	927	4	纯字母	
+mA	ext	沂	725	4	纯字母	
+mA	ext	免安装	117	4	纯字母	
+mB	ext	蒙	4752	1	纯字母	
+mD	ext	面对	47015	2	纯字母	
+mD	ext	朦	708	2	纯字母	
+mE	ext	艨	516	1	纯字母	
+mG	ext	美国	122057	2	纯字母	
+mG	ext	嵋	597	2	纯字母	
+mH	ext	美好	15376	2	纯字母	
+mH	ext	玫	1085	2	纯字母	
+mI	ext	美	18573	1	纯字母	
+mJ	ext	酶	1858	1	纯字母	
+mK	ext	门槛	15958	3	纯字母	
+mK	ext	曌	523	3	纯字母	
+mK	ext	礞	360	3	纯字母	
+mL	ext	霉	1221	1	纯字母	
+mM	ext	眉	1984	1	纯字母	
+mN	ext	美女	17932	1	纯字母	
+mO	ext	寐	768	1	纯字母	
+mP	ext	袂	668	1	纯字母	
+mR	ext	牺	541	1	纯字母	
+mS	ext	描述	35376	2	纯字母	
+mS	ext	盟	1994	2	纯字母	
+mT	ext	猛	4929	1	纯字母	
+mU	ext	门	15692	1	纯字母	
+mV	ext	坆	389	1	纯字母	
+mW	ext	魅	1064	1	纯字母	
+mX	ext	梦	10282	1	纯字母	
+mY	ext	没有	347575	2	纯字母	
+mY	ext	塺	232	2	纯字母	
+mZ	ext	每周	11152	2	纯字母	
+mZ	ext	镁	1123	2	纯字母	
+m_	ext	场景	43632	1	后缀	_
+m_=	auto	民	5752	1	空格并击	=
+m`	auto	工具	51553	1	后缀	`
+ma	ext	芈	576	1	纯字母	
+mb	ext	苗	2505	1	纯字母	
+mc	ext	每次	43247	2	纯字母	
+mc	ext	渺	776	2	纯字母	
+md	ext	们的	9487	2	纯字母	
+md	ext	腼	470	2	纯字母	
+mf	ext	命	5746	1	纯字母	
+mg	ext	眠	1301	1	纯字母	
+mh	ext	珉	812	1	纯字母	
+mi	ext	米	16910	1	纯字母	
+mj	ext	面积	12675	2	纯字母	
+mj	ext	醚	784	2	纯字母	
+ml	ext	咪	2141	1	纯字母	
+mm	ext	明明	13571	1	纯字母	
+mn	ext	民	5752	1	纯字母	
+mo	ext	密	3139	1	纯字母	
+mp	ext	谜	1315	1	纯字母	
+mq	ext	秒	6051	1	纯字母	
+mr	ext	没人	11274	2	纯字母	
+mr	ext	觅	1112	2	纯字母	
+ms	ext	明	10778	1	纯字母	
+mt	ext	名	22727	1	纯字母	
+mu	ext	描	1006	1	纯字母	
+mv	ext	塓	233	1	纯字母	
+mw	ext	名为	5674	2	纯字母	
+mw	ext	躾	326	2	纯字母	
+mx	ext	棉	2026	1	纯字母	
+my	ext	庙	1861	1	纯字母	
+mz	ext	灭	3865	1	纯字母	
+m~	auto	每一个	29779	1	后缀	~
+n'	auto	运动	58476	1	后缀	'
+n,	ext	娘	4421	1	后缀	,
+n.	auto	帮	31037	1	后缀	.
+n/	ext	纽	824	1	后缀	/
+n:	auto	太	72029	1	后缀	:
+n;	ext	匿	753	1	后缀	;
+n<	ext	嫩	3402	1	后缀	<
+n=	auto	能	162177	1	空格并击	=
+n?	zero	寡	985	2	后缀	?
+n?	zero	粟	947	2	后缀	?
+n@	auto	逆天者亡	0	1	后缀	@
+nA	ext	你爱	1068	1	纯字母	
+nB	ext	内部	32593	2	纯字母	
+nB	ext	石墨	847	2	纯字母	
+nC	ext	内存	9604	2	纯字母	
+nC	ext	浽	237	2	纯字母	
+nD	ext	年代	34100	2	纯字母	
+nD	ext	腇	345	2	纯字母	
+nE	auto	你饿	0	1	纯字母	
+nF	ext	能否	17362	2	纯字母	
+nF	ext	恁	865	2	纯字母	
+nH	ext	你会	27223	3	纯字母	
+nH	ext	疆	994	3	纯字母	
+nH	ext	惺	674	3	纯字母	
+nI	auto	摊	1554	1	纯字母	
+nJ	ext	凝聚	1630	1	纯字母	
+nK	ext	你看	16473	2	纯字母	
+nK	ext	峡	1074	2	纯字母	
+nL	ext	优秀	46492	1	纯字母	
+nM	ext	糟	1353	1	纯字母	
+nN	ext	牛奶	9886	1	纯字母	
+nO	ext	你哦	1296	1	纯字母	
+nP	ext	牛排	6206	2	纯字母	
+nP	ext	讷	756	2	纯字母	
+nQ	ext	你去	7873	2	纯字母	
+nQ	ext	氝	326	2	纯字母	
+nR	ext	能让	12383	2	纯字母	
+nR	ext	筋	1393	2	纯字母	
+nS	ext	你说	19576	4	纯字母	
+nS	ext	吁	1298	4	纯字母	
+nS	ext	忻	782	4	纯字母	
+nS	ext	祀	776	4	纯字母	
+nT	ext	馁	594	1	纯字母	
+nU	ext	抐	305	1	纯字母	
+nV	auto	蔡	3374	1	纯字母	
+nW	ext	反复	44462	1	纯字母	
+nX	ext	郊	868	1	纯字母	
+nY	ext	能源	6286	1	纯字母	
+nZ	ext	你在	19157	2	纯字母	
+nZ	ext	年终	1293	2	纯字母	
+n_	ext	经过	45292	1	后缀	_
+n_=	auto	加	44999	1	空格并击	=
+n`	zero	枚	1772	4	后缀	`
+n`	zero	漾	890	4	后缀	`
+n`	zero	拄	684	4	后缀	`
+n`	zero	腊八粥	549	4	后缀	`
+na	ext	惄	343	1	纯字母	
+nb	ext	牛逼	16350	2	纯字母	
+nb	ext	孽	863	2	纯字母	
+nc	ext	泥	2738	1	纯字母	
+nd	ext	你的	159646	2	纯字母	
+nd	ext	腻	1799	2	纯字母	
+ne	ext	艌	328	1	纯字母	
+nf	ext	念	5974	1	纯字母	
+ng	ext	嬲	959	1	纯字母	
+nh	ext	内核	6686	2	纯字母	
+nh	ext	辇	645	2	纯字母	
+ni	ext	逆	1737	1	纯字母	
+nj	ext	你就	25335	2	纯字母	
+nj	ext	聂	1576	2	纯字母	
+nk	ext	碾	832	1	纯字母	
+nm	ext	你们	96181	2	纯字母	
+nm	ext	隉	0	2	纯字母	
+nn	ext	尼	3288	1	纯字母	
+no	ext	宁	5034	1	纯字母	
+np	ext	牛皮	1248	1	纯字母	
+nr	ext	玻	852	1	纯字母	
+ns	ext	你是	23076	2	纯字母	
+ns	ext	昵	111	2	纯字母	
+nt	ext	鸟	10298	1	纯字母	
+nu	ext	拟	3654	1	纯字母	
+nv	ext	埝	551	1	纯字母	
+nw	ext	臬	474	1	纯字母	
+nx	ext	内心	24027	2	纯字母	
+nx	ext	柠	947	2	纯字母	
+ny	ext	你也	9747	2	纯字母	
+ny	ext	凝	1800	2	纯字母	
+nz	ext	钮	1887	1	纯字母	
+n~	zero	恤	1743	4	后缀	~
+n~	zero	拘	841	4	后缀	~
+n~	zero	鸟语花香	605	4	后缀	~
+n~	zero	疡	577	4	后缀	~
+o!	zero	雅	3827	3	后缀	!
+o!	zero	塞	3601	3	后缀	!
+o!	zero	惠	2582	3	后缀	!
+o'	auto	效率	17147	1	后缀	'
+o,	zero	帧	1588	2	后缀	,
+o,	zero	揭	1532	2	后缀	,
+o.	auto	俩	6640	1	后缀	.
+o/	auto	女	23625	1	后缀	/
+o:	zero	烧	5784	3	后缀	:
+o:	zero	径	1983	3	后缀	:
+o:	zero	辈	1168	3	后缀	:
+o<	zero	懂	9825	3	后缀	<
+o<	zero	享	1385	3	后缀	<
+o<	zero	授	1233	3	后缀	<
+o=	auto	过	112999	1	空格并击	=
+o?	auto	哎	18219	1	后缀	?
+oA	auto	术	3687	1	纯字母	
+oB	ext	每个	67862	1	纯字母	
+oC	auto	拥有	53670	1	纯字母	
+oD	auto	天网	841	1	纯字母	
+oE	auto	鸟语	831	1	纯字母	
+oF	ext	生产	26622	1	纯字母	
+oG	auto	关系	51144	1	纯字母	
+oH	auto	起跑	829	1	纯字母	
+oI	auto	袖	1355	1	纯字母	
+oJ	auto	精神	31030	1	纯字母	
+oK	auto	岁月	5071	1	纯字母	
+oL	auto	辣椒	5380	1	纯字母	
+oM	auto	音乐	51998	1	纯字母	
+oN	auto	黑幕	1170	1	纯字母	
+oO	auto	品牌	76278	1	纯字母	
+oP	auto	排名	28222	1	纯字母	
+oQ	auto	标准	58039	1	纯字母	
+oR	auto	和胃	0	1	纯字母	
+oS	auto	客户	59854	1	纯字母	
+oT	auto	大概	69730	1	纯字母	
+oU	auto	敲	2786	1	纯字母	
+oV	auto	跟你	10588	1	纯字母	
+oW	auto	沸腾	1667	1	纯字母	
+oX	auto	先生	26614	1	纯字母	
+oY	auto	研究	93375	1	纯字母	
+oZ	auto	政府	31174	1	纯字母	
+o_=	auto	西	10824	1	空格并击	=
+o`	auto	市	19057	1	后缀	`
+oa	auto	上午	11182	1	纯字母	
+ob	ext	饿殍	475	1	纯字母	
+oc	auto	感到	19110	1	纯字母	
+od	auto	随着	40997	1	纯字母	
+oe	auto	资源	58764	1	纯字母	
+of	auto	锋芒	920	1	纯字母	
+og	auto	跌破	1725	1	纯字母	
+oh	auto	社会	45195	1	纯字母	
+oi	ext	歌声	2130	1	纯字母	
+oj	ext	大量	46759	1	纯字母	
+ok	auto	港澳	1237	1	纯字母	
+ol	auto	管理	47221	1	纯字母	
+om	auto	最近	52707	1	纯字母	
+on	auto	黑盒	628	1	纯字母	
+oo	auto	眼睛	27523	1	纯字母	
+op	auto	籍	1980	1	纯字母	
+oq	auto	至于	65852	1	纯字母	
+or	ext	努力	50784	1	纯字母	
+os	auto	和谐	6789	1	纯字母	
+ot	auto	故事	50581	1	纯字母	
+ou	auto	可曾	820	1	纯字母	
+ov	auto	建设	23933	1	纯字母	
+ow	auto	唯一	28557	1	纯字母	
+ox	auto	休息	18757	1	纯字母	
+oy	auto	嗯嗯	2637	1	纯字母	
+oz	auto	监督	6459	1	纯字母	
+o~	auto	卖	36565	1	后缀	~
+p!	auto	慢	15166	1	后缀	!
+p'	auto	朋友	91420	1	后缀	'
+p,	ext	皮	5866	1	后缀	,
+p.	ext	翍	286	1	后缀	.
+p/	ext	骗	6061	1	后缀	/
+p;	ext	匹	1158	1	后缀	;
+p<	ext	婄	528	1	后缀	<
+p=	auto	方	13669	1	空格并击	=
+p?	ext	辔	606	1	后缀	?
+pA	ext	平安	4780	2	纯字母	
+pA	ext	裴	1460	2	纯字母	
+pB	ext	陪伴	6130	2	纯字母	
+pB	ext	蓬	1105	2	纯字母	
+pC	ext	平常	8875	2	纯字母	
+pC	ext	澎	716	2	纯字母	
+pD	ext	朋	1459	1	纯字母	
+pE	zero	昭	1530	3	纯字母	
+pE	zero	叽	993	3	纯字母	
+pE	zero	荔	820	3	纯字母	
+pF	ext	皮肤	23423	2	纯字母	
+pF	ext	佩	1665	2	纯字母	
+pG	ext	赔	2641	1	纯字母	
+pH	ext	偏好	6476	2	纯字母	
+pH	ext	珮	140	2	纯字母	
+pI	auto	摘	1909	1	纯字母	
+pJ	ext	配	7583	1	纯字母	
+pK	ext	碰	3603	1	纯字母	
+pL	ext	喷	2844	1	纯字母	
+pM	ext	陪	9989	1	纯字母	
+pN	ext	弸	432	1	纯字母	
+pO	ext	怦	485	1	纯字母	
+pP	ext	批判	8317	2	纯字母	
+pP	ext	衯	486	2	纯字母	
+pQ	ext	篷	726	1	纯字母	
+pR	ext	盆	1987	1	纯字母	
+pS	ext	昢	319	1	纯字母	
+pT	ext	配套	6802	2	纯字母	
+pT	ext	厌	1075	2	纯字母	
+pU	ext	捧	2125	1	纯字母	
+pV	ext	培	1869	1	纯字母	
+pW	ext	衃	329	1	纯字母	
+pX	ext	培训	19744	2	纯字母	
+pX	ext	棚	1383	2	纯字母	
+pY	ext	培养	24513	2	纯字母	
+pY	ext	烹	853	2	纯字母	
+pZ	ext	品种	8967	2	纯字母	
+pZ	ext	锫	516	2	纯字母	
+p_=	auto	斯	4900	1	空格并击	=
+p`	auto	连	27493	1	后缀	`
+pa	ext	频	1587	1	纯字母	
+pb	ext	苹	1450	1	纯字母	
+pc	ext	评测	6125	2	纯字母	
+pc	ext	漂	1632	2	纯字母	
+pd	ext	脾	1210	1	纯字母	
+pe	ext	配额	1213	1	纯字母	
+pf	ext	偏	3967	1	纯字母	
+pg	ext	睥	474	1	纯字母	
+ph	ext	配合	25176	2	纯字母	
+ph	ext	琵	550	2	纯字母	
+pi	ext	瓶	3170	1	纯字母	
+pj	ext	票	9081	1	纯字母	
+pk	ext	丕	775	1	纯字母	
+pm	ext	拼命	7467	1	纯字母	
+pn	ext	屏	2830	1	纯字母	
+po	ext	慓	411	1	纯字母	
+pp	ext	评	3279	1	纯字母	
+pq	ext	篇	7811	1	纯字母	
+pr	ext	烹饪	6137	2	纯字母	
+pr	ext	贫	1354	2	纯字母	
+ps	ext	批图	0	1	纯字母	
+pt	ext	狉	313	1	纯字母	
+pu	ext	批	4336	1	纯字母	
+pv	ext	坯	844	1	纯字母	
+pw	ext	片	11210	1	纯字母	
+py	ext	配音	7444	2	纯字母	
+py	ext	疲	905	2	纯字母	
+pz	ext	配置	27136	2	纯字母	
+pz	ext	铍	603	2	纯字母	
+p~	zero	姜	4053	2	后缀	~
+p~	zero	涅	1394	2	后缀	~
+q!	auto	语法	15364	1	后缀	!
+q'	auto	取	16711	1	后缀	'
+q*	auto	而不是	62263	1	后缀	*
+q,	ext	嫱	566	1	后缀	,
+q.	ext	巯	520	1	后缀	.
+q/	ext	骑	3144	1	后缀	/
+q:	auto	强大	30519	1	后缀	:
+q<	auto	接着	15374	1	后缀	<
+q=	auto	要	397297	1	空格并击	=
+q?	auto	要求	109014	1	后缀	?
+qA	ext	亲爱的	2486	4	纯字母	
+qA	ext	杠	1602	4	纯字母	
+qA	ext	瞅	1031	4	纯字母	
+qA	ext	蛔	625	4	纯字母	
+qB	ext	起步	9875	1	纯字母	
+qC	ext	清楚	18390	1	纯字母	
+qD	ext	球队	28185	2	纯字母	
+qD	ext	强渡	521	2	纯字母	
+qE	zero	窦	1247	4	纯字母	
+qE	zero	磺	719	4	纯字母	
+qE	zero	睫	663	4	纯字母	
+qE	zero	E迅速录	0	4	纯字母	
+qF	ext	启发	6151	2	纯字母	
+qF	ext	潜伏	1514	2	纯字母	
+qG	ext	情感	24631	2	纯字母	
+qG	ext	抢购	1783	2	纯字母	
+qH	ext	强化	11329	1	纯字母	
+qI	auto	建	9876	1	纯字母	
+qJ	ext	千军	53	1	纯字母	
+qK	ext	计算	43385	1	纯字母	
+qL	ext	侵略	2362	1	纯字母	
+qM	ext	期末	2840	1	纯字母	
+qN	ext	倩女	623	1	纯字母	
+qO	ext	轻轻	5799	1	纯字母	
+qP	ext	强迫	4464	1	纯字母	
+qQ	ext	期权	6179	2	纯字母	
+qQ	ext	钱权	0	2	纯字母	
+qR	ext	嵌入	1904	1	纯字母	
+qS	ext	轻松	21713	1	纯字母	
+qT	ext	正确	14975	1	纯字母	
+qU	auto	运	3864	1	纯字母	
+qV	auto	强身	829	1	纯字母	
+qW	ext	前往	9586	1	纯字母	
+qX	ext	情绪	36618	1	纯字母	
+qY	ext	前沿	3009	1	纯字母	
+qZ	ext	其中	94635	2	纯字母	
+qZ	ext	胆囊	848	2	纯字母	
+q_=	auto	前	47701	1	空格并击	=
+q`	auto	程度	25453	1	后缀	`
+qa	ext	歧	793	1	纯字母	
+qb	ext	前辈	8138	2	纯字母	
+qb	ext	擎	890	2	纯字母	
+qc	ext	清	9459	1	纯字母	
+qd	ext	强调	18515	2	纯字母	
+qd	ext	腔	1561	2	纯字母	
+qe	ext	颀	588	1	纯字母	
+qf	ext	企	2009	1	纯字母	
+qg	ext	且	13038	1	纯字母	
+qh	ext	青	6040	1	纯字母	
+qi	ext	前	47701	1	纯字母	
+qk	ext	奇	3789	1	纯字母	
+ql	ext	器	7575	1	纯字母	
+qm	ext	前面	43661	2	纯字母	
+qm	ext	戕	510	2	纯字母	
+qo	ext	情	7288	1	纯字母	
+qq	ext	气	10376	1	纯字母	
+qr	ext	郄	546	1	纯字母	
+qs	ext	其实	245931	2	纯字母	
+qs	ext	晴	2322	2	纯字母	
+qt	ext	欠	3587	1	纯字母	
+qu	ext	抢	8490	1	纯字母	
+qv	ext	墙	4229	1	纯字母	
+qw	ext	丘	1458	1	纯字母	
+qx	ext	桥	5261	1	纯字母	
+qy	ext	亲	7741	1	纯字母	
+q~	auto	人们	60176	1	后缀	~
+r!	auto	吃	66402	1	后缀	!
+r'	auto	极端	13552	1	后缀	'
+r,	auto	更	49653	1	后缀	,
+r.	auto	笑	15411	1	后缀	.
+r/	ext	驲	499	1	后缀	/
+r:	ext	轫	470	1	后缀	:
+r;	auto	别	49685	1	后缀	;
+r<	ext	忍	3462	1	后缀	<
+r=	auto	来	235090	1	空格并击	=
+r?	ext	纫	586	1	后缀	?
+rA	ext	热爱	15158	1	纯字母	
+rB	ext	惹	2933	1	纯字母	
+rC	ext	涊	422	1	纯字母	
+rD	ext	人都	10133	2	纯字母	
+rD	ext	腍	370	2	纯字母	
+rE	auto	热情	11329	1	纯字母	
+rF	ext	任	8722	1	纯字母	
+rG	ext	人工	8184	2	纯字母	
+rG	ext	屻	381	2	纯字母	
+rH	ext	日后	6585	2	纯字母	
+rH	ext	韧	879	2	纯字母	
+rI	auto	裂	1529	1	纯字母	
+rJ	ext	人均	9405	2	纯字母	
+rJ	ext	靭	311	2	纯字母	
+rK	ext	搬	4500	1	纯字母	
+rL	ext	日落	1102	2	纯字母	
+rL	ext	喏	812	2	纯字母	
+rM	ext	人脉	7170	1	纯字母	
+rN	ext	进口	10234	1	纯字母	
+rO	ext	人品	4777	1	纯字母	
+rQ	ext	人群	27195	2	纯字母	
+rQ	ext	壬	792	2	纯字母	
+rR	ext	分裂	5464	1	纯字母	
+rS	ext	鞋	4231	1	纯字母	
+rT	ext	认同	11266	2	纯字母	
+rT	ext	饪	551	2	纯字母	
+rU	ext	热	13231	1	纯字母	
+rV	auto	踏	1608	1	纯字母	
+rW	ext	任务	38414	1	纯字母	
+rX	ext	棯	352	1	纯字母	
+rY	ext	人员	27598	2	纯字母	
+rY	ext	日月	1298	2	纯字母	
+rZ	ext	人在	5705	2	纯字母	
+rZ	ext	驾	1386	2	纯字母	
+r_=	auto	日	71052	1	空格并击	=
+r`	auto	人类	82236	1	后缀	`
+ra	ext	拨	2474	1	纯字母	
+rb	ext	机构	43682	1	纯字母	
+rc	ext	人称	2069	1	纯字母	
+rd	ext	热点	6413	1	纯字母	
+re	ext	任尔	0	1	纯字母	
+rf	ext	热风	1027	1	纯字母	
+rg	ext	人格	7191	2	纯字母	
+rg	ext	囸	492	2	纯字母	
+rh	ext	声音	51642	1	纯字母	
+ri	zero	我觉得	99870	5	纯字母	
+ri	zero	欺	1047	5	纯字母	
+ri	zero	檐	849	5	纯字母	
+ri	zero	潦	593	5	纯字母	
+ri	zero	粳	554	5	纯字母	
+rj	ext	人家	54210	2	纯字母	
+rj	ext	人际	1207	2	纯字母	
+rk	ext	搜	4475	1	纯字母	
+rl	ext	结构	48550	1	纯字母	
+rm	ext	甲方	5964	1	纯字母	
+rn	ext	复杂化	765	1	纯字母	
+ro	auto	鸡毛	905	1	纯字母	
+rp	ext	任凭	1059	1	纯字母	
+rq	ext	人气	8620	1	纯字母	
+rr	ext	人人	8964	2	纯字母	
+rr	ext	日日	1611	2	纯字母	
+rs	ext	方式	124842	1	纯字母	
+rt	ext	人体	20311	2	纯字母	
+rt	ext	啪啪	753	2	纯字母	
+ru	auto	入手	15176	1	纯字母	
+rv	auto	哥们	4642	1	纯字母	
+rw	ext	中国共产党	751	1	纯字母	
+rx	ext	人性	14677	2	纯字母	
+rx	ext	杁	286	2	纯字母	
+ry	ext	任意	7193	2	纯字母	
+ry	ext	日夜	1410	2	纯字母	
+rz	ext	特别	66798	1	纯字母	
+r~	auto	监控	7011	1	后缀	~
+s!	ext	圣	3841	1	后缀	!
+s'	auto	干部	6130	1	后缀	'
+s*	auto	食用	7229	1	后缀	*
+s,	ext	始	2158	1	后缀	,
+s.	ext	厶	652	1	后缀	.
+s/	ext	驶	971	1	后缀	/
+s8	auto	各次	512	1	后缀	8
+s:	auto	试	7462	1	后缀	:
+s;	ext	式	12000	1	后缀	;
+s<	ext	婶	845	1	后缀	<
+s=	auto	上	285526	1	空格并击	=
+s?	ext	绳	1403	1	后缀	?
+s@	auto	设计	130054	1	后缀	@
+sA	ext	是啊	15392	1	纯字母	
+sB	ext	失败	22808	2	纯字母	
+sB	ext	苼	577	2	纯字母	
+sC	ext	深	7714	1	纯字母	
+sD	ext	省	14563	1	纯字母	
+sE	auto	射	3102	1	纯字母	
+sF	ext	舍	2949	1	纯字母	
+sG	ext	申	2956	1	纯字母	
+sH	ext	神话	7061	2	纯字母	
+sH	ext	瑟	1242	2	纯字母	
+sI	ext	籸	207	1	纯字母	
+sJ	ext	声	8130	1	纯字母	
+sK	ext	盛	3763	1	纯字母	
+sL	ext	思路	33501	2	纯字母	
+sL	ext	呻	555	2	纯字母	
+sM	ext	什么	295927	3	纯字母	
+sM	ext	是吗	4976	3	纯字母	
+sM	ext	陞	0	3	纯字母	
+sN	ext	神农	809	1	纯字母	
+sO	ext	审	1756	1	纯字母	
+sQ	ext	生	21194	1	纯字母	
+sR	ext	深入	13477	2	纯字母	
+sR	ext	扮	1519	2	纯字母	
+sS	ext	肾	2056	1	纯字母	
+sT	ext	色	8492	1	纯字母	
+sU	ext	摄	2221	1	纯字母	
+sV	ext	赦	755	1	纯字母	
+sW	ext	身	6688	1	纯字母	
+sX	ext	森	2880	1	纯字母	
+sY	ext	使用	152166	2	纯字母	
+sY	ext	麝	586	2	纯字母	
+sZ	ext	始终	13234	2	纯字母	
+sZ	ext	铯	627	2	纯字母	
+s_=	auto	生	21194	1	空格并击	=
+s`	auto	这个	559659	1	后缀	`
+sa	auto	失	2632	1	纯字母	
+sb	ext	设备	32441	2	纯字母	
+sb	ext	虱	878	2	纯字母	
+sc	ext	湿	3335	1	纯字母	
+sd	ext	师	5965	1	纯字母	
+se	ext	视力	3937	1	纯字母	
+sg	ext	四	15966	1	纯字母	
+sh	ext	适合	48337	2	纯字母	
+sh	ext	示	1414	2	纯字母	
+si	ext	燍	241	1	纯字母	
+sl	ext	实力	35966	2	纯字母	
+sl	ext	嗜	1014	2	纯字母	
+sm	ext	审美	13049	2	纯字母	
+sm	ext	旹	291	2	纯字母	
+sn	ext	司	3811	1	纯字母	
+so	ext	实	3966	1	纯字母	
+sp	ext	识	2624	1	纯字母	
+sq	ext	私	2439	1	纯字母	
+sr	ext	诗人	7488	2	纯字母	
+sr	ext	释	1374	2	纯字母	
+st	ext	氏	3365	1	纯字母	
+su	ext	势	1921	1	纯字母	
+sv	ext	寺	2853	1	纯字母	
+sw	ext	思维	34652	2	纯字母	
+sw	ext	鼶	307	2	纯字母	
+sx	ext	实现	62132	2	纯字母	
+sx	ext	柿	744	2	纯字母	
+sz	ext	设置	28149	2	纯字母	
+sz	ext	铈	592	2	纯字母	
+s~	auto	实践	15753	1	后缀	~
+t!	auto	早	26157	1	后缀	!
+t'	auto	条件	39431	1	后缀	'
+t,	ext	婷	1720	1	后缀	,
+t.	zero	苍	1621	3	后缀	.
+t.	zero	厘	1585	3	后缀	.
+t.	zero	札	1236	3	后缀	.
+t/	ext	绨	536	1	后缀	/
+t:	ext	忒	1430	1	后缀	:
+t;	ext	济南	3961	1	后缀	;
+t<	auto	王	21574	1	后缀	<
+t=	auto	天	44972	1	空格并击	=
+t?	auto	走	49021	1	后缀	?
+tA	ext	疼爱	1179	1	纯字母	
+tB	ext	贴吧	6816	2	纯字母	
+tB	ext	藤	1664	2	纯字母	
+tC	ext	不管	25800	1	纯字母	
+tD	ext	腾	2001	1	纯字母	
+tE	auto	孝	1905	1	纯字母	
+tF	ext	天赋	16414	1	纯字母	
+tG	ext	提供	71267	1	纯字母	
+tH	ext	体会	12147	2	纯字母	
+tH	ext	统一思想	719	2	纯字母	
+tI	ext	誊	553	1	纯字母	
+tJ	ext	添加	19129	2	纯字母	
+tJ	ext	忑	476	2	纯字母	
+tK	ext	调控	3089	1	纯字母	
+tL	ext	铁路	4447	1	纯字母	
+tM	ext	题目	36312	1	纯字母	
+tN	ext	挺难	742	1	纯字母	
+tO	ext	仇	1505	1	纯字母	
+tP	ext	宅	1870	1	纯字母	
+tQ	ext	特	10383	1	纯字母	
+tR	ext	封面	7907	1	纯字母	
+tS	ext	听说	15595	2	纯字母	
+tS	ext	提速	1485	2	纯字母	
+tT	ext	疼痛	9680	1	纯字母	
+tU	auto	嘉	2924	1	纯字母	
+tV	auto	嫁	2696	1	纯字母	
+tW	ext	听完	5815	2	纯字母	
+tW	ext	天王	1782	2	纯字母	
+tX	ext	腾讯	28492	1	纯字母	
+tY	ext	疼	5121	1	纯字母	
+tZ	ext	挑战	18176	2	纯字母	
+tZ	ext	铽	489	2	纯字母	
+t_=	auto	它	59779	1	空格并击	=
+t`	auto	题	5336	1	后缀	`
+ta	ext	龆	587	1	纯字母	
+tb	ext	苕	629	1	纯字母	
+tc	ext	添	3194	1	纯字母	
+td	ext	特点	34954	2	纯字母	
+td	ext	腆	558	2	纯字母	
+te	ext	艇	988	1	纯字母	
+tf	ext	体	6578	1	纯字母	
+tg	ext	田	5643	1	纯字母	
+ti	ext	剃	938	1	纯字母	
+tj	ext	提交	10382	2	纯字母	
+tj	ext	髫	386	2	纯字母	
+tk	ext	厅	3208	1	纯字母	
+tm	ext	粜	549	1	纯字母	
+tn	ext	体内	8765	2	纯字母	
+tn	ext	屉	740	2	纯字母	
+to	ext	恬	846	1	纯字母	
+tp	ext	调	7531	1	纯字母	
+tq	ext	甜	2983	1	纯字母	
+tr	ext	𫖯	575	1	纯字母	
+tt	ext	条	13494	1	纯字母	
+tu	ext	提	9436	1	纯字母	
+tv	ext	填	5388	1	纯字母	
+tw	ext	体温	2484	1	纯字母	
+tx	ext	体现	21871	2	纯字母	
+tx	ext	梯	1072	2	纯字母	
+ty	ext	庭	2316	1	纯字母	
+tz	ext	铁	6244	1	纯字母	
+t~	auto	代表	37601	1	后缀	~
+u!	auto	南	8232	1	后缀	!
+u'	auto	觉得	84729	1	后缀	'
+u,	auto	路	21443	1	后缀	,
+u.	auto	……	0	1	后缀	.
+u/	auto	型	15224	1	后缀	/
+u:	auto	西	10824	1	后缀	:
+u;	auto	东	9642	1	后缀	;
+u<	auto	掉	21526	1	后缀	<
+u=	auto	于	76451	1	空格并击	=
+u?	auto	北	7350	1	后缀	?
+uA	auto	凸	1284	1	纯字母	
+uB	auto	班	12762	1	纯字母	
+uC	zero	辩	1294	3	纯字母	
+uC	zero	侈	563	3	纯字母	
+uC	zero	除下	491	3	纯字母	
+uD	auto	带	39436	1	纯字母	
+uE	auto	视	3507	1	纯字母	
+uF	auto	放	26912	1	纯字母	
+uG	auto	故	5501	1	纯字母	
+uH	auto	汉	4374	1	纯字母	
+uI	auto	惨	4419	1	纯字母	
+uJ	auto	计	3372	1	纯字母	
+uK	auto	空间	64026	1	纯字母	
+uL	auto	老实	3229	1	纯字母	
+uM	auto	目前	117345	1	纯字母	
+uN	auto	很热	1271	1	纯字母	
+uO	auto	政	2249	1	纯字母	
+uP	auto	跑步	13401	1	纯字母	
+uQ	auto	秋	5229	1	纯字母	
+uR	auto	软件	55503	1	纯字母	
+uS	auto	杀	23377	1	纯字母	
+uT	auto	可是	60748	1	纯字母	
+uU	auto	羽	2502	1	纯字母	
+uV	auto	德	8041	1	纯字母	
+uW	auto	浩	2429	1	纯字母	
+uX	auto	接受	35196	1	纯字母	
+uY	auto	眼	7036	1	纯字母	
+uZ	auto	整	7993	1	纯字母	
+u_=	auto	月	66349	1	空格并击	=
+u`	zero	霞	2014	2	后缀	`
+u`	zero	琉	742	2	后缀	`
+ua	auto	睛	904	1	纯字母	
+ub	auto	必	4721	1	纯字母	
+uc	auto	英语	51815	1	纯字母	
+ud	auto	达	11227	1	纯字母	
+ue	auto	急	8827	1	纯字母	
+uf	auto	思	5265	1	纯字母	
+ug	auto	贵	14841	1	纯字母	
+uh	auto	哈	54417	1	纯字母	
+ui	auto	级	18324	1	纯字母	
+uj	auto	加	44999	1	纯字母	
+uk	auto	考	17459	1	纯字母	
+ul	auto	联	3995	1	纯字母	
+um	auto	迷	4529	1	纯字母	
+un	auto	奶	3760	1	纯字母	
+uo	auto	真	66098	1	纯字母	
+up	auto	破	8169	1	纯字母	
+uq	auto	妻	2256	1	纯字母	
+ur	auto	装	21876	1	纯字母	
+us	auto	士	3139	1	纯字母	
+ut	auto	停	6820	1	纯字母	
+uu	auto	青山	1697	1	纯字母	
+uv	auto	元	31862	1	纯字母	
+uw	auto	舞	4113	1	纯字母	
+ux	auto	相	13259	1	纯字母	
+uy	auto	亦	6363	1	纯字母	
+uz	auto	直	5901	1	纯字母	
+u~	auto	像	35573	1	后缀	~
+v!	auto	书	20065	1	后缀	!
+v'	auto	'	0	1	后缀	'
+v,	auto	《	0	1	后缀	,
+v.	auto	》	0	1	后缀	.
+v/	auto	～	0	1	后缀	/
+v9	auto	+	0	1	后缀	9
+v:	auto	-	0	1	后缀	:
+v;	auto	：	0	1	后缀	;
+v<	auto	错	23056	1	后缀	<
+v=	auto	会	209833	1	空格并击	=
+v?	auto	~	0	1	后缀	?
+vA	auto	@	0	1	纯字母	
+vB	auto	=	0	1	纯字母	
+vC	auto	$	0	1	纯字母	
+vD	auto	钦	1384	1	纯字母	
+vE	auto	拓	1519	1	纯字母	
+vF	zero	｛	0	2	纯字母	
+vF	zero	{	0	2	纯字母	
+vG	zero	｝	0	2	纯字母	
+vG	zero	}	0	2	纯字母	
+vH	auto	厚	3898	1	纯字母	
+vI	auto	侍	1085	1	纯字母	
+vJ	auto	聚餐	1786	1	纯字母	
+vK	auto	械	858	1	纯字母	
+vL	zero	窃	938	3	纯字母	
+vL	zero	烯	812	3	纯字母	
+vL	zero	蝙	452	3	纯字母	
+vM	auto	’	0	1	纯字母	
+vN	auto	‘	0	1	纯字母	
+vO	zero	兽	2226	2	纯字母	
+vO	zero	涡	820	2	纯字母	
+vP	auto	攀比	1342	1	纯字母	
+vQ	zero	蛙	1054	3	纯字母	
+vQ	zero	衷	912	3	纯字母	
+vQ	zero	饲	787	3	纯字母	
+vR	auto	储	1463	1	纯字母	
+vS	auto	经历	56898	1	纯字母	
+vT	auto	东南	2405	1	纯字母	
+vU	zero	颤	1129	2	纯字母	
+vU	zero	茬	975	2	纯字母	
+vV	auto	宰	1554	1	纯字母	
+vW	auto	潘	3328	1	纯字母	
+vX	auto	裕	1394	1	纯字母	
+vY	auto	调查	14317	1	纯字母	
+vZ	auto	展	4229	1	纯字母	
+v_=	auto	回	33179	1	空格并击	=
+v`	auto	民族	11977	1	后缀	`
+va	auto	‰	0	1	纯字母	
+vb	auto	％	0	1	纯字母	
+vc	auto	℃	0	1	纯字母	
+vd	auto	°	0	1	纯字母	
+ve	auto	】	0	1	纯字母	
+vf	zero	［	0	2	纯字母	
+vf	zero	[	0	2	纯字母	
+vg	zero	］	0	2	纯字母	
+vg	zero	]	0	2	纯字母	
+vh	auto	惊人	3185	1	纯字母	
+vi	auto	——	0	1	纯字母	
+vj	auto	（	0	1	纯字母	
+vk	auto	）	0	1	纯字母	
+vl	auto	！	0	1	纯字母	
+vm	auto	”	0	1	纯字母	
+vn	auto	“	0	1	纯字母	
+vo	auto	·	0	1	纯字母	
+vp	ext	蝶	1787	2	纯字母	
+vp	ext	眺	1021	2	纯字母	
+vq	ext	贸	1012	4	纯字母	
+vq	ext	舀	760	4	纯字母	
+vq	ext	搪	620	4	纯字母	
+vq	ext	玑	575	4	纯字母	
+vr	ext	舌	1625	3	纯字母	
+vr	ext	氢	1249	3	纯字母	
+vr	ext	祜	640	3	纯字母	
+vs	ext	谦	1326	3	纯字母	
+vs	ext	捅	1298	3	纯字母	
+vs	ext	鳍	754	3	纯字母	
+vt	ext	泄	1828	4	纯字母	
+vt	ext	檬	730	4	纯字母	
+vt	ext	矜	685	4	纯字母	
+vt	ext	嚏	496	4	纯字母	
+vu	ext	湘	2093	4	纯字母	
+vu	ext	诮	613	4	纯字母	
+vu	ext	惕	593	4	纯字母	
+vu	ext	茁	576	4	纯字母	
+vv	auto	？	0	1	纯字母	
+vw	auto	【	0	1	纯字母	
+vx	auto	※	0	1	纯字母	
+vy	auto	∶	0	1	纯字母	
+vz	auto	√	0	1	纯字母	
+v~	auto	过程中	64266	1	后缀	~
+w!	auto	及	78069	1	后缀	!
+w'	auto	推荐	113080	1	后缀	'
+w,	zero	瞧	2011	2	后缀	,
+w,	zero	缪	1045	2	后缀	,
+w.	zero	仲	4114	2	后缀	.
+w.	zero	禀	776	2	后缀	.
+w/	auto	未	18460	1	后缀	/
+w:	zero	拔	2606	2	后缀	:
+w:	zero	煎	1548	2	后缀	:
+w<	ext	娓	615	1	后缀	<
+w=	auto	为	212013	1	空格并击	=
+w?	ext	维	3278	1	后缀	?
+w@	auto	我at	0	1	后缀	@
+wA	ext	文案	9664	2	纯字母	
+wA	ext	问安	525	2	纯字母	
+wB	ext	微博	27491	2	纯字母	
+wB	ext	萎	728	2	纯字母	
+wC	ext	温	3848	1	纯字母	
+wD	ext	温度	13221	2	纯字母	
+wD	ext	肳	267	2	纯字母	
+wE	ext	微	3832	1	纯字母	
+wF	ext	位	14967	1	纯字母	
+wG	ext	围	2395	1	纯字母	
+wJ	ext	馼	0	1	纯字母	
+wK	ext	威	3184	1	纯字母	
+wL	ext	味	3956	1	纯字母	
+wM	ext	卫	2951	1	纯字母	
+wN	ext	尾	2544	1	纯字母	
+wO	ext	惟	1444	1	纯字母	
+wP	ext	谓	1531	1	纯字母	
+wQ	ext	委	2665	1	纯字母	
+wR	ext	微软	13442	2	纯字母	
+wR	ext	翁	1766	2	纯字母	
+wS	ext	为啥	19106	2	纯字母	
+wS	ext	韪	563	2	纯字母	
+wT	ext	为他	5912	2	纯字母	
+wT	ext	危	1226	2	纯字母	
+wU	ext	问	50737	1	纯字母	
+wV	ext	塕	273	1	纯字母	
+wW	ext	问我	16682	2	纯字母	
+wW	ext	璺	527	2	纯字母	
+wX	ext	文学	18255	2	纯字母	
+wX	ext	桅	594	2	纯字母	
+wY	ext	文	12104	1	纯字母	
+wZ	ext	文章	76398	1	纯字母	
+w_=	auto	问	50737	1	空格并击	=
+w`	auto	很多人	76732	1	后缀	`
+wa	auto	唉	28137	1	纯字母	
+wb	ext	未必	6552	1	纯字母	
+wc	ext	维持	18128	1	纯字母	
+wd	ext	分割	4908	1	纯字母	
+we	ext	违背	3164	1	纯字母	
+wf	ext	威风	983	1	纯字母	
+wg	ext	不敢	18109	1	纯字母	
+wh	ext	为何	21893	1	纯字母	
+wi	zero	奚	897	3	纯字母	
+wi	zero	烩	724	3	纯字母	
+wi	zero	我这样	0	3	纯字母	
+wj	ext	危机	11063	2	纯字母	
+wj	ext	局外	633	2	纯字母	
+wk	ext	文科	5023	1	纯字母	
+wl	ext	为了	108698	2	纯字母	
+wl	ext	伪劣	797	2	纯字母	
+wm	ext	文明	19259	1	纯字母	
+wn	ext	用户	109383	1	纯字母	
+wo	zero	辙	809	7	纯字母	
+wo	zero	晦	702	7	纯字母	
+wo	zero	瞽	561	7	纯字母	
+wo	zero	Windows	0	7	纯字母	
+wo	zero	Linux	0	7	纯字母	
+wo	zero	Mac	0	7	纯字母	
+wo	zero	Android	0	7	纯字母	
+wp	ext	文凭	2865	1	纯字母	
+wq	ext	尾气	840	1	纯字母	
+wr	ext	伟人	1150	1	纯字母	
+ws	ext	卫生	4782	1	纯字母	
+wt	ext	超过	50445	1	纯字母	
+wu	auto	风寒	836	1	纯字母	
+wv	auto	胃	3015	1	纯字母	
+ww	ext	微微	3671	1	纯字母	
+wx	ext	危险	11259	2	纯字母	
+wx	ext	杤	341	2	纯字母	
+wy	ext	机场	5899	1	纯字母	
+wz	ext	文字	39541	1	纯字母	
+w~	zero	文言文	2280	4	后缀	~
+w~	zero	蘸	1035	4	后缀	~
+w~	zero	笺	794	4	后缀	~
+w~	zero	汲	750	4	后缀	~
+x!	auto	喜欢	86474	1	后缀	!
+x'	auto	里的	58381	1	后缀	'
+x*	auto	牺牲	9577	1	后缀	*
+x,	ext	姓	4364	1	后缀	,
+x:	auto	平台	98670	1	后缀	:
+x<	auto	句子	15751	1	后缀	<
+x=	auto	下	164421	1	空格并击	=
+x?	auto	车	27026	1	后缀	?
+x@	auto	意见	15405	1	后缀	@
+xA	ext	西安	7816	1	纯字母	
+xB	ext	下班	11581	1	纯字母	
+xC	ext	现场	23715	1	纯字母	
+xD	ext	功能	94808	1	纯字母	
+xE	auto	戏	5280	1	纯字母	
+xF	ext	想法	39363	2	纯字母	
+xF	ext	信访	1549	2	纯字母	
+xG	ext	相关	59606	1	纯字母	
+xH	ext	相互	10710	1	纯字母	
+xI	auto	秀	5885	1	纯字母	
+xJ	ext	细菌	7343	1	纯字母	
+xK	ext	辛苦	9430	1	纯字母	
+xL	ext	新浪	4851	1	纯字母	
+xM	ext	项目	109307	1	纯字母	
+xN	ext	西南	2892	1	纯字母	
+xO	ext	西欧	1897	1	纯字母	
+xP	ext	胁迫	919	1	纯字母	
+xQ	ext	兴趣	19597	1	纯字母	
+xR	ext	显然	19821	1	纯字母	
+xS	ext	销售	34188	1	纯字母	
+xT	ext	心态	23944	1	纯字母	
+xU	auto	项	5558	1	纯字母	
+xV	auto	效	1656	1	纯字母	
+xW	ext	视频	94381	1	纯字母	
+xX	ext	导致	90303	1	纯字母	
+xY	ext	相遇	4569	1	纯字母	
+xZ	ext	下载	28268	1	纯字母	
+x_=	auto	小	92897	1	空格并击	=
+x`	auto	性质	17270	1	后缀	`
+xa	ext	些	22871	1	纯字母	
+xb	ext	芯	1882	1	纯字母	
+xc	ext	消	2293	1	纯字母	
+xd	ext	小	92897	1	纯字母	
+xg	ext	县	8575	1	纯字母	
+xi	ext	翔	2080	1	纯字母	
+xk	ext	雄	2632	1	纯字母	
+xl	ext	响	3380	1	纯字母	
+xm	ext	下面	159690	2	纯字母	
+xm	ext	限	2525	2	纯字母	
+xn	ext	弦	2437	1	纯字母	
+xp	ext	心	21110	1	纯字母	
+xq	ext	先	85126	1	纯字母	
+xr	ext	凶	2981	1	纯字母	
+xs	ext	星	6628	1	纯字母	
+xt	ext	象	14088	1	纯字母	
+xu	ext	闲	4774	1	纯字母	
+xv	ext	幸	2294	1	纯字母	
+xw	ext	向	53695	1	纯字母	
+xx	ext	想	142577	1	纯字母	
+xy	ext	新	78195	1	纯字母	
+xz	ext	销	1671	1	纯字母	
+x~	auto	办法	21981	1	后缀	~
+y!	auto	一切	40636	1	后缀	!
+y'	auto	实际上	54677	1	后缀	'
+y*	auto	一开始	32369	1	后缀	*
+y,	ext	盈	1774	1	后缀	,
+y/	ext	驿	916	1	后缀	/
+y:	ext	邪	2193	1	后缀	:
+y;	ext	医	2322	1	后缀	;
+y<	auto	艺术	28964	1	后缀	<
+y=	auto	也	404779	1	空格并击	=
+y?	auto	这次	47757	1	后缀	?
+y@	auto	他们的	67688	1	后缀	@
+yA	ext	阴暗	1911	1	纯字母	
+yB	ext	一波	14570	1	纯字母	
+yC	ext	液	2704	1	纯字母	
+yD	ext	一旦	34518	2	纯字母	
+yD	ext	腋	686	2	纯字母	
+yE	ext	歋	204	1	纯字母	
+yF	ext	依法	5120	1	纯字母	
+yG	ext	野	5582	1	纯字母	
+yH	ext	遗憾	9183	1	纯字母	
+yI	ext	烨	1028	1	纯字母	
+yJ	ext	耶	3917	1	纯字母	
+yL	ext	叶	8103	1	纯字母	
+yN	ext	疑难	968	1	纯字母	
+yO	ext	弯	2029	1	纯字母	
+yP	ext	硬盘	9393	2	纯字母	
+yP	ext	谒	718	2	纯字母	
+yQ	ext	一群	14323	1	纯字母	
+yR	ext	爷	2141	1	纯字母	
+yT	ext	乐	7822	1	纯字母	
+yU	ext	掖	703	1	纯字母	
+yV	auto	纠	872	1	纯字母	
+yW	ext	业务	52299	1	纯字母	
+yX	ext	医学	10993	2	纯字母	
+yX	ext	椰	948	2	纯字母	
+yY	ext	一样	175106	2	纯字母	
+yY	ext	夜	6027	2	纯字母	
+yZ	ext	一种	114649	2	纯字母	
+yZ	ext	铘	446	2	纯字母	
+y_	ext	一个个	10348	1	后缀	_
+y_=	auto	意	4585	1	空格并击	=
+y`	auto	一个人	46879	1	后缀	`
+ya	ext	咿呀	736	2	纯字母	
+ya	ext	龈	625	2	纯字母	
+yb	ext	英	5454	1	纯字母	
+yc	ext	因此	121514	2	纯字母	
+yc	ext	溢	1113	2	纯字母	
+yd	ext	一点	102014	2	纯字母	
+yd	ext	胰	799	2	纯字母	
+ye	ext	因而	7304	2	纯字母	
+ye	ext	役	1000	2	纯字母	
+yf	ext	依	4223	1	纯字母	
+yh	ext	也很	13716	2	纯字母	
+yh	ext	瑛	1049	2	纯字母	
+yi	ext	义	3386	1	纯字母	
+yj	ext	已经	209044	2	纯字母	
+yj	ext	颐	1095	2	纯字母	
+yk	ext	硬	5354	1	纯字母	
+yl	ext	盈利	20215	2	纯字母	
+yl	ext	吟	1460	2	纯字母	
+ym	ext	阴	3030	1	纯字母	
+yn	ext	已	44260	1	纯字母	
+yo	ext	宜	3291	1	纯字母	
+yp	ext	影片	20346	2	纯字母	
+yp	ext	议	1406	2	纯字母	
+yq	ext	一起	58494	2	纯字母	
+yq	ext	移	1905	2	纯字母	
+yr	ext	一人	10518	2	纯字母	
+yr	ext	繇	591	2	纯字母	
+ys	ext	也是	305905	1	纯字母	
+yt	ext	迎	2187	1	纯字母	
+yu	ext	抑	1083	1	纯字母	
+yv	ext	圻	642	1	纯字母	
+yw	ext	劓	442	1	纯字母	
+yx	ext	一些	260081	2	纯字母	
+yx	ext	椅	1086	2	纯字母	
+yy	ext	应	21211	1	纯字母	
+yz	ext	银	4938	1	纯字母	
+y~	auto	每天	80837	1	后缀	~
+z!	auto	写	41835	1	后缀	!
+z'	auto	座	16908	1	后缀	'
+z,	ext	姊	717	1	后缀	,
+z.	ext	翐	254	1	后缀	.
+z/	ext	织	1324	1	后缀	/
+z:	ext	辄	711	1	后缀	:
+z<	ext	姫	566	1	后缀	<
+z=	auto	在	974219	1	空格并击	=
+z?	ext	缯	568	1	后缀	?
+zA	ext	贞	1393	1	纯字母	
+zB	ext	蒸	2169	1	纯字母	
+zC	ext	泽	3054	1	纯字母	
+zD	ext	知道	145224	2	纯字母	
+zD	ext	朕	1487	2	纯字母	
+zE	ext	征	3036	1	纯字母	
+zF	ext	支付	20145	2	纯字母	
+zF	ext	侦	751	2	纯字母	
+zH	ext	之后	253997	2	纯字母	
+zH	ext	责	1456	2	纯字母	
+zK	ext	这款	39744	2	纯字母	
+zK	ext	仄	844	2	纯字母	
+zL	ext	震	2351	1	纯字母	
+zM	ext	这么	75265	2	纯字母	
+zM	ext	阵	2624	2	纯字母	
+zN	ext	子女	7380	2	纯字母	
+zN	ext	弫	254	2	纯字母	
+zO	ext	怔	867	1	纯字母	
+zR	ext	阵容	9051	1	纯字母	
+zS	ext	证书	36800	2	纯字母	
+zS	ext	昣	390	2	纯字母	
+zT	ext	争	3411	1	纯字母	
+zU	ext	择	1302	1	纯字母	
+zV	ext	增	3479	1	纯字母	
+zW	ext	植物	13736	1	纯字母	
+zX	ext	咨询	23240	2	纯字母	
+zX	ext	枕	1784	2	纯字母	
+zZ	ext	这种	278588	2	纯字母	
+zZ	ext	针	3561	2	纯字母	
+z_=	auto	自	15317	1	空格并击	=
+z`	auto	质量	50793	1	后缀	`
+za	ext	止	2263	1	纯字母	
+zb	ext	资本	26013	2	纯字母	
+zb	ext	芝	1797	2	纯字母	
+zc	ext	治	4373	1	纯字母	
+zd	ext	真的	169887	2	纯字母	
+zd	ext	肢	823	2	纯字母	
+ze	ext	质	2738	1	纯字母	
+zf	ext	值	10062	1	纯字母	
+zg	ext	置	2417	1	纯字母	
+zh	ext	整合	8499	2	纯字母	
+zh	ext	耔	565	2	纯字母	
+zi	ext	兹	1754	1	纯字母	
+zj	ext	支	4265	1	纯字母	
+zk	ext	殖	740	1	纯字母	
+zl	ext	只	38354	1	纯字母	
+zn	ext	只能	82250	2	纯字母	
+zn	ext	咫	620	2	纯字母	
+zo	ext	字	17656	1	纯字母	
+zp	ext	之	50505	1	纯字母	
+zq	ext	制	6580	1	纯字母	
+zr	ext	责任	17173	2	纯字母	
+zr	ext	豸	572	2	纯字母	
+zs	ext	这是	168655	2	纯字母	
+zs	ext	黹	438	2	纯字母	
+zt	ext	真题	25521	2	纯字母	
+zt	ext	旨	921	2	纯字母	
+zu	ext	指	9663	1	纯字母	
+zv	ext	址	1034	1	纯字母	
+zw	ext	自	15317	1	纯字母	
+zx	ext	这些	268736	2	纯字母	
+zx	ext	植	1347	2	纯字母	
+zy	ext	之一	58498	1	纯字母	
+zz	ext	真正	63091	2	纯字母	
+zz	ext	锱	562	2	纯字母	
+z~	auto	整个	82665	1	后缀	~
+~	ext	~	0	1	前缀	~
+~=	auto	~	0	1	空格并击	=

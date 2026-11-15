@@ -22,6 +22,24 @@
 | `kongmingma` | **空明码-并击** | **300 万** 全量大词库 | `kongmingma.dict.yaml` | 追求词汇覆盖极致全面，词条量巨大 |
 | `kongmingmas` | **空明码-宏版S** | **160 万** 压缩精简版 | `kongmingmas.dict.yaml` | 内存占用更低、部署与加载更快（推荐日常使用） |
 
+### 仓库结构
+
+```
+.
+├── kongmingma*.yaml / kongmingmas*.yaml   # 方案与词库（含繁体镜像 _t）
+├── kongmingmas_core.dict.yaml             # 核心库（单字全留 + 高频词），部署时预编译
+├── kongmingmas_ext.schema.yaml            # 仅用于预编译扩展库的「依赖方案」，不在 schema_list 中
+├── rime.lua / lua/                        # @date、@time、反查等 Lua 组件
+├── default.custom.yaml                    # 启用的方案列表
+├── km-tui/                                # Rust + Ratatui 词库管理终端
+├── tools/                                 # 简码优化工具链（见 tools/README.md）
+└── docs/
+    ├── adr/                               # 架构决策记录
+    ├── reports/                           # 历次简码优化分析报告
+    ├── reference/                         # 简码参考手册（md / html / tsv）
+    └── data/                              # 词库分析导出的数据表
+```
+
 ---
 
 ## 🚀 本版本核心优化与升级
@@ -162,7 +180,7 @@ graph TD
   - `Ctrl+q`（或 `Ctrl+c`）：退出程序（未保存或部署时支持确认流程；普通模式下按 Esc 仅用于取消操作，避免误触退出）。
 - **超大文件零卡顿**：支持 50MB+（逾 150 万行）词库秒级加载与毫秒级防抖持久化。
 - **[`dazitui`](https://github.com/JackTheMico/dazitui)**：专为终端用户打造的打字练习 TUI 工具，支持专项练习空明码一简字与空格并击，快速肌肉记忆打卡。
-- **`tools/`**：包含反查数据生成器、Rime API 调试探针及测试工具。
+- **`tools/`**：简码优化工具链（击数模型、槽位回收、一词一码、死码清理、文档导出）＋ 反查数据生成器与 Rime API 调试探针，用法见 [`tools/README.md`](tools/README.md)。
 
 ---
 
@@ -172,6 +190,10 @@ graph TD
 - [一击字现状调研与优化方案报告](docs/kongmingma-single-strike-words-optimization.md)：字频统计、归因分析与优化依据。
 - [空格并击可行性研究与实施报告](docs/kongmingma-space-chord-research.md)：基于 librime 源码的原理解析。
 - [拼音反查实施方案与繁体镜像修复报告](docs/kongmingma-reverse-lookup.md)：反查机制实现与繁体缺陷修复细节。
+- [简码参考手册（可搜索）](docs/reference/jianma_reference.html)：全量简码清单，支持筛选与排序。
+
+`docs/reports/` 收录历次简码优化的分析报告（数字族开槽、槽位回收、死码清理、一词一码等），
+`docs/adr/` 收录架构决策记录。
 
 ---
 
