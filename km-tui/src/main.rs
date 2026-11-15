@@ -58,10 +58,8 @@ fn main() -> Result<()> {
 
     let cli = Cli::parse();
     let config = config::Config::load();
-    let deploy_cmd = config
-        .deploy_cmd
-        .clone()
-        .unwrap_or_else(|| "fcitx5 -r".to_string());
+    // 未配置自定义命令时走内置部署（直接调用 librime 编译到 XSIME）
+    let deploy_cmd = config.deploy_cmd.clone().unwrap_or_default();
     let pinyin_path = cli
         .pinyin
         .or(config.pinyin_path.clone().map(PathBuf::from))

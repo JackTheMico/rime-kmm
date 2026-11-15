@@ -1,11 +1,21 @@
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
+/// 需要跟随主词库一起同步到 XSIME 方案包的配套文件。
+const COMPANIONS: &[&str] = &[
+    "kongmingmas.schema.yaml",
+    "kongmingmas_core.dict.yaml",
+    "kongmingmas_ext.schema.yaml",
+    "rime.lua",
+];
+
 /// XSIME（犀术IME）在 Linux 上的运行时目录布局。
 ///
 /// `resources`：当前生效的共享数据目录（导入方案包时是方案包目录，否则为内置 `data`）。
+/// `learning`：用户目录，部署产物（`build/*.table.bin`）写在这里。
 pub struct XSIME {
     pub resources: PathBuf,
+    pub learning: PathBuf,
     pub schema: Option<String>,
 }
 
@@ -27,13 +37,22 @@ pub fn detect() -> Option<XSIME> {
     if let Some(id) = package {
         let resources = user_root.join("schemes/packages").join(&id);
         if resources.is_dir() {
-            return Some(XSIME { resources, schema });
+            let learning = user_root.join("schemes/learning").join(&id);
+            return Some(XSIME {
+                resources,
+                learning,
+                schema,
+            });
         }
     }
 
     // 未导入方案包时使用内置数据目录
-    let resources = user_root.join("data");
-    resources.is_dir().then_some(XSIME { resources, schema })
+    let data = user_root.join("data");
+    data.is_dir().then(|| XSIME {
+        resources: data.clone(),
+        learning: data,
+        schema,
+    })
 }
 
 fn parse_active(text: &str) -> (Option<String>, Option<String>) {
@@ -56,30 +75,26 @@ fn parse_active(text: &str) -> (Option<String>, Option<String>) {
     (package, schema)
 }
 
-/// 把词库同步到 XSIME 当前方案包，再重启 fcitx5 让 XSIME 重新编译词库。
+/// 把词库及其配套文件同步到 XSIME 方案包，然后编译。
+/// `override_cmd` 为空时走内置部署（直接调用 librime）；非空时执行该命令。
 pub fn sync_and_deploy(dict_path: &Path, override_cmd: Option<&str>) -> String {
     let mut log = String::new();
     let Some(x) = detect() else {
         log.push_str("✖ 未检测到 XSIME 目录（~/.local/share/rimes），请确认已安装犀术IME\n");
         return log;
     };
-
-    // 1. 同步词库到方案包（若当前编辑的已经就在方案目录内则跳过）
     let Some(name) = dict_path.file_name() else {
         log.push_str("✖ 词库路径缺少文件名，无法同步\n");
         return log;
     };
+    let repo_root = dict_path.parent().unwrap_or(Path::new("."));
+
+    // 1. 同步主词库
     let target = x.resources.join(name);
-    let same = matches!(
-        (dict_path.canonicalize(), target.canonicalize()),
-        (Ok(a), Ok(b)) if a == b
-    );
-    if same {
-        log.push_str("ℹ 词库已在 XSIME 方案目录内，无需同步\n");
-    } else if dict_path.exists() {
+    if dict_path.exists() {
         match std::fs::copy(dict_path, &target) {
             Ok(bytes) => log.push_str(&format!(
-                "✔ 同步词库到 XSIME 方案目录：{} ({:.2} MB)\n",
+                "✔ 同步词库：{} ({:.2} MB)\n",
                 target.display(),
                 bytes as f64 / 1_048_576.0
             )),
@@ -89,59 +104,111 @@ pub fn sync_and_deploy(dict_path: &Path, override_cmd: Option<&str>) -> String {
         log.push_str(&format!("✖ 词库不存在：{}\n", dict_path.display()));
     }
 
-    // 2. 触发 XSIME 重新编译：默认重启 fcitx5，插件启动时自动部署
-    let cmd = override_cmd.unwrap_or("fcitx5 -r");
-    log.push_str(&format!(
-        "⚙ 目标方案：{}（schema: {}）\n",
-        x.resources.display(),
-        x.schema.as_deref().unwrap_or("未知")
-    ));
-    log.push_str(&format!("⚙ 重新加载：{cmd}\n"));
+    // 2. 同步配套文件（方案、核心/后缀词库、lua）
+    for rel in COMPANIONS {
+        let src = repo_root.join(rel);
+        if !src.exists() {
+            continue;
+        }
+        let dst = x.resources.join(rel);
+        if let Some(parent) = dst.parent() {
+            let _ = std::fs::create_dir_all(parent);
+        }
+        match std::fs::copy(&src, &dst) {
+            Ok(_) => log.push_str(&format!("✔ 同步 {rel}\n")),
+            Err(e) => log.push_str(&format!("✖ 同步 {rel} 失败：{e}\n")),
+        }
+    }
 
-    if is_fcitx5_restart(cmd) {
-        if spawn_detached(cmd) {
-            log.push_str("✔ 已请求重启 fcitx5；XSIME 启动时会在后台重编译词库\n");
-            log.push_str("ℹ 编译完成前候选仍为旧内容，状态栏显示 Deploying 时请稍候\n");
-        } else {
-            log.push_str("✖ 无法启动 fcitx5，请手动重启输入法\n");
-        }
-    } else {
-        match run_captured(cmd) {
-            Ok(o) => {
-                let out = String::from_utf8_lossy(&o.stdout);
-                let err = String::from_utf8_lossy(&o.stderr);
-                if o.status.success() {
-                    log.push_str("✔ 自定义重载命令执行成功\n");
-                } else {
-                    log.push_str(&format!(
-                        "⚠ 自定义重载命令返回异常码：{:?}\n{out}{err}\n",
-                        o.status.code()
-                    ));
-                }
-            }
-            Err(e) => log.push_str(&format!("✖ 执行重载命令失败：{e}\n")),
-        }
+    log.push_str(&format!(
+        "⚙ 方案包：{}（schema: {}）\n⚙ 用户目录：{}\n",
+        x.resources.display(),
+        x.schema.as_deref().unwrap_or("未知"),
+        x.learning.display()
+    ));
+
+    // 3. 编译
+    match override_cmd.map(str::trim).filter(|s| !s.is_empty()) {
+        Some(cmd) => run_custom(cmd, &mut log),
+        None => run_builtin(&x, repo_root, &mut log),
     }
 
     log
 }
 
-/// `fcitx5 -r` 会接管前台进程，必须脱离终端后台启动，否则会一直占用输出管道。
-fn is_fcitx5_restart(cmd: &str) -> bool {
-    cmd.split_whitespace()
-        .next()
-        .and_then(|bin| Path::new(bin).file_name())
-        .and_then(|s| s.to_str())
-        == Some("fcitx5")
+fn run_custom(cmd: &str, log: &mut String) {
+    log.push_str(&format!("⚙ 自定义重载命令：{cmd}\n"));
+    match run_captured(cmd) {
+        Ok(o) => {
+            let out = String::from_utf8_lossy(&o.stdout);
+            let err = String::from_utf8_lossy(&o.stderr);
+            if o.status.success() {
+                log.push_str("✔ 命令执行成功\n");
+            } else {
+                log.push_str(&format!(
+                    "⚠ 命令返回异常码：{:?}\n{out}{err}\n",
+                    o.status.code()
+                ));
+            }
+        }
+        Err(e) => log.push_str(&format!("✖ 执行失败：{e}\n")),
+    }
 }
 
-fn spawn_detached(cmd: &str) -> bool {
-    Command::new("sh")
-        .arg("-c")
-        .arg(format!("setsid {cmd} </dev/null >/dev/null 2>&1 &"))
-        .status()
-        .map(|s| s.success())
-        .unwrap_or(false)
+/// 内置部署：用 `tools/km_deploy.c` 直接调用 librime 编译到 XSIME 用户目录。
+fn run_builtin(x: &XSIME, repo_root: &Path, log: &mut String) {
+    let bin = match ensure_deployer(repo_root) {
+        Ok(b) => b,
+        Err(e) => {
+            log.push_str(&format!("✖ 准备部署器失败：{e}\n"));
+            return;
+        }
+    };
+    log.push_str(&format!("⚙ 编译：{} + librime\n", bin.display()));
+    match Command::new(&bin)
+        .arg(&x.resources)
+        .arg(&x.learning)
+        .output()
+    {
+        Ok(o) if o.status.success() => log.push_str("✔ 部署完成\n"),
+        Ok(o) => log.push_str(&format!(
+            "✖ 部署失败（{:?}）：{}\n",
+            o.status.code(),
+            String::from_utf8_lossy(&o.stderr)
+        )),
+        Err(e) => log.push_str(&format!("✖ 无法运行部署器：{e}\n")),
+    }
+}
+
+/// 按需编译 `tools/km_deploy.c`，缓存到 XDG cache 目录。
+fn ensure_deployer(repo_root: &Path) -> Result<PathBuf, String> {
+    let cache = dirs::cache_dir()
+        .ok_or("找不到 cache 目录")?
+        .join("km-tui");
+    std::fs::create_dir_all(&cache).map_err(|e| e.to_string())?;
+    let src = repo_root.join("tools/km_deploy.c");
+    let bin = cache.join("km_deploy");
+    let stale = match (bin.metadata(), src.metadata()) {
+        (Ok(b), Ok(s)) => match (b.modified(), s.modified()) {
+            (Ok(bt), Ok(st)) => bt < st,
+            _ => false,
+        },
+        _ => true,
+    };
+    if stale {
+        let out = Command::new("cc")
+            .arg("-O2")
+            .arg("-o")
+            .arg(&bin)
+            .arg(&src)
+            .arg("-lrime")
+            .output()
+            .map_err(|e| format!("调用 cc 失败：{e}"))?;
+        if !out.status.success() {
+            return Err(String::from_utf8_lossy(&out.stderr).into_owned());
+        }
+    }
+    Ok(bin)
 }
 
 fn run_captured(cmd: &str) -> std::io::Result<std::process::Output> {
@@ -163,12 +230,5 @@ mod tests {
     #[test]
     fn test_parse_active_empty() {
         assert_eq!(parse_active(""), (None, None));
-    }
-
-    #[test]
-    fn test_is_fcitx5_restart() {
-        assert!(is_fcitx5_restart("fcitx5 -r"));
-        assert!(is_fcitx5_restart("/usr/bin/fcitx5 --replace"));
-        assert!(!is_fcitx5_restart("fcitx5-remote -r"));
     }
 }
