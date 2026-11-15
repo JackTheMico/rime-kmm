@@ -35,8 +35,9 @@ python3 tools/km_one_code.py --apply --with-trad   # 写入简繁双库
 | `km_jianma_zero.py` | **零延伸槽位**（`X~` `X'` `@X` `*X` 等符号族）优化。零延伸槽一旦两个候选就会退化成「必须空格」，所以只能置换不能追加。 | `jianma_zero_opt_report.md` |
 | `km_jianma_digit.py` | 数字族（`0X` / `7X` / `8X` / `9X`）优化：开新槽 + 清残渣。`--set 0o=知道` 可单槽改派。 | `jianma_digit_opt_report.md` |
 | `km_jianma_reclaim.py` | 回收「已有读音简码」的词额外占的一击槽，再分配给缺槽的高频词/字。`--force-codes 0b` 点名强制回收，`--dedup` 回收一词多槽。 | `jianma_reclaim_report.md` |
-| `km_one_code.py` | **一词一码**：收敛「一词多简码」，把腾出的空槽再分配给缺槽高频词。留哪条按价值模型（成本、码位竞争者、备份史老码、读音码收益）。 | `one_code_report.md` / `one_code_report_t.md` |
+| `km_one_code.py` | **一词一码**：收敛「一词多简码」，把腾出的空槽再分配给缺槽高频词。留哪条按价值模型（成本、码位竞争者、备份史老码、读音码收益）。内置护栏：摘掉某码位唯一真候选时跳过（`--allow-empty-head` 可关），否则首候选会变成 `载 ;` 这类后缀构造。 | `one_code_report.md` / `one_code_report_t.md` |
 | `km_fix_dead.py` | 清理打不出来的简码：数字码元（`7/8/9` 是左手三键）写到字母后面会变成死码，能反转的改写（`A8`→`8A`）、撞车的删除。 | `dead_code_report.md` |
+| `km_code_head_fix.py` | **回补码位首候选**。词库头是 `sort: original`、没有权重列，同码候选全按文件行序。删掉某码位唯一的真候选后，同码的「字+空格+后缀」构造（`载 ;`）就会顶到首位。本工具按改动前备份把这些条目原样补回。 | `code_head_fix_report.md` |
 | `km_jianma_prune.py` | 清理含数字的编码（`Y4` 这类两码简码、`--legacy` 清含 1–6 的旧式码）。 | `jianma_prune_report*.md` |
 
 ## 3. 文档与部署

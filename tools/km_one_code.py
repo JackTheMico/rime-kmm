@@ -163,6 +163,9 @@ def main():
                     help='处理哪本词库：S=简体（默认）、T=繁体（繁体独有的词要单独收敛）')
     ap.add_argument('--dedupe-only', action='store_true',
                     help='只收敛多简码，不新增任何条目（繁体库用）')
+    ap.add_argument('--allow-empty-head', action='store_true',
+                    help='允许把某码位唯一真候选摘掉（该码位此后只剩「字 空格 后缀」构造，'
+                         '首候选会变成 `载 ;` 这类构造，通常不要开）')
     args = ap.parse_args()
     path = DICT_T if args.dict == 'T' else DICT_S
 
@@ -221,8 +224,29 @@ def main():
     if args.dedupe_only:
         targets = []
 
+    def drop_units():
+        """要摘掉的 (词, 码) 清单。
+
+        护栏：词库头是 `sort: original`，同码候选按文件行序排。若某个码位剩下的
+        全是「字+空格+后缀」构造（`载 ;`/`枣 o` 之类），再摘掉它唯一的真候选，
+        该码位的首候选就会变成这种构造（敲 `Zj` 出 `载 ;`），等于把码位废掉。
+        这种摘除换不到任何空槽，纯亏，直接跳过。
+        """
+        out = []
+        for it in items:
+            for c in it['codes']:
+                if c == it['keep']:
+                    continue
+                if not args.allow_empty_head:
+                    rest = [t for t in codes.get(c, [])
+                            if ' ' not in t and t != it['word']]
+                    if not rest:
+                        continue
+                out.append((it['word'], c))
+        return out
+
     def evaluate():
-        units = [(it['word'], c) for it in items for c in it['codes'] if c != it['keep']]
+        units = drop_units()
         free = free_slots(units, codes, freq)
         return units, free, assign(free, targets)
 
