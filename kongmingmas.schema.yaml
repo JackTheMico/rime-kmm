@@ -56,7 +56,7 @@ engine:
   translators:
     - punct_translator
     - reverse_lookup_translator
-    - table_translator
+    - table_translator          # 词库（直接使用全量 kongmingmas 词库）
     - "lua_translator@date_translator" #键入date出日期等功能
 
 # 拼音反查（纯内置方案，不依赖 Lua）
@@ -231,7 +231,6 @@ translator:
   # 不显示逐码提示
   comment_format:
     - xform/~//
-    #- xform/.*//
 
 key_binder:
   bindings:

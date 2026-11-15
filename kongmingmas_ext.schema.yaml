@@ -1,0 +1,15 @@
+# Rime schema
+# encoding: utf-8
+#
+# 仅用于部署时预编译扩展库词库 kongmingmas.table.bin。
+# librime 部署只会编译方案自身 translator/dictionary 指向的词库，
+# 因此把扩展库词库挂在一个「依赖方案」上，让它也能生成 table.bin。
+# 本方案不出现在 default.yaml 的 schema_list 中，用户看不到。
+
+schema:
+  schema_id: kongmingmas_ext
+  name: 空明码扩展库（部署用）
+  version: 2025/08/06
+
+translator:
+  dictionary: kongmingmas
