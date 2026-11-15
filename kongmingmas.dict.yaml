@@ -193,28 +193,28 @@ _	_=
 泻	﻿!'
 嚎	﻿!'
 锭	﻿!'
-沿	!<
+改	!<
 注意	!b
 宝宝	!B
-乘	!c
+完	!c
 畅	!C
 裁	!C
-戴	!d
-朵	!D
-详	!e
+至	!d
+刚	!D
+换	!e
 学历	!g
 相信	!G
 好像	!H
-凌	!i
+花	!i
 洁	!j
 疾	!j
 截	!j
-净	!J
-凉	!l
+网	!J
+偶	!l
 劳动	!L
 帽子	!M
 农民	!N
-外婆	!P
+构成	!P
 旗	!q
 潜	!q
 琴	!q
@@ -224,55 +224,54 @@ _	_=
 生命	!s
 搜索	!S
 贴	!t
-捅	!T
+请	!T
 ’	!V
 大多数	!W
 鲜	!x
 析	!x
 协	!x
-询	!X
+谁	!X
 香港	!y
 幽	!Y
 掩	!Y
 支持	!z
-遭	!Z
+送	!Z
 ”“	"
 *	*
-爱因斯坦	*A
-不可避免	*B
-牲	*c
-帝国主义	*d
+绝大多数	*B
+吧	*c
+这种情况	*d
 丛	*f
 嗡	*f
-共产主义	*G
-经济效益	*j
+没有什么	*j
 另一方面	*l
-人民群众	*m
-马克思主义	*M
-全面发展	*Q
-日常生活	*r
-社会主义	*s
-上层建筑	*S
-统一战线	*T
-挡	*v
-唯物主义	*w
-物理学家	*W
-现实主义	*x
-与此同时	*Y
-资本主义	*z
-做梦	*Z
+最重要的	*m
+有什么区别	*M
+这是一个	*Q
+越来越多	*s
+这个问题	*S
+作为一个	*T
+各	*v
+也就是说	*w
+账号	*Z
+还有一个	*A
+很多时候	*z
+其实就是	*W
+产品经理	*G
+为什么要	*x
+保险公司	*r
+这个时候	*Y
 ，	,
-报错	,B
+大众	,B
 参加	,C
 导航	,D
-飞天	,f
-仿便	,F
+杂志	,f
+都是	,F
 更多	,g
 高手	,G
 环境	,H
 教程	,j
-架	,J
-利害	,l
+类	,J
 千万	,q
 利润	,r
 世界	,s
@@ -284,7 +283,8 @@ _	_=
 一直	,y
 可能性	,Y
 一方面	,z
-做人	,Z
+成就	,Z
+候	,l
 。	.
 包括	.B
 难道	.C
@@ -293,7 +293,7 @@ _	_=
 革命	.g
 感动	.G
 程序员	.j
-技	.J
+听	.J
 理论	.l
 奇怪	.q
 认真	.r
@@ -303,12 +303,12 @@ _	_=
 网站	.W
 现状	.x
 指出	.y
-办公室	.Y
-科学家	.z
-主权	.Z
+是一种	.Y
+不需要	.z
+心里	.Z
 、	/
 编程	/b
-取决于	/B
+你可以	/B
 参数	/C
 等等	/d
 陷入	/D
@@ -318,18 +318,17 @@ _	_=
 心脏	/h
 好吃	/H
 加班	/j
-禁	/J
+刷	/J
 厉害	/l
 取消	/m
 满足	/M
 能量	/n
 判断	/P
-前途	/q
 日常	/r
 如今	/R
 社区	/s
-熟习	/S
-有利于	/T
+但是	/S
+可能会	/T
 味道	/w
 完全	/W
 细节	/x
@@ -337,8 +336,9 @@ _	_=
 不好意思	/Y
 挑选	/z
 状态	/Z
+有的	/q
 ：	:
-振	::
+忙	::
 并且	:b
 秘密	:B
 程序	:c
@@ -349,8 +349,8 @@ _	_=
 活动	:H
 今天	:j
 旧	:J
-小伙子	:k
-每一次	:K
+这也是	:k
+这就是	:K
 梦想	:m
 目标	:M
 期待	:q
@@ -365,7 +365,7 @@ _	_=
 幸福	:x
 许多	:X
 小区	:y
-大规模	:Y
+尤其是	:Y
 自由	:z
 罗马	:Z
 ；	;
@@ -376,17 +376,17 @@ _	_=
 (	;9
 影响	;a
 效果	;b
-近年来	;B
+基本上	;B
 吃饭	;c
 参考	;C
-一会儿	;d
+不同的	;d
 权益	;D
 非常	;f
-发财	;F
+框架	;F
 刚才	;G
-资本家	;H
+应该是	;H
 经验	;j
-救	;J
+图	;J
 哪儿	;k
 练习	;l
 旅游	;L
@@ -398,7 +398,7 @@ _	_=
 入门	;R
 身体	;s
 手机	;S
-特长	;t
+早期	;t
 太多	;T
 微信	;w
 完成	;W
@@ -408,7 +408,7 @@ _	_=
 自动	;z
 找到	;Z
 ？	?
-暗暗	?a
+想想	?a
 爸爸	?B
 试试	?c
 常常	?C
@@ -416,28 +416,27 @@ _	_=
 显卡	?D
 负责	?F
 哥哥	?g
-姑姑	?G
-赫赫	?h
+好好	?G
+天天	?h
 一步	?H
 姐姐	?j
-舅舅	?J
+说说	?J
 伤心	?K
 全文	?l
 妹妹	?m
 妈妈	?M
-查查	?n
+仅仅	?n
 奶奶	?N
-陪陪	?p
-婆婆	?P
-强强	?q
+谢谢	?p
+嘿嘿	?P
+慢慢	?q
 权力	?Q
 谁能	?r
-婶婶	?s
+看看	?s
 叔叔	?S
 流水	?t
 伟大	?w
 学期	?W
-小小	?x
 学校	?X
 爷爷	?y
 之间	?z
@@ -448,28 +447,28 @@ _	_=
 不一定	@B
 差不多	@C
 大部分	@D
-恶作剧	@e
-负责人	@F
-各方面	@g
-干什么	@G
-合作社	@h
+就可以	@e
+可能是	@F
+有一个	@g
+主要是	@G
+也可以	@h
 有时候	@i
 进一步	@j
-居民身份证	@J
+最重要的是	@J
 可以说	@k
 就可以	@k*=
 醒来	@K
 历史上	@l
-毛泽东	@M
+一定要	@M
 那时候	@N
 怎么样	@o
-朋友们	@p
-青少年	@q
-全世界	@Q
-日本人	@r
+也没有	@p
+情况下	@q
+还可以	@Q
+第一次	@r
 是不是	@s
-所有人	@S
-天地间	@t
+并没有	@S
+是一个	@t
 同学们	@T
 计算机	@u
 唯一的	@w
@@ -478,67 +477,117 @@ _	_=
 一部分	@y
 越来越	@Y
 这时候	@z
-站起来	@Z
+也就是	@Z
 _	_
 `	`
 ~	~
 "	<a
 病	<b
-伴	<B
-剩	<c
-促	<C
-刁	<d
+汗	<B
+张	<c
+算	<C
+找	<d
 倒	<D
-祥	<e
-鼻	<E
-奉	<f
-伏	<F
+咋	<e
+拿	<E
+住	<f
+睡	<F
 格	<g
-固	<G
-横	<h
+晕	<G
+怕	<h
 混	<H
 辉	<H
 滑	<H
-恰	<i
+快	<i
 假	<j
-迹	<j
 佳	<j
 井	<J
 奖	<J
-壳	<k
-控	<K
-邻	<l
-吕	<L
-摩	<m
-冒	<M
-疑	<n
-努	<N
+称	<k
+总	<K
+叫	<l
+涨	<L
+拍	<m
+哦	<M
+啥	<n
+跟	<N
 巧	<q
 弃	<q
 侵	<q
-娶	<Q
-扔	<r
-乳	<R
+怪	<Q
+赚	<r
+爱	<R
 神	<s
-速	<S
+区	<S
 挺	<t
-挤	<u
-惑	<v
+店	<u
+才	<v
 ‘	<V
-呜	<W
+啊	<W
 仙	<x
 斜	<x
 刑	<x
-献	<X
+股	<X
 印	<y
 伊	<y
 燕	<Y
 愈	<Y
 犹	<Y
-离不开	<z
-竹	<Z
+是什么	<z
+干	<Z
 0	0
 有没有	0Y
+所以	0a
+我们	0c
+因为	0d
+那么	0e
+如果	0f
+的话	0g
+自己	0h
+这样	0i
+通过	0k
+以及	0l
+可能	0m
+进行	0n
+大家	0q
+一下	0r
+来说	0t
+只有	0u
+只是	0z
+其他	0A
+主要	0C
+能力	0D
+时间	0G
+结果	0J
+当时	0N
+这里	0O
+以上	0P
+那个	0Q
+里面	0R
+学生	0T
+两个	0W
+以后	0X
+数	0o
+资	0Z
+目	0V
+场	0U
+程	0S
+习	0M
+证	0L
+选	0K
+论	0I
+据	0H
+设	0F
+觉	0E
+影	0B
+保	0y
+怎	0w
+专	0v
+金	0s
+件	0p
+认	0j
+的时候	0b
+回来	0x
 1	1
 壹	1~
 1、	1~
@@ -546,7 +595,6 @@ _	_
 2	2
 贰	2~
 2、	2~
-老鼠	2s
 3	3
 叁	3~
 3、	3~
@@ -585,10 +633,8 @@ _	_
 肯定	7k
 情报	7K
 历史	7l
-人民政府	7m
 能够	7n
 农业	7N
-有所不同	7q
 认识	7r
 技术上	7R
 事情	7s
@@ -597,86 +643,87 @@ _	_
 统一	7T
 意义	7U
 达到	7v
-我爱你	7w
+方面	7w
 往往	7W
 信仰	7x
 职务	7y
 永远	7Y
 空中	7z
 农民工	7Z
+凹凸	7A
+分数	7f
+年均	7H
+什么时候	7i
+平时	7p
+安装	7L
+另外	7X
+起来	7q
+人生	7m
 8	8
 捌	8~
 8、	8~
 ~	89
-爱国	8a
 中华人民共和国	8b
 农产品	8B
 我爱	8c
 存在	8C
-许可	8d
+直接	8d
 单位	8D
 而且	8e
 比较	8E
 法律	8F
 感觉	8g
 刚刚	8G
-市场经济	8h
+也会	8h
 内容	8I
-工作者	8j
 具备	8J
 可怜	8k
-一幅	8K
 明白	8m
 才能	8n
-共产党	8N
 情况	8q
-晚年	8R
+国家	8R
 思想	8s
-列入	8S
-联手	8t
+都有	8S
 统治	8T
-积极性	8U
 改变	8v
-往事	8W
 信心	8x
 梭	8X
 糙	8X
 佰	8X
 一件	8y
-自然界	8Y
+只要	8Y
 值得	8z
-幕后	8Z
+老板	8Z
 9	9
 玖	9~
 9、	9~
 _	90
 变化	9b
 不仅	9B
-测速	9c
-惭愧	9C
-录入	9d
-毛主席	9D
+个人	9c
+了解	9C
+发展	9d
+有些	9D
 范围	9F
-谦虚	9G
 继续	9j
 拒绝	9J
 可惜	9k
 考虑	9K
-携手	9n
-创造性	9N
+国内	9n
+理解	9N
 企业	9q
 认为	9r
-极速	9R
-下落	9S
+也有	9R
+出现	9S
 提高	9t
-逍遥	9T
-肉眼	9U
+不要	9T
+就会	9U
 实验	9v
 物质	9W
 形成	9x
 应该	9y
 愉快	9Y
-牡丹	9z
+部分	9z
 状况	9Z
 '	a'
 !	a!
@@ -690,8 +737,6 @@ _	90
 _	a;
 ?	a?
 +	a<
-)	a0
-安全第一	a4
 &	a7
 *	a8
 (	a9
@@ -780,9 +825,6 @@ Z	aZ
 欸乃词	A.Nc
 欸乃曲	A.NQ
 欸欸	A.A.
-爱心	A0
-凹凸	A7
-艾灸	A9
 皑皑白雪	AABX
 暗暗吃惊	AAcj
 嗷嗷待哺	AADB
@@ -3204,10 +3246,10 @@ Z	aZ
 澳大利亚联邦	ADlYlB
 阿大中郎喜有馀	ADZLxYY
 安石榴花开最迟	ADlHKZc
+阿尔法	Ae
 梳	Ae
 殃	Ae
 霓	Ae
-阿尔法	Ae
 挨饿	Ae*=
 阿尔卑斯山脉	AebM
 爱尔兰人	AeLr
@@ -5449,6 +5491,7 @@ Z	aZ
 熝头僧	AiTs
 爊煎	Aiji
 爊炕	AiKi
+案件	Aj
 鞍	Aj
 毐 /	Aj
 毐	Aj/=
@@ -6316,7 +6359,6 @@ Z	aZ
 阿卡胡特拉	AKHtL
 阿空加瓜山廷	AKjGSt
 爱开玩笑的人	AKWxdr
-啊	Al
 唉 .	Al
 唉	Al.=
 哎 b	Al
@@ -7210,10 +7252,10 @@ Z	aZ
 傲吏身闲笑五侯	AlsxxWH
 爱丽丝梦游仙境	AlsmYxj
 安理会常任理事国	AlHCrlsG
+阿拉伯	AL
 啸	AL
 甥	AL
 妪	AL
-阿拉伯	AL
 按劳分配	ALfp
 阿拉法特	ALFt
 阿拉木图	ALMT
@@ -7502,7 +7544,6 @@ Z	aZ
 阿拉伯大羚羊保护区	ALBDlYQ
 阿拉伯国家联盟	ALBGjlm
 阿拉伯联合酋长国	ALBlhqZG
-阿	Am
 隘 i	Am
 隘	Ami=
 隞 h	Am
@@ -12686,7 +12727,6 @@ Z	aZ
 安全理事会	AQlsH
 安全操作系统	AQCZxT
 爱渠入眼南山碧	AQRYNSb
-爱	Ar
 豻 h	Ar
 豻	Arh=
 爱 k	Ar
@@ -15746,7 +15786,6 @@ Z	aZ
 昂头问客几时归	ATwkjsG
 遨头小簇行春队	ATxCHCD
 遨头小簇行春队	ATxCxCD
-按	Au
 挨 .	Au
 挨	Au.=
 拗 /	Au
@@ -18322,6 +18361,7 @@ Z	aZ
 安讯不曾通	AXBcT
 安讯不曾通	AXBzT
 暗许闲人带偷掐	AXxrDTq
+熬夜	Ay
 哀	Ay
 哀 t	Ay
 哀	Ayt=
@@ -19280,6 +19320,7 @@ Z	aZ
 安用茗浇垒块胸	AYmjlKx
 庵云作顶峭无邻	AYZdqWl
 哀乐不易施乎前	AYBysHq
+癌症	Az
 铵	Az
 锕 m	Az
 锕	Azm=
@@ -22867,11 +22908,6 @@ Z	aZ
 并击助手	b~
 愚	b<
 橡	b<
-笔记本	b2
-笔记本电脑	b4
-并击	b7
-资产阶级	b8
-表示	b9
 彪	ba
 彪 e	ba
 彪	bae=
@@ -22919,7 +22955,6 @@ Z	aZ
 彪休	baxf
 彪勒	balJ
 彪蒙	bamB
-北	bA
 背 d	bA
 背	bAd=
 悲 p	bA
@@ -24551,6 +24586,7 @@ Z	aZ
 北苑茶	bAYC
 杯案若平生	bARps
 并岸飞两桨	bAflj
+必备	bb
 蔽	bb
 蔽 i	bb
 蔽	bbi=
@@ -24995,6 +25031,7 @@ Z	aZ
 比并余花发最迟	bbYHFZc
 秉畀炎火传自古	bbYHCzG
 秉畀炎火传自古	bbYHZzG
+并不	bB
 苯	bB
 苝 a	bB
 苝	bBa=
@@ -25728,6 +25765,7 @@ Z	aZ
 并包佳丽入江亭	bBjlRjt
 本宝宝有小情绪了	bBBYxql
 本宝宝不开心了	bBBBKxl
+变成	bc
 滨	bc
 泌 p	bc
 泌	bcp=
@@ -26876,6 +26914,7 @@ Z	aZ
 畚插如云声凶凶	bCRYsxx
 别裁伪体亲风雅	bCwtqfY
 辨材须待七年期	bCXDqnq
+别的	bd
 膘	bd
 脿 h	bd
 脿	bdh=
@@ -29968,6 +30007,7 @@ Z	aZ
 鬓发斑然潘骑省	bFBRPqx
 鬓发幸未成老翁	bFxwcLw
 被发之叟狂而痴	bFzSKec
+变更	bg
 贬	bg
 峅 .	bg
 峅	bg.=
@@ -32498,6 +32538,7 @@ Z	aZ
 兵横海内犹纷若	bhHnYfR
 病鹤不病骨愈虬	bhBbGYq
 病鹤欲飞还踯躅	bhYfHzZ
+背后	bH
 琲	bH
 琲 a	bH
 琲	bHa=
@@ -34496,6 +34537,7 @@ Z	aZ
 焙药	bIYb
 焙火	bIHI
 迸火	bIHI
+背景	bj
 丙	bj
 鞭 f	bj
 鞭	bjf=
@@ -35976,7 +36018,6 @@ Z	aZ
 北京协和医学院	bjxhyXY
 北极朝庭终不改	bjCtZBG
 北京人民广播电台	bjrmGBdT
-本	bJ
 贲 g	bJ
 贲	bJg=
 甏 ;	bJ
@@ -37221,6 +37262,7 @@ Z	aZ
 必浚其泉源	bJqQY
 别君不觉岁时荒	bJBjSsH
 别君去兮何时还	bJQxhsH
+本科	bk
 飙	bk
 殡 o	bk
 殡	bko=
@@ -38156,7 +38198,6 @@ Z	aZ
 便恐世间无妙质	bKsjWmz
 别开小径连松路	bKxjlSL
 别开阊阖壶天外	bKChHtW
-别	bl
 鄙 m	bl
 鄙	blm=
 哔 ;	bl
@@ -39796,6 +39837,7 @@ Z	aZ
 别离空复数朝曛	blKFSCX
 别离空复数朝曛	blKFSZX
 表里江山路眼平	bljSLYp
+本来	bL
 蹦	bL
 呗	bLg=
 跰 i	bL
@@ -40368,6 +40410,7 @@ Z	aZ
 槟榔生子竹生孙	bLszZsS
 槟榔一斛何须得	bLyHhXd
 鬓乱钗斜特地寒	bLCxtdH
+避免	bm
 陛	bm
 陛 ;	bm
 陛	bm;=
@@ -41046,7 +41089,6 @@ Z	aZ
 闭门家里坐祸从天上来	bmjlZHL
 陂	bM
 陂	bM,=
-编码	bM2=
 病魔缠身	bMCs
 本末倒置	bMDz
 笔墨官司	bMGs
@@ -46784,6 +46826,7 @@ Z	aZ
 迸泉飒飒飞木末	bQSSfMM
 扁鹊入秦始治病	bQRqszb
 汴渠西受昆仑水	bQxSKLS
+本人	br
 邠 m	br
 邠	brm=
 辨认出来	brCL
@@ -47291,6 +47334,7 @@ Z	aZ
 柄任儒术崇丘轲	brRZCqk
 彼仁人何其多忧也	brrhqDy
 被人卖了还帮着数钱	brMlHBzSq
+比如	bR
 坌	bR
 炃 i	bR
 炃	bRi=
@@ -48282,8 +48326,8 @@ Z	aZ
 必使仰足以事父母	bsYZysM
 便胜却人间无数	bsQrjWS
 便是人间好时节	bsrjHsj
+比赛	bS
 粒	bS
-腺	bS
 比上不足	bSBZ
 碧水青山	bSqS
 闭锁不全	bSBQ
@@ -51263,6 +51307,7 @@ Z	aZ
 病为兀兀安身物	bwWWAsW
 病维摩诘更无言	bwMjgWY
 病闻吹枕海涛喧	bwCzHTX
+比我	bW
 卑	bW
 鹎 t	bW
 鹎	bWt=
@@ -55799,6 +55844,7 @@ Z	aZ
 别意与之谁短长	byYzsDC
 并移香本到寒家	byxbDHj
 便引诗情到碧霄	bysqDbx
+表演	bY
 痭	bY
 痭 d	bY
 痭	bYd=
@@ -57459,6 +57505,7 @@ Z	aZ
 别自有人桃叶渡	bzYrTyD
 病自能起不用扶	bznqBYF
 彼知颦美而不知颦之所以美	bzpmeBm
+标注	bZ
 钡	bZ
 镚 g	bZ
 镚	bZg=
@@ -58363,8 +58410,8 @@ Z	aZ
 便做春江都是泪	bZCjDsl
 悲壮地步	bZdB
 屏里江山如出色	bljSRCs
-心爱	B'
-暴雨	B*
+检查	B'
+回家	B*
 办	B,
 媬 f	B,
 媬	B,f=
@@ -58740,7 +58787,7 @@ Z	aZ
 办法吧	B,FB
 办公室	B,Gs
 办公司	B,Gs
-抱	B.
+线	B.
 绑	B/
 绑 h	B/
 绑	B/h=
@@ -58986,19 +59033,13 @@ Z	aZ
 绊住了	B/Zl
 绊脚	B/jd
 驳脚	B/jd
-播	B;
-摆	B?
+唔	B;
+跑	B?
 帮助	B@
 帮忙	B_
 不懂	B`
-有一说一	B~
-婄	B<
 婄 y	B<
 婄	B<y=
-不知道	B2
-不小心	B4
-不错	B7
-慰问	B8
 青山	uu
 龅	Ba
 龅 t	Ba
@@ -63256,6 +63297,7 @@ Z	aZ
 不除乡校独何心	BCxxDhx
 不禅而十方清净	BCesFqj
 报仇千里如咫尺	BCqlRzc
+不得	Bd
 胞	Bd
 脖 j	Bd
 脖	Bdj=
@@ -65643,7 +65685,6 @@ Z	aZ
 不二门开休闯首	BemKxCS
 博尔塔拉蒙古自治州	BeTLmGzzZ
 潭	BE
-保	Bf
 保 l	Bf
 保	Bfl=
 伴 i	Bf
@@ -68842,6 +68883,7 @@ Z	aZ
 不隔朝宗夙夜心	BgZZSyx
 不管	tC
 峬	BGj=
+不过	BG
 峬	BG
 峬 j	BG
 八国联军	BGlJ
@@ -69984,7 +70026,6 @@ Z	aZ
 布谷未应勤种播	BGwyqZB
 不敢怀非誉巧拙	BGHfYqZ
 八公山上草木皆兵	BGSSCMjb
-帮	Bh
 帮 g	Bh
 帮	Bhg=
 班 i	Bh
@@ -71323,6 +71364,7 @@ Z	aZ
 不恨居邻无二仲	BhJlWeZ
 不恨天涯行役苦	BhtYHyK
 不恨天涯行役苦	BhtYxyK
+不会	BH
 立案	BH
 跋胡疐尾	BHw=
 包含	BH@=
@@ -75394,6 +75436,7 @@ Z	aZ
 不叫天下人负我	BjtxrFW
 不经一事不长一智	BjysBZyz
 不觉风光都过了	BjfGDGl
+布局	BJ
 逋	BJ
 逋 p	BJ
 逋	BJp=
@@ -80972,7 +81015,6 @@ Z	aZ
 不看僧而看佛面	BKseKFm
 不愧汉庭御史祖	BKHtYsZ
 不困田租与王役	BKtZYWy
-吧	Bl
 吧 m	Bl
 吧	Blm=
 霸 j	Bl
@@ -82315,6 +82357,7 @@ Z	aZ
 巴陵一望洞庭秋	BlyWDtq
 百里奚爵禄不入于心	BlxJLBx
 巴里坤哈萨克自治县	BlKHSkzzx
+不论	BL
 哺	BL
 卟 f	BL
 卟	BLf=
@@ -84859,6 +84902,7 @@ Z	aZ
 不满三尺齐晏婴	BMScqYy
 白马湖平秋日光	BMHpqrG
 百亩庭中半是苔	BMtZBsT
+不能	Bn
 剥	Bn
 孹 m	Bn
 孹	Bnm=
@@ -89169,6 +89213,7 @@ Z	aZ
 不求有功但求无过	BqYGDqWG
 搬起石头砸自己的脚	BqsTZzjdj
 不求同日生只愿同日死	BqTrszYTrs
+版权	BQ
 簿	BQ
 簿 c	BQ
 簿	BQc=
@@ -89489,7 +89534,6 @@ Z	aZ
 不取造化相经营	BQZHxjy
 部曲霜行璧月沉	BQSHbYc
 部曲霜行璧月沉	BQSxbYc
-八	Br
 爸 m	Br
 爸	Brm=
 颁 k	Br
@@ -91523,6 +91567,7 @@ Z	aZ
 不如须臾之所学也	BRXYzSy
 不若相忘于江湖	BRxWYjH
 不入虎穴焉得虎子	BRHXYdHz
+不是	Bs
 暴	Bs
 暴 j	Bs
 暴	Bsj=
@@ -93174,6 +93219,7 @@ Z	aZ
 博斯普鲁斯海峡	BsPLsHx
 不是东风压倒西风	BsDfYDf
 波斯尼亚和黑塞哥维那	BsnYhhSgwN
+不少	BS
 晡	BS
 晡 j	BS
 晡	BSj=
@@ -95553,6 +95599,7 @@ Z	aZ
 白铁无辜铸佞臣	BtWGZnc
 暴殄天物圣所哀	BttWsSA
 保亭黎族苗族自治县	BtlZmZzzx
+不同	BT
 阎	BT
 馍	BT
 麸	BT
@@ -96481,7 +96528,6 @@ Z	aZ
 不图为乐之至于斯也	BTwlzzy
 不图为乐之至于斯也	BTwyzzy
 不脱蓑衣卧月明	BTSyWYm
-把	Bu
 报 m	Bu
 报	Bum=
 抱 t	Bu
@@ -101630,6 +101676,7 @@ Z	aZ
 不为商贾不耕田	BwSGBgt
 不为者与不能者之形何以异	BwzYBny
 不闻先王之遗言	BwxWzyY
+把我	BW
 豹	BW
 谍	BW
 百万富翁	BWFw
@@ -104041,6 +104088,7 @@ Z	aZ
 不贤者识其小者	Bxzsqxz
 不信比来长下泪	BxbLCxl
 八仙过海各显神通	BxGHgxsT
+暴雪	BX
 柨	BX
 柨 k	BX
 柨	BXk=
@@ -104483,6 +104531,7 @@ Z	aZ
 白雪却嫌春色晚	BXQxCsW
 博学而无所成名	BXeWScm
 不须惆怅怨芳时	BXCCYFs
+不易	By
 瓣	By
 褒 f	By
 褒	Byf=
@@ -105539,7 +105588,6 @@ Z	aZ
 布宜诺斯艾利斯省	ByNsAls
 不以规矩不成方圆	ByGJBcFY
 巴音郭楞蒙古自治州	ByGlmGzzZ
-部	BY
 勏 ,	BY
 勏	BY,=
 部 m	BY
@@ -107009,6 +107057,7 @@ Z	aZ
 不与秦塞通人烟	BYqSTrY
 不用医生开药方	BYysKYF
 不养儿不知父母恩	BYeBzFMe
+不知	Bz
 钵	Bz
 镑 y	Bz
 镑	Bzy=
@@ -108165,6 +108214,7 @@ Z	aZ
 不自得而得彼者	Bzdedbz
 不知人间有羞耻事	BzrjYxs
 不知我者谓我何求	BzWzwWhq
+不足	BZ
 钚	BZ
 钸 k	BZ
 钸	BZk=
@@ -109496,7 +109546,6 @@ Z	aZ
 驰骑	c/j/
 驰结	c/j/
 驰绩	c/j/
-车	c:
 臣 g	c:
 臣	c:g=
 车	c:x=
@@ -110628,23 +110677,19 @@ Z	aZ
 骋辩	c?by
 骋骤	c?Z/
 骋纵	c?Z/
+测试工程师	c`
 璃	c`
 硫	c`
 袒	c`
 曦	c`
-测试工程师	c`
+测试环境	c~
 胁	c~
 粱	c~
 坍	c~
 骧	c~
-测试环境	c~
 娍	c<
 娍 k	c<
 娍	c<k=
-词库	c2
-测试一下	c4
-强国	c8
-成熟	c9
 此	ca
 齿 f	ca
 齿	caf=
@@ -111647,6 +111692,7 @@ Z	aZ
 尘埃辇寺三年别	cAnsSnb
 成安书生自圣贤	cASszsx
 慈爱聪明惠利人	cACmHlr
+成本	cb
 茨	cb
 茌 f	cb
 茌	cbf=
@@ -114358,6 +114404,7 @@ Z	aZ
 此处应该有掌声	cCyGYZs
 此处不留人会有留人处	cCBlrHC
 此处不留人会有留人处	cCBlrKC
+彻底	cd
 胵	cd
 胵 ;	cd
 胵	cd;=
@@ -116041,6 +116088,7 @@ Z	aZ
 彻简	cEjq
 彻坐	cEZF
 彻俎	cEZF
+成分	cf
 伺	cf
 侙 ;	cf
 侙	cf;=
@@ -117219,6 +117267,7 @@ Z	aZ
 尘隔斗牛三月余	cgDnSYY
 乘隔残年更土思	cgCngTs
 此阁何人是主人	cghrsZr
+成果	cG
 岑	cG
 瞠 f	cG
 瞠	cGf=
@@ -118021,6 +118070,7 @@ Z	aZ
 此恨难平君知否	chNpJzF
 此恨难平君知否	chNpJzp
 此恨终身恐难了	chZsKNl
+词汇	cH
 琛	cH
 珹 k	cH
 珹	cHk=
@@ -121686,7 +121736,6 @@ Z	aZ
 词客哀时且未还	ckAsJwH
 辞柯落叶最知秋	ckLxZzq
 辞柯落叶最知秋	ckLyZzq
-盛	cK
 厕 g	cK
 厕	cKg=
 成 v	cK
@@ -123193,7 +123242,6 @@ Z	aZ
 此苦又谁知否	cKYSzp
 池空野迥楼阁小	cKyjLgx
 赤口上天白舌入地	cKStBsd
-吃	cl
 叱 t	cl
 叱	clt=
 嗤 m	cl
@@ -125038,6 +125086,7 @@ Z	aZ
 此老矍铄还冠军	cLJSHGJ
 次律宁非过去僧	cLnfGQs
 此率兽而食人也	cLSesry
+层面	cm
 蚩	cm
 蚩 g	cm
 蚩	cmg=
@@ -128248,7 +128297,6 @@ Z	aZ
 层	cN
 层 h	cN
 层	cNh=
-吃奶	cN2=
 层出	cNCM
 层层	cNcN
 层次	cNcy
@@ -129764,6 +129812,7 @@ Z	aZ
 沉魄浮魂不可招	cPFHBkZ
 此盘不进行路难	cPBjxLN
 刺破青天锷未残	cPqtewC
+此前	cq
 辞	cq
 笞 .	cq
 笞	cq.=
@@ -130289,7 +130338,6 @@ Z	aZ
 赐钱千万民犹饥	cqqMmYj
 赐钱千万民犹饥	cqqWmYj
 曾将狱市寄全齐	cqYsjQq
-程	cQ
 称 t	cQ
 称	cQt=
 策 j	cQ
@@ -131829,6 +131877,7 @@ Z	aZ
 此泉何处觅寒温	cQhCmHw
 曾屈诗人杜审言	cQsrDsY
 此去泉台招旧部	cQQTZjB
+承认	cr
 瓻	cr
 瓻 ;	cr
 瓻	cr;=
@@ -132169,6 +132218,7 @@ Z	aZ
 车如鸡栖马如狗	cRjxMRG
 尘容已似服辕驹	cRysFYJ
 成如容易却艰辛	cRRyQjx
+城市	cs
 匙	cs
 匙 t	cs
 匙	cst=
@@ -136655,6 +136705,7 @@ Z	aZ
 趁时	cVss
 城市间	cVsj
 城肆	cVsj
+成为	cw
 皉	cw
 皉 a	cw
 皉	cwa=
@@ -137298,6 +137349,7 @@ Z	aZ
 曾於古图见彷佛	cWGTxPF
 此吾祖太常公宣德间执此以朝	cWZTCGC
 此吾祖太常公宣德间执此以朝	cWZTCGZ
+呈现	cx
 柅	cx
 榋 n	cx
 榋	cxn=
@@ -138053,6 +138105,7 @@ Z	aZ
 痴心妇人负心汉	cxFrFxH
 此先汉所以兴隆也	cxHSyxy
 乘兴而来败兴而归	cxeLBxeG
+持续	cX
 橙	cX
 郴 x	cX
 郴	cXx=
@@ -139765,6 +139818,7 @@ Z	aZ
 此夜曲中闻折柳	cyQZwzl
 赐也闻一以知二	cywyyze
 成也萧何败也萧何	cyxhByxh
+持有	cY
 瘨	cY
 瘨 j	cY
 瘨	cYj=
@@ -140341,6 +140395,7 @@ Z	aZ
 成由勤俭破由奢	cYqjPYs
 次韵章质夫杨花词	cYZzFYc
 尺有所短寸有所长	cYSDCYSC
+辞职	cz
 豉	cz
 豉 j	cz
 豉	czj=
@@ -140711,6 +140766,7 @@ Z	aZ
 臣之年二十而好捶钩	czneseG
 此则寡人之罪也	czGrzZy
 吃着碗里的望着锅里的	czWldWzGld
+车主	cZ
 铖	cZ
 铖 k	cZ
 铖	cZk=
@@ -141940,7 +141996,7 @@ Z	aZ
 翠羽盖	C!YG
 翠筠管	C!YG
 翠园路	C!YL
-充实	C*
+要说	C*
 娼	C,
 嫦 f	C,
 嫦	C,f=
@@ -143585,8 +143641,7 @@ Z	aZ
 纯净的	C?jd
 充满	C@
 财富	C_
-跳楼	C`
-悄然	C~
+主角	C`
 刅	C<
 婥 a	C<
 婥	C<a=
@@ -143606,12 +143661,6 @@ Z	aZ
 婥约	C<Y?
 娖娖	C<C<
 婥婥	C<C<
-总是	C0
-出去了	C2
-操作系统	C4
-重码	C7
-重复	C8
-聪明	C9
 餐	Ca
 餐 f	Ca
 餐	Caf=
@@ -146561,6 +146610,7 @@ Z	aZ
 唇比仙人亦未惭	CbxrywC
 丛边幽蠹更不凡	CbYDgBF
 翠被冷落凄余馨	CblLqYx
+出版	CB
 莼 /	CB
 莼	CB/=
 芚	CB
@@ -148317,6 +148367,7 @@ Z	aZ
 丛祠瓜步认前朝	CcGBrqC
 丛祠瓜步认前朝	CcGBrqZ
 催成客睡须春酒	CckSXCj
+纯粹	CC
 淳	CC
 滁 m	CC
 滁	CCm=
@@ -149741,6 +149792,7 @@ Z	aZ
 蟾蜍爬沙不肯行	CCPSBkH
 蟾蜍爬沙不肯行	CCPSBkx
 潺潺流淌	CClT
+出的	Cd
 肠	Cd
 肠 ,	Cd
 肠	Cd,=
@@ -150585,6 +150637,7 @@ Z	aZ
 重叠寄存器窗口	CdjCqCK
 钗钿坠处遗香泽	CdZCwxz
 钗钿坠处遗香泽	CdZCyxz
+长度	CD
 脆	CD
 臎 .	CD
 臎	CD.=
@@ -151446,6 +151499,7 @@ Z	aZ
 错刀剜出藓纹乾	CDWCxwq
 从刀尖上爬过来的	CDjSPGLd
 炒豆众人吃炸锅一人事	CDZrcZGyrs
+从而	Ce
 舱	Ce
 徜 f	Ce
 徜	Cef=
@@ -152214,7 +152268,6 @@ Z	aZ
 船溪乡	CExx
 船桨	CEjy
 船浆	CEjy
-从	Cf
 常 g	Cf
 常	Cfg=
 尝 h	Cf
@@ -162878,7 +162931,6 @@ Z	aZ
 粹孰	CISY
 粗糙的	CICd
 粗略的	CILd
-才	Cj
 朝 d	Cj
 朝	Cjd=
 曹 s	Cj
@@ -166141,7 +166193,6 @@ Z	aZ
 婵娟一种如冰雪	CJyZRbX
 婵娟已有岁寒姿	CJyYSHz
 丛菊两开他日泪	CJlKTrl
-厂	Ck
 残 h	Ck
 残	Ckh=
 碴 x	Ck
@@ -171445,7 +171496,6 @@ Z	aZ
 艟艨巨舰直东指	CmJjzDz
 长门尽日无梳洗	CmjrWSx
 聪明一世糊涂一时	CmysHTys
-出	CM
 除 f	CM
 除	CMf=
 陲 q	CM
@@ -173319,6 +173369,7 @@ Z	aZ
 翠木交阴覆两檐	CMjyFlY
 错莫风沙愁病眼	CMfSCbY
 材木不可胜用也	CMBksYy
+常年	Cn
 孱	Cn
 孱 m	Cn
 孱	Cnm=
@@ -175606,6 +175657,7 @@ Z	aZ
 茶瓯屡煮龙山白	COLZLSB
 茶瓯破睡秋堂空	COPSqTK
 茶瓯香篆小帘栊	COxZxlL
+曹丕	Cp
 禅	Cp
 诧 o	Cp
 诧	Cpo=
@@ -180177,6 +180229,7 @@ Z	aZ
 翠翘金雀玉搔头	CqjQYST
 操千曲而后晓声	CqQeHxs
 出其不意攻其不备	CqByGqBb
+出去	CQ
 垂	CQ
 簇 y	CQ
 簇	CQy=
@@ -182197,6 +182250,7 @@ Z	aZ
 从人嘲我腹便便	CrZWFpp
 错认林花作锦鞯	CrlHZjj
 错认三刀是得州	CrSDsdZ
+插入	CR
 汆	CR
 䝙 ;	CR
 䝙	CR;=
@@ -184048,6 +184102,7 @@ Z	aZ
 窜身南国避胡尘	CsNGbHc
 初识不知曲中意	CsBzQZy
 春生夏长秋收冬藏	CsxZqSDC
+厂商	CS
 噪	CS
 垂裳而治	CSez
 草率收兵	CSSb
@@ -189231,7 +189286,6 @@ Z	aZ
 摧挫	CUCU
 揣挫	CUCU
 摧摧	CUCU
-场	Cv
 超 ,	Cv
 超	Cv,=
 垞 o	Cv
@@ -198652,6 +198706,7 @@ Z	aZ
 春雨惊春清谷天	CYjCqYt
 愁云惨淡万里凝	CYCDWln
 长阳土家族自治县	CYTjZzzx
+材质	Cz
 钞	Cz
 铲 y	Cz
 铲	Czy=
@@ -199733,7 +199788,6 @@ Z	aZ
 出则无敌国外患者	CzWdGWz
 初识不知曲中意	CzBzQZy
 差之毫厘谬以千里	CzHlmyql
-错	CZ
 错 j	CZ
 错	CZj=
 锄 g	CZ
@@ -201297,7 +201351,7 @@ Z	aZ
 超精细	Cvjx
 超计划	CvjH
 超极化	CvjH
-仙女	d'
+相当	d'
 邓	d!
 登 z	d!
 登	d!z=
@@ -202951,36 +203005,11 @@ Z	aZ
 缔结	d/j/
 缔缉	d/j/
 缔生	d/sQ
-廉	d:
-炸	d?
+靠	d:
+页	d?
 嬁	d<
 嬁 .	d<
 嬁	d<.=
-电话	d0
-对了	d5a=
-代表	d5b=
-到处	d5c=
-到底	d5d=
-地方	d5f=
-大概	d5g=
-电话	d5h=
-大家	d5j=
-打开	d5k=
-到了	d5l=
-对面	d5m=
-电脑	d5n=
-当然	d5r=
-但是	d5s=
-代替	d5t=
-单位	d5w=
-东西	d5x=
-第一	d5y=
-第二	d5e=
-第三	d5S=
-地址	d5z=
-电脑	d7
-埋头	d9
-点	da
 敁 a	da
 敁	daa=
 奌 k	da
@@ -204573,6 +204602,7 @@ Z	aZ
 雕陂之水清且泚	dbzSqJz
 雕陂之水清且泚	dbzSqqc
 雕陂之水清且泚	dbzSqqz
+地步	dB
 点播	dB
 电波暗室	dBAs
 电爆网路	dBWL
@@ -206459,6 +206489,7 @@ Z	aZ
 笛催疏影日更疏	dCSyrgS
 底处人间是所欣	dCrjsSx
 点窜尧典舜典字	dCYdSdz
+点的	dd
 腚	dd
 腚 o	dd
 腚	ddo=
@@ -207043,6 +207074,7 @@ Z	aZ
 点点行行泪痕满	ddxHlhM
 点点行行泪痕满	ddxxlhM
 点点抟作雪绵松润	ddTZXmR
+得到	dD
 日程	dD
 订单日期	dDrq
 订单履行	dDLx
@@ -207917,6 +207949,7 @@ Z	aZ
 颠倒四海由禄儿	dDsHYLe
 登大雷岸与妹书	dDlAYmS
 得道多助失道寡助	dDDZsDGZ
+第二	de
 彽	de
 彽 t	de
 彽	det=
@@ -208349,7 +208382,6 @@ Z	aZ
 第二宇宙速度	deYZSD
 第二次世界大战	decsjDZ
 第二次国内革命战争	decGngz
-德	dE
 德 j	dE
 德	dEj=
 得 s	dE
@@ -210852,6 +210884,7 @@ Z	aZ
 得逢佳处几人曾	dfjCjrc
 得逢佳处几人曾	dfjCjrz
 定分百榼饷春耕	dfBkxCg
+地方	dF
 僜	dF
 僜	dF.=
 定幅曲面	dFQm
@@ -211375,7 +211408,6 @@ Z	aZ
 得放手时须放手	dFSsXFS
 地方百里身南面	dFBlsNm
 得复见将军于此	dFjjJYc
-电	dg
 典 r	dg
 典	dgr=
 迪 p	dg
@@ -213251,6 +213283,7 @@ Z	aZ
 殿阁生微凉	dgswl
 地隔中原劳北望	dgZYLbW
 殿阁抡材覆等差	dgLCFdC
+德国	dG
 瞪	dG
 嶝 .	dG
 嶝	dG.=
@@ -219595,6 +219628,7 @@ Z	aZ
 地灵人秀古所臧	dlrxGSZ
 帝乐天香似许闻	dltxsXw
 蝶恋花答李淑一	dlHDlSy
+登录	dL
 蹬	dL
 蹬 .	dL
 蹬	dL.=
@@ -220121,6 +220155,7 @@ Z	aZ
 地籁则众窍是已	dLzZqsy
 得来全不费工夫	dLQBfGF
 得来全不费功夫	dLQBfGF
+地面	dm
 阽	dm
 阽	dma=
 隄 s	dm
@@ -220748,6 +220783,7 @@ Z	aZ
 得马失马心清凉	dMsMxql
 地脉已断天应悭	dMyDtyq
 电眸虎齿霹雳舌	dMHcpls
+等你	dn
 殿	dn
 刁 z	dn
 刁	dnz=
@@ -221726,7 +221762,6 @@ Z	aZ
 电脑爱好者	dNAHz
 丁女真水妃	dNzSf
 得暖欢呼我未贫	dNHHWwp
-定	do
 定 j	do
 定	doj=
 惦 y	do
@@ -226285,6 +226320,7 @@ Z	aZ
 掉却甜桃摘醋梨	dQtTZCl
 钓取薄禄欢庭闱	dQBLHtw
 蝶去莺飞无处问	dQyfWCw
+的人	dr
 爹	dr
 貂 ,	dr
 貂	dr,=
@@ -226891,6 +226927,7 @@ Z	aZ
 地入家山眼更明	dRjSYgm
 蝶绕蜂随俱入座	dRfSJRZ
 蝶绕蜂围奈晚何	dRfwNWh
+的事	ds
 旳	ds
 昳 q	ds
 昳	dsq=
@@ -227873,6 +227910,7 @@ Z	aZ
 定是著书扬子云	dsZSYzY
 丢失中断处理程序	dsZDClX
 爹死娘嫁人各人顾各人	dsnjrgrGgr
+第三	dS
 戥	dS
 戥 ;	dS
 戥	dS;=
@@ -229807,7 +229845,6 @@ Z	aZ
 钿头银篦击节碎	dTybjjS
 钿头云映褪红酥	dTYyTGS
 钿头云映褪红酥	dTYyTHS
-掉	du
 掉 a	du
 掉	dua=
 抵 t	du
@@ -232018,7 +232055,6 @@ Z	aZ
 地响	dvxl
 地下站	dvxZ
 地星属	dvxZ
-地	dV
 地 m	dV
 地	dVm=
 地说	dVSP
@@ -232028,6 +232064,7 @@ Z	aZ
 地叫	dVjl
 地看	dVKq
 地干吧	dVGB
+定位	dw
 牒	dw
 牒 j	dw
 牒	dwj=
@@ -232438,7 +232475,6 @@ Z	aZ
 蝶为风光勾引破	dwfGGyP
 丁未同升乡里贤	dwTsxlx
 簟纹如水帐如烟	dwRSZRY
-的	dW
 的 t	dW
 的	dWt=
 的女人	dWN=
@@ -235715,6 +235751,7 @@ Z	aZ
 地望岁功还物外	dWSGHWW
 帝王之功一豪芒	dWzGyHM
 帝王天子之德也	dWtzzdy
+电信	dx
 棣	dx
 棣 n	dx
 棣	dxn=
@@ -239221,6 +239258,7 @@ Z	aZ
 定有云孙作世家	dYYSZsj
 荻芽蒲笋上春洲	dYPSSCZ
 得鱼笑寄情相亲	dYxjqxq
+电子	dz
 钓	dz
 钓 t	dz
 钓	dzt=
@@ -240445,6 +240483,7 @@ Z	aZ
 定知闻健休官去	dzwjxGQ
 定知献马胡雏入	dzxMHCR
 定知玉兔十分圆	dzYTsfY
+点赞	dZ
 镫	dZ
 锝 s	dZ
 锝	dZs=
@@ -241161,8 +241200,7 @@ Z	aZ
 地在人种事在人为	dZrZsZrw
 帝城风月看常好	dcfYKCH
 底用探萤囊	dYTyN
-懦弱	D'
-对	D!
+结论	D'
 对 j	D!
 对	D!j=
 怼 p	D!
@@ -242615,7 +242653,6 @@ Z	aZ
 对李	D!lx
 对立性	D!lx
 对立项	D!lx
-刀	D,
 媅 j	D,
 媅	D,j=
 妲 s	D,
@@ -243427,7 +243464,6 @@ Z	aZ
 顿时语	D:sY
 趸交	D:jy
 顿迹	D:jy
-到	D;
 东 v	D;
 东	D;v=
 甙 j	D;
@@ -245382,13 +245418,13 @@ Z	aZ
 驮兽	D?Si
 驮送	D?Si
 都知道	D_
+都可以	D`
 淘	D`
 畸	D`
 篆	D`
-都可以	D`
+都以为	D~
 贻	D~
 楹	D~
-都以为	D~
 妒	D<
 媏 g	D<
 媏	D<g=
@@ -245445,11 +245481,6 @@ Z	aZ
 妒忌的	D<jd
 妒悍	D<Ho
 妒害	D<Ho
-打电话	D0
-都不知道	D4
-大佬	D7
-没收	D8
-打字	D9
 袋	Da
 督	DA
 督 g	DA
@@ -247167,6 +247198,7 @@ Z	aZ
 多病废诗仍止酒	Dbfsrzj
 当婊子又立牌坊	DbzYlPF
 东边日出西边雨	DbrCxbY
+豆瓣	DB
 厾	DB
 芏 v	DB
 芏	DBv=
@@ -249288,6 +249320,7 @@ Z	aZ
 迨此暇时须痛饮	DcxsXTy
 冬吃萝卜夏吃姜	DcLBxcj
 独此一家别无分店	DcyjbWfd
+单纯	DC
 渡	DC
 沌 ;	DC
 沌	DC;=
@@ -250293,6 +250326,7 @@ Z	aZ
 蠹穿风物皆爱惜	DCfWjAx
 殚残天下之圣法	DCtxzsF
 道常无为而无不为	DCWweWw
+到底	Dd
 胆	Dd
 膻 y	Dd
 膻	Ddy=
@@ -251359,6 +251393,7 @@ Z	aZ
 大地微微暖风吹	DdwwNfC
 打掉门牙往肚里咽	DdmYWDlY
 党的十一届三中全会	DdsyjSZQH
+大多	DD
 肚	DD
 遯 p	DD
 遯	DDp=
@@ -253261,7 +253296,6 @@ Z	aZ
 遁疾	DEjy
 遁疚	DEjy
 舵桨	DEjy
-但	Df
 代 ;	Df
 代	Df;=
 倒	Df;s
@@ -255846,6 +255880,7 @@ Z	aZ
 东风昨夜忽相过	DfZyHxG
 东风袅袅泛崇光	DfnnFCG
 东风已绿瀛洲草	DfyLyZC
+对方	DF
 伅	DF
 伅 ;	DF
 伅	DF;=
@@ -256671,6 +256706,7 @@ Z	aZ
 但凡你吃一粒花生米	DFncylm
 但凡有一粒花生米	DFYylHm
 豆腐一方扁担一条	DFyFbDyt
+多个	Dg
 眈	Dg
 蚪 o	Dg
 蚪	Dgo=
@@ -262546,7 +262582,6 @@ Z	aZ
 断箭	DIjq
 断简	DIjq
 断金契	DIjq
-都	Dj
 带 g	Dj
 带	Djg=
 戴	Djgj
@@ -265670,7 +265705,6 @@ Z	aZ
 端居感慨忽自寤	DJGKHzW
 端居隐几学无心	DJyjXWx
 断绝胡儿恋母声	DJHelMs
-大	Dk
 达 p	Dk
 达	Dkp=
 石 l	Dk
@@ -269941,6 +269975,7 @@ Z	aZ
 单克隆抗体	DkLKt
 但可与人漫酱瓿	DkYrMjB
 对客挥毫秦少游	DkHHqSY
+对抗	DK
 夺	DK
 碓 f	DK
 碓	DKf=
@@ -277559,6 +277594,7 @@ Z	aZ
 憞溷	DOHC
 对偶向量	DOxl
 惰性的	DOxd
+搭配	Dp
 诞	Dp
 裆 f	Dp
 裆	Dpf=
@@ -280888,6 +280924,7 @@ Z	aZ
 夺去黄柑千户侯	DQHGqHH
 多取之而不为虐	DQzeBwN
 短喙	DQHL
+担任	Dr
 荫	Dr
 榴	Dr
 大人物	DrW=
@@ -285526,7 +285563,6 @@ Z	aZ
 豆田见角谷成螺	DtxjYcL
 读田家书从之游	DtjSCzY
 洞庭西望楚江分	DtxWCjf
-多	DT
 多 t	DT
 多	DTt=
 独 g	DT
@@ -288098,7 +288134,6 @@ Z	aZ
 度脱众生具功德	DTZsJGd
 断头今日意如何	DTjryRh
 大通回族土族自治县	DTHZTZzzx
-打	Du
 担 s	Du
 担	Dus=
 搭 b	Du
@@ -290452,6 +290487,7 @@ Z	aZ
 垛头	DVTo
 堆积的	DVjd
 堆下	DVxj
+到位	Dw
 兜	Dw
 躭 p	Dw
 躭	Dwp=
@@ -296209,6 +296245,7 @@ Z	aZ
 打一枪换一个地方	DyqHygdF
 打一巴掌给个甜枣	DyBZggtZ
 当一天和尚撞一天钟	DythSZytZ
+对于	DY
 度	DY
 端 g	DY
 端	DYg=
@@ -299275,6 +299312,7 @@ Z	aZ
 渡浙江问舟中人	DzjwZZr
 多识于鸟兽草木之名	DzYnSCm
 道真仡佬族苗族自治县	DzgLZmZzzx
+都在	DZ
 锻	DZ
 镀 y	DZ
 镀	DZy=
@@ -300592,9 +300630,8 @@ Z	aZ
 大课间	Dkkj
 烈	e!
 诗	e!
-景	e,
-磨	e/
-贰	e:
+组	e,
+拉	e/
 贰 h	e:
 贰	e:h=
 轭 k	e:
@@ -300723,8 +300760,8 @@ Z	aZ
 贰郡	e:JN
 庄	e?
 介	e?
-锦	e`
-津	e~
+万	e`
+撒	e~
 娥	e<
 娥 q	e<
 娥	e<q=
@@ -300769,15 +300806,6 @@ Z	aZ
 娥轮	e<L:
 娥眉沙	e<mS
 娥说	e<YP
-恶心	e2
-恩爱	e4a=
-二逼	e4b=
-恩赐	e4c=
-而且	e4q=
-饿死	e4s=
-儿戏	e4x=
-而已	e4y=
-儿子	e4z=
 仅	ea
 恩爱	eA
 恩爱	eA*=
@@ -301437,6 +301465,7 @@ Z	aZ
 而不自适其适者也	eBzsqKy
 而不自适其适者也	eBzsqsy
 儿不嫌母丑狗不嫌家贫	eBxMCGBxjp
+二次	ec
 焦	ec
 二次元	ec7=
 二次大战	ecDZ
@@ -302498,6 +302527,7 @@ Z	aZ
 鹅儿破壳酥流盎	eePkSlA
 鹅儿破壳酥流盎	eePqSlA
 饿	eE
+而非	ef
 同志们	ef
 二分之一	efzy
 二分搜索	efSS
@@ -302898,7 +302928,6 @@ Z	aZ
 二更酒醒船初发	egjxCCF
 二更月落天深黑	egYLtsh
 二更铙鼓动诸邻	egNGDZl
-恩	eG
 甘	eG
 蛾 q	eG
 蛾	eGq=
@@ -303644,8 +303673,8 @@ Z	aZ
 二公身安民乃乐	eGsAmNl
 二公身安民乃乐	eGsAmNy
 二公诗格老弥新	eGsgLmx
-弐	eh
 恶狠狠	eh
+弐	eh
 阿赫利队	ehlD
 阿赫达什	ehDs
 恩赫赛汗	ehSH
@@ -303682,7 +303711,6 @@ Z	aZ
 哦呵呵呵	ehhh
 阿赫迈德	ehMd
 阿赫默德	ehMd
-二	eH
 噩 l	eH
 噩	eHl=
 弐 h	eH
@@ -305634,7 +305662,6 @@ Z	aZ
 二江合处朱楼开	ejhCZLK
 二韮虽寒故是公	ejSHGsG
 恶	eJ
-竟	eJ
 纪	eJ
 耳 z	eJ
 耳	eJz=
@@ -308254,7 +308281,6 @@ Z	aZ
 二乐并君已是三	elbJysS
 二陵风雨自东来	elfYzDL
 耳里如闻饥冻声	elRwjDs
-嗯	eL
 嗯 g	eL
 嗯	eLg=
 咢 h	eL
@@ -312000,6 +312026,7 @@ Z	aZ
 鹅观草	eQGC
 鹅酒	eQjc
 二曲林泉胜	eQlQs
+二人	er
 恶人	er
 二人世界	ersj
 二人同心	erTx
@@ -312106,6 +312133,7 @@ Z	aZ
 阿戎修玉牒	eRxYd
 阿戎翻隔万山云	eRFgMSY
 阿戎翻隔万山云	eRFgWSY
+而是	es
 斯	es
 二〇〇四	es
 二〇四〇	es
@@ -313141,7 +313169,6 @@ Z	aZ
 儿啼却得偿当年	etQdCDn
 儿啼卧路呼不还	etWLHBH
 耳听为虚眼见为实	etwXYjws
-儿	eT
 尔 d	eT
 尔	eTd=
 饿 q	eT
@@ -314057,8 +314084,6 @@ Z	aZ
 饿瘪的	eTbd
 耳朵	eu
 扼	eU
-项	eU
-效	eU
 摁 g	eU
 摁	eUg=
 搤 i	eU
@@ -314279,6 +314304,7 @@ Z	aZ
 而唯蜩翼之知	ewtyzz
 鄂温克族自治旗	ewkZzzq
 耳闻是虚眼观为实	ewsXYGs
+额外	eW
 衈 j	eW
 衈	eWj=
 皒 q	eW
@@ -314602,7 +314628,6 @@ Z	aZ
 而吾与子之所共适	eWYzzSs
 修	ex
 醒	ex
-秀	ex
 鹅行鸭步	exYB
 恶性案件	exAj
 恶心呕吐	exOT
@@ -315533,6 +315558,7 @@ Z	aZ
 二月初惊见草芽	eYCjjCY
 二月垂杨未挂丝	eYCYwGs
 二月二日江上行	eYerjSx
+儿子	ez
 职	ez
 儿子	ez*=
 阿旨顺情	ezSq
@@ -316004,15 +316030,14 @@ Z	aZ
 诌	E!
 泣	E,
 峙	E,
-脊	E.
-淫	E/
+再	E.
+哪	E/
 僧	E:
 诛	E:
 蒋	E?
 捻	E?
 瞩	E?
-躯体	E`
-无产阶级	E~
+案例	E`
 茂	E<
 唧	E<
 蛛	E<
@@ -316033,21 +316058,19 @@ Z	aZ
 故意	EG
 荐	Eh
 相貌	EH
+你这样	Ei
 竭	Ei
 鲨	Ei
 漳	Ei
-你这样	Ei
 言论	EI
 教育	Ej
 科学	Ek
 淮	EK
 桨	EK
 力量	El
-亲朋好友	EL
 明显	Em
 骄	EM
 抠	EM
-帧	EM
 🐒	EMh=
 ⬆ s	EM
 ⬆	EMs=
@@ -316089,20 +316112,19 @@ Z	aZ
 不好用	EV
 违反	Ew
 完善	EW
-世界经济	Ex
 乾	EX
 一般	Ey
 矢	EY
 知识	Ez
 造成	EZ
-卫士	f'
+治疗	f'
 翂	f!
 翂 r	f!
 翂	f!r=
 翂翂	f!f!
-偿	f,
+打	f,
 坐	f.
-绩	f/
+玩	f/
 匪	f:
 匪 a	f:
 匪	f:a=
@@ -317410,11 +317432,6 @@ Z	aZ
 飞行中	f<xZ
 飞鱼族	f<YZ
 飞鱼座	f<YZ
-风雨	f0
-分别是	f2
-风险很大	f4
-分数	f7
-分别	f8
 父亲	fa
 非	fA
 斐 y	fA
@@ -319803,6 +319820,7 @@ Z	aZ
 奉持所闻佛直指	fcSwFzz
 凤城寒尽怕春宵	fcHjPCx
 凤城南陌他年忆	fcNMTny
+飞船	fC
 沸	fC
 汾 r	fC
 汾	fCr=
@@ -325415,6 +325433,7 @@ Z	aZ
 粉饺	fIjt
 粉角	fIjt
 粉系	fIjt
+风景	fj
 覅	fj
 分久必合	fjbh
 飞机大炮	fjDP
@@ -326163,6 +326182,7 @@ Z	aZ
 蜂窠巷陌	fkHM
 蜂窠巷陌	fkxM
 肺科医院	fkyY
+疯狂	fK
 奋	fK
 豮 j	fK
 豮	fKj=
@@ -331377,6 +331397,7 @@ FOMO	fo
 风入园林寒漠漠	fRYlHMM
 风软鸟声相应酬	fRnsxyC
 飞入菜花无处寻	fRCHWCX
+粉丝	fs
 封神	fs
 粉丝	fs*=
 分身乏术	fsFS
@@ -331764,6 +331785,7 @@ FOMO	fo
 奉事稿骨尤兢兢	fsGGYjj
 非蛇鳝之穴无可寄托者	fsSzXWz
 凤笙龙管行相催	fsLGxxC
+分散	fS
 昲	fS
 暃 a	fS
 暃	fSa=
@@ -334954,6 +334976,7 @@ FOMO	fo
 封闭期	fVbq
 封笔	fVbq
 封秘	fVbq
+分为	fw
 绯闻	fw
 分文不取	fwBQ
 奉为楷模	fwKM
@@ -338268,6 +338291,7 @@ FOMO	fo
 逢盐久已成枯腊	fYjycKx
 飞扬跋扈为谁雄	fYBHwsx
 风雨不动安如山	fYBDARS
+分子	fz
 美美	fz
 奉子成婚	fzcH
 肺真菌病	fzJb
@@ -339096,7 +339120,6 @@ FOMO	fo
 翇	F!
 翇 k	F!
 翇	F!k=
-发	F,
 发 .	F,
 发	F,.=
 妨 y	F,
@@ -340972,7 +340995,7 @@ FOMO	fo
 缚裤	F?KP
 缚袴	F?KP
 反映	F`
-赋值	F~
+球员	F~
 妇	F<
 妇 n	F<
 妇	F<n=
@@ -341139,15 +341162,9 @@ FOMO	fo
 妇炎康	F<YK
 妇女节	F<Nj
 妇女界	F<Nj
-发展	F0
-服务器	F2
-防火墙	F4
-调查研究	F8
-方式	F9
 虙	FA
 虙 p	FA
 虙	FAp=
-方案	FA2=
 妨碍公务	FAGW
 妨碍交通	FAjT
 方案实施	FAss
@@ -341317,7 +341334,6 @@ FOMO	fo
 藩	Fbc=
 蘩 q	Fb
 蘩	Fbq=
-范	Fbc2
 茷 f	Fb
 茷	Fbf=
 芣 k	Fb
@@ -342570,6 +342586,7 @@ FOMO	fo
 扶病江边送客	FbjbSk
 方便把他悲愿满	FbBTbYM
 复辟归来道更尊	FbGLDgZ
+反驳	FB
 芙	FB
 苻 f	FB
 苻	FBf=
@@ -343116,7 +343133,6 @@ FOMO	fo
 赋罢双垂紫锦绦	FBSCzjT
 富不期奢奢自至	FBqsszz
 夫不自见而见彼	FBzjejb
-法	Fc
 泛 r	Fc
 泛	Fcr=
 沷 k	Fc
@@ -344338,6 +344354,7 @@ FOMO	fo
 浮尘坌亦缁人衣	Fcbyzry
 覆成三角翻两髻	FcSjFlj
 樊迟从游于舞雩之下	FcCYYWx
+付出	FC
 浮	FC
 泭 f	FC
 泭	FCf=
@@ -345358,6 +345375,7 @@ FOMO	fo
 放出声名压酪奴	FCsmYLN
 福昌爱民如父母	FCAmRFM
 发错人了	FCrl
+否定	Fd
 肪	Fd
 凣 b	Fd
 凣	Fdb=
@@ -350718,6 +350736,7 @@ FOMO	fo
 反更刻画无盐丑	FgkHWYC
 复阁重楼天际逢	FgCLtjf
 复阁重楼天际逢	FgZLtjf
+法国	FG
 幅	FG
 赋 h	FG
 赋	FGh=
@@ -351621,6 +351640,7 @@ FOMO	fo
 妇姑相唤浴蚕去	FGxHYCQ
 富贵必从勤苦得	FGbCqKd
 法国一八四八年革命	FGyBsBm
+符合	Fh
 璠	Fh
 珐 v	Fh
 珐	Fhv=
@@ -353125,6 +353145,7 @@ FOMO	fo
 烰炭	FITg
 烰烰	FIFI
 烰火	FIHI
+附近	Fj
 髣	Fj
 髣 y	Fj
 髣	Fjy=
@@ -354778,6 +354799,7 @@ FOMO	fo
 福克兰群岛	FkLQD
 斧柯尝烂浥	FkCLy
 芳可搴兮甘可漱	FkqxGkS
+反馈	FK
 砆	FK
 砆 h	FK
 砆	FKh=
@@ -355162,6 +355184,7 @@ FOMO	fo
 夫适人之适而不自适其适	FKrzKes
 夫适人之适而不自适其适	FKrzseK
 夫适人之适而不自适其适	FKrzses
+福利	Fl
 蹯	Fl
 蹯 r	Fl
 蹯	Flr=
@@ -355624,6 +355647,7 @@ FOMO	fo
 腹里虽盈五车读	FlSyWcD
 腹里虽盈五车读	FlSyWJD
 芳林新叶催陈叶	FlxyCcy
+泛滥	FL
 咐	FL
 跗 f	FL
 跗	FLf=
@@ -360661,6 +360685,7 @@ FOMO	fo
 福嘏	FPjj
 福新路	FPxL
 福星楼	FPxL
+放弃	Fq
 繁	Fq
 筏 f	Fq
 筏	Fqf=
@@ -361476,7 +361501,6 @@ FOMO	fo
 夫妻无隔夜之仇	FqWgyzq
 夫妻本是同林鸟大难临头各自飞	FqbsTlf
 夫妻本是同林鸟	FqbsTln
-复	FQ
 符 f	FQ
 符	FQf=
 氟 n	FQ
@@ -363924,10 +363948,10 @@ FOMO	fo
 芙蓉芍药皆嫫母	FRSYjMM
 芙蓉向脸两边开	FRxllbK
 福如东海长流水	FRDHClS
+发生	Fs
 昉	Fs
 昉 y	Fs
 昉	Fsy=
-方式	Fs2=
 发送	Fs*=
 辐射范围	FsFw
 发生改变	FsGb
@@ -364857,6 +364881,7 @@ FOMO	fo
 佛是金妆人是衣妆	FsjZrsZ
 佛是金装人是衣装	FsjZrsZ
 方是真的药是假的	FszdYsjd
+防守	FS
 黻	FS
 黼 j	FS
 黼	FSj=
@@ -369250,6 +369275,7 @@ FOMO	fo
 富於春秋已如此	FWCqyRc
 犯我中华者虽远必诛	FWZHzSZ
 福无双至祸不单行	FWSzHBDx
+发现	Fx
 梵	Fx
 梵 t	Fx
 梵	Fxt=
@@ -370445,6 +370471,7 @@ FOMO	fo
 方显出英雄本色	FxCyxbs
 放下屠刀立地成佛	FxTDldcF
 阜新蒙古族自治县	FxmGZzzx
+法学	FX
 枹	FX
 棴 d	FX
 棴	FXd=
@@ -370613,7 +370640,6 @@ FOMO	fo
 犯雪方南奔	FXFNb
 复寻飞英游	FXfyY
 负雪崔嵬插花里	FXCwCHl
-方	Fy
 放 q	Fy
 放	Fyq=
 瓬 ;	Fy
@@ -373756,6 +373782,7 @@ FOMO	fo
 富于春秋貌突兀	FYCqMTW
 富於春秋已如此	FYCqyRc
 夫有干越之剑者	FYGYzjz
+否则	Fz
 钫	Fz
 钫 y	Fz
 钫	Fzy=
@@ -375971,8 +375998,8 @@ FOMO	fo
 颈嗓	g!Sl
 颈后推	g!HT
 颈椎管	g!ZG
-辑	g,
-仓	g.
+咯	g,
+弄	g.
 赢	g/
 给不起	g/Bq
 给电	g/dg
@@ -377287,16 +377314,11 @@ FOMO	fo
 给我说	g?WS
 给我追	g?WZ
 给我讲	g?Wj
-债	g`
-悔	g~
+乖	g`
+号	g~
 哿	g<
 哿 z	g<
 哿	g<z=
-歌曲	g0
-根本就	g2
-各种各样	g4
-更新	g8
-跟风	g9
 歌	ga
 个案	gA
 隔岸观火	gAGH
@@ -378526,6 +378548,7 @@ FOMO	fo
 根不固而求木之长	gBGeqMC
 根不固而求木之长	gBGeqMZ
 胳膊肘儿往外拐	gBZeWWG
+歌词	gc
 跟车	gc
 各持己见	gcjj
 跟车理论	gclL
@@ -378627,6 +378650,7 @@ FOMO	fo
 割此衰老肠	gcSLC
 根尘各清净	gcgqj
 隔层肚皮隔层山	gcDpgcS
+给出	gC
 浭	gC
 滆 z	gC
 滆	gCz=
@@ -378816,6 +378840,7 @@ FOMO	fo
 更吹三弄乞风光	gCSNqfG
 更垂帘幕护窗纱	gClMHCS
 更吹羌笛关山月	gCqdGSY
+更低	gd
 脵 l	gd
 脵	gdl=
 孤独	gd*=
@@ -379122,6 +379147,7 @@ FOMO	fo
 更得谬恩分省舍	gdmefxs
 给点洪水就泛滥	gdHSjFL
 给点阳光就灿烂	gdYGjCL
+更大	gD
 胳	gD
 肐 q	gD
 肐	gDq=
@@ -379655,7 +379681,6 @@ FOMO	fo
 割肥方厌万钱厨	gfFYMqC
 割肥方厌万钱厨	gfFYWqC
 更分楼船浮豫章	gfLCFYZ
-个	gF
 鸽 k	gF
 鸽	gFk=
 合 l	gF
@@ -381388,6 +381413,7 @@ FOMO	fo
 耿耿星河欲曙天	ggxhYSt
 耿耿虚堂一榻秋	ggXTyTq
 耿耿独与参横昏	ggDYshH
+更高	gG
 骼	gG
 蛤	gGf=
 虼 q	gG
@@ -381781,6 +381807,7 @@ FOMO	fo
 更合适的	ghsd
 更何须春风千树	ghXCfqS
 更恨桂树无由攀	ghGSWYP
+更换	gH
 耕	gH
 耕 h	gH
 耕	gHh=
@@ -382807,7 +382834,6 @@ FOMO	fo
 更觉秋风白发生	gjqfBFs
 更觉求田问舍迟	gjqtwsc
 更嗟贤路此时难	gjxLcsN
-更	gJ
 革 g	gJ
 革	gJg=
 耿 i	gJ
@@ -384308,11 +384334,10 @@ FOMO	fo
 各科室局队	gksJD
 绠刻深容指	gksRz
 更肯悲吟白头曲	gkbyBTQ
+更快	gK
 硌	gK
 硌	gKt=
 𬒔	gKa=
-更快	gK2=
-隔空	gK3=
 更快更好	gKgH
 硌窝儿	gKWe
 隔空打人	gKDr
@@ -384872,7 +384897,6 @@ FOMO	fo
 更留佳句似池塘	gljGscT
 更留佳句似池塘	gljJscT
 更留佳客赋婵娟	gljkFCJ
-跟	gL
 咯	gLt=
 哽 j	gL
 哽	gLj=
@@ -386293,6 +386317,7 @@ FOMO	fo
 戈矛战天骄	gMZtj
 更莫辛勤问南郭	gMxqwNG
 耿马傣族佤族自治县	gMDZWZx
+给你	gn
 庐山	gn
 跟内侧支	gncz
 颌内支抗	gnzK
@@ -388240,6 +388265,7 @@ FOMO	fo
 更思一士济阳城	gsysjYc
 歌诗合为事而作	gshwseZ
 哥斯达黎加共和国	gsDljGG
+歌手	gS
 暅 o	gS
 暅	gSo=
 隔山打牛	gSDn
@@ -388517,6 +388543,7 @@ FOMO	fo
 更送银盘尾鬣红	gSyPwlH
 更说彭城真梦耳	gSpczme
 更随落景尽余樽	gSLjjYZ
+个体	gt
 前言	gt
 个体经济	gtjj
 各条战线	gtZx
@@ -388691,7 +388718,6 @@ FOMO	fo
 更添潘阆倒骑驴	gtPLDqL
 更听波涛围野屋	gtBTwyW
 更听萧萧风雨哀	gtxxfYA
-各	gT
 獦 b	gT
 獦	gTb=
 鲠 j	gT
@@ -390006,6 +390032,7 @@ FOMO	fo
 更问黄鸡肥与癯	gwHjfYQ
 更问江东三语掾	gwjDSYY
 更闻桑田变成海	gwStbcH
+给我	gW
 男儿	gW
 歌舞表演	gWbY
 歌舞晚会	gWWH
@@ -390498,6 +390525,7 @@ FOMO	fo
 更无言语空相觑	gWYYKxQ
 更无一字不清真	gWyzBqz
 更无余事出山来	gWYsCSL
+更像	gx
 杚	gx
 杚 q	gx
 杚	gxq=
@@ -392198,6 +392226,7 @@ FOMO	fo
 更吟丑妇恶嘲谤	gyCFeZB
 更吟丑妇恶嘲谤	gyCFWCB
 更吟丑妇恶嘲谤	gyCFWZB
+个月	gY
 庚	gY
 庚 n	gY
 庚	gYn=
@@ -392756,7 +392785,6 @@ FOMO	fo
 更欲题诗满浙东	gYtsMzD
 更欲远引追宗雷	gYYyZZl
 更欲湔衣北城水	gYjybcS
-坐	gz
 各自为战	gzwZ
 根正苗红	gzmH
 根子空间	gzKj
@@ -396102,7 +396130,6 @@ FOMO	fo
 贯轶	G?y;
 绲夷	G?y;
 关心	G`
-涉案	G~
 姑	G<
 妫 i	G<
 妫	G<i=
@@ -396302,11 +396329,6 @@ FOMO	fo
 姑娘赛	G<nS
 姑娘长	G<nZ
 姑娘追	G<nZ
-估计	G0
-国家大事	G4
-关键	G7
-过程	G8
-干嘛	G9
 公安	GA
 公安部门	GABm
 港澳办公室	GABs
@@ -396561,6 +396583,7 @@ FOMO	fo
 过岸橹声空复长	GALsKFC
 过岸橹声空复长	GALsKFZ
 港澳事务办公室	GAsWBGs
+关闭	Gb
 芉	Gb
 苟 t	Gb
 苟	Gbt=
@@ -397240,6 +397263,7 @@ FOMO	fo
 官焙龙文常食陈	GbLwCsc
 红焙浅瓯新活火	GbjOxHH
 红焙浅瓯新活火	GbqOxHH
+公布	GB
 菇	GB
 菇 ,	GB
 菇	GB,=
@@ -405763,7 +405787,6 @@ FOMO	fo
 句法如此今谁工	GFRcjSG
 功夫不负有心人	GFBFYxr
 国防科学技术工业委员会	GFkXjSGywYH
-刚	Gg
 购 t	Gg
 购	Ggt=
 岗 g	Gg
@@ -406999,7 +407022,6 @@ FOMO	fo
 孤根偃蹇非傲世	GgYjfAs
 归耕不用一钱物	GgBYyqW
 改革春风吹满地	GgCfCMd
-国	GG
 国 h	GG
 国	GGh=
 果 v	GG
@@ -409811,7 +409833,6 @@ FOMO	fo
 尴尬又不失礼貌	GGYBslM
 尴尬又不失礼貌的微笑	GGYBslx
 关公面前耍大刀	GGmqSDD
-干	Gh
 珙 j	Gh
 珙	Ghj=
 遘 p	Gh
@@ -410982,6 +411003,7 @@ FOMO	fo
 关河不锁真消息	GhBSzxx
 贾河动物保护区	GhDWBHO
 贾河动物保护区	GhDWBHQ
+规划	GH
 规	GH
 规 g	GH
 规	GHg=
@@ -416784,7 +416806,6 @@ FOMO	fo
 国家经济体制改革委员会	GjjjtzGgwYH
 䢼 m	Gj
 䢼	Gjm=
-过	GJ
 古 l	GJ
 古	GJl=
 鼓 j	GJ
@@ -419615,7 +419636,6 @@ FOMO	fo
 感觉身体被掏空	GJstbTK
 感觉自己萌萌哒	GJzjmmD
 规矩是死的人是活的	GJssdrd
-感	Gk
 龚 j	Gk
 龚	Gkj=
 尴 s	Gk
@@ -423074,6 +423094,7 @@ FOMO	fo
 干了这碗恒河水	GlzWhhS
 过了这个村就没这个店	GlzgCjd
 关岭布依族苗族自治县	GlByZmZzzx
+过来	GL
 跪	GL
 剐 s	GL
 剐	GLs=
@@ -424220,6 +424241,7 @@ FOMO	fo
 古来得意不相负	GLdyBxF
 光禄池台开锦绣	GLcTKjx
 归来展转到五更	GLZZDWg
+共鸣	Gm
 陔	Gm
 阬 y	Gm
 阬	Gmy=
@@ -424844,6 +424866,7 @@ FOMO	fo
 故民之从之也轻	GmzCzyq
 国民政府军事委员会	GmzFJsH
 关门养虎虎大伤人	GmYHHDSr
+购买	GM
 孤	GM
 孤 e	GM
 孤	GMe=
@@ -425844,7 +425867,6 @@ FOMO	fo
 规摹简古人争看	GMjGrzK
 规模虽小意高深	GMSxyGs
 红抹燕脂嫩脸苏	GMYznlS
-改	Gn
 敢 q	Gn
 敢	Gnq=
 弓 b	Gn
@@ -429230,7 +429252,6 @@ FOMO	fo
 怪迂	GOYH
 官样花	GOYH
 官样黄	GOYH
-该	Gp
 诟 e	Gp
 诟	Gpe=
 祴 ;	Gp
@@ -433722,7 +433743,6 @@ FOMO	fo
 宫阙万间都做了土	GQMjDZT
 宫阙万间都做了土	GQWjDZT
 苟全性命于乱世	GQxmYLs
-公	Gr
 公 .	Gr
 公	Gr.=
 豿 t	Gr
@@ -436006,6 +436026,7 @@ FOMO	fo
 红蕊将春待入关	GRqCDRG
 槁壤太牢俱有味	GRTLJYw
 公然抱茅入竹去	GRBMRZQ
+公式	Gs
 杲	Gs
 旰 h	Gs
 旰	Gsh=
@@ -437155,6 +437176,7 @@ FOMO	fo
 故圣人之用兵也	GsrzYby
 故士有画地为牢	GsYHdwL
 归师勿掩穷寇勿追	GsWYqKWZ
+感受	GS
 晷	GS
 炅 i	GS
 炅	GSi=
@@ -440921,7 +440943,6 @@ FOMO	fo
 郭泰归来雨垫巾	GTGLYdj
 红桃绿柳垂檐向	GTLlCYx
 绀瞳绿发方谢事	GTLFFxs
-搞	Gu
 拱 j	Gu
 拱	Guj=
 搆 h	Gu
@@ -442672,6 +442693,7 @@ FOMO	fo
 圭璧	GVbn
 圭璋	GVZh
 圭瓒	GVZh
+岗位	Gw
 躬	Gw
 躬 n	Gw
 躬	Gwn=
@@ -449251,6 +449273,7 @@ FOMO	fo
 贾谊归来席更前	GyGLxgq
 贾谊上书忧汉室	GySSYHs
 缟衣风争过墙来	GyfzGqL
+关于	GY
 广	GY
 郭 m	GY
 郭	GYm=
@@ -452753,6 +452776,7 @@ FOMO	fo
 古之学者必有师	GzXzbYs
 国之利器不可以示人	GzlqBkr
 国之所以废兴存亡者亦然	GzSyfxR
+工作	GZ
 锅	GZ
 锅 l	GZ
 锅	GZl=
@@ -454240,8 +454264,8 @@ FOMO	fo
 翯 y	h!
 翯	h!y=
 翯翯	h!h!
-浑	h,
-拆	h.
+嗯	h,
+占	h.
 悠	h/
 𬘬	h/q=
 隺	h:
@@ -454856,29 +454880,9 @@ FOMO	fo
 贺建国	h<jG
 贺今朝	h<jZ
 贺锦斋	h<jZ
-∑ e	h3
 ∑	h3e=
-哈哈	h3a=
-何必	h3b=
-好处	h3c=
-很多	h3d=
-回复	h3f=
-合格	h3g=
-环境	h3j=
-呵呵	h3h=
-很快	h3k=
-合理	h3l=
-后面	h3m=
-很难	h3n=
-害怕	h3p=
-回去	h3q=
-还是	h3s=
-后天	h3t=
-和我	h3w=
-好像	h3x=
-还有	h3y=
-或者	h3z=
 励	ha
+黑暗	hA
 壑	hA
 龁 q	hA
 龁	hAq=
@@ -456094,6 +456098,7 @@ FOMO	fo
 何不于君指上听	hBYJzSt
 恨不移封向酒泉	hByfxjQ
 和布克赛尔蒙古自治县	hBkSemGzzx
+合成	hc
 怒火	hc
 合成一体	hcyt
 很吃得开	hcdK
@@ -457424,6 +457429,7 @@ FOMO	fo
 横笛牛羊归晚径	hdnYGWj
 横笛偏吹行路难	hdpCHLN
 横笛偏吹行路难	hdpCxLN
+很多	hD
 胻	hD
 胻 e	hD
 胻	hDe=
@@ -463513,7 +463519,6 @@ FOMO	fo
 河公未许人力穷	hGwXrlq
 鹤骨龙姿尚宛然	hGLzSWR
 鹤骨霜髯心已灰	hGSRxyH
-嘿嘿	hh
 呵呵大笑	hhDx
 呵呵没事	hhms
 赫赫之名	hhzm
@@ -463822,6 +463827,7 @@ FOMO	fo
 何恨流传乐府诗	hhlZlFs
 何恨流传乐府诗	hhlZyFs
 何恨远别音书少	hhYbySS
+很好	hH
 珩	hH
 珩 e	hH
 珩	hHe=
@@ -465229,6 +465235,7 @@ FOMO	fo
 何况朱轮职劝农	hKZLzQN
 横空初不跨鹏鳌	hKCBKpA
 横空好在修眉色	hKHZxms
+合理	hl
 全责	hl
 合理安排	hlAP
 合理布局	hlBJ
@@ -466743,6 +466750,7 @@ FOMO	fo
 何满能歌能宛转	hMngnWZ
 横目之民万物灵	hMzmMWl
 横目之民万物灵	hMzmWWl
+和你	hn
 去中心化	hn
 何年何月	hnhY
 核内复制	hnFz
@@ -468080,7 +468088,6 @@ FOMO	fo
 和平堡垒拥苏联	hpBlYSl
 和平堡垒拥苏联	hpPlYSl
 和平共处五项原则	hpGCWxYz
-鹤	hP
 鹤 t	hP
 鹤	hPt=
 褐 s	hP
@@ -468643,6 +468650,7 @@ FOMO	fo
 鹤衣	hPyy
 鹤瘗	hPyy
 鹤膺	hPyy
+很强	hq
 祸	hq
 呵欠连天	hqlt
 何奇不有	hqBY
@@ -471701,6 +471709,7 @@ FOMO	fo
 贺诗先到古宣城	hsxDGXc
 恨身不如雁随阳	hsBRYSY
 横身势欲填沧海	hssYtCH
+很少	hS
 曷	hS
 鹖 t	hS
 鹖	hSt=
@@ -473411,6 +473420,7 @@ html	html
 何为独忆卢泉之上多绿杨	hwDyLQY
 何为来此骊山中	hwLclSZ
 何为临冢惋枯形	hwlZWKx
+和我	hW
 募捐	hW
 核外电子	hWdz
 核外遗传	hWyC
@@ -475424,7 +475434,6 @@ html	html
 何逊扬州又几年	hXYZYjn
 何须生入玉门关	hXsRYmG
 何须马革裹尸还	hXMgGsH
-乡镇企业	hy
 行业	hy*=
 荷叶三蒸	hySz
 和衣而卧	hyeW
@@ -475798,6 +475807,7 @@ html	html
 黑蚁旋磨千里错	hyXMqlC
 荷叶罗裙一色裁	hyLQysC
 荷叶生时春恨生	hyssChs
+很有	hY
 痕	hY
 痕 n	hY
 痕	hYn=
@@ -476653,6 +476663,7 @@ html	html
 黑质白章声琳球	hzBZslq
 颌髭今成雪点斑	hzjcXdB
 涸泽而渔焚林而猎	hzeYflel
+合作	hZ
 翮	hZ
 翮 .	hZ
 翮	hZ.=
@@ -477439,8 +477450,7 @@ html	html
 翚衣	H!yy
 欢喜的	H!xd
 欢乐文	H!lw
-海水	H*
-好	H,
+有时	H*
 妎 f	H,
 妎	H,f=
 妅 j	H,
@@ -482161,10 +482171,10 @@ html	html
 缓醒	H?xj
 幻小说	H?xY
 汉字	H`
+火车站	H~
 冈	H~
 峭	H~
 榭	H~
-火车站	H~
 婚	H<
 婚 t	H<
 婚	H<t=
@@ -482369,9 +482379,6 @@ html	html
 婚资	H<zy
 姱姿	H<zy
 婚姻类	H<yl
-活跃	H0
-年均	H7
-爱国主义	H8
 虎	HA
 虎 t	HA
 虎	HAt=
@@ -482913,6 +482920,7 @@ html	html
 海螯江柱初脱泉	HAjZCTQ
 海螯要共诗人把	HAYGsrB
 黄埃散漫风萧索	HASMfxS
+会被	Hb
 菡	Hb
 薅 ,	Hb
 薅	Hb,=
@@ -483666,7 +483674,6 @@ html	html
 华表月明归夜鹤	HbYmGyh
 画屏闲展吴山翠	HbxZWSC
 坏壁无由见旧题	HbWYjjt
-花	HB
 获 t	HB
 获	HBt=
 荒 w	HB
@@ -490886,6 +490893,7 @@ html	html
 或从十五北防河	HCsWbFh
 祸从口出患从口入	HCKCHCR
 祸从口出病从口入	HCKCbCR
+好的	Hd
 肣	Hd
 肣 f	Hd
 肣	Hdf=
@@ -491788,6 +491796,7 @@ html	html
 皇帝行天第一春	HdxtdyC
 黄帝游乎赤水之北	HdYHcSb
 黄灯亮了等一等	Hdlldyd
+回到	HD
 臛	HD
 肒 ,	HD
 肒	HD,=
@@ -492864,7 +492873,6 @@ html	html
 浩荡离愁白日斜	HDlCBrx
 火到猪头烂钱到公事办	HDZTLqB
 画栋朝飞南浦云	HDCfNPY
-后	He
 航 y	He
 航	Hey=
 行 h	He
@@ -495204,7 +495212,6 @@ html	html
 徽徽	HEHE
 徊徨	HEHE
 徨徨	HEHE
-候	Hf
 含 l	Hf
 含	Hfl=
 侯 n	Hf
@@ -496488,7 +496495,6 @@ html	html
 魂飞汤火命如鸡	HfTHmRj
 火凤有凰求不得	HfYHqBd
 鹄飞千里从此始	HfqlCcs
-会	HF
 会 h	HF
 会	HFh=
 伙 i	HF
@@ -501591,6 +501597,7 @@ html	html
 悔过东庭识面迟	HGDtzmc
 火红销尽灰如雪	HGxjHRX
 湖光秋月两相和	HGqYlxh
+回合	Hh
 耗	Hh
 顸 k	Hh
 顸	Hhk=
@@ -513359,7 +513366,6 @@ html	html
 花开堪折直须折	HKKzzXz
 惶恐滩头说惶恐	HKTTSHK
 海阔凭鱼跃天高任鸟飞	HKpYYtGrnf
-号	Hl
 哈 f	Hl
 哈	Hlf=
 喊 k	Hl
@@ -515160,6 +515166,7 @@ html	html
 红莲池里白莲开	HlclBlK
 欢乐的时光总是短暂的	HldsGZd
 好良言难劝该死鬼	HlYNQGG
+后来	HL
 呼	HL
 唤 t	HL
 唤	HLt=
@@ -516613,6 +516620,7 @@ html	html
 魂来空复梦平生	HLKFmps
 後来谁复钓槎头	HLSFdCT
 画龙画虎难画骨	HLHHNHG
+后面	Hm
 孩	Hm
 函 m	Hm
 函	Hmm=
@@ -517518,6 +517526,7 @@ html	html
 黄门寡好心易足	HmGHxyZ
 魂梦久向东南驰	HmjxDNc
 侯门一入深如海	HmyRsRH
+号码	HM
 隍	HM
 隳 f	HM
 隳	HMf=
@@ -518042,6 +518051,7 @@ html	html
 毫毛不敢有所近	HMBGYSj
 祸莫大于不知足	HMDYBzZ
 好摸不过姑娘腿	HMBGGnT
+还能	Hn
 弘	Hn
 弘 .	Hn
 弘	Hn.=
@@ -522662,6 +522672,7 @@ html	html
 海畔云山拥蓟城	HPYSYjc
 还怕两人俱薄命	HPlrJBm
 魂魄不曾来入梦	HPBcLRm
+后期	Hq
 氦	Hq
 篊 c	Hq
 篊	Hqc=
@@ -523479,6 +523490,7 @@ html	html
 灏气才中兔魄圆	HqCZTTY
 红旗半卷出辕门	HqBJCYm
 好亲不过姑娘嘴	HqBGGnZ
+获取	HQ
 簧	HQ
 秽 g	HQ
 秽	HQg=
@@ -524023,6 +524035,7 @@ html	html
 惠泉山下土如濡	HQSxTRR
 或取而有众忿喧	HQeYZfX
 红裙妒杀石榴花	HQDSslH
+湖人	Hr
 谼	Hr
 谽 f	Hr
 谽	Hrf=
@@ -524893,6 +524906,7 @@ html	html
 霍若猛吹翻旌旗	HRmCFjq
 好染髭须事后生	HRzXsHs
 忽如一夜春风来	HRyyCfL
+还是	Hs
 旱	Hs
 昊	Hshv
 颢 k	Hs
@@ -527670,6 +527684,7 @@ html	html
 火燧试焙分新胯	HSsbfxK
 好收吾骨瘴江边	HSWGZjb
 黄山风景名胜区	HSfjmsQ
+话题	Ht
 猴	Ht
 猴 f	Ht
 猴	Htf=
@@ -531647,6 +531662,7 @@ html	html
 坏坏的	HVHd
 坏吧	HVBl
 恚疾	HVjy
+华为	Hw
 鼾	Hw
 鼾 h	Hw
 鼾	Hwh=
@@ -533562,6 +533578,7 @@ html	html
 会挽雕弓如满月	HWdGRMY
 怀王与诸将约曰	HWYZjYY
 或五十步而后止	HWsBeHz
+互相	Hx
 杭	Hx
 椃 a	Hx
 椃	Hxa=
@@ -534926,6 +534943,7 @@ html	html
 韩信将兵多多益善	HxjbDDyS
 祸兮福所倚福兮祸所伏	HxFSyFxHSF
 海西蒙古族藏族自治州	HxmGZZZzzZ
+或许	HX
 桦	HX
 槐 w	HX
 槐	HXw=
@@ -537182,6 +537200,7 @@ html	html
 回也闻一以知十	Hywyyzs
 欢乐的时光总是短暂的	HydsGZd
 豪阀	HyFu
+还有	HY
 麾	HY
 冱 ;	HY
 冱	HY;=
@@ -538696,6 +538715,7 @@ html	html
 会于会稽山阴之兰亭	HYKjSyt
 会于会稽山阴之兰亭	HYKqSyt
 火云满山凝未开	HYMSnwK
+或者	Hz
 镐	Hz
 铪 f	Hz
 铪	Hzf=
@@ -541081,7 +541101,6 @@ html	html
 缋事	H?sj
 缓歌	H?gZ
 也许	i'
-力	i,
 九	i,
 刀	i,
 飝	i,,,
@@ -542676,10 +542695,6 @@ html	html
 豎	i;zl
 𬨂	i;tb
 𨐈	i;fb
-大家都	i0
-什么时候	i7
-的时候	i8
-我们的	i9
 丄	ia
 髠	ia,=
 皻	ia,.
@@ -542899,7 +542914,6 @@ html	html
 乛	ib
 乁	ib
 乚	ib
-乙	ib
 荔	ib,,
 葌	ib,,
 茘	ib,,
@@ -545846,8 +545860,6 @@ html	html
 銜	iezh
 舸	iezl
 亻	if
-人	if
-卜	if
 佊	if,.
 伮	if,.
 伜	if,j
@@ -548507,7 +548519,6 @@ html	html
 辿	igp=
 𫵷	igk,
 告诉	iG
-二	ih
 珕	ih,,
 玻	ih,.
 耚	ih,.
@@ -549770,7 +549781,6 @@ html	html
 𥻗	iixs
 㸆	iiqa
 㶲	iitx
-十	ij
 丁	ij
 丅	ij
 協	ij,,
@@ -552732,7 +552742,6 @@ html	html
 凵	im
 卩	im
 丩	im
-了	im
 陂	im,.
 韌	im,v
 妛	im,z
@@ -555492,7 +555501,6 @@ html	html
 秬	iq;z
 群	iQ
 乂	ir
-入	ir
 八	ir
 貂	ir,l
 飜	ir,t
@@ -555984,9 +555992,6 @@ html	html
 曬	iszy
 删除	iS
 勹	it
-几	it
-儿	it
-九	it
 皱	it,.
 狓	it,.
 鲏	it,.
@@ -558562,7 +558567,6 @@ html	html
 丨	ix
 亅	ix
 朩	ix
-木	ix
 栛	ix,,
 皶	ix,.
 柀	ix,.
@@ -560881,8 +560885,6 @@ html	html
 麠	iyzz
 钅	iz
 釒	iz
-一	iz
-金	iz
 铍	iz,.
 鈹	iz,.
 钖	iz,c
@@ -561885,10 +561887,9 @@ html	html
 䓨	ibpq
 鿎	ikkp
 基础	I`
-武当	I~
+明天	I~
 鄙	Ib
 齿	Ic
-当	Id
 代	ID
 妃	If
 鹤	Ih
@@ -561903,7 +561904,6 @@ html	html
 石	Is
 说：“	IS
 繁体	It
-问	Iw
 碗	IW
 角	Ix
 雪	IX
@@ -561931,7 +561931,6 @@ html	html
 颈围鸽	j!wg
 颈中穴	j!ZX
 界面	j*
-九	j,
 及 v	j,
 及	j,v=
 姐 g	j,
@@ -565739,7 +565738,6 @@ html	html
 艰棘	j.jj
 鸡戟	j.jj
 鸡妈妈	j.MM
-经	j/
 结 j	j/
 结	j/j=
 级 ,	j/
@@ -569289,36 +569287,7 @@ html	html
 建立	j@
 键盘	j`
 即使	j~
-杰	j<
-结果	j0
-经不起	j2
-加密货币	j4
-骄傲	j5a=
-进步	j5b=
-基础	j5c=
-简单	j5d=
-金额	j5e=
-解放	j5f=
-结果	j5g=
-几乎	j5h=
-解决	j5j=
-即可	j5k=
-经历	j5l=
-见面	j5m=
-今年	j5n=
-奇偶	j5o=
-键盘	j5p=
-加强	j5q=
-进入	j5r=
-介绍	j5s=
-今天	j5t=
-几位	j5w=
-进行	j5x=
-教育	j5y=
-简直	j5z=
-击键	j7
-简单	j8
-进步	j9
+强	j<
 冀	ja
 冀 g	ja
 冀	jag=
@@ -575950,6 +575919,7 @@ html	html
 晋祠流水如碧玉	jclSRbY
 坚持四项基本原则	jcsxjbYz
 江城哈尼族彝族自治县	jcHnZyZzzx
+经常	jC
 冥冥	jC
 经常	jC*=
 家传秘方	jCmF
@@ -581366,7 +581336,6 @@ html	html
 酒恶花愁梦多魇	jeHCmDY
 嗟尔後至将何怙	jeHzjhH
 嗟尔後至将何怙	jeHzqhH
-件	jf
 今 p	jf
 今	jfp=
 集 x	jf
@@ -588441,7 +588410,6 @@ html	html
 进攻是最好的防御	jGsZHdY
 金刚座舍利宝塔	jGZslBT
 机关算尽太聪明	jGSjTCm
-进	jh
 静 t	jh
 静	jht=
 击 x	jh
@@ -600002,7 +599970,6 @@ html	html
 京口北固亭怀古	jKbGtHG
 健康是最大的财富	jKsZDdF
 京口瓜洲一水间	jKGZySj
-叫	jl
 践 h	jl
 践	jlh=
 夹 v	jl
@@ -602106,6 +602073,7 @@ html	html
 江流宛转绕芳甸	jlWZRFd
 解铃还须系铃人	jlHXjlr
 家累千金坐不垂堂	jlqjZBCT
+记录	jL
 纹	jL
 经纶天下	jLtx
 经纶满腹	jLMF
@@ -615453,6 +615421,7 @@ html	html
 绛阙清都想盛容	jQqDxsR
 绛阙云台总有名	jQYTZYm
 鸡犬之声相闻老死不相往来	jQzsxwLsBxWL
+家人	jr
 比武	jr
 计日而待	jreD
 计日可待	jrkD
@@ -621501,7 +621470,6 @@ html	html
 江山好改本性难移	jSHGbxy
 计算机科学与技术	jSjkXYjS
 江山易改本性难移	jSyGbxNy
-几	jt
 解 ,	jt
 解	jt,=
 急 p	jt
@@ -628262,6 +628230,7 @@ html	html
 劫运	jvYH
 劫余灰	jvYH
 健	jV
+较为	jw
 舅	jw
 皎 y	jw
 皎	jwy=
@@ -629078,6 +629047,7 @@ html	html
 季文子三思而后行	jwzSsex
 借问吹箫向紫烟	jwCxxzY
 节文斯二者是也	jwsezsy
+今晚	jW
 鹰	jW
 九万里风鹏正举	jWlJ
 颈外动脉	jWDM
@@ -640022,7 +639992,6 @@ html	html
 将欲取之必先与之	jYQzbxz
 家有敝帚享之千金	jYbZxzqj
 金玉其外败絮其中	jYqWBXqZ
-金	jz
 镜 y	jz
 镜	jzy=
 键 n	jz
@@ -644813,7 +644782,7 @@ html	html
 矞云	J!YH
 剑	J,
 借	J.
-济	J/
+死	J/
 巨	J:
 巨 n	J:
 巨	J:n=
@@ -645924,7 +645893,7 @@ html	html
 车资料	J:zl
 巨跖	J:zl
 巨蹠	J:zl
-惊	J;
+按	J;
 绝	J?
 骏 .	J?
 骏	J?.=
@@ -646525,7 +646494,6 @@ html	html
 绝远	J?YH
 绝佳	J?jf
 绝伎	J?jf
-聚会	J`
 娟	J<
 姖 ;	J<
 姖	J<;=
@@ -646825,6 +646793,7 @@ html	html
 举杯消愁愁更愁	JbxCCgC
 举杯意气欲翻盆	JbyqYFp
 举鞭拍手笑山简	JbPSxSj
+举报	JB
 菊	JB
 菌 g	JB
 菌	JBg=
@@ -648560,6 +648529,7 @@ html	html
 卷地风抛市井声	JdfPsjs
 绝顶寒松叶不雕	JdHSxBd
 绝顶寒松叶不雕	JdHSyBd
+绝对	JD
 腃	JD
 腃 i	JD
 腃	JDi=
@@ -651238,10 +651208,10 @@ html	html
 君行适吴我适越	JHsWWKY
 君行适吴我适越	JHsWWsY
 菊花须插满头归	JHXCMTG
+我感觉	Ji
 迭	Ji
 箕	Ji
 墅	Ji
-我感觉	Ji
 卷	JI
 卷 /	JI
 卷	JI/=
@@ -652375,7 +652345,6 @@ html	html
 厥角稽首并二州	JjqSbeZ
 崛强又此凭江淮	JjYcpjH
 掘井九仞而不及泉	JjjreBQ
-聚	JJ
 聚 w	JJ
 聚	JJw=
 鞠 t	JJ
@@ -657375,6 +657344,7 @@ html	html
 卷却天机云锦段	JQtjYjD
 决去湖波尚有情	JQHBSYq
 君去苦早我来暮	JQKZWLM
+巨人	Jr
 冷暖	Jr
 拒人千里之外	JrqW
 军人专政	JrZz
@@ -657490,6 +657460,7 @@ html	html
 郡人谁敢慢陶潜	JrSGMTq
 郡人谁敢慢陶潜	JrSGMYq
 军人以服从命令为天职	JryFCmz
+居然	JR
 爵	JR
 爵 g	JR
 爵	JRg=
@@ -658363,6 +658334,7 @@ html	html
 君死又随人去了	JsYSrQl
 橘生淮南则为橘	JsHNzwJ
 君失臣兮龙为鱼	JscxLwY
+决赛	JS
 晙	JS
 晙 .	JS
 晙	JS.=
@@ -659466,7 +659438,6 @@ html	html
 瞿塘石城草萧瑟	JTscCxs
 卷土重来未可知	JTCLwkz
 据说	Ju
-据	JU
 拒 ;	JU
 拒	JU;=
 捐 l	JU
@@ -661082,6 +661053,7 @@ html	html
 君问归期未有期	JwGqwYq
 且为王孙立斯须	JwWSlsX
 君问二妃何处所	JwefhCS
+绝望	JW
 据我	JW
 觉悟程度	JWcD
 居无定所	JWdS
@@ -662184,6 +662156,7 @@ html	html
 且乐生前一杯酒	Jysqybj
 钜野东倾淮泗满	JyDqHsM
 具以沛公言报项王	JypGYBW
+均匀	JY
 决	JY
 决 n	JY
 决	JYn=
@@ -664241,16 +664214,16 @@ html	html
 缂绣	k?x/
 骒驴	k?L?
 骒骡	k?L?
+可爱的	k`
 毅	k`
 栓	k`
 僳	k`
 祗	k`
-可爱的	k`
+可怜的	k~
 骤	k~
 沪	k~
 嗽	k~
 猷	k~
-可怜的	k~
 娔	k<
 娔 j	k<
 娔	k<j=
@@ -664631,6 +664604,7 @@ html	html
 肯爱千金轻一笑	kAqjqyx
 肯爱闲曹一秃翁	kAxCyTw
 可爱深红爱浅红	kAsHAqH
+课本	kb
 可悲	kb
 可变电容	kbdR
 可比价格	kbjg
@@ -666081,7 +666055,6 @@ html	html
 客耳那堪不忍闻	keNKBrw
 铿尔舍琴而对吏	kesqeDl
 晋	kE
-精神文明	kf
 可分对策	kfDc
 可分态射	kfTs
 可分过程	kfGc
@@ -666132,6 +666105,7 @@ html	html
 克分子浓度	kfzND
 渴肺还生津	kfHsj
 可非前世江都王	kfqsjDW
+客服	kF
 樖	kF
 樖 x	kF
 樖	kFx=
@@ -666600,6 +666574,7 @@ html	html
 可核查性	khCx
 可核查性	khZx
 科赫法则	khFz
+科幻	kH
 珢	kH
 珢 n	kH
 珢	kHn=
@@ -669529,7 +669504,6 @@ html	html
 肯来传舍人皆说	kLCsrjY
 肯来传舍人皆说	kLZsrjS
 肯来传舍人皆说	kLZsrjY
-经济体制	km
 坑蒙拐骗	kmGp
 可没想到	kmxD
 克米里特	kmlt
@@ -669590,6 +669564,7 @@ html	html
 客梦还家得俄倾	kmHjdeq
 客梦冷随枫叶断	kmlSfxD
 客梦冷随枫叶断	kmlSfyD
+科目	kM
 阬	kM
 阬	kMy=
 科目考试	kMKs
@@ -673126,6 +673101,7 @@ html	html
 可调底座	ktdZ
 客亭长短路南北	ktCDLNb
 客亭长短路南北	ktZDLNb
+课堂	kT
 翗	kT
 翗 .	kT
 翗	kT.=
@@ -673634,6 +673610,7 @@ html	html
 肯问箪瓢与万锺	kwDpYMZ
 肯问箪瓢与万锺	kwDpYWZ
 可谓仁之方也已	kwrzFyy
+渴望	kW
 辰	kW
 可望不可及	kWBj
 课外读物	kWDW
@@ -676548,7 +676525,6 @@ html	html
 客子空知行路难	kzKzHLN
 客子空知行路难	kzKzxLN
 克孜勒苏柯尔克孜自治州	kzlSkekzzzZ
-可	kZ
 铿 s	kZ
 铿	kZs=
 铿 g	kZ
@@ -678279,7 +678255,7 @@ html	html
 戣	K!;=
 鄈 m	K!
 鄈	K!m=
-暗访	K*
+作者	K*
 嫝	K,
 嫝 y	K,
 嫝	K,y=
@@ -678564,7 +678540,7 @@ html	html
 纩绵	K?m/
 纩纮	K?H/
 纩缯	K?z?
-看一下	K@
+是因为	K@
 看一看	K_
 空明码	K`
 空明码并击	K~
@@ -678592,12 +678568,6 @@ html	html
 姱词	K<cp
 姱辞	K<cq
 姱大	K<Dk
-开车	K0
-看起来	K2
-看不懂	K4
-空气	K7
-工人阶级	K9
-卡	Ka
 卡 v	Ka
 卡	Kav=
 开始	Ka'=
@@ -679634,6 +679604,7 @@ html	html
 考爱山森林	KASsl
 跨鞍聊一寻	KAlyX
 跨鞍随我游	KASWY
+口碑	Kb
 蔻	Kb
 蔻 o	Kb
 蔻	Kbo=
@@ -680891,6 +680862,7 @@ html	html
 快剥千颗轻红肌	KBqkqGj
 快剥千颗轻红肌	KBqkqHj
 跬步寻常畏简书	KBXCwjS
+堪称	Kc
 漮	Kc
 洘 j	Kc
 洘	Kcj=
@@ -681120,6 +681092,7 @@ html	html
 狂痴未解惜光阴	KcwxxGy
 况此介然衣带窄	KcjRyDZ
 愧此八尺黄琉璃	KcBcHll
+考察	KC
 溃	KC
 洭 ;	KC
 洭	KC;=
@@ -681736,6 +681709,7 @@ html	html
 窥船野鹤何曾下	KCyhhzx
 刳肠以占幸无事	KCyZxWs
 看菜吃饭量体裁衣	KCcFltCy
+看的	Kd
 胩	Kd
 胩 a	Kd
 胩	Kda=
@@ -682239,6 +682213,7 @@ html	html
 空得平安书信回	KdpASxH
 况得数子发嘉兴	KdSzFjx
 龛灯明灭欲三更	KdmmYSg
+看到	KD
 胯	KD
 脍 f	KD
 脍	KDf=
@@ -683169,6 +683144,7 @@ html	html
 况尔初不语	KeCBY
 尧	KE
 拌	KE
+咖啡	Kf
 侃	Kf
 佧 a	Kf
 佧	Kfa=
@@ -683455,7 +683431,6 @@ html	html
 狂风还来欺老树	KfHLqLS
 况逢孟简对卢仝	KfmjDLT
 狂风落尽深红色	KfLjsHs
-会	KF
 傀	KFw=
 俈 q	KF
 俈	KFq=
@@ -686188,7 +686163,6 @@ html	html
 蒯缑弹铗咏新诗	KGDjYxs
 蒯缑弹铗咏新诗	KGTjYxs
 蒯缑玉具皆外物	KGYJjWW
-开	Kh
 刊 s	Kh
 刊	Khs=
 开 x	Kh
@@ -688781,7 +688755,6 @@ html	html
 焜黄	KIHJ
 夔夔	KIKI
 焜焜	KIKI
-考	Kj
 恐 p	Kj
 恐	Kjp=
 勘 ,	Kj
@@ -692335,7 +692308,6 @@ html	html
 空看野叶翠葳蕤	KKyxCwR
 空看野叶翠葳蕤	KKyyCwR
 枯葵应感不足伦	KKyGBZL
-口	Kl
 咖	Kl,=
 叩 m	Kl
 叩	Klm=
@@ -695606,6 +695578,7 @@ html	html
 快马加鞭未下鞍	KMjbwxA
 快马轻衫来一抹	KMqSLyM
 狂谋谬算百不遂	KMmSBBS
+看你	Kn
 尻	Kn
 尻 t	Kn
 尻	Knt=
@@ -697213,7 +697186,6 @@ html	html
 空教	Kojj
 寇贾	Kojj
 空棘	Kojj
-快	KO
 宽 b	KO
 宽	KOb=
 愧 w	KO
@@ -698582,6 +698554,7 @@ html	html
 宽焦	KOjf
 快乐游	KOlY
 快乐说	KOlY
+卡片	Kp
 冚	Kp
 冚 g	Kp
 冚	Kpg=
@@ -698762,6 +698735,7 @@ html	html
 困便横眠饥吃饭	KphmjcF
 鲲鹏击浪从兹始	KpjLCzs
 鲲鹏水击三千里	KpSjSql
+靠谱	KP
 裤	KP
 诓 ;	KP
 诓	KP;=
@@ -699129,7 +699103,6 @@ html	html
 卡帕多西亚	KPDxY
 空蟠胸中书万卷	KPxZSMJ
 空蟠胸中书万卷	KPxZSWJ
-看	Kq
 靠 a	Kq
 靠	Kqa=
 犒 y	Kq
@@ -701107,10 +701080,9 @@ html	html
 窥人鸟唤悠扬梦	KrnHYYm
 适人之适而不自适其适者也	KrzKeBy
 适人之适而不自适其适者也	KrzseBy
-貇	KR
+宽容	KR
 貇 n	KR
 貇	KRn=
-宽容	KR
 姱容修态	KRxT
 岿然不动	KRBD
 宽容态度	KRTD
@@ -701290,6 +701262,7 @@ html	html
 况汝命轻俟涕唾	KRmqqtT
 况汝命轻俟涕唾	KRmqstT
 廓然无圣	KRWs
+考生	Ks
 暟	Ks
 暟 g	Ks
 暟	Ksg=
@@ -706752,6 +706725,7 @@ html	html
 逵巷	KVxj
 堀穴	KVXO
 逵穴	KVXO
+口味	Kw
 衉	Kw
 衉 t	Kw
 衉	Kwt=
@@ -706919,6 +706893,7 @@ html	html
 口吻如风那肯吐	KwRfNkT
 苦问沩山有无句	KwwSYWG
 苦问沩山有无句	KwwSYWJ
+看完	KW
 魁	KW
 魁 o	KW
 魁	KWo=
@@ -707363,6 +707338,7 @@ html	html
 愧无藻监能推毂	KWZjnTG
 愧无征南虿尾手	KWzNCwS
 愧无征南虿尾手	KWzNCyS
+开心	Kx
 楷	Kx
 槛 s	Kx
 槛	Kxs=
@@ -710969,6 +710945,7 @@ html	html
 会于会稽山阴之兰亭	KYHqSyt
 会于会稽山阴之兰亭	KYKjSyt
 会于会稽山阴之兰亭	KYKqSyt
+控制	Kz
 铠	Kz
 锴 ;	Kz
 锴	Kz;=
@@ -711666,10 +711643,10 @@ html	html
 孔子登东山而小鲁	KzdDSeL
 孔子顾谓弟子曰	KzGwdzY
 孔子之谓集大成	KzzwjDc
+枯燥	KZ
 锟	KZ
 锟 s	KZ
 锟	KZs=
-枯燥	KZ
 口诛笔伐	KZbF
 开闸放水	KZFS
 空中客车	KZkc
@@ -712483,8 +712460,6 @@ html	html
 垒壁陈	l!bc
 垒起	l!qv
 垒墙	l!qv
-劳动人民	l*
-力	l,
 姈 f	l,
 姈	l,f=
 嫽 k	l,
@@ -713465,8 +713440,7 @@ html	html
 蠡蠡	l/l/
 练习赛	l/xS
 练形术	l/xS
-炎	l:
-连	l;
+则	l:
 辆 j	l;
 辆	l;j=
 辚 i	l;
@@ -714797,8 +714771,6 @@ html	html
 嫘祖庙	l<Zm
 嫘陲	l<CM
 嫘萦	l<yb
-联系	l0
-仁义	l8
 龄	la
 龄 f	la
 龄	laf=
@@ -715964,6 +715936,7 @@ html	html
 柳边人歇待船归	lbrxDCG
 离别家乡岁月多	lbjxSYD
 两鬓苍苍十指黑	lbCCszh
+了吧	lB
 蕾	lB
 蕾 l	lB
 蕾	lBl=
@@ -720094,6 +720067,7 @@ html	html
 留得枯荷听雨声	ldKhtYs
 留得残荷听雨声	ldChtYs
 留得青山在不怕没柴烧	ldqSZBPmCS
+乐队	lD
 肋	lD
 肋 ,	lD
 肋	lD,=
@@ -722531,6 +722505,7 @@ html	html
 临风有客吟秋扇	lfYkyqS
 灵峰山上宝陀寺	lfSSBTs
 灵峰寺里借绳床	lfsljsC
+历法	lF
 儡	lF
 仂 ,	lF
 仂	lF,=
@@ -722888,7 +722863,6 @@ html	html
 柳拂鞍鞯绿色匀	lFAjLsY
 柳拂旌旗露未干	lFjqLwG
 六幅生绡四五峰	lFsxsWf
-里	lg
 岭 f	lg
 岭	lgf=
 崚 v	lg
@@ -724959,7 +724933,6 @@ html	html
 骊宫高处入青云	lGGCRqY
 邻国之民不加少	lGzmBjS
 流光容易把人抛	lGRyBrP
-理	lh
 琳 x	lh
 琳	lhx=
 玲 f	lh
@@ -726087,6 +726060,7 @@ html	html
 六翮如云岂长锻	lhRYqZD
 联合国欧洲经济委员会	lhGOZjH
 泪痕红浥鲛绡透	lhHyjxT
+灵魂	lH
 耒	lH
 玏 ,	lH
 玏	lH,=
@@ -727616,7 +727590,6 @@ html	html
 燎燎	lili
 粮料	lili
 燐燐	lili
-类	lI
 类 k	lI
 类	lIk=
 类比	lIb;
@@ -732299,6 +732272,7 @@ html	html
 留客听其间	lktqj
 雷克雅未克	lkYwk
 两客争棋烂斧柯	lkzqLFk
+离开	lK
 磊	lK
 磊 k	lK
 磊	lKk=
@@ -735626,7 +735600,6 @@ html	html
 撩乱边愁听不尽	lLbCtBj
 伶伦吹裂孤生竹	lLClGsZ
 辽	lm
-了	lm
 阾 f	lm
 阾	lmf=
 辽 p	lm
@@ -737452,7 +737425,6 @@ html	html
 怜愍鸡豚非孟子	lmjTfmz
 岭梅不用催归骑	lmBYCGj
 岭梅不用催归骑	lmBYCGq
-了	lM
 阞 ,	lM
 阞	lM,=
 了些	lMxa
@@ -740353,10 +740325,10 @@ html	html
 两篇三叹不能休	lpSTBnx
 伶俜寒蝶抱秋花	lpHdBqH
 李凭中国弹箜篌	lpZGDKH
+流派	lP
 诔	lP
 诔 h	lP
 诔	lPh=
-流派	lP
 离谱	lP*=
 力排众议	lPZy
 力迫条件	lPtj
@@ -742054,6 +742026,7 @@ html	html
 灵旗指麾尽貔虎	lqzHjpH
 留情度意抛弦管	lqDyPxG
 六桥横绝天汉上	lqhJtHS
+领取	lQ
 簕	lQ
 簕 j	lQ
 簕	lQj=
@@ -742304,6 +742277,7 @@ html	html
 六曲屏山和梦遥	lQbShmY
 六曲屏山和梦遥	lQpShmY
 醴泉寺古垂橘柚	lQsGCJY
+两人	lr
 嗠	lr
 嗠 t	lr
 嗠	lrt=
@@ -743116,7 +743090,6 @@ html	html
 缭绕芜城一带长	lRWcyDC
 缭绕芜城一带长	lRWcyDZ
 缭绕香烟来月下	lRxYLYx
-量	ls
 量 g	ls
 量	lsg=
 临 q	ls
@@ -746866,7 +746839,6 @@ html	html
 柳条折赠经年别	ltszjnb
 柳条折赠经年别	ltzzjnb
 柳条莺啭清阴里	ltyZqyl
-乐	lT
 乐	lTv=
 鳓 j	lT
 鳓	lTj=
@@ -748186,6 +748158,7 @@ html	html
 堎 v	lV
 堎	lVv=
 塄坎	lVKv
+两位	lw
 皊	lw
 皊 f	lw
 皊	lwf=
@@ -752274,6 +752247,7 @@ html	html
 柳下系船犹未稳	lxxCYww
 两心之外无人知	lxzWWrz
 量小非君子无毒不丈夫	lxfJzWDBZF
+连续	lX
 棱	lX
 楞 g	lX
 楞	lXg=
@@ -759694,6 +759668,7 @@ html	html
 六子晨耕箪瓢出	lzcgDpC
 两只黄鹂鸣翠柳	lzHlmCl
 林子大了什么鸟都有	lzDlsmnDY
+两种	lZ
 镭	lZ
 镭 l	lZ
 镭	lZl=
@@ -762099,9 +762074,6 @@ html	html
 娽 n	L<
 娽	L<n=
 娽娽	L<L<
-老板	L0
-老婆	L8
-论坛	L9
 耍	La
 馏	La
 虑	LA
@@ -767483,6 +767455,7 @@ html	html
 螺簇山低青点点	LCSdqdd
 洛川自有浴妃池	LCzYYfc
 澜沧拉祜族自治县	LCLHZzzx
+来的	Ld
 腊	Ld
 胧 k	Ld
 胧	Ldk=
@@ -768199,6 +768172,7 @@ html	html
 乱点余花唾碧衫	LdYHTbS
 落第汝为中酒味	LdRwZjw
 来得早不如来得巧	LdZBRLdq
+来到	LD
 膟	LD
 胪 a	LD
 胪	LDa=
@@ -769240,6 +769214,7 @@ html	html
 律师界	LEsj
 律师心	LEsx
 律是	LEss
+浪费	Lf
 佬	Lf
 偻 i	Lf
 偻	Lfi=
@@ -772342,7 +772317,6 @@ html	html
 落红满地花初歇	LGMdHCx
 栾公千岁湖冥冥	LGqSHmm
 旅馆寒灯独不眠	LGHdDBm
-弄	Lh
 珑 k	Lh
 珑	Lhk=
 琅 p	Lh
@@ -773063,6 +773037,7 @@ html	html
 露鹤声中江月白	LhsZjYB
 绿荷深处有游龟	LhsCYYG
 绿荷菡萏稍觉晚	LhHDSjW
+落后	LH
 璐	LH
 珞 t	LH
 珞	LHt=
@@ -779005,6 +778980,7 @@ html	html
 龙体系	Lktx
 烂柯应有看棋归	LkyYKqG
 老可能为竹写真	LknwZxz
+来看	LK
 碌	LK
 砢 z	LK
 砢	LKz=
@@ -779289,7 +779265,6 @@ html	html
 来看置酒新亭上	LKzjxtS
 老狂聊作座中先	LKlZZZx
 劳苦而功高如此	LKeGGRc
-来	Ll
 啦 u	Ll
 啦	Llu=
 露 t	Ll
@@ -780954,7 +780929,6 @@ html	html
 闾里不须多按治	LlBXDAz
 泷吏无言只笑侬	LlWYzxN
 鹭立渔船野水乾	LlYCySq
-路	LL
 吕 l	LL
 吕	LLl=
 露	LLlt
@@ -783409,10 +783383,10 @@ html	html
 乱鸣双橹散轻鸥	LmSLSqO
 掠面惊沙寒霎霎	LmjSHSS
 落梅新诗入吾手	LmxsRWS
+浪漫	LM
 陆	LM
 陆 h	LM
 陆	LMh=
-浪漫	LM
 陆河县	LMhx
 罗马帝国	LMdG
 陆地	LMdv
@@ -785514,7 +785488,6 @@ html	html
 懒得想	Lodx
 厢	LO
 鄂	LO
-涡	LO
 洛欧庄园	LOZY
 老区建设	LOjs
 旅欧书简	LOSj
@@ -786069,7 +786042,6 @@ html	html
 来篇信时女	LpxsN
 塱 v	Lp
 塱	Lpv=
-论	LP
 论 f	LP
 论	LPf=
 裸 g	LP
@@ -786913,6 +786885,7 @@ html	html
 路旁时卖故侯瓜	LPsMGHG
 落魄江湖载酒行	LPjHZjx
 落魄酒中无定止	LPjZWdz
+篮球	Lq
 篮	Lq
 笼 k	Lq
 笼	Lqk=
@@ -788394,9 +788367,8 @@ html	html
 乱泉深水绕床鸣	LQsSRCm
 荦确何人似退之	LQhrsTz
 禄劝彝族苗族自治县	LQyZmZzzx
+老人	Lr
 顷	Lr
-鲨	Lr
-沼	Lr
 老人	Lr@=
 来日方长	LrFC
 路人皆知	Lrjz
@@ -788718,10 +788690,10 @@ html	html
 老人七十仍沽酒	LrqsrGj
 落日欲没岘山西	LrYmxSx
 老人小孩都爱吃	LrxHDAc
+输入	LR
 寽	LR
 寽 j	LR
 寽	LRj=
-输入	LR
 老弱病残	LRbC
 录入错误	LRCW
 落入法网	LRFW
@@ -788873,6 +788845,7 @@ html	html
 渌绕宫城漫漫流	LRGcMMl
 来如春梦不多时	LRCmBDs
 乱入池中看不见	LRcZKBj
+律师	Ls
 览	Ls
 览 g	Ls
 览	Lsg=
@@ -792206,7 +792179,6 @@ html	html
 轮台九月风夜吼	LTjYfyH
 落魄酒中无定止	LTjZWdz
 落拓旧游应记得	LTjYyjd
-拉	Lu
 拉 y	Lu
 拉	Luy=
 拦 i	Lu
@@ -793924,6 +793896,7 @@ html	html
 垆坶	LVMV
 垆埴	LVzv
 𫭢	LVft
+论文	Lw
 躴	Lw
 躴 p	Lw
 躴	Lwp=
@@ -798580,6 +798553,7 @@ html	html
 落月摇情满江树	LYYqMjS
 绿杨阴里白沙堤	LYylBSd
 路遥知马力日久见人心	LYzMlrjjrx
+来自	Lz
 镂	Lz
 镂 i	Lz
 镂	Lzi=
@@ -799900,7 +799874,7 @@ html	html
 蜡皮蜥	Lgpx
 阆州城南果何似	LZcNGhs
 癞蛤蟆想吃天鹅肉	LHMxcteR
-卖弄	m'
+一定	m'
 奸	m!
 璧	m!
 妙	m,
@@ -800706,7 +800680,6 @@ html	html
 免费	m:
 祭	m?
 砚	m?
-每个人都	m_
 每一个	m~
 妹	m<
 妹 h	m<
@@ -800963,11 +800936,6 @@ html	html
 妹妹说	m<mY
 妹妹家	m<mj
 媒体界	m<tj
-面包	m0
-每个人	m2
-没有问题	m4
-明确	m7
-命令	m9
 芈	ma
 芈 h	ma
 芈	mah=
@@ -800978,10 +800946,10 @@ html	html
 芈十四	mass
 芈昱廷	maYt
 芈芈芈	mamm
+免安装	mA
 煌	mA
 苇	mA
 沂	mA
-免安装	mA
 没安好心	mAHx
 明暗图案	mATA
 明暗处理	mACl
@@ -802565,6 +802533,7 @@ html	html
 面不改色心不跳	mBGsxBt
 迷邦故令成器晚	mBGlcqW
 靡不有初鲜克有终	mBYCxkYZ
+每次	mc
 渺	mc
 渺 g	mc
 渺	mcg=
@@ -803059,7 +803028,6 @@ html	html
 梦成江上打船蓬	mcjSDCp
 没吃过猪肉还没见过猪跑	mcGZRHmjGZP
 每次成功	mccG
-没	mC
 湄 m	mC
 湄	mCm=
 浼 t	mC
@@ -804966,6 +804934,7 @@ html	html
 鸣蝉更乱行人耳	mCgLHre
 鸣蝉更乱行人耳	mCgLxre
 名垂竹帛书勋在	mCZBSXZ
+们的	md
 腼	md
 脒 i	md
 脒	mdi=
@@ -805375,6 +805344,7 @@ html	html
 每得问讯犹千里	mdwXYql
 每得君诗如得书	mdJsRdS
 梦蝶真人貌黄槁	mdzrMHG
+面对	mD
 朦	mD
 朦 b	mD
 朦	mDb=
@@ -806832,7 +806802,6 @@ html	html
 明妃初出汉宫时	mfCCHGs
 明妃初嫁与胡儿	mfCjYHe
 宓妃留枕魏王才	mflzwWC
-们	mF
 们 u	mF
 们	mFu=
 民法通则	mFTz
@@ -808163,6 +808132,7 @@ html	html
 妙歌扬声倾满堂	mgYsqMT
 民歌姬奭次周南	mgjscZN
 每个人都有不同的境遇	mgrDYBY
+美国	mG
 嵋	mG
 嵋 m	mG
 嵋	mGm=
@@ -809085,6 +809055,7 @@ html	html
 玟璇	mhXH
 每恨生不早	mhsBZ
 民和回族土族自治县	mhHZTZzzx
+美好	mH
 玫	mH
 玧 .	mH
 玧	mH.=
@@ -812081,6 +812052,7 @@ html	html
 美国心	mIGx
 美丽岛	mIlD
 美利达	mIlD
+面积	mj
 醚	mj
 醚 i	mj
 醚	mji=
@@ -813035,7 +813007,6 @@ html	html
 明君制民之产	mJzmzC
 觅句近窥诗一斑	mJjKsyB
 妙句锵金和八銮	mJqjhBL
-面	mk
 勔 ,	mk
 勔	mk,=
 砇 y	mk
@@ -813887,6 +813858,7 @@ html	html
 密克罗尼西亚	mkLnxY
 密克罗尼西亚联邦	mkLnxY
 面馍	mkMt
+门槛	mK
 礞	mK
 曌	mK
 礞 b	mK
@@ -820639,7 +820611,6 @@ html	html
 明枪好躲暗箭难防	mqHDAjF
 明枪容易躲暗箭最难防	mqRyDAF
 煤气喷灯	mqpd
-每	mQ
 每 /	mQ
 每	mQ/=
 篃 m	mQ
@@ -821585,6 +821556,7 @@ html	html
 每一周	mQyZ
 猛犬如黄驴	mQRHL
 梦去呼鹰雪打围	mQHyXDw
+没人	mr
 觅	mr
 觅 g	mr
 觅	mrg=
@@ -822209,7 +822181,6 @@ html	html
 美人在时花满堂	mrZsHMT
 明日复明日明日何其多	mrFmrmD
 牺	mR
-鳖	mR
 泌乳素瘤	mRSl
 面如土色	mRTs
 面容失认	mRsr
@@ -824030,6 +824001,7 @@ html	html
 名世于今五百年	msYjWBn
 孟氏使阳肤为士师	mssYFws
 明是一盆火暗是一把刀	msypHAD
+描述	mS
 盟	mS
 昧 h	mS
 昧	mSh=
@@ -828254,6 +828226,7 @@ html	html
 堳	mVm=
 坆	mVq=
 堳埒	mVlv
+名为	mw
 躾	mw
 躾 i	mw
 躾	mwi=
@@ -831644,6 +831617,7 @@ html	html
 每依南斗望京华	myNDWjH
 梦也何曾到谢桥	myhzDxq
 妙意有在终无言	myYZZWY
+没有	mY
 塺	mY
 糜 i	mY
 糜	mYi=
@@ -833819,6 +833793,7 @@ html	html
 孟氏使阳肤为士师	mzsYFws
 梦泽悲风动白茅	mzbfDBM
 梦之中又占其梦焉	mzZYZqY
+每周	mZ
 镁	mZ
 镁 i	mZ
 镁	mZi=
@@ -834707,7 +834682,6 @@ html	html
 明朝有意抱琴来	mZYyBqL
 明足以察秋毫之末	mZyCqHM
 目的	M'
-毣	M!
 楘 x	M!
 楘	M!x=
 毣 q	M!
@@ -838981,7 +838955,6 @@ html	html
 暮霭朝曦一生子	MACxysz
 暮霭朝曦一生子	MAZxysz
 暮霭沉沉楚天阔	MAccCtK
-买	Mb
 莫 s	Mb
 莫	Mbs=
 茫 c	Mb
@@ -840750,6 +840723,7 @@ html	html
 漠北风沙不可留	MbfSBkl
 墓碑千字多遗余	MbqzDwY
 墓碑千字多遗余	MbqzDyY
+模板	MB
 幕	MB
 墓 v	MB
 墓	MBv=
@@ -842676,6 +842650,7 @@ html	html
 莫辞更坐弹一曲	McgZDyQ
 莫嗔榆柳更萌芽	McYlgmY
 墨池雪岭春俱好	McXlCJH
+卖出	MC
 沐	MC
 沐 x	MC
 沐	MCx=
@@ -843846,10 +843821,10 @@ html	html
 莫滴水西桥畔泪	MdSxqPl
 满地芦花和我老	MdLHhWL
 墨翟之言盈天下	MdzYytx
+矛盾	MD
 胟	MD
 胟 /	MD
 胟	MD/=
-矛盾	MD
 马到成功	MDcG
 矛盾冲突	MDCT
 满打满算	MDMS
@@ -844552,6 +844527,7 @@ html	html
 艒 g	ME
 艒	MEg=
 艒艒船	MEMC
+满分	Mf
 侔	Mf
 侔 .	Mf
 侔	Mf.=
@@ -844673,10 +844649,10 @@ html	html
 霾风携万物	MfxMW
 霾风携万物	MfxWW
 蛮风蜒雨愁黄昏	MfYYCHH
+模仿	MF
 仫	MF
 仫 t	MF
 仫	MFt=
-模仿	MF
 模范带头	MFDT
 满腹牢骚	MFLS
 仫佬族	MFLZ
@@ -846228,7 +846204,6 @@ html	html
 马革裹尸真细事	MgGszxs
 麦根肥润桑叶大	MgfRSxD
 麦根肥润桑叶大	MgfRSyD
-目	MG
 睦 v	MG
 睦	MGv=
 蚞 x	MG
@@ -849665,10 +849640,10 @@ html	html
 万家杨柳青烟里	MjYlqYl
 满架蔷薇一院香	MjqwyYx
 墨江哈尼族自治县	MjHnZzzx
+模具	MJ
 畞	MJ
 畞 g	MJ
 畞	MJg=
-模具	MJ
 募捐活动	MJHD
 毛卷层云	MJcY
 毛举细故	MJxG
@@ -850166,10 +850141,10 @@ html	html
 马克思列宁主义	MkslnZy
 蛮榼花前想自随	MkHqxzS
 末可全抛一片心	MkQPypx
+模块	MK
 砪	MK
 砪 /	MK
 砪	MK/=
-模块	MK
 满口答应	MKDy
 猫哭耗子假慈悲	MKHb
 猫哭耗子	MKHz
@@ -850383,7 +850358,6 @@ html	html
 莫看玄都观里花	MKXDGlH
 莫恐元戎逐客不	MKYRZkB
 莫夸舌在牙齿牢	MKsZYcL
-吗	Ml
 骂 /	Ml
 骂	Ml/=
 嘛 y	Ml
@@ -853306,7 +853280,6 @@ html	html
 马瑙盘盛金缕杯	MNPcjLb
 马瑙盘盛金缕杯	MNPsjLb
 漠南春色到滹沱	MNCsDHT
-忙	Mo
 慢 s	Mo
 慢	Mos=
 寞 b	Mo
@@ -856359,6 +856332,7 @@ html	html
 抹裙彩凤盘宫锦	MQCfPGj
 莫去沙边学钓鱼	MQSbXdY
 暮去朝来颜色故	MQCLYsG
+默认	Mr
 貌	Mr
 貘 b	Mr
 貘	Mrb=
@@ -858627,7 +858601,6 @@ html	html
 万山不隔中秋月	MSBgZqY
 万树桃花映小楼	MSTHyxL
 万岁山前珠翠绕	MSSqZCR
-么	Mt
 么 v	Mt
 么	Mtv=
 猫 b	Mt
@@ -865942,11 +865915,11 @@ html	html
 母子为人实仓廪	MzwrsCl
 马之死者十二三矣	Mzszsey
 眸子不能掩其恶	MzBnYqe
+某种	MZ
 钼	MZ
 𬭁	MZ;=
 钼 g	MZ
 钼	MZg=
-某种	MZ
 忙中出错	MZCC
 满载而归	MZeG
 目中无人	MZWr
@@ -866549,7 +866522,6 @@ html	html
 幕中草檄砚水凝	MZCxYSn
 万丈长缨要把鲲鹏缚	MZCyYBF
 万丈长缨要把鲲鹏缚	MZZyYBF
-能	n!
 能 t	n!
 能	n!t=
 能按	n!Au
@@ -868074,7 +868046,7 @@ html	html
 妮妮	n,n,
 娘子	n,zm
 妮子	n,zm
-涵	n.
+帮	n.
 纽	n/
 纽 m	n/
 纽	n/m=
@@ -868275,7 +868247,7 @@ html	html
 纽约市	n/Ys
 纽伯里	n/Bl
 纽奥良	n/Al
-哑	n:
+太	n:
 匿	n;
 匿 b	n;
 匿	n;b=
@@ -868335,15 +868307,14 @@ html	html
 寡	n?
 粟	n?
 逆天者亡	n@
-逆天改命	n_
+腊八粥	n`
 枚	n`
 拄	n`
 漾	n`
-腊八粥	n`
+鸟语花香	n~
 拘	n~
 恤	n~
 疡	n~
-鸟语花香	n~
 嫩	n<
 嫩 j	n<
 嫩	n<j=
@@ -868516,10 +868487,6 @@ html	html
 嫩江村	n<jC
 嫩娘	n<n,
 嫩妞	n<n,
-宁愿	n0
-易学	n7
-昵称	n8
-匿名	n9
 惄	na
 惄 p	na
 惄	nap=
@@ -868604,6 +868571,7 @@ html	html
 你爱上他	nAST
 你爱我想	nAWx
 能爱的人	nAdr
+牛逼	nb
 孽	nb
 蔫 j	nb
 蔫	nbj=
@@ -868911,6 +868879,7 @@ html	html
 年比数珠剩三颗	nbSZsSk
 牛背短笛催归忙	nbDdCGM
 凝碧池头奏管弦	nbcTZGx
+内部	nB
 石墨	nB
 内部分配	nBfp
 内部矛盾	nBMD
@@ -870220,6 +870189,7 @@ html	html
 念此衰冷勤呵嘘	ncSlqks
 念此衰冷勤呵嘘	ncSlqkX
 酿成千顷稻花香	ncqqDHx
+内存	nC
 浽	nC
 浽	nCr=
 内存储器	nCCq
@@ -870569,6 +870539,7 @@ html	html
 鸟残红柿昔曾分	nCHsxcf
 鸟残红柿昔曾分	nCHsxzf
 霓裳一曲千峰上	nCyQqfS
+你的	nd
 腻	nd
 腻 ;	nd
 腻	nd;=
@@ -871307,6 +871278,7 @@ html	html
 拈得花枝不忍看	ndHzBrK
 年抵冯唐初未半	ndfTCwB
 年抵冯唐初未半	ndpTCwB
+年代	nD
 腇	nD
 腇 q	nD
 腇	nDq=
@@ -873908,6 +873880,7 @@ html	html
 鸟飞不到吴天长	nfBDWtZ
 鸟飞鱼泳随高下	nfYYSGx
 鸟焚鱼烂为可哀	nfYLwkA
+能否	nF
 恁	nF
 恁 p	nF
 恁	nFp=
@@ -874404,7 +874377,6 @@ html	html
 能歌杨白花	ngYBH
 尼格罗人种	ngLrZ
 能歌德声莫入月	ngdsMRY
-内	nG
 内 v	nG
 内	nGv=
 能够摆脱	nGBT
@@ -876024,6 +875996,7 @@ html	html
 年光如水尽东流	nGRSjDl
 年过半百不称意	nGBBBcy
 内透	nGTq
+内核	nh
 辇	nh
 蛪 g	nh
 蛪	nhg=
@@ -876239,8 +876212,8 @@ html	html
 你和他们	nhTm
 内核启动	nhqD
 辇毂下	nhGx
+你会	nH
 疆	nH
-酪	nH
 惺	nH
 内涵丰富	nHfF
 能耗曲线	nHQx
@@ -877347,6 +877320,7 @@ html	html
 粘结剂	nijj
 逆教	nijj
 摊	nI
+你就	nj
 聂	nj
 酿 p	nj
 酿	njp=
@@ -878653,6 +878627,7 @@ html	html
 宁可玉碎不能瓦全	nkYSBnQ
 宁可折本休要饥损	nksbxYS
 宁可折本休要饥损	nkzbxYS
+你看	nK
 峡	nK
 扭亏为盈	nKwy
 扭亏增盈	nKzy
@@ -878950,7 +878925,6 @@ html	html
 拟看斜阳万顷红	nKxYWqG
 拟看斜阳万顷红	nKxYWqH
 牛困人饥日已高	nKrjryG
-呢	nl
 呢 n	nl
 呢	nln=
 啮 a	nl
@@ -879734,7 +879708,6 @@ html	html
 泥莲刚倩藕丝萦	nlGqOsy
 逆鳞可摩若家狗	nlkMRjG
 念柳外青骢别后	nlWqCbH
-呢	nL
 哪	nLn=
 呢料	nLli
 呢吧	nLBl
@@ -880072,6 +880045,7 @@ html	html
 辇路行看斗柄东	nLxKDbD
 恁栏十里芰荷香	nLsljhx
 逆旅人有妾二人	nLrYqer
+你们	nm
 隉	nm
 孨	nmm=
 陧 s	nm
@@ -882719,6 +882693,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 牛皮癣药	npXY
 年平均增长	npJzZ
 年平均增长率	npJzZL
+牛排	nP
 讷	nP
 讷 g	nP
 讷	nPg=
@@ -882819,7 +882794,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 涅盘生死不二见	nPssBej
 涅盘生死不二见	nPssBex
 讷河案	nPhA
-年	nq
 牛 x	nq
 牛	nqx=
 黏 a	nq
@@ -884525,6 +884499,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 宁其生而曳尾于涂中乎	nqseywH
 宁其生而曳尾于涂中乎	nqseyyH
 宁其死为留骨而贵乎	nqswlGH
+你去	nQ
 氝	nQ
 氝 g	nQ
 氝	nQg=
@@ -884757,6 +884732,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 疑人勿用用人勿疑	nrWYYry
 疑人勿使使人勿疑	nrWssrn
 疑人勿使使人勿疑	nrWssry
+能让	nR
 筋	nR
 内容包括	nRBK
 内燃机车	nRjc
@@ -885092,6 +885068,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 能容著帽挥谈拂	nRZMHTF
 念汝还须戴星起	nRHXDxq
 牛乳芳甘那得比	nRFGNdb
+你是	ns
 昵	ns
 暱 ;	ns
 暱	ns;=
@@ -885652,6 +885629,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 年四十而见恶焉	nssejeY
 宁生而曳尾涂中	nseywTZ
 你什么时候来接我啊	nsMsHLA
+你说	nS
 吁	nS
 祀	nS
 忻	nS
@@ -888004,7 +887982,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 宁为鸡口无为牛后	nwjKWwH
 宁为鸡口毋为牛后	nwjKWwH
 宁为玉碎不为瓦全	nwYSBwWQ
-统治阶级	nW
 内外妇儿	nWFe
 内外关系	nWGx
 内外夹攻	nWjG
@@ -888247,6 +888224,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 鸟乌未觉常先晓	nWwjCxx
 鸟於窗外奏萧韶	nWCWZxS
 宁无一个是男儿	nWygsNe
+内心	nx
 柠	nx
 柠 o	nx
 柠	nxo=
@@ -888882,6 +888860,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 拟学耕田给公上	nXgtjGS
 拟学梁家名解脱	nXljmjT
 拟学梁家名解脱	nXljmxT
+你也	ny
 凝	ny
 痆 n	ny
 痆	nyn=
@@ -890694,6 +890673,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 宁知白玉暗成痕	nzBYAch
 辇致归来荷二圣	nzGLhes
 你这个糟老头子坏得很	nzgZLTh
+你在	nZ
 年终	nZ
 内重外轻	nZWq
 牛仔服饰	nZFs
@@ -891322,7 +891302,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 你站在这里不要走动	nZZzlBD
 年比冯唐未觉衰	nbfTwjS
 南方	N'
-缴	N!
+钱	N!
 乃	N,
 奶 ,	N,
 奶	N,,=
@@ -893121,11 +893101,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 纳赛尔	N/Se
 暇	N:
 募	N:
-疫	N?
+恩	N?
 男孩	N@
 女孩	N_
 男人	N~
-女	N<
 女 z	N<
 女	N<z=
 努 ,	N<
@@ -894518,10 +894497,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 奴斯	N<sj
 女肆	N<sj
 女圣纪	N<sj
-哪些	N0
-形而上学	N7
-斜坡	N8
-哪里	N9
 泳	Na
 虐	NA
 虐 ;	NA
@@ -894649,6 +894624,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 虐燄	NAYt
 南岸街道	NAjD
 虐待罪	NADZ
+那边	Nb
 艿	Nb
 艿 ,	Nb
 艿	Nb,=
@@ -897213,7 +897189,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 男儿何不带吴钩	NehBDWG
 甩	NE
 匈	NE
-拿	Nf
 侬 p	Nf
 侬	Nfp=
 拿 u	Nf
@@ -899066,8 +899041,8 @@ $y-$m-$d$20$h:$mi:$s	now=
 那更陪君作诗瘦	NgpJZsS
 哪个耗子不偷油	NgHzBTY
 哪个猫儿不吃腥	NgMeBcx
-囡	NG
 那该	NG
+囡	NG
 弄鬼妆幺	NGZY
 弄鬼弄神	NGNs
 南国风光	NGfG
@@ -899396,7 +899371,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 南陔香草可晨羞	NGxCkcx
 农工已毕岁云暮	NGybSYM
 南国烽烟正十年	NGfYzsn
-弄	Nh
 弄 k	Nh
 弄	Nhk=
 耨 k	Nh
@@ -900745,7 +900719,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 糯高梁	NIGl
 糯米团	NImT
 糯米粥	NImZ
-南	Nj
 南 g	Nj
 南	Njg=
 囊 h	Nj
@@ -903219,7 +903192,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 难堪藏室称中士	NKZscZs
 囊空不办寻春马	NKBBXCM
 暖开蔬甲助春盘	NKSjZCP
-哪	Nl
 哪 n	Nl
 哪	Nln=
 呐 g	Nl
@@ -905501,7 +905473,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 南陌争牛卧作团	NMznWZT
 怒目横行与虎争	NMhHYHz
 怒目横行与虎争	NMhxYHz
-那	Nn
 那 m	Nn
 那	Nnm=
 那边	Nnb,
@@ -909418,6 +909389,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 闹若蚁运壤	NRyYR
 哪容百族共骈阗	NRBZGpt
 乃若所忧则有之	NRSYzYz
+女生	Ns
 暔	Ns
 暔 j	Ns
 暔	Nsj=
@@ -910540,6 +910512,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 浓睡觉来莺乱语	NSjLyLY
 怒水凭风雪垄高	NSpfXLG
 女三为粲当献王	NSwCDxW
+那天	Nt
 猱	Nt
 猱 .	Nt
 猱	Nt.=
@@ -911548,6 +911521,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 妓	NV
 痢	NV
 蓑	NV
+那位	Nw
 齉	Nw
 齉 j	Nw
 齉	Nwj=
@@ -911713,6 +911687,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 乃翁依旧管些儿	NwyjGxe
 乃翁知国如知兵	NwzGRzb
 女闻人籁而未闻地籁	NwrLewL
+那我	NW
 衄	NW
 衂 ,	NW
 衂	NW,=
@@ -912040,6 +912015,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 女巫索我何所有	NWSWhSY
 女娲炼石补天处	NWlsBtC
 那我就大发慈悲的告诉你	NWjDFcn
+那些	Nx
 楠	Nx
 柟 g	Nx
 柟	Nxg=
@@ -912148,7 +912124,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 那些答案	NxDA
 那些大爷	NxDy
 那些担任	NxDr
-楠大典	NxDd
 难解说地	NxSd
 那些道理	NxDl
 楠的	NxdW
@@ -912792,10 +912767,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 暖须人气燠	NXrqY
 南穴残枭欲就烹	NXCxYjp
 女婿有半子之劳	NXYBzzL
+难以	Ny
 疓	Ny
 疓 ,	Ny
 疓	Ny,=
-难以	Ny
 弄影团风	NyTf
 难以表达	NybD
 难以避免	Nybm
@@ -913454,10 +913429,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 南漪杜鹃天下无	NyDJtxW
 难应接许多春色	NyjXDCs
 农业生产合作社	NysChZs
+哪有	NY
 疟	NY
 疟 ;	NY
 疟	NY;=
-哪有	NY
 弄月嘲风	NYCf
 弄玉偷香	NYTx
 弄月抟风	NYTf
@@ -914127,6 +914102,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 暖烟笼瓦碧参差	NYLWbsC
 暖于蛮帐紫茸毡	NYMZzRZ
 哪有什么岁月静好	NYsMSYH
+乃至	Nz
 钠	Nz
 钠 g	Nz
 钠	Nzg=
@@ -914650,6 +914626,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 衲子杀人须见血	NzSrXxX
 南枝向暖北枝寒	NzxNbzH
 脑子是个好东西	NzsgHDx
+那种	NZ
 钕	NZ
 钕 ,	NZ
 钕	NZ,=
@@ -915128,29 +915105,16 @@ $y-$m-$d$20$h:$mi:$s	now=
 揭	o,
 帧	o,
 俩	o.
-岩	o/
+女	o/
 辈	o:
 烧	o:
 径	o:
-悲	o?
-租	o`
-贡	o~
+哎	o?
+市	o`
+卖	o~
 懂	o<
 授	o<
 享	o<
-我呀	o3a=
-我爸	o3b=
-我的	o3d=
-偶尔	o3e=
-我会	o3h=
-我就	o3j=
-我看	o3k=
-我请	o3q=
-偶然	o3r=
-我是	o3s=
-我想	o3x=
-我有	o3y=
-我在	o3z=
 上午	oa
 比赛	ob*=
 保证	oB@=
@@ -915162,7 +915126,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 起跑	oH
 功能	oi*=
 袖	oI
-自己	oj
 简直	oj*=
 精彩	oj@=
 精神	oJ
@@ -915181,13 +915144,12 @@ $y-$m-$d$20$h:$mi:$s	now=
 研究	oY
 政府	oZ
 偶尔	O'
-肩	O!
+卡	O!
 株	O,
 韭	O,
 辕	O,
 离	O.
-哉	O/
-箱	O:
+该	O/
 锦	O:
 区楚良	O:Cl
 区瑞强	O:Rq
@@ -916192,7 +916154,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 欧阳正	O;Yz
 臂	O?
 涉	O?
-稽	O`
+吗	O`
 喉	O~
 芋	O~
 洪	O<
@@ -916554,7 +916516,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 偶尔说笑	OeYx
 偶尔也有	OeyY
 浴	OE
-偶	Of
 偶 g	Of
 偶	Ofg=
 偶得	OfdE
@@ -916992,7 +916953,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 耦蝠箐龛	OFqK
 鸥浮鹭立	OFLl
 瓯饭瓢饮	OFpy
-歌	Og
 耦合运动	OgYD
 欧格鲁姆	OgLM
 讴歌风范	OgfF
@@ -917128,7 +917088,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 耦邃桧	OhSH
 耦合常数	OhCS
 歹	OH
-拌	OH
 哦哈哈哈	OHHH
 哦好玩吗	OHWM
 哦还可以	OHky
@@ -917243,7 +917202,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 哦开机可	OKjk
 哦看见了	OKjl
 哦看见了	OKxl
-哦	Ol
 呕 ;	Ol
 呕	Ol;=
 哦 q	Ol
@@ -918768,7 +918726,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 偶作郊原十日游	OZjYsrY
 欧洲复兴开发银行	OZFxKFH
 朋友	p'
-唇	p!
+慢	p!
 皮	p,
 皮 .	p,
 皮	p,.=
@@ -919961,7 +919919,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 缥缥	p/p/
 骉骉	p/p/
 骗氪	p/kQ
-辔	p:
 辔 l	p:
 辔	p:l=
 辔头	p:To
@@ -920089,34 +920046,11 @@ $y-$m-$d$20$h:$mi:$s	now=
 辔舆	p?YW
 辔靷	p?yj
 辔策	p?cQ
-稿	p`
+连	p`
 姜	p~
 涅	p~
 婄	p<
 婄	p<y=
-怕呀	p4a=
-旁边	p4b=
-平常	p4c=
-平等	p4d=
-普洱	p4e=
-皮肤	p4f=
-苹果	p4g=
-配合	p4h=
-普及	p4j=
-贫困	p4k=
-漂亮	p4l=
-排名	p4m=
-陪你	p4n=
-脾气	p4q=
-骗人	p4r=
-破碎	p4s=
-平台	p4t=
-培训	p4x=
-拼音	p4y=
-配置	p4z=
-平时	p7
-平均	p8
-贫穷	p9
 频	pa
 频 k	pa
 频	pak=
@@ -920286,10 +920220,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 颦呻	pasL
 频带	paDj
 频繁的	paFd
+平安	pA
 裴	pA
 裴 y	pA
 裴	pAy=
-平安	pA
 裴多菲	pADf
 平安归来	pAGL
 平安无事	pAWs
@@ -920991,6 +920925,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 疲兵敢犯犬羊锋	pbGFQYf
 贫病只知为善乐	pbzzwSl
 贫病只知为善乐	pbzzwSy
+陪伴	pB
 蓬	pB
 芃 t	pB
 芃	pBt=
@@ -921384,6 +921319,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 飘泊风尘少滋味	pBfcSzw
 漂泊来游一客星	pBLYykx
 漂泊西南天地间	pBxNtdj
+评测	pc
 漂	pc
 漂 j	pc
 漂	pcj=
@@ -921769,6 +921705,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 彭城之游乐复乐	pczYlFy
 彭城之游乐复乐	pczYyFl
 彭城之游乐复乐	pczYyFy
+平常	pC
 澎	pC
 沛 j	pC
 沛	pCj=
@@ -924436,6 +924373,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 鹏飞逼塞满空虚	pfbSMKX
 鹏飞鲲化未即逍遥游	pfKHwjY
 屏风九叠云锦张	pfjdYjZ
+皮肤	pF
 佩	pF
 伂 j	pF
 伂	pFj=
@@ -925771,6 +925709,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 沛公之参乘樊哙者也	pGzscFy
 沛公之参乘樊哙者也	pGzssFy
 沛公左司马曹无伤使人言于项羽曰	pGZsMCY
+配合	ph
 琵	ph
 耚 ,	ph
 耚	ph,=
@@ -926053,6 +925992,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 膨脝厕元首	phcYS
 便合剑佩趋明光	phjpQmG
 便合与官充水手	phYGCSS
+偏好	pH
 珮	pH
 珮 t	pH
 珮	pHt=
@@ -929618,7 +929558,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 劈开翠峡走云雷	pKCxZYl
 平看鹰隼去飞翔	pKySQfx
 擗开华岳三峰手	pKHYSfS
-品	pl
 平 x	pl
 平	plx=
 啤 w	pl
@@ -932014,7 +931953,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 飘落高下随风花	pLGxSfH
 凭阑半日独无言	pLBrDWY
 烹龙炮凤玉脂泣	pLPfYzq
-陂	pm
+拼命	pm
 陂	pm,=
 疋	pmv=
 陴 w	pm
@@ -934474,6 +934413,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 飘飘乎如遗世独立	ppHRwsl
 飘飘乎如遗世独立	ppHRysl
 平平仄仄平平仄	ppzzppz
+批判	pP
 衯	pP
 衯	pPr=
 偏旁部首	pPBS
@@ -935241,6 +935181,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 扁鹊入秦始治病	pQRqszb
 平泉浩荡银河注	pQHDyhZ
 平泉老令更可悲	pQLlgkb
+烹饪	pr
 贫	pr
 贫 g	pr
 贫	prg=
@@ -936919,6 +936860,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 漂田种杭出穰穰	ptZHCRR
 陂田荒尽岂尝窥	ptHjqCK
 娉婷更欲向何人	ptgYxhr
+配套	pT
 厌	pT
 配套办法	pTBF
 平头百姓	pTBx
@@ -939177,7 +939119,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 贫无置锥人所怜	pWzZrSl
 平芜还破烧痕青	pWHPShq
 平芜尽处是春山	pWjCsCS
-朴	px
 枇 ;	px
 枇	px;=
 朴	pxf=
@@ -939796,6 +939737,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 凭心岂吝慰相怜	pxqlwxl
 拚洗一春汤饼睡	pxyCSbS
 拚洗一春汤饼睡	pxyCTbS
+培训	pX
 棚	pX
 樥 b	pX
 樥	pXb=
@@ -940065,6 +940007,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 便须置酒呼同舍	pXzjHTs
 便寻辙迹访崆峒	pXzjFKD
 便寻辙迹访崆峒	pXzjFKT
+配音	py
 疲	py
 冯	py/=
 癖 n	py
@@ -941285,6 +941228,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 飘衣犹觉色尘高	pyYjscG
 漂影溪光本自明	pyxGbzm
 频倚阑干不自由	pyLGBzY
+培养	pY
 烹	pY
 痭	pYd=
 烹 o	pY
@@ -942034,6 +941978,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 佩玉鸣鸾罢歌舞	pYmLBgW
 片言可以折狱者	pYkyzYz
 朋友多了路好走	pYDlLHZ
+配置	pz
 铍	pz
 铍 ,	pz
 铍	pz,=
@@ -942477,6 +942422,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 披榛觅药采芝菌	pzmYCzJ
 贫子还家作富儿	pzHjZFe
 皮之不存毛将焉附	pzBCMjYF
+品种	pZ
 锫	pZ
 锫 y	pZ
 锫	pZy=
@@ -943059,7 +943005,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 颇黎	P,lq
 颇稜	P,lq
 颇梨	P,lq
-壶	P.
+讲	P.
 淋	P/
 啰	P/
 搏	P:
@@ -943079,10 +943025,9 @@ $y-$m-$d$20$h:$mi:$s	now=
 叵奈	P;Nk
 尀耐	P;Nk
 尀奈	P;Nk
-宛	P?
-魄	P`
+让	P?
+买	P`
 瞒	P~
-秤	P~
 隙	P<
 鲤	P<
 攴	Pa
@@ -943121,6 +943066,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 普安科技	PAkj
 普埃雷东	PAlD
 颇哀老子今日饮	PALzjry
+普遍	Pb
 蔢	Pb
 蔢 ,	Pb
 蔢	Pb,=
@@ -943483,6 +943429,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 蒲鞭挂壁一事无	PbGbysW
 泮冰亡国不崇朝	PbWGBCC
 泮冰亡国不崇朝	PbWGBCZ
+排版	PB
 葡	PB
 蒲 c	PB
 蒲	PBc=
@@ -945494,6 +945441,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 炮车云起风欲作	PcYqfYZ
 破铛煮饭茅三间	PcZFMSj
 普慈寺后千竿竹	PcsHqGZ
+排除	PC
 浦	PC
 瀑	PCs=
 濮 f	PC
@@ -946403,6 +946351,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 庖丁解牛妙世故	PdjnmsG
 庖丁解牛妙世故	PdxnmsG
 跑得了和尚跑不了庙	PdlhSPBlm
+跑到	PD
 脯	PD
 脯	PDj=
 炮弹休克	PDxk
@@ -948625,6 +948574,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 剖割且谁肯	PgJSk
 剖割且谁肯	PgqSk
 蟠根今鬯茂	PgjCM
+曝光	PG
 圃	PG
 圃 j	PG
 圃	PGj=
@@ -948931,10 +948881,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 珀末	PhMh
 破恨悬知酒有兵	PhXzjYb
 帕赫贝尔	Phbe
+徘徊	PH
 璞	PH
 璞 s	PH
 璞	PHs=
-徘徊	PH
 炮火连天	PHlt
 彷徨歧途	PHqT
 彷徨无措	PHWC
@@ -950796,7 +950746,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 暴君纵欲穷人力	PJZYqrl
 怕君瞋我却须吞	PJcWQXT
 炮车云起风欲作	PJYqfYZ
-破	Pk
 磅	Pky=
 破 ,	Pk
 破	Pk,=
@@ -951562,6 +951511,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 破山剑	PkSj
 破文章	PkwZ
 尨	Pktv
+抛开	PK
 比比	PK
 破口大骂	PKDM
 暴狂之徒	PKzT
@@ -951660,7 +951610,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 排空驭气奔如电	PKYqbRd
 袍裤宫人扫御床	PKGrSYC
 浦口杜若愁湘君	PKDRCxJ
-跑	Pl
 啪 u	Pl
 啪	Plu=
 趴 r	Pl
@@ -953306,7 +953255,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 跑哪儿了	PNel
 仆奴睥睨费呼叱	PNbnfHc
 仆奴睥睨费呼叱	PNpnfHc
-怕	Po
 怕 w	Po
 怕	Pow=
 怕被	PobP
@@ -953899,10 +953847,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 拍屁股走人	PpGZr
 破瓢为轮土为釜	PpwLTwF
 破陂漏水不耐旱	PpLSBNH
+拍拍	PP
 谱	PP
 谱 i	PP
 谱	PPi=
-拍拍	PP
 婆婆妈妈	PPMM
 普普通通	PPTT
 谱系	PPxt
@@ -954109,6 +954057,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 扑扑烟岚绕四阿	PPYLRsA
 扑扑烟岚绕四阿	PPYLRse
 浦浦移家蜑子船	PPyjDzC
+抛弃	Pq
 馞	Pq
 繁	Pq/=
 笸 ;	Pq
@@ -954889,7 +954838,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 仆弱马行涩	PRMxs
 滂然遥接石龙关	PRYjDLG
 滂然遥接石龙关	PRYjsLG
-昢	Ps
+拍摄	Ps
 昢 m	Ps
 昢	Psm=
 炮声隆隆	PsLL
@@ -960555,6 +960504,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 颇欲携樽邀使骑	PYxZYsq
 扑缘发尾困牛马	PYFwKnM
 扑缘发尾困牛马	PYFyKnM
+牌子	Pz
 钯	Pz
 钋 f	Pz
 钋	Pzf=
@@ -961238,8 +961188,8 @@ $y-$m-$d$20$h:$mi:$s	now=
 啪叽	Pljl
 牌尾	PwwN
 取	q'
-恰恰	q!
-巧克力	q*
+语法	q!
+而不是	q*
 嫱	q,
 嬛	q,g=
 嫀 h	q,
@@ -961925,7 +961875,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 缉事	q/sj
 骑省集	q/sj
 强大	q:
-七	q;
 切 ,	q;
 切	q;,=
 轻 .	q;
@@ -963978,31 +963927,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 顷听	q;tl
 七美乡	q;mx
 程度	q`
-青松	q~
-铿锵	q0
-前因后果	q4
-全部	q4b=
-其次	q4c=
-确定	q4d=
-全额	q4e=
-缺乏	q4f=
-奇怪	q4g=
-切换	q4h=
-普及	q4j=
-情况	q4k=
-起来	q4l=
-前面	q4m=
-去年	q4n=
-欺骗	q4p=
-恰恰	q4q=
-确认	q4r=
-其实	q4s=
-其他	q4t=
-千万	q4w=
-取消	q4x=
-企业	q4y=
-其中	q4z=
-比试	q7
+人们	q~
 歧	qa
 歧 j	qa
 歧	qaj=
@@ -964847,11 +964772,10 @@ $y-$m-$d$20$h:$mi:$s	now=
 卡剌特	qaLt
 卡卢加	qaLj
 卡梅罗	qamL
-剧	qA
+亲爱的	qA
 杠	qA
 蛔	qA
 瞅	qA
-亲爱的	qA
 弃暗投明	qATm
 乞哀告怜	qAGl
 前凹椎体	qACt
@@ -964929,6 +964853,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 棋按吹毛更不疑	qACMgBn
 棋按吹毛更不疑	qACMgBy
 亲爱的你怎么不在我身边	qAdnzMb
+前辈	qb
 擎	qb
 茄 ,	qb
 茄	qb,=
@@ -969481,6 +969406,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 千棰打锣一棰定声	qCDLyCs
 青春作伴好还乡	qCZBHHx
 青出于蓝而胜于蓝	qCYLesYL
+强调	qd
 腔	qd
 脐 y	qd
 脐	qdy=
@@ -970028,6 +969954,7 @@ $y-$m-$d$20$h:$mi:$s	now=
 乞得摩尼照生灭	qdMnZsm
 汽笛一声肠已断	qdysCyD
 轻蝶怨良宵岑寂	qdYlxcj
+球队	qD
 强渡	qD
 起到	qD*=
 强度很高	qDhG
@@ -971143,7 +971070,6 @@ $y-$m-$d$20$h:$mi:$s	now=
 卡尔德拉港	qedLj
 其恶者自恶	qezze
 企而羡者蓬与蒿	qexzpYH
-醒	qE
 窦	qE
 磺	qE
 睫	qE
@@ -972597,6 +972523,7 @@ E迅速录	qE
 秋风庭院藓侵阶	qftYxqj
 青枫浦上不胜愁	qfPSBsC
 棋逢对手将遇良才	qfDSjYlC
+启发	qF
 潜伏	qF
 强凫变鹤	qFbh
 庆父不死	qFBs
@@ -974107,6 +974034,7 @@ E迅速录	qE
 七个头八个胆	qgTBgD
 犍耕躬稼角挂经	qgGjjGj
 清歌妙舞落花前	qgmWLHq
+情感	qG
 抢购	qG
 强弓硬弩	qGyN
 强干弱枝	qGRz
@@ -979660,7 +979588,6 @@ E迅速录	qE
 前疾	qijy
 前旌	qijy
 前五百	qiWB
-其	qj
 期 d	qj
 期	qjd=
 求 v	qj
@@ -985845,6 +985772,7 @@ E迅速录	qE
 敲锣卖糖各干一行	qLMTgGH
 敲锣卖糖各干一行	qLMTgGx
 骑驴看唱本走着瞧	qLKCbZq
+前面	qm
 戕	qm
 戕 ;	qm
 戕	qm;=
@@ -986789,7 +986717,6 @@ E迅速录	qE
 骑马夜入南山谷	qMyRNSY
 千磨万击还坚劲	qMWjHjj
 桤木三年已足烧	qMSnyZS
-强	qn
 强	qnl=
 迉 p	qn
 迉	qnp=
@@ -989835,7 +989762,6 @@ E迅速录	qE
 求偶行为	qOxw
 侵区违例	qOwl
 千欧姆计	qOMj
-请	qp
 启 l	qp
 启	qpl=
 谴 g	qp
@@ -994598,6 +994524,7 @@ E迅速录	qE
 茕茕孑立形影相吊	qqjlxyxd
 敲敲边鼓	qqbG
 气血	qqXW
+期权	qQ
 钱权	qQ
 强权国家	qQGj
 强取勒索	qQlS
@@ -994848,8 +994775,6 @@ E迅速录	qE
 郄	qr
 郄 m	qr
 郄	qrm=
-清热	qr2=
-穷人	qr2=
 强人政权	qrzQ
 强忍悲痛	qrbT
 清热安胎	qrAT
@@ -995476,6 +995401,7 @@ E迅速录	qE
 岂若封疆今晏眠	qRfjjYm
 颀然病鹤清而修	qRbhqex
 岂如春色嗾人狂	qRCsSrK
+其实	qs
 晴	qs
 昑 f	qs
 昑	qsf=
@@ -1007675,7 +1007601,6 @@ E迅速录	qE
 且有大觉而后知此其大梦也	qYDjeHy
 且予求无所可用久矣	qYqWSky
 将欲取之必先与之	qYQzbxz
-钱	qz
 铅	qzt=
 锲 h	qz
 锲	qzh=
@@ -1010312,9 +1010237,8 @@ E迅速录	qE
 劝解者	Q!jz
 寨	Q,
 钳	Q,
-焰	Q.
-愉	Q/
-区	Q:
+呀	Q.
+呢	Q/
 辁 f	Q:
 辁	Q:f=
 区	Q:r=
@@ -1011095,7 +1011019,7 @@ E迅速录	qE
 驱动器	Q?Dq
 驱动桥	Q?Dq
 驱动着	Q?Dz
-侠	Q`
+搞	Q`
 肖	Q~
 卯	Q~
 姾	Q<
@@ -1011107,7 +1011031,6 @@ E迅速录	qE
 婘属	Q<SN
 婘属	Q<ZN
 婘婘	Q<Q<
-全部都	Q2
 却 '	Qa
 却	Qa'=
 钱啊	Qa
@@ -1011304,6 +1011227,7 @@ E迅速录	qE
 曲柄半径	QbBj
 区别不同情况	QbBTqK
 区别轻重缓急	QbqZHj
+全部	QB
 蕖	QB
 荃 f	QB
 荃	QBf=
@@ -1012091,6 +1012015,7 @@ E迅速录	qE
 全程掉线	Qcdx
 驱车登古原	QcdGY
 去趁蚕生看外家	QcCsKWj
+全场	QC
 渠	QC
 湶 w	QC
 湶	QCw=
@@ -1012800,6 +1012725,7 @@ E迅速录	qE
 取得谅解	Qdlj
 取得联系	Qdlx
 全德之君子	QdzJz
+渠道	QD
 雀	QD
 雀 f	QD
 雀	QDf=
@@ -1016251,9 +1016177,9 @@ E迅速录	qE
 取回来了	QHLl
 却话家山夜雨	QHjSyY
 却话巴山夜雨时	QHBSyYs
+前五百	Qi
 乙	Qi
 绎	Qi
-前五百	Qi
 拳	QI
 券 ,	QI
 券	QI,=
@@ -1016784,7 +1016710,6 @@ E迅速录	qE
 曲径通幽处	QjTYC
 却几日阴沉	Qjryc
 却将万字平戎策	QjWzpRc
-取	QJ
 娶 ,	QJ
 娶	QJ,=
 鹊 t	QJ
@@ -1018878,6 +1018803,7 @@ E迅速录	qE
 却没猜中结尾	QmCZjw
 却没猜中结尾	QmCZjy
 全面建设小康社会	QmjsxKsH
+去买	QM
 阹	QM
 阹 v	QM
 阹	QMv=
@@ -1018966,6 +1018892,7 @@ E迅速录	qE
 驱魔警察	QMjC
 去慢慢的	QMMd
 驱马出关门	QMCGm
+去年	Qn
 合起来	Qn
 去年	Qn*=
 去年开始	QnKs
@@ -1019210,7 +1019137,6 @@ E迅速录	qE
 去年溪打那边流	QnxDNbl
 去年元夜奉宸游	QnYyfcY
 去年醉处犹能记	QnZCYnj
-群	QN
 群 i	QN
 群	QNi=
 屈 m	QN
@@ -1021986,6 +1021912,7 @@ E迅速录	qE
 曲士不可以语于道者	QsBkyYz
 去似朝云无觅处	QsCYWmC
 权势不尤则夸者悲	QsBYzKb
+券商	QS
 泉水	QS
 取送调车	QSdc
 蠼螋亚目	QSYM
@@ -1026218,6 +1026145,7 @@ E迅速录	qE
 却忆红楼半夜灯	QyGLByd
 却忆红楼半夜灯	QyHLByd
 去以六月息者也	QylYxzy
+却又	QY
 痊	QY
 痊 f	QY
 痊	QYf=
@@ -1026956,6 +1026884,7 @@ E迅速录	qE
 取之于蓝而青于蓝	QzYLeqL
 取之不尽用之不竭	QzBjYzBj
 取之于民用之于民	QzYmYzYm
+去做	QZ
 铨	QZ
 铨 f	QZ
 铨	QZf=
@@ -1027439,9 +1027368,9 @@ E迅速录	qE
 去住彼此无消息	QZbcWxx
 却坐促弦弦转急	QZCxxZj
 区区将将	QOjj
-袭	r!
-趣	r,
-击	r.
+吃	r!
+更	r,
+笑	r.
 驲	r/
 驲 s	r/
 驲	r/s=
@@ -1027463,7 +1027392,7 @@ E迅速录	qE
 轫性	r:xo
 轫车	r:c:
 轫车	r:J:
-扩	r;
+别	r;
 纫	r?
 纫 ,	r?
 纫	r?,=
@@ -1027761,10 +1027690,6 @@ E迅速录	qE
 忍耐着	r<NZ
 忍者组	r<zZ
 忍著	r<ZB
-人才	r0
-人身攻击	r2
-热门	r7
-热闹	r8
 拨	ra
 人民	ra'=
 热爱	rA
@@ -1029481,6 +1029406,7 @@ E迅速录	qE
 人得而诛之	rdeZz
 认得迎门轻笑	rdymqx
 人的名儿树的影儿	rdmeSde
+人都	rD
 腍	rD
 肕 ,	rD
 肕	rD,=
@@ -1032086,6 +1032012,7 @@ E迅速录	qE
 仁士	rFsj
 人胜节	rFsj
 忍放花如雪	rFHRX
+人格	rg
 囸	rg
 囸 j	rg
 囸	rgj=
@@ -1032182,6 +1032109,7 @@ E迅速录	qE
 人各有能	rgYn
 人各有所好	rgYH
 人各有所好	rgYSH
+人工	rG
 屻	rG
 屻 ,	rG
 屻	rG,=
@@ -1033010,6 +1032938,7 @@ E迅速录	qE
 任何行业	rhHy
 任何国家	rhGj
 人和国家	rhGj
+日后	rH
 韧	rH
 韧 ,	rH
 韧	rH,=
@@ -1033216,12 +1033145,13 @@ E迅速录	qE
 人行犹可复	rHYkF
 热化学方程式	rHXFcs
 热火盆里抽火炭	rHplCHT
+我觉得	ri
 欺	ri
 檐	ri
 粳	ri
 潦	ri
-我觉得	ri
 裂	rI
+人家	rj
 人际	rj
 日记	rj*=
 忍饥挨饿	rjAe
@@ -1033749,6 +1033679,7 @@ E迅速录	qE
 日见孤峰水上浮	rjGfSSF
 人间那得几回闻	rjNdjHw
 日计不足岁计有余	rjBZSjYY
+人均	rJ
 靭	rJ
 靭 ,	rJ
 靭	rJ,=
@@ -1034548,9 +1034479,9 @@ E迅速录	qE
 人力资源和社会保障部	rlzYhsB
 热力学第二定律	rlXdedL
 热力学第一定律	rlXdydL
+日落	rL
 喏	rL
 喏	rLb=
-日落	rL
 日落而息	rLex
 热浪滚滚	rLGG
 人来人往	rLrW
@@ -1035480,7 +1035411,6 @@ E迅速录	qE
 任凭弱水三千	rpRSSq
 任凭风浪起稳坐钓鱼船	rpfLqwC
 任凭风浪起稳坐钓鱼台	rpfLqwT
-认	rP
 认 f	rP
 认	rPf=
 礽 ,	rP
@@ -1036246,6 +1036176,7 @@ E迅速录	qE
 人穷志短马瘦毛长	rqzDMSZ
 人且偃然寝于巨室	rqYRqYs
 人穷方知钱可贵	rqFzqkG
+人群	rQ
 壬	rQ
 稔 f	rQ
 稔	rQf=
@@ -1036479,6 +1036410,7 @@ E迅速录	qE
 人权发展	rQFZ
 人去似春休	rQsCx
 人去西楼雁杳	rQxLYY
+人人	rr
 日日	rr
 任人摆布	rrBB
 人人喊打	rrHD
@@ -1036850,7 +1036782,6 @@ E迅速录	qE
 荏苒荏苒瞻四海	rRrRZsH
 人如风后入江云	rRfHRjY
 热若蒸屉	rRzt
-日	rs
 人参鹿茸	rsLR
 人身安全	rsAQ
 日本人	rsbr
@@ -1038609,6 +1038540,7 @@ E迅速录	qE
 人善被人欺马善被人骑	rSbrqMq
 人善人欺天不欺	rSrqtBq
 人随沙路向江村	rSSLxjC
+人体	rt
 啪啪	rt
 人体健康	rtjK
 人体机能	rtjn
@@ -1038725,6 +1038657,7 @@ E迅速录	qE
 忍听东风笛	rtDfd
 忍听湘弦重理	rtxxCl
 忍听湘弦重理	rtxxZl
+认同	rT
 饪	rT
 饪 q	rT
 饪	rTq=
@@ -1040442,6 +1040375,7 @@ E迅速录	qE
 人无千日好花无百日红	rWqrHHH
 人无完人金无足赤	rWWrjWc
 人往高处走水往低处流	rWGCZSWdCl
+人性	rx
 杁	rx
 杁 r	rx
 杁	rxr=
@@ -1040963,6 +1040897,7 @@ E迅速录	qE
 任选高处	rXGC
 任选一题	rXyt
 仁恤庶无尤	rXSWY
+任意	ry
 日夜	ry
 日益成为	rycw
 日益恶化	ryeH
@@ -1041358,6 +1041293,7 @@ E迅速录	qE
 日夜经过赵李家	ryjGZlj
 仁义不施而攻守之势异也	ryBseGy
 忍一时风平浪静退一步海阔天空	rysfpLK
+人员	rY
 日月	rY
 人烟稠密	rYCm
 日月经天	rYjt
@@ -1042462,6 +1042398,7 @@ E迅速录	qE
 仁者老吾老以及人之老	rzLWLyL
 人之有是四端也	rzYssDy
 人自伤心水自流	rzSxSzl
+人在	rZ
 驾	rZ
 热重分析	rZfx
 热轧板卷	rZBJ
@@ -1042867,7 +1042804,7 @@ E迅速录	qE
 日夜钻研	ryZY
 人不风流	rBfl
 日夜守护	rySH
-物质文明	R'
+如何看待	R'
 叒	R!
 叒 .	R!
 叒	R!.=
@@ -1044342,15 +1044279,14 @@ E迅速录	qE
 缛绣	R?x/
 缛彩	R?Cr
 缛采	R?Cr
+软件开发	R`
 峻	R`
 疹	R`
 邬	R`
-软件开发	R`
+让你感觉	R~
 宪	R~
 蝗	R~
 柞	R~
-让你感觉	R~
-如	R<
 帤 g	R<
 帤	R<g=
 如 l	R<
@@ -1050190,6 +1050126,7 @@ E迅速录	qE
 如果不出意外	RGBCyW
 如果细心的话	RGxxdH
 瑞光千丈生白毫	RGqZsBH
+融合	Rh
 瑈	Rh
 瑈 .	Rh
 瑈	Rh.=
@@ -1050614,6 +1050551,7 @@ E迅速录	qE
 如何梦也都无	RhmyDW
 如何过得今宵去	RhGdjxQ
 如何四纪为天子	Rhsjwtz
+然后	RH
 瑞	RH
 瑞 g	RH
 瑞	RHg=
@@ -1052371,8 +1052309,8 @@ E迅速录	qE
 醹醴	RJlj
 戎车啴啴	RJCC
 戎车既驾	RJjj
+入坑	Rk
 烛	Rk
-癣	Rk
 揍	Rk
 瑞克大学	RkDX
 瑞克博顿	RkBD
@@ -1052394,6 +1052332,7 @@ E迅速录	qE
 汝可识得	Rksd
 入坑哪个	RkNg
 软壳鸡蛋	RkjD
+入口	RK
 辱	RK
 辱 j	RK
 辱	RKj=
@@ -1054523,7 +1054462,6 @@ E迅速录	qE
 容易给	Royj
 入欧	RO
 入区企业	ROqy
-让	Rp
 冗 t	Rp
 冗	Rpt=
 让 a	Rp
@@ -1055589,6 +1055527,7 @@ E迅速录	qE
 软盘驱动器	RPQDq
 入破舞腰红乱旋	RPWYGLX
 入破舞腰红乱旋	RPWYHLX
+入侵	Rq
 毧	Rq
 毧 ;	Rq
 毧	Rq;=
@@ -1056098,7 +1056037,6 @@ E迅速录	qE
 如日月之食	RrYzs
 如日月之食焉	RrYzsY
 如人饮水冷暖自知	RrySlNzz
-入	RR
 乳 b	RR
 乳	RRb=
 㐈 b	RR
@@ -1057786,7 +1057724,6 @@ E迅速录	qE
 弱水三千只取一瓢	RSSqzQp
 弱水三千只取一瓢饮	RSSqzQy
 若属皆且为所虏	RSjqwSL
-然	Rt
 饶 ;	Rt
 饶	Rt;=
 然 o	Rt
@@ -1058317,6 +1058254,7 @@ E迅速录	qE
 如听万壑松	RtWhS
 汝体吾此心	RtWcx
 如听仙乐耳暂明	RtxleZm
+让他	RT
 獳	RT
 獳 l	RT
 獳	RTl=
@@ -1059403,6 +1059341,7 @@ E迅速录	qE
 攘外必先安内	RWbxAn
 若无闲事挂心头	RWxsGxT
 若无罪而就死地	RWZejsd
+如下	Rx
 榕	Rx
 楺 .	Rx
 楺	Rx.=
@@ -1059735,6 +1059674,7 @@ E迅速录	qE
 柔香系幽素	RxxYS
 汝幸而偶我	RxeOW
 容膝之安一肉之味	RxzAyRw
+入学	RX
 檽	RX
 楉 b	RX
 楉	RXb=
@@ -1060634,6 +1060574,7 @@ E迅速录	qE
 若言琴上有琴声	RYqSYqs
 若言声在指头上	RYsZzTS
 若要人不知除非己莫为	RYrBzCfjMw
+融资	Rz
 融	Rz
 融 g	Rz
 融	Rzg=
@@ -1063244,7 +1063185,7 @@ E迅速录	qE
 绳子等	s?zd
 绅士的	s?sd
 设计	s@
-全速	s`
+这个	s`
 实践	s~
 婶	s<
 婶 o	s<
@@ -1063273,30 +1063214,6 @@ E迅速录	qE
 婶祖母	s<ZM
 婶太太	s<TT
 婶子	s<zm
-实事	s0
-顺便	s5b=
-市场	s5c=
-速度	s5d=
-十分	s5f=
-说过	s5g=
-时候	s5h=
-实践	s5j=
-思考	s5k=
-算了	s5l=
-什么	s5m=
-随你	s5n=
-视频	s5p=
-事情	s5q=
-虽然	s5r=
-身上	s5s=
-身体	s5t=
-所谓	s5w=
-首先	s5x=
-所以	s5y=
-随着	s5z=
-随着	s5Z=
-农活	s7
-似乎	s9
 失	sa
 是啊	sA
 深谙其道	sAqD
@@ -1063469,6 +1063386,7 @@ E迅速录	qE
 甚爱必大费	sAbDf
 圣奥古斯丁	sAGsd
 圣安多尼堂区	sADnTQ
+设备	sb
 虱	sb
 莳 s	sb
 莳	sbs=
@@ -1064131,6 +1064049,7 @@ E迅速录	qE
 士别三日当刮目相待	sbSrDGD
 士别三日刮目相待	sbSrGMD
 四边伐鼓雪海涌	sbFGXHY
+失败	sB
 苼	sB
 葠 f	sB
 葠	sBf=
@@ -1070521,7 +1070440,6 @@ E迅速录	qE
 视而不见听而不闻	seBjteBw
 神而明之存乎其人	semzCHqr
 射	sE
-使	sf
 似 .	sf
 似	sf.=
 食 p	sf
@@ -1077226,6 +1077144,7 @@ E迅速录	qE
 是故弟子不必不如师	sGdzBbs
 是故禽兽可系羁而游	sGqSkjY
 是故禽兽可系羁而游	sGqSkxY
+适合	sh
 示	sh
 示 d	sh
 示	shd=
@@ -1077799,6 +1077718,7 @@ E迅速录	qE
 俟河之清未有期	shzqwYq
 是何异于刺人而杀之	shyYcrz
 是恒物之大情也	shWzDqy
+神话	sH
 瑟	sH
 珅 g	sH
 珅	sHg=
@@ -1079213,7 +1079133,6 @@ E迅速录	qE
 燊	sIx=
 燊海井	sIHj
 籸盆	sIpR
-十	sj
 事 x	sj
 事	sjx=
 世 b	sj
@@ -1083363,7 +1083282,6 @@ E迅速录	qE
 参军新妇贤相敌	sJxFxxd
 参军拄笏看云气	sJZHKYq
 思君不见下渝州	sJBjxYZ
-死	sk
 石	skl=
 厮 j	sk
 厮	skj=
@@ -1086330,6 +1086248,7 @@ E迅速录	qE
 试开云梦羔儿酒	sKYmGej
 试看天下谁能敌	sKtxsnd
 盛满	sKMc
+实力	sl
 嗜	sl
 嗣 n	sl
 嗣	sln=
@@ -1087413,6 +1087332,7 @@ E迅速录	qE
 石廪腾掷堆祝融	sltzDZR
 思量却也有悲时	slQyYbs
 使离朱索之而不得	slZSzed
+思路	sL
 呻	sL
 呻 g	sL
 呻	sLg=
@@ -1087842,6 +1087762,7 @@ E迅速录	qE
 是骡子是马拉出来溜溜	sLzsMLl
 耆老执戟哀扬子	sLzjAYz
 耆老智者但袖手	sLzzDxS
+审美	sm
 旹	sm
 旹 s	sm
 旹	sms=
@@ -1088985,8 +1088906,9 @@ E迅速录	qE
 四面边声连角起	smbsljq
 什么都没有发生过	smDmYFG
 盛名之下无虚士	smzxWXs
-陞	sM
+什么	sM
 是吗	sM
+陞	sM
 陞 q	sM
 陞	sMq=
 石码街道	sMjD
@@ -1093881,7 +1093803,6 @@ E迅速录	qE
 石棚山石棚	spSDp
 石棚山石棚	spSsp
 世披靡矣扶之直	spmyFzz
-设	sP
 神 g	sP
 神	sPg=
 社 v	sP
@@ -1099751,6 +1099672,7 @@ E迅速录	qE
 色取仁而行违	sQrexw
 事去千年犹恨速	sQqnYhS
 死去元知万事空	sQYzWsK
+诗人	sr
 释	sr
 释 .	sr
 释	sr.=
@@ -1100470,8 +1100392,8 @@ E迅速录	qE
 适人之适而不自适其适者也	srzKeBy
 适人之适而不自适其适者也	srzseBy
 十日一水五日一石	srySWrys
+深入	sR
 扮	sR
-堰	sR
 参茸鞭丸	sRbW
 石蕊牛奶	sRnN
 石蕊冻原	sRDY
@@ -1100800,7 +1100722,6 @@ E迅速录	qE
 森然魄动下马拜	sRTDxMB
 事如春梦了无痕	sRCmlWh
 事如芳草春长在	sRFCCCZ
-时	ss
 匙	sst=
 遈 p	ss
 遈	ssp=
@@ -1107734,6 +1107655,7 @@ E迅速录	qE
 赦恩	sVeG
 赦水	sVSC
 赦罪符	sVZF
+思维	sw
 鼶	sw
 鼶 e	sw
 鼶	swe=
@@ -1109698,6 +1109620,7 @@ E迅速录	qE
 生物之以息相吹也	sWzyxxy
 使吾勇于就死也	sWYYjsy
 十五的月亮十六圆	sWdYlslY
+实现	sx
 柿	sx
 杫 a	sx
 杫	sxa=
@@ -1111378,7 +1111301,6 @@ E迅速录	qE
 乘轩故自非明眼	sXGzfmY
 麝熏微度绣芙蓉	sXwDxFR
 斯须改变如苍狗	sXGbRCG
-市	sy
 市 g	sy
 市	syg=
 市 x	sy
@@ -1112998,6 +1112920,7 @@ E迅速录	qE
 斯亦不足畏也已	syBZwyy
 斯亦伐根以求木茂	syFgyqM
 是以圣人犹难之	sysrYNz
+使用	sY
 麝	sY
 瘆 .	sY
 瘆	sY.=
@@ -1114246,6 +1114169,7 @@ E迅速录	qE
 斯友一国之善士	sYyGzSs
 斯友一乡之善士	sYyxzSs
 生于忧患死于安乐	sYYHsYAl
+设置	sz
 铈	sz
 锶 g	sz
 锶	szg=
@@ -1115317,11 +1115241,11 @@ E迅速录	qE
 失之东隅收之桑榆	szDYSzSY
 失之毫厘谬以千里	szHlmyql
 视之不见听之不闻	szBjtzBw
+始终	sZ
 铯	sZ
 𬬹	sZg=
 铯 t	sZ
 铯	sZt=
-始终	sZ
 实在	sZ*=
 盛妆炫服	sZXF
 石嘴山区	sZSQ
@@ -1118363,7 +1118287,6 @@ E迅速录	qE
 召景哈	S,jH
 邵阳县	S,Yx
 邵云	S,YH
-叁	S.
 桑 x	S.
 桑	S.x=
 叁 k	S.
@@ -1119899,7 +1119822,6 @@ E迅速录	qE
 输入国	S:RG
 输入端	S:RD
 输入带	S:RD
-书	S?
 缩 o	S?
 缩	S?o=
 绥 r	S?
@@ -1120809,7 +1120731,7 @@ E迅速录	qE
 书籍类	S?jl
 顺天者昌	S@
 商品	S`
-输入法	S~
+有哪些	S~
 恕	S<
 恕 p	S<
 恕	S<p=
@@ -1120881,10 +1120803,6 @@ E迅速录	qE
 恕辞	S<cq
 恕道	S<Di
 孀单	S<Di
-速录	S0
-熟悉	S8
-熟练	S9
-上	Sa
 上 z	Sa
 上	Saz=
 上边	Sab,
@@ -1123165,6 +1123083,7 @@ E迅速录	qE
 上溜头	SalT
 上流头	SalT
 上乐	SalT
+上岸	SA
 叔	SA
 叔 .	SA
 叔	SA.=
@@ -1127814,7 +1127733,6 @@ E迅速录	qE
 谁持彩练当空舞行动上	ScClDKS
 谁持白羽静风尘	ScBYjfc
 山城斜路杏花香	ScxLxHx
-水	SC
 淑 a	SC
 淑	SCa=
 溯 i	SC
@@ -1130140,7 +1130058,6 @@ E迅速录	qE
 山长水阔知何处	SCSKzhC
 三长一短选最短	SCyDXZD
 山重水复疑无路柳暗花明又一村	SCSFyWLlAHmYyC
-少	Sd
 少 c	Sd
 少	Sdc=
 膳 i	Sd
@@ -1140356,7 +1140273,6 @@ E迅速录	qE
 蜀国曾闻子规鸟	SGcwzGn
 少管闲事少拉稀	SGxsSLx
 树高千丈叶落归根	SGqZxLGg
-三	Sh
 寿 j	Sh
 寿	Shj=
 珊 t	Sh
@@ -1144530,7 +1144446,6 @@ E迅速录	qE
 水花红减似春休	SHGjsCx
 水花红减似春休	SHHjsCx
 水火相济盐梅相成	SHxjYmc
-送	Si
 善 l	Si
 善	Sil=
 烧 ;	Si
@@ -1146619,7 +1146534,6 @@ E迅速录	qE
 送献	Sixj
 烧献	Sixj
 单相系	Sixj
-数	SI
 朔 d	SI
 朔	SId=
 塑 v	SI
@@ -1150979,6 +1150893,7 @@ E迅速录	qE
 随君直到夜郎西	SJzDyLx
 送君千里终须一别	SJqlZXb
 送君千里终须别	SJqlZXb
+上课	Sk
 厦	Sk
 砂 d	Sk
 砂	Skd=
@@ -1152612,7 +1152527,6 @@ E迅速录	qE
 山开旷望旋平陆	SKKWXpL
 水阔鱼沉何处问	SKYchCw
 数口之家可以无饥矣	SKzjkyy
-啥	Sl
 嗓 .	Sl
 嗓	Sl.=
 哨 f	Sl
@@ -1155027,7 +1154941,6 @@ E迅速录	qE
 陕	Sml=
 收 q	Sm
 收	Smq=
-说明	Sm3=
 上面	Sm*=
 收起	Smqv
 上门安装	SmAZ
@@ -1158892,7 +1158805,6 @@ E迅速录	qE
 少年心事当拿云	SnxsDNY
 少年不知精子贵	SnBzjzG
 水能载舟亦能覆舟	SnZZynFZ
-属	SN
 刷 s	SN
 刷	SNs=
 肃 v	SN
@@ -1163095,7 +1163007,6 @@ E迅速录	qE
 沙平水息声影绝	SpSxsyJ
 双皮溜雨四十围	SplYssw
 素朴而民性得矣	Spemxdy
-说	SP
 谁 f	SP
 谁	SPf=
 诉 e	SP
@@ -1165475,7 +1165386,6 @@ E迅速录	qE
 素秋不解随船去	SqBxSCQ
 沙丘城下寄杜甫	SqcxjDF
 数钱数到手抽筋	SqSDSCj
-算	SQ
 税 i	SQ
 税	SQi=
 穗 j	SQ
@@ -1167764,6 +1167674,7 @@ E迅速录	qE
 杀人偿命欠债还钱	SrCmqZHq
 授人以鱼不如授人以渔	SryYBRSryY
 受迫害	SrPH
+收入	SR
 舜	SR
 舜 t	SR
 舜	SRt=
@@ -1169830,6 +1169741,7 @@ E迅速录	qE
 山色空蒙雨亦奇	SsKmYyq
 瘦死的骆驼比马大	SsdLTbMD
 三十年河东三十年河西	SsnhDSsnhx
+手术	SS
 竖	SS
 曙 g	SS
 曙	SSg=
@@ -1172777,7 +1172689,6 @@ E迅速录	qE
 善推其所为而已矣	STqSwey
 树头花落未成阴	STHLwcy
 宿桐庐江寄广陵旧游	STLjjGY
-手	Su
 闪 f	Su
 闪	Suf=
 扫 n	Su
@@ -1175069,6 +1174980,7 @@ E迅速录	qE
 塐	SVh=
 埣 y	SV
 埣	SVy=
+稍微	Sw
 叟	Sw
 叟 .	Sw
 叟	Sw.=
@@ -1181736,6 +1181648,7 @@ E迅速录	qE
 所以遣将守关者	SyqjSGz
 所以谓人皆有不忍人之心者	SywrjYz
 说一是一说二是二	SysySese
+所有	SY
 衰	SY
 熟 o	SY
 熟	SYo=
@@ -1183546,6 +1183459,7 @@ E迅速录	qE
 所有命运赠送的礼物	SYmYzSW
 善有善报恶有恶报	SYSBeYeB
 上有天堂下有苏杭	SYtTxYSH
+数字	Sz
 钐	Sz
 钐 e	Sz
 钐	Sze=
@@ -1185659,7 +1185573,7 @@ E迅速录	qE
 双塘街道	STjD
 埽门	SvmU
 条件	t'
-贾	t!
+早	t!
 婷	t,
 迢 p	t,
 迢	t,p=
@@ -1185817,14 +1185731,7 @@ E迅速录	qE
 忒忒	t;t;
 忒提斯	t;ts
 忒儿	t;eT
-慕	t?
-田地	t`
-提醒	t0
-天天都	t2
-天时地利	t4
-天气	t7
-天空	t8
-马列主义	t9
+走	t?
 龆	ta
 龆 ,	ta
 龆	ta,=
@@ -1186496,6 +1186403,7 @@ E迅速录	qE
 天边树若荠	tbSRj
 天边金掌露成霜	tbjZLcS
 天兵怒气冲霄汉	tbNqCxH
+贴吧	tB
 藤	tB
 藤 d	tB
 藤	tBd=
@@ -1187875,6 +1187783,7 @@ E迅速录	qE
 天长路远魂飞苦	tCLYHfK
 听唱新翻杨柳枝	tCxFYlz
 天长水阔厌远涉	tCSKYYs
+特点	td
 腆	td
 胋 a	td
 胋	tda=
@@ -1192600,7 +1192509,6 @@ E迅速录	qE
 特古西加尔巴	tGxjeB
 提高劳动生产率	tGLDsCL
 天光云影共徘徊	tGYyGPH
-天	th
 替 s	th
 替	ths=
 忝 f	th
@@ -1194554,6 +1194462,7 @@ E迅速录	qE
 啼痕酒痕无限	thjhWx
 梯横画阁黄昏后	thHgHHH
 啼痕止恨清明雨	thzhqmY
+体会	tH
 统一思想	tH
 天寒地冻	tHdD
 停火协议	tHxy
@@ -1194975,6 +1194884,7 @@ E迅速录	qE
 誊正	tIzJ
 誊真	tIzJ
 誊写版	tIxB
+提交	tj
 髫	tj
 斢 o	tj
 斢	tjo=
@@ -1195888,10 +1195798,10 @@ E迅速录	qE
 铁骑无声望似水	tjWsWsS
 天阶夜色凉如水	tjyslRS
 跳进黄河也洗不清	tjHhyxBq
+添加	tJ
 忑	tJ
 忑 p	tJ
 忑	tJp=
-添加	tJ
 听觉刺激	tJcj
 听觉范围	tJFw
 听觉过敏	tJGm
@@ -1196418,7 +1196328,6 @@ E迅速录	qE
 特快专递	tKZd
 剔开红焰救飞蛾	tKHYjfe
 庭空客散人归后	tKkSrGH
-听	tl
 跳 r	tl
 跳	tlr=
 踢 s	tl
@@ -1198498,6 +1198407,7 @@ E迅速录	qE
 铁马从容杀敌回	tMCRSdH
 铁马秋风大散关	tMqfDSG
 听妈妈讲那过去的事情	tMMjNGq
+体内	tn
 屉	tn
 屉 j	tn
 屉	tnj=
@@ -1202138,7 +1202048,6 @@ E迅速录	qE
 天若不爱酒	tRBAj
 天若有情天亦老	tRYqtyL
 天容海色本澄清	tRHsbcq
-题	ts
 剔 s	ts
 剔	tss=
 晀 r	ts
@@ -1202881,6 +1202790,7 @@ E迅速录	qE
 天生我材必有用	tsWCbYY
 天生我才必有用	tsWCbYY
 天时不如地利地利不如人和	tsBRdldlBRrh
+听说	tS
 提速	tS
 调速马达	tSMD
 贴上标签	tSbq
@@ -1206448,6 +1206358,7 @@ E迅速录	qE
 天文大潮	twDC
 天文望远镜	twWYj
 特威菲尔泉岩画	twfeQYH
+听完	tW
 天王	tW
 天无二日	tWer
 滕王阁序	tWgX
@@ -1206660,6 +1206571,7 @@ E迅速录	qE
 天外三峰削不成	tWSfxBc
 滕王高阁临江渚	tWGgljZ
 天网恢恢疏而不漏	tWHHSeBL
+体现	tx
 梯	tx
 梃 q	tx
 梃	txq=
@@ -1210282,6 +1210194,7 @@ E迅速录	qE
 天之历数在尔躬	tzlSZeG
 天之未丧斯文也	tzwSswy
 天知地知你知我知	tzdznzWz
+挑战	tZ
 铽	tZ
 铽 ;	tZ
 铽	tZ;=
@@ -1210798,7 +1210711,6 @@ E迅速录	qE
 嘲	T!
 檀	T!
 甄	T!
-她	T,
 帑 g	T,
 帑	T,g=
 婒 i	T,
@@ -1214156,10 +1214068,6 @@ E迅速录	qE
 嫷服	T<FD
 媠媠	T<T<
 嫷嫷	T<T<
-同志	T0
-桃花	T7
-历年来	T8
-寻人	T9
 忐	Ta
 忐 p	Ta
 忐	Tap=
@@ -1214168,7 +1214076,6 @@ E迅速录	qE
 忐忑与	TatY
 忐忑感	TatG
 忐忑的	Tatd
-凸	TA
 凸 z	TA
 凸	TAz=
 凸版	TABw
@@ -1214399,6 +1214306,7 @@ E迅速录	qE
 凸折线	TAzx
 他爱上她	TAST
 太暗了吧	TAlB
+图表	Tb
 萄	Tb
 苔 .	Tb
 苔	Tb.=
@@ -1214848,6 +1214756,7 @@ E迅速录	qE
 台杯须满引	TbXMy
 叹鬓侵半苎	TbqBZ
 踏遍青山人未老	TbqSrwL
+淘宝	TB
 蓷	TB
 蒤 c	TB
 蒤	TBc=
@@ -1217614,6 +1217523,7 @@ E迅速录	qE
 通常情况下	TCqKx
 偷采白莲回	TCBlH
 头醋不酸二醋不辣	TCBSeCL
+他的	Td
 胎	Td
 胎 .	Td
 胎	Td.=
@@ -1221912,6 +1221822,7 @@ E迅速录	qE
 探风前津鼓	TfqjG
 叹凤嗟身否	TfjsF
 叹凤嗟身否	Tfjsp
+头发	TF
 途	TF
 途 p	TF
 途	TFp=
@@ -1222300,7 +1222211,6 @@ E迅速录	qE
 徒法不能以自行	TFBnyzx
 抟扶摇而上者九万里	TFYeSzl
 突发问题	TFwt
-同	Tg
 同 z	Tg
 同	Tgz=
 炭 k	Tg
@@ -1223673,7 +1223583,6 @@ E迅速录	qE
 同栖	Tgxx
 炭挝	TgWu
 同蹄	Tgtl
-图	TG
 团 j	TG
 团	TGj=
 蜕 i	TG
@@ -1225836,6 +1225745,7 @@ E迅速录	qE
 韬韫	ThYH
 韬瑜	ThYH
 苔痕上阶绿	ThSjL
+他会	TH
 吞	TH
 吞 l	TH
 吞	THl=
@@ -1226852,6 +1226762,7 @@ E迅速录	qE
 煓	TIg=
 煺毛	TIMq
 焞焞	TITI
+统计	Tj
 酮	Tj
 鞳 b	Tj
 鞳	Tjb=
@@ -1227969,7 +1227880,6 @@ E迅速录	qE
 他决不会	TJBH
 同君一席话	TJyxH
 同居长干里	TJCGl
-太	Tk
 套 j	Tk
 套	Tkj=
 套 e	Tk
@@ -1229908,6 +1229818,7 @@ E迅速录	qE
 太霞	Tkxl
 太霄	Tkxl
 塔克拉玛干沙漠	TkLMGSM
+太空	TK
 砣	TK
 豘 ;	TK
 豘	TK;=
@@ -1232102,6 +1232013,7 @@ E迅速录	qE
 头颅早悔平生贱	TLZHpsj
 螳螂执翳而搏之	TLzyeBz
 吐血呀	TLXY
+他们	Tm
 陶	Tm
 陶 t	Tm
 陶	Tmt=
@@ -1237582,6 +1237494,7 @@ E迅速录	qE
 讨羹饭	TpgF
 图片仅供参考	TpjGCK
 太平天国天王府遗址	TptGtWz
+突破	TP
 褪	TP
 袉 o	TP
 袉	TPo=
@@ -1239611,10 +1239524,10 @@ E迅速录	qE
 逃北者	Trbz
 他日汝当用之	TrRDYz
 他日如何举似人	TrRhJsr
+突然	TR
 妥	TR
 妥 ,	TR
 妥	TR,=
-突然	TR
 妥当	TRDf
 投入多少	TRDu
 投入金额	TRje
@@ -1240272,6 +1240185,7 @@ E迅速录	qE
 突如其来的骚	TRqLdS
 陶然共醉菊花杯	TRGZJHb
 澹然空水对斜晖	TRKSDxH
+同时	Ts
 昙	Ts
 遢 p	Ts
 遢	Tsp=
@@ -1241050,6 +1240964,7 @@ E迅速录	qE
 徒使两地眼成穿而骨化石	TsldYcs
 同声相应同气相求	TsxyTqxq
 塔什库尔干塔吉克自治县	TsKeGTjkzzx
+他说	TS
 旽	TS
 旽 ;	TS
 旽	TS;=
@@ -1241791,6 +1241706,7 @@ E迅速录	qE
 台上一分钟台下十年功	TSyfZTG
 铜山西崩洛钟东应	TSxbLZDy
 堂上一呼阶下百诺	TSyHjxBN
+头疼	Tt
 饧	Tt
 饧 ,	Tt
 饧	Tt,=
@@ -1246258,7 +1246174,6 @@ E迅速录	qE
 塔下	Tvxj
 塘下	Tvxj
 塌下	Tvxj
-土	TV
 坉 ;	TV
 坉	TV;=
 坨 o	TV
@@ -1247874,6 +1247789,7 @@ E迅速录	qE
 突兀压神州	TWYsZ
 台湾电视公司	TWdsGs
 台湾事务办公室	TWsWBGs
+图像	Tx
 桃	Tx
 桶 .	Tx
 桶	Tx.=
@@ -1249226,6 +1249142,7 @@ E迅速录	qE
 彤霞久绝飞琼字	TxjJfqz
 投晓共流霞倾尽	TxGlxqj
 途见白云如晶海	TxBYRjH
+同学	TX
 椭	TX
 柝 e	TX
 柝	TXe=
@@ -1251330,6 +1251247,7 @@ E迅速录	qE
 同殷仲文之古树	TyZwzGS
 痛饮狂歌空度日	TyKgKDr
 退役军人事务部	TyJrsWB
+同样	TY
 凃	TY
 凃 f	TY
 凃	TYf=
@@ -1252156,7 +1252074,6 @@ E迅速录	qE
 镋	Tzfl
 锬 i	Tz
 锬	Tzi=
-通知	Tz3=
 投资	Tz*=
 弹指可破	TzkP
 投资成本	Tzcb
@@ -1253228,6 +1253145,7 @@ E迅速录	qE
 太真含笑入帘来	TzHxRlL
 童子解吟长恨曲	TzjyChQ
 兔子急了也咬人	TzjlyYr
+他在	TZ
 铊	TZ
 铊 o	TZ
 铊	TZo=
@@ -1253820,22 +1253738,20 @@ E迅速录	qE
 觉得	u'
 南	u!
 ……	u.
-纪	u/
+型	u/
 西	u:
 东	u;
 北	u?
 霞	u`
 琉	u`
-鉴	u~
-右	u<
+像	u~
+掉	u<
 睛	ua
 凸	uA
 必	ub
-重	uc
-辩	uC
-榴	uC
-侈	uC
 除下	uC
+辩	uC
+侈	uC
 急	ue
 放	uF
 贵	ug
@@ -1253860,7 +1253776,6 @@ E迅速录	qE
 士	us
 杀	uS
 停	ut
-商品经济	uT
 羽	uU
 元	uv
 德	uV
@@ -1253882,7 +1253797,6 @@ E迅速录	qE
 替罪羊	Ua
 不相信	UB
 抽	UC
-国际形势	Ud
 毛泽东思想	Ue
 缘分	UF
 峥嵘	Ug
@@ -1253898,16 +1253812,12 @@ E迅速录	qE
 狂傲	Uo
 问题	Up
 跑路	UP
-唯心主义	Uq
 毛毛雨	Ur
 时候	Us
 男权	Ut
-半殖民地	UT
 经济	Uu
 政治	Uv
-按劳分配	Uw
 我们要	UW
-添油加醋	Ux
 需要	UX
 快如	Uy
 袅娜	Uz
@@ -1253920,8 +1253830,7 @@ E迅速录	qE
 ：	v;
 ~	v?
 民族	v`
-军事上	v~
-_	v0
+过程中	v~
 +	v9
 ‰	va
 @	vA
@@ -1253960,7 +1253869,6 @@ $	vC
 兽	vO
 涡	vO
 蝶	vp
-峭	vp
 眺	vp
 ① ,	vp
 ①	vp,=
@@ -1254091,7 +1253999,6 @@ $	vC
 蛙	vQ
 舌	vr
 氢	vr
-淌	vr
 祜	vr
 № ,	vr
 №	vr,=
@@ -1254355,8 +1254262,8 @@ $	vC
 √	vz
 展	vZ
 ”	V'
-涌	V!
-宙	V,
+少	V!
+啦	V,
 襟	V:
 蘑	V:
 倡	V`
@@ -1254366,7 +1254273,6 @@ $	vC
 腮	V~
 斌	V<
 逍	V<
-剥削阶级	Va
 塘	VA
 全拼	Vb
 俏	VB
@@ -1254386,7 +1254292,6 @@ $	vC
 蟒	VF
 鹰犬	Vg
 腺	VG
-另谋出路	Vh
 勋	VH
 隋	VH
 这件	Vi
@@ -1254439,7 +1254344,6 @@ $	vC
 鹃	VW
 回答	Vx
 哗	VX
-萤	VX
 悍	VX
 除了	Vy
 怎样	VY
@@ -1255174,11 +1255078,11 @@ $	vC
 维修点	w?xd
 纹影法	w?yF
 我at	w@
-文件夹	w`
+很多人	w`
+文言文	w~
 汲	w~
 笺	w~
 蘸	w~
-文言文	w~
 娓	w<
 娓 n	w<
 娓	w<n=
@@ -1255189,34 +1255093,8 @@ $	vC
 娓娓	w<w<
 娓告	w<Gq
 媦婿	w<X<
-未来	w0
-为的是	w2
-我们	w3m=
-五笔	w3b=
-为此	w3c=
-我的	w3d=
-玩儿	w3e=
-无法	w3f=
-我国	w3g=
-文化	w3h=
-文件	w3j=
-唯恐	w3k=
-为了	w3l=
-无奈	w3n=
-网盘	w3p=
-完全	w3q=
-微软	w3r=
-晚上	w3s=
-问题	w3t=
-问问	w3w=
-无线	w3x=
-唯一	w3y=
-为止	w3z=
-为了我们	w4
-文件	w7
-位置	w8
-问问	w9
 唉	wa
+文案	wA
 问安	wA
 微奥米伽	wAmG
 未艾方兴	wAFx
@@ -1255633,6 +1255511,7 @@ $	vC
 未必为其服也	wbwqFy
 未必知其道也	wbzqDy
 位卑未敢忘忧国	wbwGWYG
+微博	wB
 萎	wB
 薇 e	wB
 薇	wBe=
@@ -1257772,6 +1257651,7 @@ $	vC
 未得报恩不能归	wdBeBnG
 未抵柴桑陌上尘	wdCSMSc
 未得与项羽相见	wdYxYxj
+温度	wD
 肳	wD
 腲 g	wD
 腲	wDg=
@@ -1261986,7 +1261866,6 @@ $w	week
 问何人会解连环	whrKxlH
 为何你如此优秀	whnRcYx
 为何你如此突出	whnRcTC
-未	wH
 未 v	wH
 未	wHv=
 违 p	wH
@@ -1263771,10 +1263650,9 @@ $w	week
 为虺弗摧为蛇若何	wHFCwsh
 为虺弗摧为蛇若何	wHFCwyh
 未展	wHZn
+我这样	wi
 奚	wi
 烩	wi
-我这样	wi
-为	wI
 煨 g	wI
 煨	wIg=
 炜 h	wI
@@ -1266466,6 +1266344,7 @@ $w	week
 唯恐天下不乱	wKtxBL
 惟恐天下不乱	wKtxBL
 惟恐鸟散花飘零	wKnSHpl
+为了	wl
 伪劣	wl
 温良恭俭让	wlGR
 为了这些	wlzx
@@ -1271569,6 +1271448,7 @@ Android	wo
 问人于他邦	wrYTB
 唯仁者能好人	wrznHr
 为人性僻耽佳句	wrxpDjJ
+微软	wR
 翁	wR
 翁 .	wR
 翁	wR.=
@@ -1272640,6 +1272520,7 @@ Android	wo
 为谁辛苦为谁甜	wsxKwst
 为谁憔悴损芳姿	wsqCSFz
 为什么我的眼里常含泪水	wsMWdYS
+为啥	wS
 韪	wS
 暡 r	wS
 暡	wSr=
@@ -1273388,6 +1273269,7 @@ Android	wo
 唯倜傥非常之人称焉	wtTfCzY
 威天下不以兵革之利	wtxBybl
 为天下人谋永福也	wtxrMYy
+为他	wT
 危	wT
 猥 g	wT
 猥	wTg=
@@ -1275179,6 +1275061,7 @@ Android	wo
 为问天戎窦车骑	wwtRDJj
 为问天戎窦车骑	wwtRDJq
 微微一笑很倾城	wwyxhqc
+问我	wW
 璺	wW
 璺 h	wW
 璺	wWh=
@@ -1275507,10 +1275390,10 @@ Android	wo
 唯我与尔有是夫	wWYeYsF
 谓吾不知汝之不欲吾死也	wWBzRzy
 谓吾忍舍汝而死	wWrsRes
+危险	wx
 杤	wx
 杤 ;	wx
 杤	wx;=
-危险	wx
 危行危言	wxwY
 维系人心	wxrx
 维修人员	wxrY
@@ -1276145,6 +1276028,7 @@ Android	wo
 惟见长江天际流	wxCjtjl
 惟见长江天际流	wxZjtjl
 维西傈僳族自治县	wxlSZzzx
+文学	wX
 桅	wX
 椳 g	wX
 椳	wXg=
@@ -1279839,7 +1279723,6 @@ Android	wo
 纨裤	W/KP
 纨袴	W/KP
 无线	W:
-万	W;
 瓦 v	W;
 瓦	W;v=
 卧 f	W;
@@ -1281420,11 +1281303,11 @@ Android	wo
 毋宁死	W?ns
 毋忘	W?Wy
 毋望	W?Wy
-我个人	W@
+这样的	W@
 倘	W`
 辗	W`
-琼	W~
 我现在	W~
+琼	W~
 妩	W<
 妩 h	W<
 妩	W<h=
@@ -1281436,12 +1281319,6 @@ Android	wo
 妩媚值	W<mz
 妩丽	W<lz
 妩媚的	W<md
-电影	W0
-我一直	W2
-我不知道	W4
-另外	W7
-毕竟	W8
-晚上	W9
 龌	Wa
 龌 n	Wa
 龌	Wan=
@@ -1281640,6 +1281517,7 @@ Android	wo
 我爱夏日长	WAxrC
 吾爱孟夫子	WAmFz
 吾安得夫忘言之人而与之言哉	WAdFWYZ
+无比	Wb
 蔓	Wb
 蔓 s	Wb
 蔓	Wbs=
@@ -1282178,6 +1282056,7 @@ Android	wo
 吾辈处今日之中国	WbCjrzG
 五笔中的战斗机	WbZdZDj
 五笔中的法拉利	WbZdFLl
+我不	WB
 芜	WB
 芜 h	WB
 芜	WBh=
@@ -1284208,6 +1284087,7 @@ Android	wo
 吾诚愿与汝相守以死	WcYYRxs
 无此道而为此服者	WcDewcz
 𬇕	Wc;=
+我从	WC
 污	WC
 浯 j	WC
 浯	WCj=
@@ -1284975,6 +1284855,7 @@ Android	wo
 无产阶级革命家	WCjjgmj
 务川仡佬族苗族自治县	WCgLZmZzzx
 蔓草横生	WChs
+我的	Wd
 腕	Wd
 肟 h	Wd
 肟	Wdh=
@@ -1285907,6 +1285788,7 @@ Android	wo
 武帝祠前云欲散	WdcqYYS
 五帝三皇神圣事	WdSHsss
 舞低杨柳楼心月	WdYlLxY
+我对	WD
 无端	WD
 我都	WD*=
 万达华府	WDHF
@@ -1287616,7 +1287498,7 @@ Android	wo
 我非生而知之者	Wfsezzz
 吾非至于子之门则殆矣	WfzYzzy
 五峰土家族自治县	WfTjZzzx
-伍	WF
+无法	WF
 俉	WFjl
 侮 q	WF
 侮	WFq=
@@ -1288612,7 +1288494,6 @@ Android	wo
 我返自崖君去矣	WFzYJQy
 无法无天是为民	WFWtswm
 无复射蛟江水中	WFsjjSZ
-网	Wg
 蜗 l	Wg
 蜗	Wgl=
 罔 i	Wg
@@ -1289662,6 +1289543,7 @@ Android	wo
 五更鼓角声悲壮	WgGjsbZ
 五更依旧落花朝	WgyjLHC
 五更依旧落花朝	WgyjLHZ
+我国	WG
 蜈	WG
 屼 k	WG
 屼	WGk=
@@ -1290484,7 +1290366,6 @@ Android	wo
 吴宫花草埋幽径	WGHCMYj
 王顾谓其友颜不疑曰	WGwqYYY
 王顾左右而言他	WGZYeYT
-王	Wh
 玩 h	Wh
 玩	Whh=
 顽 k	Wh
@@ -1293363,7 +1293244,6 @@ Android	wo
 无恒产者无恒心	WhCzWhx
 我和小伙伴们都惊呆了	WhxHBml
 我和我的小伙伴们都惊呆了	WhWdxHl
-无	WH
 武 a	WH
 武	WHa=
 无 b	WH
@@ -1296015,6 +1295895,7 @@ Android	wo
 焐脚	WIjd
 焐热	WIrU
 粅粅	WIWI
+我就	Wj
 斡	Wj
 斡 f	Wj
 斡	Wjf=
@@ -1299792,6 +1299673,7 @@ Android	wo
 无可无不可	WkWBk
 恶客云是谁	WkYsS
 无可奈何花落去	WkNhHLQ
+我看	WK
 戊	WK
 兀 b	WK
 兀	WKb=
@@ -1304494,6 +1304376,7 @@ Android	wo
 我们一起学猫叫	WmyqXMj
 我们是受过专业训练的	WmsSGZd
 无面目见江东父老	WmMjjDFL
+我妈	WM
 阢	WM
 陚	WMh=
 阢 k	WM
@@ -1304868,10 +1304751,10 @@ Android	wo
 王莽谦恭未篡时	WMqGwCs
 王母桃花千遍红	WMTHqbH
 吾末如之何也已矣	WMRzhyy
+万能	Wn
 卐	Wn
 卐 z	Wn
 卐	Wnz=
-万能	Wn
 万年遗臭	WnyC
 万年花城	WnHc
 万能驱动	WnQD
@@ -1305617,7 +1305500,6 @@ Android	wo
 无奈夜长人不寐	WNyZrBm
 无那金闺万里愁	WNjGWlC
 吾乃今于是乎见龙	WNjYsHL
-完	Wo
 窝 l	Wo
 窝	Wol=
 惘 g	Wo
@@ -1306545,6 +1306427,7 @@ Android	wo
 悟觉	WOjo
 寤觉	WOjo
 悟寂	WOjo
+物品	Wp
 袜	Wp
 袜 h	Wp
 袜	Wph=
@@ -1307268,7 +1307151,6 @@ Android	wo
 王牌对王牌	WPDWP
 舞破中原始下来	WPZYsxL
 王婆卖瓜自卖自夸	WPMGzMzK
-我	Wq
 我 v	Wq
 我	Wqv=
 完全	Wq*=
@@ -1310413,6 +1310295,7 @@ Android	wo
 舞裙歌板尽情欢	WQgBjqH
 我去给你买几个橘子	WQgnMjz
 我去给你买几个橘子	WQjnMjz
+万人	Wr
 兦	Wr
 兦	Wrb=
 尩 h	Wr
@@ -1310763,6 +1310646,7 @@ Android	wo
 无人知是荔枝来	WrzslzL
 吾日三省乎吾身	WrSxHWs
 我仍待你如初恋	WrDnRCl
+污染	WR
 兦 b	WR
 兦	WRb=
 㐅	WR
@@ -1312322,6 +1312206,7 @@ Android	wo
 五十者可以衣帛矣	Wszkyyy
 无事献殷勤非奸即盗	WsxyqfD
 万事俱备只欠东风	WsJbzqDf
+网上	WS
 晤	WS
 晤 j	WS
 晤	WSj=
@@ -1313305,7 +1313190,6 @@ Android	wo
 无数铃声遥过碛	WSlsYGq
 吾所以有大患者	WSyYDHz
 无所逃于天地之间	WSTYtdj
-外	Wt
 外 f	Wt
 外	Wtf=
 丸	Wtv=
@@ -1317162,7 +1317046,6 @@ Android	wo
 鼯	WW
 鼯 j	WW
 鼯	WWj=
-往往	WW2=
 万物皆可	WWjk
 万万没想到	WWmD
 无万大千	WWDq
@@ -1317721,6 +1317604,7 @@ Android	wo
 吴娃双舞醉芙蓉	WWSWZFR
 物物而不物于物	WWeBWYW
 万恶淫为首百善孝为先	WWywSBx
+我想	Wx
 枉	Wx
 枉 h	Wx
 枉	Wxh=
@@ -1318862,6 +1318746,7 @@ Android	wo
 五溪衣服共云山	WxyFGYS
 我现在慌得一批	WxZHdyp
 无心插柳柳成荫	WxCllcy
+无需	WX
 杇	WX
 梧 j	WX
 梧	WXj=
@@ -1320661,6 +1320546,7 @@ Android	wo
 勿以恶小而为之	Wyexewz
 勿以善小而不为	WySxeBw
 物以类聚人以群分	WylJryQf
+我要	WY
 於	WY
 於 f	WY
 於	WYf=
@@ -1321733,6 +1321619,7 @@ Android	wo
 五月五日天晴明	WYWrtqm
 完颜希尹家族墓地	WYxyjZd
 无源之水无本之木	WYzSWbzM
+完整	Wz
 豌	Wz
 豌 o	Wz
 豌	Wzo=
@@ -1322524,6 +1322411,7 @@ Android	wo
 我自中宵成转侧	WzZxcZZ
 望之而不见其崖	WzeBjqY
 王子犯法与庶民同罪	WzFFYSmTZ
+我在	WZ
 钨	WZ
 钨 t	WZ
 钨	WZt=
@@ -1324175,7 +1324063,6 @@ Android	wo
 姓袁的	x,Yd
 姓张的	x,Zd
 嫌脏	x,Zd
-习	x.
 戏 ;	x.
 戏	x.;=
 熊 o	x.
@@ -1325121,7 +1325008,6 @@ Android	wo
 熊官屯	x.GZ
 习于	x.YH
 习黎明	x.lm
-线	x/
 乡 c	x/
 乡	x/c=
 线 h	x/
@@ -1326711,7 +1326597,6 @@ Android	wo
 线鞋	x/xj
 细揣	x/CU
 平台	x:
-邪	x;
 匣 g	x;
 匣	x;g=
 辖 o	x;
@@ -1327135,13 +1327020,9 @@ Android	wo
 邪正	x;zJ
 邪政	x;zJ
 熙政	x;zJ
-贤	x?
-想像	x@
+车	x?
+意见	x@
 性质	x`
-行之有效	x4
-现象	x7
-小事	x8
-形象	x9
 些	xa
 韰 a	xa
 韰	xaa=
@@ -1337027,7 +1336908,6 @@ Android	wo
 行到中庭数花朵	xDZtSHD
 羞答答的玫瑰静悄悄的开	xDDdmGK
 休对故人思故国	xDGrsGG
-行	xe
 衔 q	xe
 衔	xeq=
 欣 t	xe
@@ -1338658,7 +1338538,6 @@ Android	wo
 小儿误喜朱颜在	xeWxZYZ
 笑而不答心自闲	xeBDxzx
 秀而不实者有矣夫	xeBszYF
-像	xf
 信 y	xf
 信	xfy=
 休	xfx=
@@ -1341531,6 +1341410,7 @@ Android	wo
 新丰美酒斗十千	xfmjDsq
 相逢一笑泯恩仇	xfyxmeC
 相逢一笑泯恩仇	xfyxmeq
+想法	xF
 信访	xF
 行拂乱其所为	xFLw
 系副主任	xFZr
@@ -1344663,7 +1344543,6 @@ Android	wo
 箫管迎龙水庙前	xGyLSmq
 叶公问孔子于子路	xGwKzYL
 香港电视广播有限公司	xGdsGBs
-现	xh
 形 e	xh
 形	xhe=
 型 v	xh
@@ -1347725,7 +1347604,6 @@ Android	wo
 煋煋	xixi
 羞问	xiwU
 秀	xI
-下	xj
 喜 i	xj
 喜	xji=
 西 z	xj
@@ -1357373,6 +1357251,7 @@ Android	wo
 小楼吹彻玉笙寒	xLCcYsH
 小楼一夜听风雨	xLyytfY
 形劳而不休则弊	xLeBxzb
+下面	xm
 限	xm
 险 f	xm
 险	xmf=
@@ -1360661,7 +1360540,6 @@ Android	wo
 西南火星如弹丸	xNHxRDW
 西南火星如弹丸	xNHxRTW
 匈奴草黄马正肥	xNCHMzf
-性	xo
 兴 r	xo
 兴	xor=
 惜 j	xo
@@ -1389838,13 +1389716,13 @@ Android	wo
 项庄舞剑意在沛公	xZWjyZpG
 下午	xW*=
 细叙别情	xXbq
-涯	X!
+您	X!
 簇	X,
 拴	X,
 眸	X.
 痪	X.
 荚	X.
-捏	X/
+每	X/
 轩	X:
 轩 h	X:
 轩	X:h=
@@ -1390805,7 +1390683,6 @@ Android	wo
 嬛嬛	X<X<
 旭旭	X<X<
 姁姁	X<X<
-学习	X7
 迅	Xa
 虚	XA
 虚 a	XA
@@ -1391373,8 +1391250,8 @@ Android	wo
 虚乔	XAqq
 虚怯怯	XAqq
 虚拟组	XAnZ
-苋	Xb
 雪崩	Xb
+苋	Xb
 喧宾夺主	XbDZ
 悬臂梁桥	Xblq
 悬臂模板	XbMB
@@ -1392479,6 +1392356,7 @@ Android	wo
 熏彻金猊烬冷	Xcjnjl
 宣城还见杜鹃花	XcHjDJH
 宣城太守知不知	XcTSzBz
+宣传	XC
 汛	XC
 汛 b	XC
 汛	XCb=
@@ -1392972,6 +1392850,7 @@ Android	wo
 寻常相见了	XCxxl
 宣传科长	XCkZ
 寻常百种花齐发	XCBZHqF
+学的	Xd
 学弟	Xd
 蓄电池壳	Xdck
 蓄电池室	Xdcs
@@ -1393122,6 +1393001,7 @@ Android	wo
 选调对象	XdDx
 薛定谔方程	XdeFc
 寻甸回族彝族自治县	XdHZyZx
+学到	XD
 臐	XD
 臐 q	XD
 臐	XDq=
@@ -1395806,6 +1395686,7 @@ Android	wo
 询根问底	Xgwd
 许个愿望	XgYW
 徐各庄村	XgZC
+选购	XG
 悬	XG
 眩 y	XG
 眩	XGy=
@@ -1396574,6 +1396455,7 @@ Android	wo
 烜赫一时	Xhys
 宣和遗事	Xhys
 烜赫大梁城	XhDlc
+学会	XH
 璇	XH
 珣 t	XH
 珣	XHt=
@@ -1398521,7 +1398403,6 @@ Android	wo
 雪里已知春信至	XlyzCxz
 迅雷不及掩耳盗铃之势	XlBjYes
 迅雷不及掩耳之势	XlBjYezs
-需	XL
 需 k	XL
 需	XLk=
 雪 n	XL
@@ -1400272,7 +1400153,6 @@ Android	wo
 卂 x	XN
 卂	XNx=
 𬩽	XNm=
-寻	XNj2
 迅驰	XNc/
 迅即	XNjn
 迅捷	XNju
@@ -1403825,7 +1403705,6 @@ Android	wo
 需求进行	Xqjx
 续清经解	Xqjx
 雪晴池馆如画	XqcGRH
-选	XQ
 选 p	XQ
 选	XQp=
 熏 o	XQ
@@ -1404635,6 +1404514,7 @@ Android	wo
 炫人眼目	XrYM
 雪人洞穴	XrDX
 寻人启事	Xrqs
+渲染	XR
 虚弱	XR
 轩然大波	XRDB
 血肉横飞	XRhf
@@ -1405259,6 +1405139,7 @@ Android	wo
 血色罗裙翻酒污	XsLQFjW
 寻声暗问弹者谁	XsAwDzs
 玄圣素王之道也	XsSWzDy
+迅速	XS
 煦	XS
 暄 o	XS
 暄	XSo=
@@ -1410311,6 +1410192,7 @@ Android	wo
 学则三代共之	XzSDGz
 须知一盏花前酒	XzyZHqj
 旋折荷花剥莲子	XzhHBlz
+寻找	XZ
 铉	XZ
 镟 y	XZ
 镟	XZy=
@@ -1411059,7 +1410941,6 @@ Android	wo
 姨姐	y,j,
 姻嫁	y,j,
 姻娇	y,j,
-以	y.
 矣 q	y.
 矣	y.q=
 翼 g	y.
@@ -1413353,18 +1413234,15 @@ Android	wo
 医士	y;sj
 轶士	y;sj
 夷世	y;sj
-一小时	y@
+他们的	y@
 一个个	y_
 一个人	y`
 每天	y~
 艺术	y<
-一样的	y2
-一不小心	y4
-英语	y9
+咿呀	ya
 龈	ya
 龈	yan=
 𬺈	yak=
-咿呀	ya
 龈炎	yaYi
 龈交穴	yajX
 龈交	yajy
@@ -1416691,6 +1416569,7 @@ Android	wo
 艾伯塔省恐龙公园	yBTxKLY
 一波未平一波又起	yBwpyBYq
 一把钥匙开一把锁	yBYsKyBS
+因此	yc
 溢	yc
 溢 i	yc
 溢	yci=
@@ -1418778,6 +1418657,7 @@ Android	wo
 一朝怀胎十月分娩	yCHTsYm
 一朝被蛇咬十年怕井绳	yCbsYsnPjs
 一朝权在手便把令来行	yCQZSbBlLH
+一点	yd
 胰	yd
 臆 y	yd
 臆	ydy=
@@ -1419700,6 +1419580,7 @@ Android	wo
 赢得更深哭一场	ydgsKyC
 赢得生前身后名	ydsqsHm
 倚得东风势便狂	ydDfsbK
+一旦	yD
 腋	yD
 腋 y	yD
 腋	yDy=
@@ -1420822,6 +1420703,7 @@ Android	wo
 印度尼西亚共和国	yDnxYGG
 一朵鲜花插在牛粪上	yDxHCZnfS
 一大捆柴	yDKC
+因而	ye
 役	ye
 殷 t	ye
 殷	yet=
@@ -1423871,7 +1423753,6 @@ $y	year
 一佛出世二佛升天	yFCseFst
 一佛出世二佛涅槃	yFCseFnP
 蝇附骥尾而致千里	yFjwezql
-因	yg
 遗	ygp=
 因 k	yg
 因	ygk=
@@ -1427651,6 +1427532,7 @@ $y	year
 羿工乎中微而拙乎使人无己誉	yGHZweY
 一句卧槽走天下	yGWCZtx
 一鼓作气再而衰三而竭	yGZqZej
+也很	yh
 瑛	yh
 璎 g	yh
 璎	yhg=
@@ -1429681,6 +1429563,7 @@ $y	year
 烨烁	yISI
 烨煜	yIYI
 烨然	yIRt
+已经	yj
 颐	yj
 壹 z	yj
 壹	yjz=
@@ -1432564,7 +1432447,6 @@ $y	year
 亦可以弗畔矣夫	ykyFPyF
 亦可以胜残去杀矣	ykysCQy
 亦可以为成人矣	ykywcry
-页	yK
 页 g	yK
 页	yKg=
 靥 k	yK
@@ -1433231,6 +1433113,7 @@ $y	year
 野哭千家闻战伐	yKqjwZF
 一口吸尽西江水	yKxjxjS
 一口不能着两匙	yKBnZlc
+盈利	yl
 吟	yl
 咦 ;	yl
 咦	yl;=
@@ -1437469,7 +1437352,6 @@ $y	year
 遗民几度垂垂老	ymjDCCL
 因民之所利而利之	ymzSlez
 也没有无缘无故的恨	ymYWYWh
-也	yM
 也 b	yM
 也	yMb=
 也爱	yMAr
@@ -1441595,7 +1441477,6 @@ $y	year
 怡怿	yoyo
 怿怿	yoyo
 弯	yO
-橡	yO
 印欧语系	yOYx
 一欧电阻	yOdZ
 一区三边	yOSb
@@ -1441608,6 +1441489,7 @@ $y	year
 印欧语言	yOYY
 镱耦朦耱	yOmM
 艾欧里亚	yOlY
+影片	yp
 议	yp
 议 i	yp
 议	ypi=
@@ -1442502,6 +1442384,7 @@ $y	year
 一片西飞一片东	ypxfypD
 淫僻于仁义之行	ypYryzx
 一片春愁待酒浇	ypCCDjj
+硬盘	yP
 谒	yP
 谒 s	yP
 谒	yPs=
@@ -1442811,6 +1442694,7 @@ $y	year
 硬盘驱动器	yPQDq
 夜泊牛渚怀古	yPnZHG
 一派秋声入寥廓	yPqsRlK
+一起	yq
 移	yq
 迤 p	yq
 迤	yqp=
@@ -1444411,6 +1444295,7 @@ $y	year
 一阕声长听不尽	yQsZtBj
 亦去其害马者而已矣	yQqHMzy
 一犬吠形百犬吠声	yQfxBQfs
+一人	yr
 繇	yr
 刈 s	yr
 刈	yrs=
@@ -1444796,8 +1444681,6 @@ $y	year
 爷	yR
 爷 m	yR
 爷	yRm=
-依然	yR2=
-毅然	yR2=
 以柔克刚	yRkG
 爷俩	yRlf
 爷们儿	yRme
@@ -1445234,7 +1445117,7 @@ $y	year
 亦若是则已矣	yRszyy
 饮如长鲸吸百川	yRCjxBC
 影入平羌江水流	yRpqjSl
-影	ys
+也是	ys
 影 e	ys
 影	yse=
 易 t	ys
@@ -1447133,7 +1447016,6 @@ $y	year
 野生生物保护区	yssWBHQ
 一死一生乃知交情	ysysNzq
 一石激起千层浪	ysjqqcL
-业	yS
 晔 f	yS
 晔	ySf=
 邺 m	yS
@@ -1453166,6 +1453048,7 @@ $y	year
 以吾从大夫之后	yWCDFzH
 以五十步笑百步	yWsBxBB
 引无数英雄竞折腰	yWSyxjY
+一些	yx
 椅	yx
 樱 g	yx
 樱	yxg=
@@ -1454585,12 +1454468,12 @@ $y	year
 亦奚以异乎牧马者哉	yxyyHMZ
 一笑相倾国便亡	yxxqGbW
 以小人之心度君子之腹	yxrzxDJzzF
+医学	yX
 椰	yX
 楪 j	yX
 楪	yXj=
 椰 j	yX
 椰	yXj=
-医学	yX
 遗训可秉	yXkb
 阴虚火旺	yXHW
 易学难精	yXNj
@@ -1457872,6 +1457755,7 @@ $y	year
 已映洲前芦荻花	yyZqLdH
 引以为流觞曲水	yywlSQS
 隐隐飞桥隔野烟	yyfqgyY
+一样	yY
 夜	yY
 冶 .	yY
 冶	yY.=
@@ -1459519,7 +1459403,6 @@ $y	year
 一言既出驷马难追	yYjCsMNZ
 以眼还眼以牙还牙	yYHYyYHY
 银	yz
-一	yz
 钇 b	yz
 钇	yzb=
 镒 i	yz
@@ -1463129,6 +1463012,7 @@ $y	year
 一子悟道九族生天	yzWDjZt
 一则以喜一则以惧	yzyxyzyJ
 以子之矛攻子之盾	yzzMGzzD
+一种	yZ
 铘	yZ
 铘 ;	yZ
 铘	yZ;=
@@ -1466197,7 +1466081,6 @@ $y	year
 姚新培	Y,xp
 妖祥	Y,xp
 妍详	Y,xp
-又	Y.
 勇 ,	Y.
 勇	Y.,=
 甬 g	Y.
@@ -1471720,7 +1471603,7 @@ $y	year
 约翰森	Y?Hs
 有什么	Y@
 用什么	Y_
-有时间	Y~
+有很多	Y~
 孕	Y<
 娱 l	Y<
 娱	Y<l=
@@ -1471927,10 +1471810,6 @@ $y	year
 娱乐感	Y<lG
 娱乐吧	Y<lB
 娱乐性	Y<lx
-有多少	Y2
-有的时候	Y4
-优势	Y7
-运行	Y8
 鬳	Ya
 虤 a	Ya
 虤	Yaa=
@@ -1479154,7 +1479033,6 @@ $y	year
 雁点青天字一行	YdqtzyH
 愿得此身长报国	YdcsCBG
 说的比唱的还好听	YdbCdHt
-月	YD
 刖 s	YD
 刖	YDs=
 腴 w	YD
@@ -1495241,7 +1495119,6 @@ $y	year
 燠燠	YIYI
 燠煜	YIYI
 煴煴	YIYI
-要	Yj
 要 ,	Yj
 要	Yj,=
 严 c	Yj
@@ -1504236,7 +1504113,6 @@ $y	year
 又恐汝不察吾衷	YKRBCWZ
 远看方知出处高	YKFzCCG
 云开衡岳积阴止	YKhYjyz
-呀	Yl
 呀 ;	Yl
 呀	Yl;=
 哟 /	Yl
@@ -1509088,6 +1508964,7 @@ $y	year
 欲买桂花同载酒	YMGHTZj
 远目非春亦自伤	YMfCyzS
 月满西楼凭阑久	YMxLpLj
+又能	Yn
 幼年	Yn
 又能如何	YnRh
 延年益寿	YnyS
@@ -1513594,6 +1513471,7 @@ $y	year
 越跑越远	YPYY
 圆魄上寒空	YPSHK
 云破月来花弄影	YPYLHNy
+尤其	Yq
 氧	Yq
 秧 g	Yq
 秧	Yqg=
@@ -1514853,6 +1514731,7 @@ $y	year
 有牵牛而过堂下者	YqneGTz
 运气都不会太差	YqDBHTC
 有钱难买子孙贤	YqNMzSx
+有趣	YQ
 竽	YQ
 篗 f	YQ
 篗	YQf=
@@ -1515283,6 +1515162,7 @@ $y	year
 有趣的灵魂万里挑一	YQdlHMy
 有趣的灵魂万里挑一	YQdlHWy
 燕雀安知鸿鹄之志	YQAzHHzz
+有人	Yr
 遥	Yr
 遥 p	Yr
 遥	Yrp=
@@ -1516891,6 +1516771,7 @@ $y	year
 怨入双眉闲斗损	YRSmxDS
 嫣然一笑竹篱间	YRyxZlj
 燕然未勒归无计	YRwlGWj
+于是	Ys
 晏	Ys
 曜 .	Ys
 曜	Ys.=
@@ -1518272,7 +1518153,6 @@ $y	year
 于是焉河伯欣然自喜	YsYhBxx
 于是张良至军门见樊哙	YsZlzJK
 禹思天下有溺者	YstxYnz
-晕	YS
 曰 z	YS
 曰	YSz=
 昱 y	YS
@@ -1519637,7 +1519517,6 @@ $y	year
 远水救不了近火	YSjBljH
 欲上青天揽明月	YSqtLmY
 跃上葱茏四百旋	YSCLsBX
-用	Yt
 犹 k	Yt
 犹	Ytk=
 鱿	Ytkv
@@ -1525933,6 +1525812,7 @@ $y	year
 越跻	YVjl
 越践	YVjl
 垣	YVzz
+原文	Yw
 延	Yw
 邀 p	Yw
 邀	Ywp=
@@ -1528009,7 +1527889,6 @@ $y	year
 予恶乎知说生之非惑邪	YWHzYsy
 愈往而不知其所穷	YWeBzqq
 于吾言无所不说	YWYWSBS
-样	Yx
 杨 ,	Yx
 杨	Yx,=
 柚 g	Yx
@@ -1530546,6 +1530425,7 @@ $y	year
 雨歇杨林东渡头	YxYlDDT
 庾信文章老更成	YxwZLgc
 月行却与人相随	YxQYrxS
+允许	YX
 榆	YX
 橼 /	YX
 橼	YX/=
@@ -1532811,6 +1532691,7 @@ $y	year
 有一利即有一弊	YyljYyb
 有一言而可以终身行之者乎	YyYekyH
 予也有三年之爱于其父母乎	YyYSnzH
+由于	YY
 育	YY
 育 d	YY
 育	YYd=
@@ -1534602,6 +1534483,7 @@ $y	year
 运用之妙存乎一心	YYzmCHyx
 运用之妙在于一心	YYzmZYyx
 酉阳土家族苗族自治县	YYTjZmZzzx
+验证	Yz
 铅	Yz
 钥	Yzd=
 铅 t	Yz
@@ -1535721,6 +1535603,7 @@ $y	year
 有则改之无则加勉	YzGzWzjm
 愚者千虑必有一得	YzqLbYyd
 言者谆谆听者藐藐	YzZZtzmm
+有着	YZ
 钰	YZ
 钺 ;	YZ
 钺	YZ;=
@@ -1537492,7 +1537375,6 @@ $y	year
 臻臻	z:z:
 轸辙	z:z:
 轸轸	z:z:
-至	z;
 致 q	z;
 致	z;q=
 至 v	z;
@@ -1538250,32 +1538132,6 @@ $y	year
 姫化	z<HF
 姫国	z<GG
 姫吕	z<LL
-体验	z0
-在干嘛	z2
-知识分子	z4
-在呀	z5a=
-准备	z5b=
-支持	z5c=
-知道	z5d=
-政府	z5f=
-中国	z5g=
-之后	z5h=
-自己	z5j=
-走开	z5k=
-走了	z5l=
-怎么	z5m=
-只能	z5n=
-只怕	z5p=
-正确	z5q=
-自然	z5r=
-总算	z5s=
-昨天	z5t=
-掌握	z5w=
-在线	z5x=
-怎样	z5y=
-真正	z5z=
-指法	z7
-执法	z8
 止	za
 紫 /	za
 紫	za/=
@@ -1539701,6 +1539557,7 @@ $y	year
 则哀矜而勿喜	zAjeWx
 自爱残妆晓镜中	zACZxjZ
 自爱名山入剡中	zAmSRSZ
+资本	zb
 芝	zb
 芝 p	zb
 芝	zbp=
@@ -1543337,6 +1543194,7 @@ $y	year
 只吹的水尽鹅飞罢	zCdSjeB
 子产听郑国之政	zCtzGzz
 知错能改善莫大焉	zCnGSMDY
+真的	zd
 肢	zd
 脂 t	zd
 脂	zdt=
@@ -1544268,6 +1544126,7 @@ $y	year
 折得梅花独自看	zdmHDzK
 枕簟溪堂冷欲秋	zdxTlYq
 正得秋而万宝成	zdqeWBc
+知道	zD
 朕	zD
 胗 f	zD
 胗	zDf=
@@ -1546820,6 +1546679,7 @@ $y	year
 值呀	zfYl
 值得打	zfdD
 值得交	zfdj
+支付	zF
 侦	zF
 侦 a	zF
 侦	zFa=
@@ -1548709,7 +1548569,6 @@ $y	year
 真个浓如酒	zgNRj
 这个逼装的	zgbZd
 这个时候	zg8=
-则	zG
 则 s	zG
 则	zGs=
 贼 ;	zG
@@ -1550109,6 +1549968,7 @@ $y	year
 自古深情留不住	zGsqlBZ
 自古真情留不住	zGzqlBZ
 贼难打	zGND
+整合	zh
 耔	zh
 耔 m	zh
 耔	zhm=
@@ -1550306,6 +1550166,7 @@ $y	year
 曾何污洁白	zhWjB
 只喝井里水	zhjlS
 正和前线捷音联	zhqxjyl
+之后	zH
 责	zH
 责 g	zH
 责	zHg=
@@ -1551501,7 +1551362,6 @@ $y	year
 孳孳	zizi
 兹基	zijj
 兹通知	ziTz
-曾	zI
 郑 m	zI
 郑	zIm=
 鄫	zIm=
@@ -1555458,7 +1555318,6 @@ $y	year
 自己约的炮含泪也要打完	zjYdPHW
 知己知彼百战百胜	zjzbBZs
 知己知彼百战不殆	zjzbBZBD
-者	zJ
 政 q	zJ
 政	zJq=
 者 s	zJ
@@ -1558358,6 +1558217,7 @@ $y	year
 只可自怡悦	zkzyY
 止可以一宿而不可久处	zkyySeC
 止可以一宿而不可久处	zkyyxeC
+这款	zK
 仄	zK
 砧 a	zK
 砧	zKa=
@@ -1561121,7 +1560981,6 @@ $y	year
 子路问君子	zLwJz
 子路无宿诺	zLWSN
 子路愠见曰	zLYjY
-子	zm
 孜 q	zm
 孜	zmq=
 孖	zmm=
@@ -1562388,6 +1562247,7 @@ $y	year
 致命的青铜短剑	zmdqTDj
 姊妹弟兄皆列士	zmdxjls
 则民莫敢不用情	zmMGBYq
+这么	zM
 阵	zM
 阵 ;	zM
 阵	zM;=
@@ -1563323,6 +1563183,7 @@ $y	year
 紫陌红尘拂面来	zMHcFmL
 怎么舒服怎么来	zMSFzML
 怎么可以吃兔兔	zMkycTT
+只能	zn
 咫	zn
 咫 l	zn
 咫	znl=
@@ -1563888,6 +1563749,7 @@ $y	year
 鸷鸟将击卑飞敛翼	znqjbfy
 鸷鸟累百不如一鹗	znlBBRe
 镇宁布依族苗族自治县	znByZmZzzx
+子女	zN
 弫 j	zN
 弫	zNj=
 弫	zN
@@ -1565872,7 +1565734,6 @@ $y	year
 知否小窗红烛	zpxCGZ
 知否小窗红烛	zpxCHZ
 曾陪令尹苍髯古	zplyCRG
-证	zP
 诊 f	zP
 诊	zPf=
 谪 y	zP
@@ -1568101,7 +1567962,6 @@ $y	year
 知其不可为而为之	zqBkwewz
 知其然不知其所以然	zqRBzqSyR
 知其然而不知其所以然	zqReBzqSyR
-怎	zQ
 箴 k	zQ
 箴	zQk=
 筝 t	zQ
@@ -1568701,10 +1568561,10 @@ $y	year
 则群聚而笑之	zQJexz
 曾屈诗人杜审言	zQsrDsY
 紫泉宫殿锁烟霞	zQGdSYx
+责任	zr
 豸	zr
 豸 c	zr
 豸	zrc=
-责任	zr
 责任编辑	zrbj
 责任比例	zrbl
 责任承担	zrcD
@@ -1569559,6 +1569419,7 @@ $y	year
 指如削葱根	zRXCg
 峥嵘岁又除	zRSYC
 知汝远来应有意	zRYLyYy
+这是	zs
 黹	zs
 晊 ;	zs
 晊	zs;=
@@ -1570826,6 +1570687,7 @@ $y	year
 志士不忘在沟壑	zsBWZGh
 子食于有丧者之侧	zsYYSzc
 子食于有丧者之侧	zsYYSzZ
+证书	zS
 昣	zS
 昗 y	zS
 昗	zSy=
@@ -1571579,6 +1571441,7 @@ $y	year
 则塞于天地之间	zSYtdzj
 子孙以祭祀不辍	zSyjsBC
 这说的是人话吗	zSdsrHM
+真题	zt
 旨	zt
 炙 i	zt
 炙	zti=
@@ -1577701,6 +1577564,7 @@ $y	year
 则物与我皆无尽也	zWYWjWy
 知误会前番书语	zWHqFSY
 知无不言言无不尽	zWBYYWBj
+这些	zx
 植	zx
 枝 j	zx
 枝	zxj=
@@ -1579200,6 +1579064,7 @@ $y	year
 只见树木不见森林	zxSMBjl
 只见树木不见森林	zxSMBxl
 政协全国委员会	zxQGwYH
+咨询	zX
 枕	zX
 桢 a	zX
 桢	zXa=
@@ -1579899,7 +1579764,7 @@ $y	year
 自许高材老更刚	zXGCLgG
 自叙少小时欢乐事	zXSxsHs
 直须看尽洛城花	zXKjLcH
-资	zy
+之一	zy
 资 g	zy
 资	zyg=
 咨 l	zy
@@ -1581208,7 +1581073,6 @@ $y	year
 正义也许会迟到	zyyXHcD
 正义也许会迟到	zyyXKcD
 睁一只眼闭一只眼	zyzYbyzY
-这	zY
 症 j	zY
 症	zYj=
 遮 p	zY
@@ -1583438,6 +1583302,7 @@ $y	year
 只缘身在此山中	zYsZcSZ
 紫云苗族布依族自治县	zYmZByZzzx
 只要功夫深铁杵磨成针	zYGFstCMcz
+真正	zz
 锱	zz
 锱 /	zz
 锱	zz/=
@@ -1584618,6 +1584483,7 @@ $y	year
 子之不知鱼之乐	zzBzYzl
 字字看来都是血	zzKLDsX
 置之死地而后生	zzsdeHs
+这种	zZ
 针	zZ
 镇 j	zZ
 镇	zZj=
@@ -1589630,7 +1589496,6 @@ $y	year
 斩殃	Z;Yk
 轧盖机	Z;Gj
 轧钢机	Z;Gj
-组	Z?
 驻 y	Z?
 驻	Z?y=
 缀 .	Z?
@@ -1590374,12 +1590239,6 @@ $y	year
 妰	Z<
 妰 q	Z<
 妰	Z<q=
-复习	Z0
-中国的	Z2
-中华民族	Z4
-周末	Z7
-左右	Z8
-早上	Z9
 战	Za
 战 ;	Za
 战	Za;=
@@ -1596495,6 +1596354,7 @@ $y	year
 罪从大辟皆除死	ZCDpjCs
 早潮才落晚潮来	ZCCLWCL
 早春呈水部张十八员外	ZCcSBZW
+中的	Zd
 脏	Zd
 肿 g	Zd
 肿	Zdg=
@@ -1597664,6 +1597524,7 @@ $y	year
 战地黄花分外香	ZdHHfWx
 重叠寄存器窗口	ZdjCqCK
 坐地日行八千里	ZdrxBql
+最大	ZD
 朘	ZD
 肫 ;	ZD
 肫	ZD;=
@@ -1603076,7 +1602937,6 @@ $y	year
 坐法宫中朝四夷	ZFGZZsy
 乍富不知新受用	ZFBzxSY
 丈夫未可轻年少	ZFwkqnS
-中	Zg
 忠 p	Zg
 忠	Zgp=
 帐 q	Zg
@@ -1607672,6 +1607532,7 @@ $y	year
 中国国民党革命委员会	ZGGmDgmwYH
 中国有色金属工业总公司	ZGYsjSGyZGs
 中国国际贸易促进委员会	ZGGjMyCjwYH
+组合	Zh
 奏	Zh
 奏 h	Zh
 奏	Zhh=
@@ -1608378,7 +1608239,7 @@ $y	year
 长恨双凫去莫攀	ZhSFQMP
 照横塘半天残月	ZhTBtCY
 中河失舟一壶千金	ZhsZyHj
-专	ZH
+最后	ZH
 珠 q	ZH
 珠	ZHq=
 琢 k	ZH
@@ -1610139,7 +1610000,6 @@ $y	year
 中华人民共和国财政部	ZHrmGhB
 中华人民共和国中央军事委员会	ZHrmGhH
 中华人民共和国全国人民代表大会	ZHrmGhH
-总	Zi
 总 p	Zi
 总	Zip=
 州 x	Zi
@@ -1611606,7 +1611466,6 @@ $y	year
 总髻交	Zijj
 总角交	Zijj
 总髻	Zijj
-着	ZI
 尊 j	ZI
 尊	ZIj=
 遵 p	ZI
@@ -1612858,7 +1612717,6 @@ $y	year
 尊醮	ZIjj
 着作	ZIZF
 尊俎	ZIZF
-再	Zj
 载 ;	Zj
 载	Zj;=
 朝	Zjd=
@@ -1622337,6 +1622195,7 @@ $y	year
 扎龙自然保护区	ZLzRBHO
 扎龙自然保护区	ZLzRBHQ
 摘来沽酒君肯否	ZLGjJkF
+专门	Zm
 障	Zm
 奘 k	Zm
 奘	Zmk=
@@ -1623886,7 +1623745,6 @@ $y	year
 做满湖风雨愁人	ZMHfYCr
 走马川行奉送封大夫出师西征	ZMCHfSz
 走马川行奉送封大夫出师西征	ZMCxfSz
-张	Zn
 展 j	Zn
 展	Znj=
 张 q	Zn
@@ -1626471,7 +1626329,6 @@ $y	year
 属	ZNw=
 劚 s	ZN
 劚	ZNs=
-灾难	ZN2=
 重农轻商	ZNqS
 长那么大	ZNmD
 属望	ZNWy
@@ -1628058,6 +1627915,7 @@ $y	year
 战区防御	ZOFY
 住区单位	ZODw
 中欧国家	ZOGj
+照片	Zp
 诈	Zp
 诏 ,	Zp
 诏	Zp,=
@@ -1636232,10 +1636090,11 @@ $y	year
 主人下马客在船	ZrxMkZC
 主人有酒欢今夕	ZrYjHjx
 昨日看花花灼灼	ZrKHHZZ
+诸如	ZR
+载入	ZR
 爼	ZR
 爼 g	ZR
 爼	ZRg=
-载入	ZR
 朝荣夕灭	ZRxm
 坠入爱河	ZRAh
 昭然若揭	ZRRj
@@ -1636654,7 +1636513,6 @@ $y	year
 长孺向来真强予	ZRxLzjY
 长孺向来真强予	ZRxLzqY
 纵然一夜风吹去	ZRyyfCQ
-早	Zs
 早 j	Zs
 早	Zsj=
 照 o	Zs
@@ -1643562,7 +1643420,6 @@ $y	year
 朝推囚暮决狱	ZTqMJY
 足太阳膀胱经	ZTYPGj
 种桃道士归何处	ZTDsGhC
-找	Zu
 找 ;	Zu
 找	Zu;=
 招 ,	Zu
@@ -1645930,7 +1645787,6 @@ $y	year
 擢跻	ZUjl
 抓不住	ZUBZ
 抓一	ZUyz
-走	Zv
 赵 r	Zv
 赵	Zvr=
 趮 l	Zv
@@ -1647834,6 +1647690,7 @@ $y	year
 圫	ZVq=
 墫墫	ZVCV
 墫墫	ZVZV
+作为	Zw
 皂	Zw
 皂 ;	Zw
 皂	Zw;=
@@ -1648708,10 +1648565,10 @@ $y	year
 诏谓将军拂绢素	ZwqJFJS
 总为浮云能蔽日	ZwFYnbr
 朝闻道夕死可矣	ZwDxsky
+掌握	ZW
 追	ZW
 追 p	ZW
 追	ZWp=
-掌握	ZW
 重望高名	ZWGm
 在外奔波	ZWbB
 追捕	ZWBU
@@ -1649889,6 +1649746,7 @@ $y	year
 竹坞无尘水槛清	ZWWcSKq
 做我老婆好不好	ZWLPHBH
 战无不胜攻无不克	ZWBsGWBk
+中心	Zx
 栈	Zx
 杖 k	Zx
 杖	Zxk=
@@ -1654509,7 +1654367,6 @@ $y	year
 做一日和尚撞一日钟	ZyrhSZZ
 做一日和尚撞一天钟	ZyrhSZZ
 做一天和尚撞一天钟	ZythSZytZ
-主	ZY
 准 f	ZY
 准	ZYf=
 壮 j	ZY
@@ -1660625,6 +1660482,7 @@ $y	year
 民	m_=
 明	=_m
 美	M_=
+表现	M`
 门	=_M
 加	n_=
 向	=_n
@@ -1660637,6 +1660495,7 @@ $y	year
 斯	p_=
 相	=_p
 解	P_=
+不用	Pj
 常	=_P
 前	q_=
 只	=_q
@@ -1660682,24 +1660541,21 @@ $y	year
 瑟利德	sHld
 的空间	dWKj
 直面自我	zmzW
-黑暗	hA3=
 赌一下	DGyx
 追逐名利	ZZml
 舒缓压力	SHYl
 终末地	Z/Md
 盈亏比	y,Kb
+这次	y?
 朝夕相伴	ZxxB
-优先	Y0
-安装	L7
 亲戚	EQ
 时期	iR
 声音	rh
 关注	;r
 品牌	oO
-进入	r4
 证明	G@
-知乎	H9
 公司	C'
+有个	C~
 感到	oc
 价值	?Y
 生产	oF
@@ -1660713,11 +1660569,9 @@ $y	year
 要求	q?
 正确	qT
 大概	oT
-创造	b0
 每个	oB
 属于	Ub
 第四	g!
-大量	g7
 制作	:G
 至于	oq
 领域	UK
@@ -1660725,77 +1660579,74 @@ $y	year
 阅读	ks
 岁月	oK
 办法	x~
-不断	f9
 操作	;g
 至少	kn
 运动	n'
+优秀	nL
+经过	n_
+反复	nW
 考试	;K
 斗争	;n
-市场	Pj
 规定	Qu
 阶段	Rm
-直接	Xz
 甚至	;y
 受到	?b
 代表	t~
 政策	Xe
 形式	X~
-模式	G2
-安安	Y`
-暗淡	q2
-安徽	q<
-傲慢	Q4
-爱慕	s2
+镜头	Y`
+接着	q<
 黯然	W_
-爱上	x2
 爱说	Es
-按需	I'
+市场	I'
 按照	B:
 被动	d`
 尽量	j:
 发布	kd
 变生	ko
-就像	l9
 拜拜	UM
-补充	q8
-补偿	R9
 客户	oS
-报复	S7
 不敢	wg
-保护	Y9
 不瞒	UA
-拨弄	B0
-搬弄	e'
+一个	e'
 资源	oe
-不容	h'
 部署	jH
 不许	kl
-剥削	m8
 标准	oQ
-尘埃	q9
-测试	qK
 称王	EE
-堤岸	B!
-电报	x'
+现在	B!
+机会	B~
+里的	x'
 调查	vY
-分钟	d8
+当然	DR
 跌宕	DR
-地黄	9e
-摇滚	R0
+电影	9e
+感	9G
+艾灸	9A
+跟风	9g
+我们的	9i
+论坛	9L
+命令	9m
+贫穷	9p
+似乎	9s
+问问	9w
+知乎	9H
+不断	9f
+距离	9X
+系列	9l
+然而	Re
 对哦	Re
 跌破	og
-电容	X8
 电视	k.
-调式	r9
 经历	vS
 东南	vT
+其中	qZ
 胆囊	qZ
-运营	y8
 嗯嗯	oy
-才是	A8
 恶狠	AQ
 耳科	AE
 耳鸣	AT
+毕竟	AI
 恶名	Ea
 饿殍	ob
 今年	EB
@@ -1660812,26 +1660663,29 @@ $y	year
 分割	wd
 风寒	wu
 飞机	N`
-封建	p0
 分裂	rR
 封面	tR
 锋芒	of
 粉墨	fx
-非你	F7
 废品	Fa
 分歧	Uf
+方向	Uw
+不知道	UT
+过程	Uq
+它的	Ud
+正常	Ux
 风热	IF
 沸腾	oW
-分析	gh
-疯子	g*
+集团	g*
 访问	IG
 个别	h~
+基金	h'
+患者	hy
+相比	hh
 各次	s8
-各地	s4
 耕地	iw
 各分	iX
 规律	iY
-隔离	l7
 哥们	rv
 跟你	oV
 歌声	oi
@@ -1660839,27 +1660693,27 @@ $y	year
 更为	W*
 更新	VJ
 交易	k'
-各自	ky
+可以	ky
 港澳	ok
-孤儿	K8
-好吃	l~
+作用	l*
+不错	l~
 呵成	m;
 音乐	oM
 工具	m`
-黑粉	M`
+场景	m_
 黑盒	on
 医生	NM
 黑幕	oN
 很热	uN
 何时	Oe
 之类	Ou
+机制	Og
 努力	or
 和胃	oR
 和谐	os
 干部	s'
 故事	ot
 超过	wt
-加班	y?
 机场	wy
 监督	oz
 极端	r'
@@ -1660869,71 +1660723,101 @@ $y	year
 监控	r~
 进口	rN
 鸡毛	ro
+方式	rs
 济南	t;
-解耦	T~
-健全	T`
+就是	T~
+面临	T`
 惊人	vh
-鸡肉	X`
+极其	X`
 就算	Xx
 接受	uX
 系统	V/
 整体	V?
-教育	V;
 几乎	V.
-集中	y0
 剧本	VM
-君臣	z9
-绝顶	X'
-距离	X9
-举起	y7
+出来	X'
 举世	Vu
+危机	wj
 局外	wj
 句子	x<
-申请	x0
 蝌蚪	kD
-事	VS
-果	Ig
+都会	km
+大学	kf
 相	ux
 期	EJ
+相对	EL
+就像	Ex
+分钟	E~
 常	IC
 解	IJ
 计	uJ
 直	uz
 安	Ga
+运营	G~
 球	IQ
 带	uD
 呵	Ha
 求	Vq
+就能	Vh
+想要	Va
+很大	VS
+有了	V;
 联	ul
 达	ud
 版	IB
 背	iB
 班	uB
 牛	iN
-什	!v
+聊	!v
 化	8f
-意	AI
+品	8a
+量	8W
+需	8j
+复	8K
+电	8N
+入	8t
+几	8U
+爱国主义	8H
+仁义	8l
+老婆	8L
+平均	8p
+位置	8w
+才是	8A
+也就	8i
 平	F.
 基	Ie
 接	Iu
+学习	Id
+中国	Ig
+新的	Iw
 信	Ja
+时代	J`
 系	S;
 单	Xi
+一年	Xz
 台	fv
 交	g;
+以下	gh
+资料	gz
 何	iE
+评价	ih
 术	oA
+大量	oj
 建	qI
 运	qU
-音	t<
-觉	u,
+计算	qK
+王	t<
+题	t`
+路	u,
 视	uE
 政	uO
 思	uf
 级	ui
-界	v!
-形	v<
+可是	uT
+英语	uc
+书	v!
+错	v<
 及	w!
-立	w/
+未	w/
 戏	xE
 写	z!
