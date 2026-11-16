@@ -6,7 +6,8 @@
 //!   km-tui -d kongmingmas.dict.yaml   # 指定要编辑的词库
 //!   km-tui -p /path/to/luna_pinyin.dict.yaml   # 指定拼音数据源
 //!
-//! 部署目标：XSIME（犀术IME）当前生效的方案包；保存后按 `d` 同步词库并重启 fcitx5。
+//! 部署后端：XSIME（犀术IME）或 fcitx5-rime，按 `s` 在设置页切换；
+//! 保存后按 `d` 同步词库到所选后端并重新部署。
 
 mod app;
 mod config;
@@ -47,8 +48,8 @@ fn default_dict(config: &config::Config) -> Option<PathBuf> {
     if let Some(repo) = Path::new(env!("CARGO_MANIFEST_DIR")).parent() {
         candidates.push(repo.join(DEFAULT_DICT));
     }
-    if let Some(x) = deploy::detect() {
-        candidates.push(x.resources.join(DEFAULT_DICT));
+    if let Some(x) = deploy::detect(config.backend) {
+        candidates.push(x.shared.join(DEFAULT_DICT));
     }
     candidates.into_iter().find(|p| p.is_file())
 }
@@ -63,7 +64,7 @@ fn main() -> Result<()> {
     let pinyin_path = cli
         .pinyin
         .or(config.pinyin_path.clone().map(PathBuf::from))
-        .or_else(pinyin::find_luna_pinyin);
+        .or_else(|| pinyin::find_luna_pinyin(config.backend));
     let pinyin_map = pinyin_path.as_ref().and_then(|p| pinyin::load_pinyin_map(p));
 
     let root = cli

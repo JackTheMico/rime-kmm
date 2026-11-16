@@ -4,7 +4,8 @@ use ratatui::text::{Line, Span};
 use ratatui::widgets::{Block, Clear, Paragraph, Row, Table, Wrap};
 use ratatui::Frame;
 
-use crate::app::{AddFocus, App, Focus, Popup, Stage};
+use crate::app::{AddFocus, App, Focus, Popup, SettingsFocus, SettingsState, Stage};
+use crate::config::Backend;
 
 pub fn ui(frame: &mut Frame, app: &App) {
     match app.stage {
@@ -16,7 +17,8 @@ pub fn ui(frame: &mut Frame, app: &App) {
     match &app.popup {
         Popup::None => {}
         Popup::Add(state) => draw_add_popup(frame, state),
-        Popup::ConfirmDeploy { on_exit } => draw_confirm_deploy_popup(frame, *on_exit),
+        Popup::Settings(state) => draw_settings_popup(frame, state),
+        Popup::ConfirmDeploy { on_exit } => draw_confirm_deploy_popup(frame, *on_exit, app.backend),
         Popup::ConfirmDelete {
             word,
             code,
@@ -24,7 +26,7 @@ pub fn ui(frame: &mut Frame, app: &App) {
             rank,
             ..
         } => draw_confirm_delete_popup(frame, word, code, *same_code_count, *rank),
-        Popup::DeployLog { log, .. } => draw_deploy_log_popup(frame, log),
+        Popup::DeployLog { log, .. } => draw_deploy_log_popup(frame, log, app.backend),
         Popup::SwitchDict(tree) => draw_switch_dict_popup(frame, tree),
         Popup::Message(m) => draw_msg_popup(frame, m),
         Popup::Help => draw_help_popup(frame),
@@ -114,7 +116,7 @@ fn draw_pick(frame: &mut Frame, app: &App) {
         " 词库目录树 (空) ".to_string()
     } else {
         format!(
-            " 词库目录树 [第 {}/{} 项]（j/k 移动 · l/Enter 打开 · h/Esc 上级 · ^q 退出） ",
+            " 词库目录树 [第 {}/{} 项]（j/k 移动 · l/Enter 打开 · h/Esc 上级 · s 设置 · ^q 退出） ",
             app.dir_tree.selected + 1,
             app.dir_tree.flat.len()
         )
@@ -312,6 +314,8 @@ fn draw_ready(frame: &mut Frame, app: &App) {
         Span::raw("保存  "),
         Span::styled("o ", Style::new().bold().yellow()),
         Span::raw("换库  "),
+        Span::styled("s ", Style::new().bold().yellow()),
+        Span::raw("设置  "),
         Span::styled("d ", Style::new().bold().yellow()),
         Span::raw("部署  "),
         Span::styled("^q ", Style::new().bold().yellow()),
@@ -579,7 +583,70 @@ fn draw_add_popup(frame: &mut Frame, state: &crate::app::AddState) {
     frame.render_widget(Paragraph::new(foot), foot_sec);
 }
 
-fn draw_confirm_deploy_popup(frame: &mut Frame, on_exit: bool) {
+fn draw_settings_popup(frame: &mut Frame, state: &SettingsState) {
+    let area = centered_rect(66, 17, frame.area());
+    frame.render_widget(Clear, area);
+
+    let block = Block::bordered()
+        .title(" 部署后端设置 ")
+        .border_style(Style::new().bold().cyan());
+    frame.render_widget(block, area);
+
+    let inner = Rect {
+        x: area.x + 2,
+        y: area.y + 1,
+        width: area.width.saturating_sub(4),
+        height: area.height.saturating_sub(2),
+    };
+
+    let mut lines = vec![
+        Line::from(Span::styled(
+            " ↑↓/j k 选择后端 · Tab 切换输入框 · Enter 保存 · Esc 取消",
+            Style::new().dark_gray(),
+        )),
+        Line::from(""),
+    ];
+    for (i, backend) in Backend::ALL.iter().enumerate() {
+        let selected = i == state.selected;
+        let style = if selected {
+            Style::new().bold().cyan()
+        } else {
+            Style::new()
+        };
+        lines.push(Line::from(vec![
+            Span::styled(format!("  {} ", if selected { "▶" } else { " " }), style),
+            Span::styled(backend.label(), style),
+        ]));
+        lines.push(Line::from(Span::styled(
+            format!("      {}", crate::deploy::probe_desc(*backend)),
+            Style::new().dark_gray(),
+        )));
+    }
+    lines.push(Line::from(""));
+
+    let cmd_style = if state.focus == SettingsFocus::Command {
+        Style::new().bold().yellow()
+    } else {
+        Style::new().dark_gray()
+    };
+    lines.push(Line::from(Span::styled(
+        " 重载命令（留空 = 按后端默认）：",
+        cmd_style,
+    )));
+    lines.push(Line::from(vec![
+        Span::styled(" > ", cmd_style),
+        Span::styled(if state.command.is_empty() { "（默认）" } else { &state.command }, cmd_style),
+    ]));
+    lines.push(Line::from(""));
+    lines.push(Line::from(Span::styled(
+        " 默认：XSIME 内置编译；fcitx5-rime 编译后执行 fcitx5 -r",
+        Style::new().dark_gray(),
+    )));
+
+    frame.render_widget(Paragraph::new(lines), inner);
+}
+
+fn draw_confirm_deploy_popup(frame: &mut Frame, on_exit: bool, backend: Backend) {
     let area = centered_rect(64, 10, frame.area());
     frame.render_widget(Clear, area);
 
@@ -602,7 +669,7 @@ fn draw_confirm_deploy_popup(frame: &mut Frame, on_exit: bool) {
 
     let text = if on_exit {
         vec![
-            Line::from("检测到词库有修改。是否同步到 XSIME 并重启 fcitx5？"),
+            Line::from(format!("检测到词库有修改。是否同步到 {} 并重新部署？", backend.label())),
             Line::from(""),
             Line::from(vec![
                 Span::styled("  [Y / Enter] ", Style::new().bold().green()),
@@ -619,7 +686,7 @@ fn draw_confirm_deploy_popup(frame: &mut Frame, on_exit: bool) {
         ]
     } else {
         vec![
-            Line::from("是否立即同步当前词库到 XSIME 并重启 fcitx5？"),
+            Line::from(format!("是否立即同步当前词库到 {} 并重新部署？", backend.label())),
             Line::from(""),
             Line::from(vec![
                 Span::styled("  [Y / Enter] ", Style::new().bold().green()),
@@ -696,12 +763,12 @@ fn draw_confirm_delete_popup(
     frame.render_widget(Paragraph::new(text), inner);
 }
 
-fn draw_deploy_log_popup(frame: &mut Frame, log: &str) {
+fn draw_deploy_log_popup(frame: &mut Frame, log: &str, backend: Backend) {
     let area = centered_rect(76, 18, frame.area());
     frame.render_widget(Clear, area);
 
     let block = Block::bordered()
-        .title(" XSIME 部署与重载输出 ")
+        .title(format!(" {} 部署与重载输出 ", backend.label()))
         .border_style(Style::new().bold().cyan());
     frame.render_widget(block, area);
 
@@ -825,7 +892,8 @@ fn draw_help_popup(frame: &mut Frame) {
         Line::from("  L (Shift+L)        同码候选项直接置底为末选"),
         Line::from("  w 或 Ctrl+s        立即落盘保存当前修改（平时自动 300ms 异步防抖写盘）"),
         Line::from("  o                  唤出词库切换抽屉，快速切换其它 .dict.yaml"),
-        Line::from("  d 或 Ctrl+r        同步词库到 XSIME 并重启 fcitx5 重新编译"),
+        Line::from("  s                  打开部署后端设置（XSIME / fcitx5-rime）"),
+        Line::from("  d 或 Ctrl+r        按当前后端同步词库并重新部署"),
         Line::from("  Ctrl+q (或 Ctrl+c) 退出程序（检测到修改时弹出部署确认）"),
         Line::from(""),
         Line::from(Span::styled("【实时写盘与备份】", Style::new().bold().yellow())),

@@ -1,6 +1,9 @@
-/* km_deploy：调用 librime 把 Rime 方案编译到 XSIME 的 learning 目录。
+/* km_deploy：调用 librime 把 Rime 方案编译到指定的用户数据目录。
  *
  * 用法：km_deploy <shared_data_dir> <user_data_dir>
+ *
+ * 由 km-tui 的两个部署后端共用：XSIME 传方案包的 resources/learning，
+ * fcitx5-rime 传 /usr/share/rime-data 与 ~/.local/share/fcitx5/rime。
  *
  * 说明：librime 的部署以「主方案文件是否变过」为触发条件，只改依赖词库
  * 不会重编。这里先把 build/ 里的主方案副本挪走（失败则挪回），

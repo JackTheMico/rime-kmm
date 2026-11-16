@@ -3,6 +3,7 @@ use std::sync::mpsc::Receiver;
 
 use crossterm::event::{Event, KeyCode, KeyEvent, KeyEventKind, KeyModifiers};
 
+use crate::config::Backend;
 use crate::deploy;
 use crate::dict::{BuildMsg, Dict};
 use crate::dirtree::DirTree;
@@ -90,9 +91,40 @@ impl AddState {
     }
 }
 
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum SettingsFocus {
+    Backend,
+    Command,
+}
+
+/// 设置页暂存状态；仅在按 Enter 时才写回配置文件。
+pub struct SettingsState {
+    pub selected: usize,
+    pub focus: SettingsFocus,
+    pub command: String,
+}
+
+impl SettingsState {
+    fn new(backend: Backend, command: &str) -> Self {
+        SettingsState {
+            selected: Backend::ALL
+                .iter()
+                .position(|b| *b == backend)
+                .unwrap_or(0),
+            focus: SettingsFocus::Backend,
+            command: command.to_string(),
+        }
+    }
+
+    fn backend(&self) -> Backend {
+        Backend::ALL[self.selected.min(Backend::ALL.len() - 1)]
+    }
+}
+
 pub enum Popup {
     None,
     Add(Box<AddState>),
+    Settings(SettingsState),
     ConfirmDeploy { on_exit: bool },
     ConfirmDelete {
         entry_idx: u32,
@@ -130,12 +162,14 @@ pub struct App {
     pub popup: Popup,
     pub pinyin_rx: Option<Receiver<BuildMsg>>,
     pub deploy_cmd: String,
+    pub backend: Backend,
     pub session_modified: bool,
     pub last_key_g: bool,
 }
 
 impl App {
     pub fn pick(root: PathBuf, deploy_cmd: String, pinyin_map: Option<PinyinMap>) -> App {
+        let backend = crate::config::Config::load().backend;
         App {
             stage: Stage::Pick,
             dir_tree: DirTree::new(root),
@@ -148,10 +182,11 @@ impl App {
             focus: Focus::Results,
             results: Vec::new(),
             selected: 0,
-            status: "j/k 移动 · l/Enter 打开 · h/Esc 返回上级 · ^q 退出".into(),
+            status: "j/k 移动 · l/Enter 打开 · h/Esc 返回上级 · s 设置 · ^q 退出".into(),
             popup: Popup::None,
             pinyin_rx: None,
             deploy_cmd,
+            backend,
             session_modified: false,
             last_key_g: false,
         }
@@ -174,7 +209,7 @@ impl App {
         app.dict_name = name;
         app.stage = Stage::Ready;
         app.start_pinyin();
-        app.status = "Normal 模式: j/k 移动 · J/K 调序 · H/L 置顶/底 · a 添加 · x 删除 · / 检索 · o 换库 · d 部署 · ^q 退出".into();
+        app.status = "Normal 模式: j/k 移动 · J/K 调序 · H/L 置顶/底 · a 添加 · x 删除 · / 检索 · o 换库 · s 设置 · d 部署 · ^q 退出".into();
         app
     }
 
@@ -217,15 +252,14 @@ impl App {
     }
 
     fn handle(&mut self, k: KeyEvent) {
+        // 弹窗优先：设置页在 Pick 阶段也能打开。
+        if !matches!(self.popup, Popup::None) {
+            self.handle_popup(k);
+            return;
+        }
         match self.stage {
             Stage::Pick => self.handle_pick(k),
-            Stage::Ready => {
-                if !matches!(self.popup, Popup::None) {
-                    self.handle_popup(k);
-                } else {
-                    self.handle_key(k);
-                }
-            }
+            Stage::Ready => self.handle_key(k),
         }
     }
 
@@ -276,6 +310,9 @@ impl App {
             KeyCode::Left | KeyCode::Char('h') | KeyCode::Backspace | KeyCode::Esc => {
                 self.last_key_g = false;
                 self.dir_tree.left();
+            }
+            KeyCode::Char('s') if !ctrl => {
+                self.open_settings();
             }
             _ => {
                 self.last_key_g = false;
@@ -484,6 +521,10 @@ impl App {
                         self.last_key_g = false;
                         self.popup = Popup::ConfirmDeploy { on_exit: false };
                     }
+                    KeyCode::Char('s') if !ctrl && !alt => {
+                        self.last_key_g = false;
+                        self.open_settings();
+                    }
                     KeyCode::Char('w') => {
                         self.last_key_g = false;
                         self.save_immediate();
@@ -590,12 +631,51 @@ impl App {
                     _ => {}
                 },
             },
+            Popup::Settings(state) => {
+                let focus = state.focus;
+                match focus {
+                    SettingsFocus::Backend => match k.code {
+                        KeyCode::Up | KeyCode::Char('k') => {
+                            state.selected = state.selected.saturating_sub(1);
+                        }
+                        KeyCode::Down | KeyCode::Char('j') => {
+                            state.selected = (state.selected + 1).min(Backend::ALL.len() - 1);
+                        }
+                        KeyCode::Tab => state.focus = SettingsFocus::Command,
+                        KeyCode::Enter => {
+                            let backend = state.backend();
+                            let command = state.command.trim().to_string();
+                            self.commit_settings(backend, command);
+                        }
+                        KeyCode::Esc | KeyCode::Char('q') => self.popup = Popup::None,
+                        _ => {}
+                    },
+                    SettingsFocus::Command => match k.code {
+                        KeyCode::Esc => self.popup = Popup::None,
+                        KeyCode::Tab => state.focus = SettingsFocus::Backend,
+                        KeyCode::Enter => {
+                            let backend = state.backend();
+                            let command = state.command.trim().to_string();
+                            self.commit_settings(backend, command);
+                        }
+                        KeyCode::Backspace => {
+                            state.command.pop();
+                        }
+                        KeyCode::Char(c) if !ctrl && !alt => state.command.push(c),
+                        _ => {}
+                    },
+                }
+            }
             Popup::ConfirmDeploy { on_exit } => {
                 let is_exit = *on_exit;
                 match k.code {
                     KeyCode::Char('y') | KeyCode::Char('Y') | KeyCode::Enter => {
                         let _ = self.dict.flush_sync();
-                        let log = deploy::sync_and_deploy(&self.dict.path, Some(&self.deploy_cmd));
+                        let log = deploy::sync_and_deploy(
+                            &self.dict.path,
+                            Some(&self.deploy_cmd),
+                            self.backend,
+                        );
                         if is_exit {
                             self.popup = Popup::DeployLog {
                                 log: format!("{log}\n\n[按任意键退出程序]"),
@@ -781,6 +861,26 @@ impl App {
         }
     }
 
+    fn open_settings(&mut self) {
+        self.popup = Popup::Settings(SettingsState::new(self.backend, &self.deploy_cmd));
+        self.status = "设置：↑↓ 选择部署后端，Tab 编辑重载命令，Enter 保存，Esc 取消".into();
+    }
+
+    fn commit_settings(&mut self, backend: Backend, command: String) {
+        let mut config = crate::config::Config::load();
+        config.backend = backend;
+        config.deploy_cmd = if command.is_empty() {
+            None
+        } else {
+            Some(command.clone())
+        };
+        config.save();
+        self.backend = backend;
+        self.deploy_cmd = command;
+        self.popup = Popup::None;
+        self.status = format!("✔ 已保存部署后端：{}（按 d 重新部署生效）", backend.label());
+    }
+
     fn save_immediate(&mut self) {
         match self.dict.flush_sync() {
             Ok(()) => {
@@ -921,6 +1021,44 @@ mod tests {
         // Pressing Ctrl+q should quit
         app.handle(make_key(KeyCode::Char('q'), KeyModifiers::CONTROL));
         assert!(app.should_quit);
+    }
+
+    #[test]
+    fn test_settings_picker_navigation() {
+        let mut app = App::pick(PathBuf::from("."), String::new(), None);
+        // Pick 阶段按 s 即可打开设置页（不依赖当前配置值）
+        app.handle(make_key(KeyCode::Char('s'), KeyModifiers::NONE));
+        assert!(matches!(app.popup, Popup::Settings(_)));
+
+        // 从固定初始态出发验证导航
+        app.popup = Popup::Settings(SettingsState::new(Backend::Xsime, ""));
+        app.handle(make_key(KeyCode::Char('j'), KeyModifiers::NONE));
+        match &app.popup {
+            Popup::Settings(state) => assert_eq!(state.backend(), Backend::Fcitx5Rime),
+            _ => panic!("expected settings popup"),
+        }
+        app.handle(make_key(KeyCode::Char('k'), KeyModifiers::NONE));
+        match &app.popup {
+            Popup::Settings(state) => assert_eq!(state.backend(), Backend::Xsime),
+            _ => panic!("expected settings popup"),
+        }
+
+        // Tab 切到命令输入框并接收字符
+        app.handle(make_key(KeyCode::Tab, KeyModifiers::NONE));
+        for c in "echo hi".chars() {
+            app.handle(make_key(KeyCode::Char(c), KeyModifiers::NONE));
+        }
+        match &app.popup {
+            Popup::Settings(state) => {
+                assert_eq!(state.focus, SettingsFocus::Command);
+                assert_eq!(state.command, "echo hi");
+            }
+            _ => panic!("expected settings popup"),
+        }
+
+        // Esc 取消，不写回配置
+        app.handle(make_key(KeyCode::Esc, KeyModifiers::NONE));
+        assert!(matches!(app.popup, Popup::None));
     }
 
     #[test]
