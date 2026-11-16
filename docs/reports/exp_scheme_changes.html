@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>空明码 · 码长实验方案改动说明</title>
+<style>
+  :root{
+    --bg:#f5f6f8; --card:#ffffff; --card2:#fbfbfc; --text:#1a1d21; --muted:#666e78;
+    --border:#e2e5ea; --border2:#eef0f3;
+    --accent:#2f6f6b; --accent-soft:#e6f2f1;
+    --warn:#a8562a; --warn-soft:#fbf0e8;
+    --good:#256f4a; --good-soft:#e6f4ec;
+    --code-bg:#f0f2f5; --shadow:0 1px 2px rgba(16,24,40,.05),0 8px 24px -12px rgba(16,24,40,.12);
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC","Source Han Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  [data-theme="dark"]{
+    --bg:#121518; --card:#1b1f23; --card2:#20252a; --text:#e7eaee; --muted:#98a1ac;
+    --border:#2b3138; --border2:#242a30;
+    --accent:#6fb6b0; --accent-soft:#1d2f2e;
+    --warn:#d99a6c; --warn-soft:#2e241c;
+    --good:#7cc9a1; --good-soft:#1c2b23;
+    --code-bg:#262c32; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+  }
+  @media (prefers-color-scheme: dark){
+    [data-theme="auto"]{
+      --bg:#121518; --card:#1b1f23; --card2:#20252a; --text:#e7eaee; --muted:#98a1ac;
+      --border:#2b3138; --border2:#242a30;
+      --accent:#6fb6b0; --accent-soft:#1d2f2e;
+      --warn:#d99a6c; --warn-soft:#2e241c;
+      --good:#7cc9a1; --good-soft:#1c2b23;
+      --code-bg:#262c32; --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);
+       font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  code,.mono{font-family:var(--mono);font-variant-ligatures:none}
+
+  /* ---------- hero ---------- */
+  header.hero{padding:56px 0 32px;border-bottom:1px solid var(--border)}
+  .kicker{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:650}
+  h1{font-size:31px;line-height:1.3;margin:10px 0 12px;letter-spacing:-.01em}
+  .lede{font-size:16px;color:var(--muted);margin:0;max-width:70ch}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .chip{font-size:12.5px;padding:4px 10px;border:1px solid var(--border);border-radius:999px;
+        background:var(--card);color:var(--muted);font-family:var(--mono)}
+  .chip b{color:var(--text);font-weight:600}
+
+  /* ---------- theme toggle ---------- */
+  .toggle{position:fixed;top:18px;right:18px;z-index:50;width:38px;height:38px;border-radius:10px;
+          border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;
+          font-size:16px;line-height:1;box-shadow:var(--shadow)}
+  .toggle:hover{border-color:var(--accent)}
+
+  /* ---------- nav ---------- */
+  nav.tabs{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);
+           backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+  nav.tabs a{font-size:13.5px;color:var(--muted);text-decoration:none;padding:6px 11px;border-radius:8px;white-space:nowrap}
+  nav.tabs a:hover{background:var(--card);color:var(--text)}
+
+  /* ---------- sections ---------- */
+  section{padding:44px 0 8px}
+  h2{font-size:21px;margin:0 0 6px;letter-spacing:-.01em}
+  h2 .num{color:var(--accent);font-family:var(--mono);font-size:15px;margin-right:8px;font-weight:600}
+  .sub{color:var(--muted);margin:0 0 22px;font-size:14.5px}
+  p{margin:0 0 14px}
+  strong{font-weight:650}
+
+  /* ---------- kpi ---------- */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+  .kpi{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 18px 16px;box-shadow:var(--shadow)}
+  .kpi .v{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.15;font-variant-numeric:tabular-nums}
+  .kpi .l{font-size:13px;color:var(--muted);margin-top:4px}
+  .kpi .n{font-family:var(--mono);font-size:12px;color:var(--accent);margin-top:8px}
+  .kpi.accent{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 30%,var(--border))}
+
+  /* ---------- change cards ---------- */
+  .changes{display:grid;grid-template-columns:repeat(auto-fit,minmax(430px,1fr));gap:16px}
+  .chg{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+  .chg header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:14px;border:0;padding:0}
+  .chg .word{font-size:23px;font-weight:700;letter-spacing:.02em}
+  .tag{font-size:11.5px;padding:2px 8px;border-radius:6px;font-family:var(--mono);font-weight:600}
+  .tag.add{background:var(--good-soft);color:var(--good)}
+  .tag.move{background:var(--warn-soft);color:var(--warn)}
+  .tag.keep{background:var(--accent-soft);color:var(--accent)}
+  .flow{display:flex;align-items:center;gap:12px;margin:6px 0 16px;flex-wrap:wrap}
+  .code{font-family:var(--mono);font-size:17px;background:var(--code-bg);border:1px solid var(--border);
+        padding:5px 12px;border-radius:9px;letter-spacing:.06em}
+  .code.old{color:var(--muted);text-decoration:line-through;text-decoration-thickness:1px}
+  .code.new{color:var(--good);border-color:color-mix(in srgb,var(--good) 40%,var(--border));font-weight:600}
+  .arrow{color:var(--muted);font-size:16px}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:13.5px;margin:0 0 12px}
+  .kv dt{color:var(--muted)}
+  .kv dd{margin:0}
+  .chg .note{font-size:13.5px;color:var(--muted);border-top:1px solid var(--border2);padding-top:12px;margin:12px 0 0}
+
+  /* ---------- table ---------- */
+  .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+  .search{flex:1 1 240px;min-width:180px;position:relative}
+  .search input{width:100%;padding:9px 12px 9px 34px;border-radius:10px;border:1px solid var(--border);
+        background:var(--card);color:var(--text);font-family:var(--sans);font-size:14px;outline:none}
+  .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .search::before{content:"⌕";position:absolute;left:11px;top:6px;color:var(--muted);font-size:16px}
+  .seg{display:inline-flex;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:3px;gap:2px}
+  .seg button{border:0;background:transparent;color:var(--muted);font-size:13px;padding:6px 11px;border-radius:7px;
+        cursor:pointer;font-family:var(--sans)}
+  .seg button.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto}
+  .tblwrap{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+  .scroll{max-height:560px;overflow:auto}
+  table{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px}
+  thead th{position:sticky;top:0;z-index:2;background:var(--card2);text-align:left;font-weight:600;
+        font-size:12.5px;color:var(--muted);padding:10px 12px;border-bottom:1px solid var(--border);
+        white-space:nowrap;cursor:pointer;user-select:none}
+  thead th:hover{color:var(--text)}
+  thead th .ind{opacity:.4;font-size:10px;margin-left:3px}
+  tbody td{padding:8px 12px;border-bottom:1px solid var(--border2);vertical-align:middle}
+  tbody tr:hover td{background:var(--card2)}
+  tbody tr:last-child td{border-bottom:0}
+  td.w{font-size:15px;font-weight:500}
+  td.c{font-family:var(--mono);font-size:14.5px;letter-spacing:.08em;color:var(--accent);font-weight:600}
+  td.num{font-variant-numeric:tabular-nums;color:var(--muted)}
+  .pill{font-size:11.5px;padding:1px 7px;border-radius:5px;font-family:var(--mono);white-space:nowrap}
+  .pill.ok{background:var(--good-soft);color:var(--good)}
+  .pill.mid{background:var(--warn-soft);color:var(--warn)}
+  .empty{padding:40px;text-align:center;color:var(--muted);font-size:14px}
+
+  /* ---------- family bars ---------- */
+  .bars{display:grid;gap:7px}
+  .bar{display:grid;grid-template-columns:46px 1fr 46px;align-items:center;gap:12px;cursor:pointer;
+       padding:3px 4px;border-radius:7px}
+  .bar:hover{background:var(--card)}
+  .bar .k{font-family:var(--mono);font-size:17px;text-align:center;color:var(--text);font-weight:700;
+          background:var(--code-bg);border:1px solid var(--border);border-radius:6px;padding:0;line-height:1.45}
+  .bar .track{height:15px;background:var(--card2);border-radius:4px;overflow:hidden;border:1px solid var(--border2)}
+  .bar .fill{height:100%;background:color-mix(in srgb,var(--accent) 78%,transparent);border-radius:3px}
+  .bar .n{font-size:12.5px;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+
+  /* ---------- timeline ---------- */
+  .steps{list-style:none;margin:0;padding:0;border-left:2px solid var(--border);margin-left:6px}
+  .steps li{position:relative;padding:0 0 20px 22px}
+  .steps li::before{content:"";position:absolute;left:-6px;top:9px;width:10px;height:10px;border-radius:50%;
+        background:var(--card);border:2px solid var(--accent)}
+  .steps .t{font-size:12.5px;font-family:var(--mono);color:var(--accent)}
+  .steps .h{font-weight:600;margin:2px 0 3px}
+  .steps .d{font-size:13.5px;color:var(--muted)}
+
+  callout{display:block;background:var(--warn-soft);border:1px solid color-mix(in srgb,var(--warn) 26%,var(--border));
+        border-left:3px solid var(--warn);border-radius:10px;padding:14px 16px;font-size:13.5px;margin:16px 0}
+  callout b{color:var(--warn)}
+  .okbox{background:var(--good-soft);border-color:color-mix(in srgb,var(--good) 26%,var(--border));
+         border-left-color:var(--good)}
+  .okbox b{color:var(--good)}
+
+  footer{margin-top:56px;padding:28px 0 48px;border-top:1px solid var(--border);color:var(--muted);font-size:12.5px}
+  @media (max-width:640px){
+    h1{font-size:25px}
+    .changes{grid-template-columns:1fr}
+    .kpi .v{font-size:25px}
+  }
+</style>
+</head>
+<body>
+<button class="toggle" id="themeBtn" title="切换明暗">◐</button>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">kongmingmas_exp · XSIME 实验包</div>
+    <h1>码长实验方案：这次到底改了什么</h1>
+    <p class="lede">实验方案 <code>kongmingmas_exp</code> 相对生产方案 <code>kongmingmas</code> 的全部词库差异，逐条可查。
+       本次会话真正动过的只有两个词 —— <b>因为</b> 与 <b>她们</b>；其余 632 条是码长实验本身带来的简码增量。</p>
+    <div class="meta">
+      <span class="chip">生成 <b>2026-11-16 23:59</b></span>
+      <span class="chip">包 <b>34290cd1…</b></span>
+      <span class="chip">ZIP <b>aa650ee8…</b></span>
+      <span class="chip">方案 <b>kongmingmas_exp / _t</b></span>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs"><div class="wrap">
+  <a href="#overview">概览</a>
+  <a href="#session">本次会话的改动</a>
+  <a href="#table">新增简码全表</a>
+  <a href="#families">首码元族</a>
+  <a href="#verify">怎么验证的</a>
+  <a href="#rollback">怎么回滚</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="overview">
+  <h2><span class="num">01</span>概览</h2>
+  <p class="sub">口径：拿 <code>kongmingmas.dict.yaml</code>（生产）与 <code>kongmingmas_exp.dict.yaml</code>（实验）逐条比对 <code>(词, 码)</code> 二元组。简码 = 3 码元以内；击数由 <code>tools/km_chord_model.py</code> 的并击模型算出（一击 = 左右手各一个码元同时按下）。</p>
+  <div class="kpis" id="kpis"></div>
+  <callout class="okbox">
+    <b>一句话结论：</b>实验方案共新增 <b>634</b> 条简码条目，全部是一击可达。其中 <b>633 条是「一击、零延伸、唯一候选」的直出码</b>（632 条来自码长优化，1 条是本次的「她们」），并且这 633 条原本都要打两下 —— 现在一下出字。剩下 1 条是本次的码位改派（因为 <code>0d → yw</code>，击数不变、助记变好，代价是桶内有竞争者要补空格）。
+  </callout>
+</section>
+
+<section id="session">
+  <h2><span class="num">02</span>本次会话真正动过的两个词</h2>
+  <p class="sub">这两条是 2026-11-16 深夜这一轮亲手改的，其余差异来自之前的码长优化。简繁两份词库同步改，行号一致。</p>
+  <div class="changes" id="changes"></div>
+  <callout>
+    <b>如实交代代价：</b><code>因为</code> 换回 <code>yw</code> 后，与 <code>劓</code>、<code>劓 s</code> 同桶（3 条），所以是 <b>1 击 + 空格</b> 上屏，而改派前它在 <code>0d</code> 是一击直出。查了 26 份历史备份，15:35–20:25 期间 <code>yw</code> 桶一直是 3 条 —— 也就是说你用 <code>yw</code> 打「因为」本来就是首候选加空格，这次恢复的是原手感，没有为了凑唯一候选去删「劓」。
+  </callout>
+</section>
+
+<section id="table">
+  <h2><span class="num">03</span>新增简码全表</h2>
+  <p class="sub">点表头排序，点族名过滤。「上屏」一列 = 零延伸唯一候选，一击直接出字；标「需空格」的要多按一下空格选重。</p>
+  <div class="toolbar">
+    <div class="search"><input id="q" type="search" placeholder="搜词或码，例如 日本 / !. / *"></div>
+    <div class="seg" id="segSet">
+      <button class="on" data-set="simp">简体</button>
+      <button data-set="trad">繁体</button>
+    </div>
+    <div class="seg" id="segFilter">
+      <button class="on" data-f="all">全部</button>
+      <button data-f="direct">直出</button>
+      <button data-f="space">需空格</button>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+  <div class="tblwrap">
+    <div class="scroll">
+      <table>
+        <thead><tr>
+          <th data-sort="word">词<span class="ind">↕</span></th>
+          <th data-sort="code">新简码<span class="ind">↕</span></th>
+          <th data-sort="strokes">击数<span class="ind">↕</span></th>
+          <th data-sort="unique">上屏<span class="ind">↕</span></th>
+          <th data-sort="before">原来怎么打<span class="ind">↕</span></th>
+          <th data-sort="line">词库行号<span class="ind">↕</span></th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <p class="sub" style="margin-top:12px">「原来怎么打」取生产方案里该词成本最低的码。行号是词库文件内的物理行（1-based），<code>sort: original</code> 下同码候选按行号排，行号越小越靠前。</p>
+</section>
+
+<section id="families">
+  <h2><span class="num">04</span>新增简码都开在哪些首码元</h2>
+  <p class="sub">634 条落在 59 个首码元族里。字母族的两码空间早被声码占满，所以增量几乎全在符号族与数字族 —— 点任意族可回到上表筛选。</p>
+  <div class="bars" id="bars"></div>
+  <callout>
+    <b>族有语义分工：</b><code>?X</code> 叠字、<code>*X</code> 四字口号、<code>@X</code> 三字、<code>X~</code> 数字大写（永不外借）、<code>X'</code> / <code>X\`</code> 两字词。新增的这些一击码全部是「符号 + 字母」的双码元组合，左右手各一个，所以一次并击就能出。
+  </callout>
+</section>
+
+<section id="verify">
+  <h2><span class="num">05</span>这次不靠「退出码 0」验收</h2>
+  <p class="sub">之前吃过三次亏：部署脚本报成功、包里也有 .bin，但你界面里根本看不到。所以这轮逐层对到「你会看到的那一层」。</p>
+  <ul class="steps">
+    <li><div class="t">digest 三方一致</div><div class="h">包的 source_digest = 包目录名 = ZIP 的 SHA256</div><div class="d">都是 <code>aa650ee8…</code>。走官方 <code>rimes-schemes --import</code> 生成，所以不会再出现「方案未部署完成」。</div></li>
+    <li><div class="t">方案准入</div><div class="h">build/default.yaml 的 schema_list 含两个方案</div><div class="d"><code>kongmingmas_exp</code> 与繁体镜像 <code>kongmingmas_exp_t</code>，rimes-package.yaml 的 recommended 也指向 exp。</div></li>
+    <li><div class="t">词库行序</div><div class="h">因为是首候选</div><div class="d">简 <code>她们 0d</code>(L187)、<code>因为 yw</code>(L543)，都早于 <code>劓 yw</code>(L1451626)。繁体同构。</div></li>
+    <li><div class="t">反查表</div><div class="h">luna_pinyin.table.bin 与生产包逐字节一致</div><div class="d">md5 <code>a2603e16…</code>，essay.txt 5.89 MB 在包内 —— 这修掉了上一轮「反查全是生僻字」的静默降级。</div></li>
+    <li><div class="t">引擎真的换包了</div><div class="h">learning/34290cd1…/ 下出现 .rimes-engine.lock</div><div class="d">重启 fcitx5 后 23:44 生成，日志 <code>librime deploy finished</code>，运行日志零错误。锁文件出现之前，跑的其实还是上一个包。</div></li>
+  </ul>
+</section>
+
+<section id="rollback">
+  <h2><span class="num">06</span>想退回去</h2>
+  <p>生产包 <code>75f1c5dc…</code> 全程没被碰过，实验包只是并存。三种退法，从轻到重：</p>
+  <div class="kv" style="grid-template-columns:auto 1fr;gap:8px 18px">
+    <dt>换回生产</dt><dd>XSIME 方案窗口里选「空明码-宏版S」；或改 <code>active.yaml</code> 的 <code>package:</code> 为 <code>75f1c5dc…</code>、<code>schema: kongmingmas</code>，然后 <code>fcitx5-remote -e</code> 重启。</dd>
+    <dt>只退这一轮的词库</dt><dd>词库文件旁有 9 份 <code>.bak-&lt;时间戳&gt;</code> 备份，<code>cp</code> 回来重新打包导入即可。</dd>
+    <dt>彻底删除实验包</dt><dd>用 XSIME 的方案管理 GUI 删除，保留学习数据即可。</dd>
+  </div>
+  <callout>
+    <b>别手改包目录。</b>XSIME 的包有 <code>source_digest</code> 校验，手改 <code>package.yaml</code> / <code>default.yaml</code> 让方案露出来，只会让方案窗口永久提示「未部署完成」，而且改不回来。要上方案就走 <code>rimes-schemes --import &lt;库根&gt; &lt;zip&gt; &lt;schema_id&gt;…</code>。
+  </callout>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+  数据源：<code>kongmingmas.dict.yaml</code> ↔ <code>kongmingmas_exp.dict.yaml</code>、<code>kongmingmas_t.dict.yaml</code> ↔ <code>kongmingmas_exp_t.dict.yaml</code>；
+  击数由 <code>tools/km_chord_model.py</code> 逐条计算，非肉眼估算。生成脚本 <code>.workbuddy/tmp/diff_exp_prod.py</code>。
+</div></footer>
+
+<script>
+const DATA = {"simp":{"added":[["她们","0d",1,1,0,"T,mF",2,187,"0"],["因为","yw",1,0,2,"0d",1,543,"y"],["上的","!!",1,1,0,"SadW",2,1661042,"!"],["体验","!*",1,1,0,"tfY/",2,1661043,"!"],["本身","!,",1,1,0,"bJsW",2,1661044,"!"],["日本","!.",1,1,0,"rsbJ",2,1661045,"!"],["复习","!/",1,1,0,"FQx.",2,1661046,"!"],["左右","!:",1,1,0,"ZKYk",2,1661047,"!"],["进入","!;",1,1,0,"jR@=",2,1661048,"!"],["我是","!?",1,1,0,"Wqss",2,1661049,"!"],["上面","!@",1,1,0,"Samk",2,1661050,"!"],["一次","!A",1,1,0,"yzcy",2,1661051,"!"],["简单","!E",1,1,0,"jD*=",2,1661052,"!"],["方法","!F",1,1,0,"FyFc",2,1661053,"!"],["是个","!I",1,1,0,"sg@=",2,1661054,"!"],["未来","!K",1,1,0,"wHLl",2,1661055,"!"],["自然","!O",1,1,0,"zwRt",2,1661056,"!"],["到了","!U",1,1,0,"D;lM",2,1661057,"!"],["模式","!_",1,1,0,"Ms*=",2,1661058,"!"],["当年","!`",1,1,0,"Dfnq",2,1661059,"!"],["有点","!a",1,1,0,"Ykda",2,1661060,"!"],["还要","!f",1,1,0,"HkYj",2,1661061,"!"],["原因","!h",1,1,0,"YKyg",2,1661062,"!"],["行为","!k",1,1,0,"xewI",2,1661063,"!"],["补充","!m",1,1,0,"BPCy",2,1661064,"!"],["优势","!n",1,1,0,"Yfsu",2,1661065,"!"],["第一","!o",1,1,0,"dqyz",2,1661066,"!"],["不好","!p",1,1,0,"BKH,",2,1661067,"!"],["这一","!u",1,1,0,"zYyz",2,1661068,"!"],["利用","!w",1,1,0,"lqYt",2,1661069,"!"],["电话","!~",1,1,0,"dgHP",2,1661070,"!"],["回复日期","*!",1,1,0,"HFrq",2,1661071,"*"],["我也","'",1,1,0,"WqyM",2,1661072,"'"],["申请",",!",1,1,0,"sGqp",2,1661073,","],["面试",",'",1,1,0,"mksp",2,1661074,","],["说的",",*",1,1,0,"SPdW",2,1661075,","],["遇到",",,",1,1,0,"YGD;",2,1661076,","],["如此",",.",1,1,0,"R<ca",2,1661077,","],["而已",",/",1,1,0,"eKyn",2,1661078,","],["表示",",:",1,1,0,"bhsh",2,1661079,","],["技能",",;",1,1,0,"jn_=",2,1661080,","],["人物",",<",1,1,0,"rFWQ",2,1661081,","],["而言",",?",1,1,0,"eKYy",2,1661082,","],["上海",",@",1,1,0,"SaHc",2,1661083,","],["父母",",A",1,1,0,"FRM?",2,1661084,","],["成绩",",E",1,1,0,"cKj/",2,1661085,","],["小时",",I",1,1,0,"xdss",2,1661086,","],["说明",",K",1,1,0,"SPms",2,1661087,","],["获得",",L",1,1,0,"HBdE",2,1661088,","],["以前",",M",1,1,0,"y.qi",2,1661089,","],["应用",",N",1,1,0,"yY@=",2,1661090,","],["哪个",",O",1,1,0,"NlgF",2,1661091,","],["会有",",P",1,1,0,"HFYk",2,1661092,","],["评论",",Q",1,1,0,"ppLP",2,1661093,","],["对比",",R",1,1,0,"D!b;",2,1661094,","],["讨论",",U",1,1,0,"Tl*=",2,1661095,","],["材料",",V",1,1,0,"Cxli",2,1661096,","],["行业",",X",1,1,0,"HeyS",2,1661097,","],["回复",",_",1,1,0,"HGFQ",2,1661098,","],["也能",",`",1,1,0,"yMn!",2,1661099,","],["处理",",a",1,1,0,"CTlh",2,1661100,","],["思考",",b",1,1,0,"sgKj",2,1661101,","],["晚上",",c",1,1,0,"WS@=",2,1661102,","],["都能",",d",1,1,0,"Djn!",2,1661103,","],["针对",",e",1,1,0,"zZD!",2,1661104,","],["它们",",h",1,1,0,"TomF",2,1661105,","],["概念",",i",1,1,0,"Gxnf",2,1661106,","],["保持",",k",1,1,0,"Bfcu",2,1661107,","],["坚持",",m",1,1,0,"jc*=",2,1661108,","],["图片",",n",1,1,0,"TGpw",2,1661109,","],["她的",",o",1,1,0,"T,dW",2,1661110,","],["每年",",p",1,1,0,"mQnq",2,1661111,","],["逻辑",",t",1,1,0,"LGj;",2,1661112,","],["事件",",u",1,1,0,"sjjf",2,1661113,","],["症状",",v",1,1,0,"zYZY",2,1661114,","],["介绍",",~",1,1,0,"jfS/",2,1661115,","],["开发",".!",1,1,0,"KhF,",2,1661116,"."],["类似",".'",1,1,0,"lIsf",2,1661117,"."],["放在",".*",1,1,0,"FyZk",2,1661118,"."],["依然",".,",1,1,0,"yfRt",2,1661119,"."],["版本","..",1,1,0,"BwbJ",2,1661120,"."],["观点","./",1,1,0,"G!da",2,1661121,"."],["观众",".:",1,1,0,"G!Zf",2,1661122,"."],["互联网","@!",1,1,0,"H:lW",2,1661123,"@"],["那就",".;",1,1,0,"Nnjy",2,1661124,"."],["做了",".<",1,1,0,"ZFlM",2,1661125,"."],["接下来","@'",1,1,0,"juxL",2,1661126,"@"],["解释",".?",1,1,0,"js*=",2,1661127,"."],["压力",".@",1,1,0,"Ykl,",2,1661128,"."],["都没有","@*",1,1,0,"DjmY",2,1661129,"@"],["更多的","@,",1,1,0,"gJDd",2,1661130,"@"],["名字",".A",1,1,0,"mtzo",2,1661131,"."],["职业",".E",1,1,0,"zjyS",2,1661132,"."],["即可",".H",1,1,0,"jnkZ",2,1661133,"."],["真的是","@.",1,1,0,"zJds",2,1661134,"@"],["昨天",".I",1,1,0,"ZSth",2,1661135,"."],["加上",".K",1,1,0,"j,Sa",2,1661136,"."],["最好",".L",1,1,0,"ZH@=",2,1661137,"."],["过去",".M",1,1,0,"GJQV",2,1661138,"."],["收益",".N",1,1,0,"Smyi",2,1661139,"."],["人的",".O",1,1,0,"rFdW",2,1661140,"."],["采用",".P",1,1,0,"CrYt",2,1661141,"."],["哪里",".Q",1,1,0,"Nl@=",2,1661142,"."],["直到",".R",1,1,0,"zjD;",2,1661143,"."],["有关",".T",1,1,0,"YkGI",2,1661144,"."],["熟悉",".U",1,1,0,"Syxr",2,1661145,"."],["那样",".V",1,1,0,"NnYx",2,1661146,"."],["毕业",".X",1,1,0,"b;yS",2,1661147,"."],["哪些","._",1,1,0,"Nlxa",2,1661148,"."],["下来",".`",1,1,0,"xjLl",2,1661149,"."],["单词",".a",1,1,0,"Dicp",2,1661150,"."],["总是",".b",1,1,0,"Ziss",2,1661151,"."],["不够",".c",1,1,0,"BKGt",2,1661152,"."],["估计",".d",1,1,0,"GFjp",2,1661153,"."],["就要",".e",1,1,0,"jyYj",2,1661154,"."],["工资",".f",1,1,0,"Gjzy",2,1661155,"."],["也不是","@/",1,1,0,"yMBs",2,1661156,"@"],["终于",".h",1,1,0,"Z/YH",2,1661157,"."],["画面",".i",1,1,0,"HZmk",2,1661158,"."],["真正的","@:",1,1,0,"zJzd",2,1661159,"@"],["之外",".k",1,1,0,"zpWt",2,1661160,"."],["在这里","@;",1,1,0,"Zkzl",2,1661161,"@"],["算是",".m",1,1,0,"SQss",2,1661162,"."],["快速",".n",1,1,0,"KOSJ",2,1661163,"."],["这类",".o",1,1,0,"zYlI",2,1661164,"."],["一天",".p",1,1,0,"yzth",2,1661165,"."],["角度",".u",1,1,0,"jD_=",2,1661166,"."],["更是",".v",1,1,0,"gJss",2,1661167,"."],["现象",".w",1,1,0,"xhxt",2,1661168,"."],["股票",".~",1,1,0,"GDpj",2,1661169,"."],["看起来","@<",1,1,0,"KqqL",2,1661170,"@"],["银行","/!",1,1,0,"yH@=",2,1661171,"/"],["数学","/'",1,1,0,"SIXO",2,1661172,"/"],["员工","/*",1,1,0,"YLGj",2,1661173,"/"],["复杂","/,",1,1,0,"FQZ,",2,1661174,"/"],["提到","/.",1,1,0,"tuD;",2,1661175,"/"],["三个","//",1,1,0,"ShgF",2,1661176,"/"],["传统","/:",1,1,0,"CFT/",2,1661177,"/"],["我自己","@?",1,1,0,"Wqzj",2,1661178,"@"],["我认为","@@",1,1,0,"Wqrw",2,1661179,"@"],["不一样","@E",1,1,0,"BKyY",2,1661180,"@"],["都要","/;",1,1,0,"DjYj",2,1661181,"/"],["翻译","/<",1,1,0,"Fryp",2,1661182,"/"],["类型","/?",1,1,0,"lIxh",2,1661183,"/"],["对应","/@",1,1,0,"D!yy",2,1661184,"/"],["家里","/A",1,1,0,"jolg",2,1661185,"/"],["数量","/E",1,1,0,"SIls",2,1661186,"/"],["不如","/I",1,1,0,"BKR<",2,1661187,"/"],["经典","/K",1,1,0,"j/dg",2,1661188,"/"],["官方","/L",1,1,0,"GOFy",2,1661189,"/"],["实习","/N",1,1,0,"sox.",2,1661190,"/"],["通常","/O",1,1,0,"T.Cf",2,1661191,"/"],["证据","/Q",1,1,0,"zPJU",2,1661192,"/"],["再次","/U",1,1,0,"Zjcy",2,1661193,"/"],["期间","/V",1,1,0,"qjju",2,1661194,"/"],["第一个","@H",1,1,0,"dqyg",2,1661195,"@"],["表达","/X",1,1,0,"bhDk",2,1661196,"/"],["颜色","/_",1,1,0,"YysT",2,1661197,"/"],["身上","/`",1,1,0,"sWSa",2,1661198,"/"],["是在","/a",1,1,0,"ssZk",2,1661199,"/"],["也要","/c",1,1,0,"yMYj",2,1661200,"/"],["因素","/e",1,1,0,"ygSH",2,1661201,"/"],["加入","/f",1,1,0,"j,RR",2,1661202,"/"],["独立","/i",1,1,0,"DTly",2,1661203,"/"],["在于","/k",1,1,0,"ZkYH",2,1661204,"/"],["基于","/o",1,1,0,"jjYH",2,1661205,"/"],["足够","/p",1,1,0,"ZLGt",2,1661206,"/"],["交流","/t",1,1,0,"jylc",2,1661207,"/"],["这一点","@I",1,1,0,"zYyd",2,1661208,"@"],["技巧","/u",1,1,0,"juqj",2,1661209,"/"],["最高","/v",1,1,0,"ZSGy",2,1661210,"/"],["看了","/~",1,1,0,"KqlM",2,1661211,"/"],["资金","0!",1,1,0,"zyjz",2,1661212,"0"],["也不会","@L",1,1,0,"yMBH",2,1661213,"@"],["此时","0'",1,1,0,"cass",2,1661214,"0"],["十分","0*",1,1,0,"sf_=",2,1661215,"0"],["那里","0,",1,1,0,"Nl*=",2,1661216,"0"],["原来","0.",1,1,0,"YKLl",2,1661217,"0"],["模型","0/",1,1,0,"Mxxh",2,1661218,"0"],["电脑","0:",1,1,0,"dgNd",2,1661219,"0"],["一边","0;",1,1,0,"yzb,",2,1661220,"0"],["成了","0<",1,1,0,"cKlM",2,1661221,"0"],["导演","0?",1,1,0,"DnYc",2,1661222,"0"],["不到","0@",1,1,0,"BKD;",2,1661223,"0"],["策略","0_",1,1,0,"cQLG",2,1661224,"0"],["习惯","0`",1,1,0,"x.GO",2,1661225,"0"],["写的","0~",1,1,0,"xpdW",2,1661226,"0"],["联系","7!",1,1,0,"ljxt",2,1661227,"7"],["则是","7'",1,1,0,"zGss",2,1661228,"7"],["意思","7*",1,1,0,"ys@=",2,1661229,"7"],["很容易","@O",1,1,0,"hERy",2,1661230,"@"],["真是","7,",1,1,0,"zJss",2,1661231,"7"],["还在","7.",1,1,0,"HZ*=",2,1661232,"7"],["最多","7/",1,1,0,"ZSDT",2,1661233,"7"],["英国","7:",1,1,0,"yG@=",2,1661234,"7"],["一款","7;",1,1,0,"yzKJ",2,1661235,"7"],["还会","7<",1,1,0,"HH*=",2,1661236,"7"],["无论是","@P",1,1,0,"WHLs",2,1661237,"@"],["给大家","@R",1,1,0,"g?Dj",2,1661238,"@"],["小说","7?",1,1,0,"xdSP",2,1661239,"7"],["追求","7@",1,1,0,"ZQ@=",2,1661240,"7"],["链接","7M",1,1,0,"lzju",2,1661241,"7"],["文件","7O",1,1,0,"wYjf",2,1661242,"7"],["教授","7P",1,1,0,"jjSu",2,1661243,"7"],["在这个","@U",1,1,0,"Zkzg",2,1661244,"@"],["算法","7Q",1,1,0,"SQFc",2,1661245,"7"],["你要","7V",1,1,0,"nfYj",2,1661246,"7"],["看着","7_",1,1,0,"KqzI",2,1661247,"7"],["规则","7o",1,1,0,"GHzG",2,1661248,"7"],["一家","7u",1,1,0,"yzjo",2,1661249,"7"],["另一个","@V",1,1,0,"llyg",2,1661250,"@"],["特别是","@X",1,1,0,"tQbs",2,1661251,"@"],["某些","8!",1,1,0,"Mjxa",2,1661252,"8"],["流量","8'",1,1,0,"lcls",2,1661253,"8"],["设定","8*",1,1,0,"sPdo",2,1661254,"8"],["以为","8,",1,1,0,"y.wI",2,1661255,"8"],["主动","8.",1,1,0,"ZYDh",2,1661256,"8"],["拿到","8/",1,1,0,"NfD;",2,1661257,"8"],["反而","8:",1,1,0,"FeeK",2,1661258,"8"],["其实是","@_",1,1,0,"qjss",2,1661259,"@"],["食物","8;",1,1,0,"sfWQ",2,1661260,"8"],["正在","8<",1,1,0,"zJZk",2,1661261,"8"],["重复","8?",1,1,0,"CqFQ",2,1661262,"8"],["简单的","@`",1,1,0,"jqDd",2,1661263,"@"],["做出","8@",1,1,0,"ZFCM",2,1661264,"8"],["保护","8M",1,1,0,"BfHU",2,1661265,"8"],["其次","8O",1,1,0,"qc*=",2,1661266,"8"],["记忆","8P",1,1,0,"jpyo",2,1661267,"8"],["比例","8Q",1,1,0,"b;lf",2,1661268,"8"],["才会","8V",1,1,0,"CjHF",2,1661269,"8"],["多了","8_",1,1,0,"DTlM",2,1661270,"8"],["减少","8`",1,1,0,"jySd",2,1661271,"8"],["动画","8o",1,1,0,"DhHZ",2,1661272,"8"],["用的","8u",1,1,0,"YtdW",2,1661273,"8"],["元素","9!",1,1,0,"YHSH",2,1661274,"9"],["欢迎","9'",1,1,0,"H!yt",2,1661275,"9"],["创作","9*",1,1,0,"CFZF",2,1661276,"9"],["无论","9,",1,1,0,"WHLP",2,1661277,"9"],["代码","9.",1,1,0,"DM*=",2,1661278,"9"],["答主","9/",1,1,0,"DqZY",2,1661279,"9"],["方便","9:",1,1,0,"Fb*=",2,1661280,"9"],["赚钱","9;",1,1,0,"ZGqz",2,1661281,"9"],["做到","9<",1,1,0,"ZFD;",2,1661282,"9"],["宇宙","9?",1,1,0,"YOZo",2,1661283,"9"],["女性","9@",1,1,0,"N<xo",2,1661284,"9"],["为主","9E",1,1,0,"wIZY",2,1661285,"9"],["实在","9I",1,1,0,"sZ*=",2,1661286,"9"],["这么多","@a",1,1,0,"zYmD",2,1661287,"@"],["长期","9M",1,1,0,"Cq*=",2,1661288,"9"],["全国","9O",1,1,0,"QFGG",2,1661289,"9"],["当你","9P",1,1,0,"Dfnf",2,1661290,"9"],["就业","9Q",1,1,0,"jyyS",2,1661291,"9"],["提出","9V",1,1,0,"tuCM",2,1661292,"9"],["一个月","@c",1,1,0,"yzgY",2,1661293,"@"],["知识点","@d",1,1,0,"zqsd",2,1661294,"@"],["反应","9_",1,1,0,"Feyy",2,1661295,"9"],["一张","9`",1,1,0,"yzZn",2,1661296,"9"],["稳定","9a",1,1,0,"wQdo",2,1661297,"9"],["什么的","@f",1,1,0,"sFmd",2,1661298,"@"],["真实","9o",1,1,0,"zJso",2,1661299,"9"],["逐渐","9u",1,1,0,"ZKjc",2,1661300,"9"],["限制",":!",1,1,0,"xmzq",2,1661301,":"],["丰富",":'",1,1,0,"fHFO",2,1661302,":"],["费用",":*",1,1,0,"fNYt",2,1661303,":"],["哪怕",":,",1,1,0,"NlPo",2,1661304,":"],["要是",":.",1,1,0,"Yjss",2,1661305,":"],["仿佛",":/",1,1,0,"FfFF",2,1661306,":"],["认知",":;",1,1,0,"rPzq",2,1661307,":"],["去了",":<",1,1,0,"QVlM",2,1661308,":"],["身份",":?",1,1,0,"sWfF",2,1661309,":"],["带着",":@",1,1,0,"DjzI",2,1661310,":"],["要么",":A",1,1,0,"YjmT",2,1661311,":"],["资产",":E",1,1,0,"zyCy",2,1661312,":"],["自身",":I",1,1,0,"zwsW",2,1661313,":"],["商业",":L",1,1,0,"SyyS",2,1661314,":"],["愿意",":N",1,1,0,"YKyy",2,1661315,":"],["周围",":O",1,1,0,"ZtwG",2,1661316,":"],["中间",":P",1,1,0,"Zgju",2,1661317,":"],["既然",":U",1,1,0,"jnRt",2,1661318,":"],["一位",":V",1,1,0,"yzwF",2,1661319,":"],["好了",":_",1,1,0,"H,lM",2,1661320,":"],["性能",":`",1,1,0,"xon!",2,1661321,":"],["沟通",":a",1,1,0,"GcT.",2,1661322,":"],["出来的","@m",1,1,0,"CMLd",2,1661323,"@"],["提前",":d",1,1,0,"tq*=",2,1661324,":"],["年轻人","@n",1,1,0,"nqqr",2,1661325,"@"],["关键",":e",1,1,0,"GIjz",2,1661326,":"],["大家都","@v",1,1,0,"DkjD",2,1661327,"@"],["不可能","@~",1,1,0,"BKkn",2,1661328,"@"],["定义",":f",1,1,0,"doyi",2,1661329,":"],["消费",":h",1,1,0,"xcfN",2,1661330,":"],["我会",":i",1,1,0,"WqHF",2,1661331,":"],["很高",":l",1,1,0,"hEGy",2,1661332,":"],["用来",":n",1,1,0,"YtLl",2,1661333,":"],["某个",":o",1,1,0,"MjgF",2,1661334,":"],["利益",":p",1,1,0,"lqyi",2,1661335,":"],["积累",":u",1,1,0,"jl_=",2,1661336,":"],["随便",":v",1,1,0,"SMbf",2,1661337,":"],["使得",":~",1,1,0,"sfdE",2,1661338,":"],["重要",";!",1,1,0,"ZqYj",2,1661339,";"],["教材",";'",1,1,0,"jjCx",2,1661340,";"],["总之",";*",1,1,0,"Zizp",2,1661341,";"],["级别",";,",1,1,0,"j/bl",2,1661342,";"],["尽管",";.",1,1,0,"jG@=",2,1661343,";"],["我说",";/",1,1,0,"WqSP",2,1661344,";"],["合并",";:",1,1,0,"hFbi",2,1661345,";"],["手段",";;",1,1,0,"SuDW",2,1661346,";"],["就有",";<",1,1,0,"jyYk",2,1661347,";"],["处于",";?",1,1,0,"CTYH",2,1661348,";"],["听到",";@",1,1,0,"tlD;",2,1661349,";"],["国外",";A",1,1,0,"GGWt",2,1661350,";"],["成熟",";E",1,1,0,"cKSY",2,1661351,";"],["一份",";I",1,1,0,"yzfF",2,1661352,";"],["做好",";N",1,1,0,"ZFH,",2,1661353,";"],["此外",";O",1,1,0,"caWt",2,1661354,";"],["一条",";U",1,1,0,"yztt",2,1661355,";"],["后的",";V",1,1,0,"HedW",2,1661356,";"],["假设",";_",1,1,0,"jfsP",2,1661357,";"],["节奏",";`",1,1,0,"jbZh",2,1661358,";"],["导师",";e",1,1,0,"Dnsd",2,1661359,";"],["医院",";h",1,1,0,"y;YM",2,1661360,";"],["不然",";i",1,1,0,"BKRt",2,1661361,";"],["收获",";o",1,1,0,"SmHB",2,1661362,";"],["英雄",";p",1,1,0,"ybxk",2,1661363,";"],["超级",";u",1,1,0,"Cvj/",2,1661364,";"],["形象",";v",1,1,0,"xhxt",2,1661365,";"],["死亡",";~",1,1,0,"skWy",2,1661366,";"],["学院","<!",1,1,0,"XOYM",2,1661367,"<"],["美元","<'",1,1,0,"mIYH",2,1661368,"<"],["记者","<*",1,1,0,"jpzJ",2,1661369,"<"],["物理","<,",1,1,0,"WQlh",2,1661370,"<"],["重点","<.",1,1,0,"Zqda",2,1661371,"<"],["分布","</",1,1,0,"fRBK",2,1661372,"<"],["这位","<:",1,1,0,"zYwF",2,1661373,"<"],["有效","<;",1,1,0,"Ykxy",2,1661374,"<"],["现代","<<",1,1,0,"xhDf",2,1661375,"<"],["自我","<?",1,1,0,"zwWq",2,1661376,"<"],["用了","<@",1,1,0,"YtlM",2,1661377,"<"],["部门","<A",1,1,0,"BYmU",2,1661378,"<"],["主题","<I",1,1,0,"ZYts",2,1661379,"<"],["肌肉","<O",1,1,0,"jdRg",2,1661380,"<"],["地球","<P",1,1,0,"dvqh",2,1661381,"<"],["对手","<T",1,1,0,"D!Su",2,1661382,"<"],["尝试","<U",1,1,0,"Cfsp",2,1661383,"<"],["博士","<_",1,1,0,"Bjsj",2,1661384,"<"],["保险","<`",1,1,0,"Bfxm",2,1661385,"<"],["理由","<o",1,1,0,"lhYg",2,1661386,"<"],["身边","<p",1,1,0,"sWb,",2,1661387,"<"],["宣布","<w",1,1,0,"XOBK",2,1661388,"<"],["点击","<~",1,1,0,"dajh",2,1661389,"<"],["又是","=*",1,1,0,"Y.ss",2,1661390,"="],["性格","=@",1,1,0,"xogX",2,1661391,"="],["差距","A!",1,1,0,"CiJL",2,1661392,"A"],["态度","A*",1,1,0,"TD*=",2,1661393,"A"],["笔记","A/",1,1,0,"bqjp",2,1661394,"A"],["变得","A:",1,1,0,"bydE",2,1661395,"A"],["大小","A;",1,1,0,"Dkxd",2,1661396,"A"],["买了","A<",1,1,0,"MblM",2,1661397,"A"],["结束","A?",1,1,0,"j/SJ",2,1661398,"A"],["冲击","A@",1,1,0,"Cyjh",2,1661399,"A"],["写作","A`",1,1,0,"xpZF",2,1661400,"A"],["指数","Aa",1,1,0,"zuSI",2,1661401,"A"],["读者","D*",1,1,0,"DPzJ",2,1661402,"D"],["营销","D@",1,1,0,"ybxz",2,1661403,"D"],["是我","E'",1,1,0,"ssWq",2,1661404,"E"],["感谢","E*",1,1,0,"Gkxp",2,1661405,"E"],["欲望","E;",1,1,0,"YRWy",2,1661406,"E"],["备考","E@",1,1,0,"bTKj",2,1661407,"E"],["错误","F*",1,1,0,"CZWP",2,1661408,"F"],["太阳","F@",1,1,0,"TkYm",2,1661409,"F"],["相应","H@",1,1,0,"xxyy",2,1661410,"H"],["那是","I!",1,1,0,"Nnss",2,1661411,"I"],["接触","I*",1,1,0,"juCT",2,1661412,"I"],["不想","I,",1,1,0,"BKxx",2,1661413,"I"],["书籍","I.",1,1,0,"S?jq",2,1661414,"I"],["没有任何","*'",1,1,0,"mYrh",2,1661415,"*"],["观察","I/",1,1,0,"G!Co",2,1661416,"I"],["媒体","I:",1,1,0,"m<tf",2,1661417,"I"],["综合","I;",1,1,0,"Z/hF",2,1661418,"I"],["说法","I<",1,1,0,"SPFc",2,1661419,"I"],["机器","I?",1,1,0,"jxql",2,1661420,"I"],["生物","I@",1,1,0,"sQWQ",2,1661421,"I"],["不行","IA",1,1,0,"BKxe",2,1661422,"I"],["好看","IE",1,1,0,"H,Kq",2,1661423,"I"],["汽车","IH",1,1,0,"qcc:",2,1661424,"I"],["衣服","II",1,1,0,"Yf*=",2,1661425,"I"],["创业","IK",1,1,0,"CFyS",2,1661426,"I"],["他是","IL",1,1,0,"Tfss",2,1661427,"I"],["一套","IN",1,1,0,"yzTk",2,1661428,"I"],["推广","IO",1,1,0,"TUGY",2,1661429,"I"],["这点","IP",1,1,0,"zYda",2,1661430,"I"],["用于","IR",1,1,0,"YY@=",2,1661431,"I"],["面前","IT",1,1,0,"mkqi",2,1661432,"I"],["说了","IU",1,1,0,"SPlM",2,1661433,"I"],["相同","IV",1,1,0,"xxTg",2,1661434,"I"],["对象","Ik",1,1,0,"D!xt",2,1661435,"I"],["显示","Io",1,1,0,"xs_=",2,1661436,"I"],["回去","Ip",1,1,0,"HGQV",2,1661437,"I"],["一句","Iv",1,1,0,"yzJT",2,1661438,"I"],["也不","J*",1,1,0,"yMBK",2,1661439,"J"],["现实","J@",1,1,0,"xhso",2,1661440,"J"],["年轻","L*",1,1,0,"nqq;",2,1661441,"L"],["母亲","L;",1,1,0,"M?qy",2,1661442,"L"],["新闻","L@",1,1,0,"xywU",2,1661443,"L"],["原理","M*",1,1,0,"YKlh",2,1661444,"M"],["简历","M@",1,1,0,"jqlk",2,1661445,"M"],["全面","N*",1,1,0,"QFmk",2,1661446,"N"],["一遍","N;",1,1,0,"yzbp",2,1661447,"N"],["特征","O*",1,1,0,"tQzE",2,1661448,"O"],["高中","O@",1,1,0,"GyZg",2,1661449,"O"],["心理","P*",1,1,0,"xplh",2,1661450,"P"],["对你","P@",1,1,0,"D!nf",2,1661451,"P"],["高考","Q*",1,1,0,"GyKj",2,1661452,"Q"],["站在","Q@",1,1,0,"ZyZk",2,1661453,"Q"],["前期","R*",1,1,0,"qiqj",2,1661454,"R"],["一段","R@",1,1,0,"yzDW",2,1661455,"R"],["读书","S*",1,1,0,"DPS?",2,1661456,"S"],["输出","T*",1,1,0,"S:CM",2,1661457,"T"],["接近","T@",1,1,0,"jj@=",2,1661458,"T"],["说话","U*",1,1,0,"SH@=",2,1661459,"U"],["后续","U:",1,1,0,"HeX?",2,1661460,"U"],["来了","U@",1,1,0,"LllM",2,1661461,"U"],["咱们","UE",1,1,0,"ZlmF",2,1661462,"U"],["记得","UI",1,1,0,"jd*=",2,1661463,"U"],["从事","UL",1,1,0,"Cfsj",2,1661464,"U"],["制定","UN",1,1,0,"zqdo",2,1661465,"U"],["新手","UO",1,1,0,"xySu",2,1661466,"U"],["谷歌","UQ",1,1,0,"GRgZ",2,1661467,"U"],["还没","UR",1,1,0,"HkmC",2,1661468,"U"],["分别","US",1,1,0,"fRbl",2,1661469,"U"],["只会","UU",1,1,0,"zlHF",2,1661470,"U"],["战争","UV",1,1,0,"ZazT",2,1661471,"U"],["销量","V*",1,1,0,"xzls",2,1661472,"V"],["可以说是","**",1,1,0,"kySs",2,1661473,"*"],["之中","V@",1,1,0,"zpZg",2,1661474,"V"],["进攻","X*",1,1,0,"jhGj",2,1661475,"X"],["地位","X;",1,1,0,"dvwF",2,1661476,"X"],["上班","X@",1,1,0,"SB*=",2,1661477,"X"],["当中","Y*",1,1,0,"DfZg",2,1661478,"Y"],["或是","_!",1,1,0,"H:ss",2,1661479,"_"],["但我","_'",1,1,0,"DfWq",2,1661480,"_"],["周边","_*",1,1,0,"Ztb,",2,1661481,"_"],["参与","_,",1,1,0,"C.Y:",2,1661482,"_"],["就在","_.",1,1,0,"jyZk",2,1661483,"_"],["房子","_/",1,1,0,"Fpzm",2,1661484,"_"],["主流","_:",1,1,0,"ZYlc",2,1661485,"_"],["英文","_;",1,1,0,"ybwY",2,1661486,"_"],["优化","_<",1,1,0,"YfHF",2,1661487,"_"],["小米","_?",1,1,0,"xdmi",2,1661488,"_"],["演员","_@",1,1,0,"YcYL",2,1661489,"_"],["给他","_A",1,1,0,"g?Tf",2,1661490,"_"],["男生","_B",1,1,0,"NgsQ",2,1661491,"_"],["一本","_C",1,1,0,"yzbJ",2,1661492,"_"],["锻炼","_D",1,1,0,"DZli",2,1661493,"_"],["同事","_E",1,1,0,"Tgsj",2,1661494,"_"],["属性","_F",1,1,0,"SNxo",2,1661495,"_"],["也在","_G",1,1,0,"yMZk",2,1661496,"_"],["组成","_H",1,1,0,"Z?cK",2,1661497,"_"],["缺点","_I",1,1,0,"QQda",2,1661498,"_"],["的确","_J",1,1,0,"dwQK",2,1661499,"_"],["事实","_K",1,1,0,"sjso",2,1661500,"_"],["可以看到","*,",1,1,0,"kyKD",2,1661501,"*"],["展示","_L",1,1,0,"Znsh",2,1661502,"_"],["消息","_M",1,1,0,"xcxw",2,1661503,"_"],["差异","_N",1,1,0,"Ciyn",2,1661504,"_"],["伤害","_O",1,1,0,"SfHo",2,1661505,"_"],["不再","_P",1,1,0,"BKZj",2,1661506,"_"],["看来","_Q",1,1,0,"KqLl",2,1661507,"_"],["一部","_R",1,1,0,"yzBY",2,1661508,"_"],["体系","_S",1,1,0,"tfxt",2,1661509,"_"],["歌曲","_T",1,1,0,"gZQG",2,1661510,"_"],["中文","_U",1,1,0,"ZgwY",2,1661511,"_"],["原则","_V",1,1,0,"YKzG",2,1661512,"_"],["降低","_W",1,1,0,"jmdf",2,1661513,"_"],["修改","_X",1,1,0,"xfGn",2,1661514,"_"],["调整","_Y",1,1,0,"tpzJ",2,1661515,"_"],["你好","_Z",1,1,0,"nfH,",2,1661516,"_"],["教练","__",1,1,0,"jjl/",2,1661517,"_"],["当初","_`",1,1,0,"DfCP",2,1661518,"_"],["攻击","_a",1,1,0,"Gjjh",2,1661519,"_"],["线上","_b",1,1,0,"x/Sa",2,1661520,"_"],["原本","_c",1,1,0,"YKbJ",2,1661521,"_"],["担心","_d",1,1,0,"Duxp",2,1661522,"_"],["即便","_e",1,1,0,"jnbf",2,1661523,"_"],["依旧","_f",1,1,0,"yfjx",2,1661524,"_"],["硕士","_g",1,1,0,"SKsj",2,1661525,"_"],["运用","_h",1,1,0,"YHYt",2,1661526,"_"],["正是","_i",1,1,0,"zJss",2,1661527,"_"],["过的","_j",1,1,0,"GJdW",2,1661528,"_"],["可以通过","*.",1,1,0,"kyTG",2,1661529,"*"],["没事","_k",1,1,0,"mCsj",2,1661530,"_"],["下去","_l",1,1,0,"xjQV",2,1661531,"_"],["很快","_m",1,1,0,"hEKO",2,1661532,"_"],["人才","_n",1,1,0,"rFCj",2,1661533,"_"],["我们可以","*/",1,1,0,"Wmky",2,1661534,"*"],["概率","_o",1,1,0,"GxLY",2,1661535,"_"],["世纪","_p",1,1,0,"sjj/",2,1661536,"_"],["动物","_q",1,1,0,"DhWQ",2,1661537,"_"],["直播","_r",1,1,0,"zjBu",2,1661538,"_"],["是指","_s",1,1,0,"sszu",2,1661539,"_"],["指标","_t",1,1,0,"zubx",2,1661540,"_"],["缺乏","_u",1,1,0,"QF@=",2,1661541,"_"],["为例","_v",1,1,0,"wIlf",2,1661542,"_"],["屏幕","_w",1,1,0,"pnMB",2,1661543,"_"],["重新","_x",1,1,0,"Cqxy",2,1661544,"_"],["明确","_y",1,1,0,"msQK",2,1661545,"_"],["并非","_z",1,1,0,"bifA",2,1661546,"_"],["谢邀","_~",1,1,0,"xpYw",2,1661547,"_"],["这就","a*",1,1,0,"zYjy",2,1661548,"a"],["认证","a@",1,1,0,"rPzP",2,1661549,"a"],["平衡","a`",1,1,0,"plhE",2,1661550,"a"],["创新","a~",1,1,0,"CFxy",2,1661551,"a"],["百度","b*",1,1,0,"BkDY",2,1661552,"b"],["工程","b@",1,1,0,"GjcQ",2,1661553,"b"],["动力","c*",1,1,0,"Dhl,",2,1661554,"c"],["双方","c;",1,1,0,"S!Fy",2,1661555,"c"],["也好","c@",1,1,0,"yMH,",2,1661556,"c"],["年龄","d*",1,1,0,"nqla",2,1661557,"d"],["下的","d;",1,1,0,"xjdW",2,1661558,"d"],["多年","d@",1,1,0,"DTnq",2,1661559,"d"],["竞争","e*",1,1,0,"jyzT",2,1661560,"e"],["商家","e;",1,1,0,"Syjo",2,1661561,"e"],["队友","e@",1,1,0,"DMYk",2,1661562,"e"],["大的","f*",1,1,0,"DkdW",2,1661563,"f"],["竟然","f;",1,1,0,"jyRt",2,1661564,"f"],["就不","f@",1,1,0,"jyBK",2,1661565,"f"],["也没","g@",1,1,0,"yMmC",2,1661566,"g"],["武器","h*",1,1,0,"WHql",2,1661567,"h"],["大佬","h;",1,1,0,"DkLf",2,1661568,"h"],["留下","h@",1,1,0,"ltxj",2,1661569,"h"],["战斗","i!",1,1,0,"ZaDo",2,1661570,"i"],["角色","i*",1,1,0,"JTsT",2,1661571,"i"],["享受","i:",1,1,0,"xySr",2,1661572,"i"],["预算","i<",1,1,0,"Y!SQ",2,1661573,"i"],["相机","i?",1,1,0,"xxjx",2,1661574,"i"],["是谁","i@",1,1,0,"ssSP",2,1661575,"i"],["而在","iI",1,1,0,"eKZk",2,1661576,"i"],["结局","iK",1,1,0,"j/JN",2,1661577,"i"],["高级","iU",1,1,0,"Gyj/",2,1661578,"i"],["过于","iV",1,1,0,"GJYH",2,1661579,"i"],["吐槽","i`",1,1,0,"TLCx",2,1661580,"i"],["来讲","i~",1,1,0,"Lljp",2,1661581,"i"],["电商","k*",1,1,0,"dgSy",2,1661582,"k"],["保障","k@",1,1,0,"BfZm",2,1661583,"k"],["麻烦","m*",1,1,0,"Mf*=",2,1661584,"m"],["上述","m@",1,1,0,"SaSX",2,1661585,"m"],["就行","n*",1,1,0,"jyxe",2,1661586,"n"],["借助","o*",1,1,0,"jfZG",2,1661587,"o"],["优点","o;",1,1,0,"Yd*=",2,1661588,"o"],["升级","o@",1,1,0,"sQj/",2,1661589,"o"],["包含","p*",1,1,0,"BH@=",2,1661590,"p"],["来源","p@",1,1,0,"LlYC",2,1661591,"p"],["瞬间","q@",1,1,0,"SGju",2,1661592,"q"],["出了","r*",1,1,0,"CMlM",2,1661593,"r"],["字体","r@",1,1,0,"zotf",2,1661594,"r"],["时的","t*",1,1,0,"ssdW",2,1661595,"t"],["所说","t@",1,1,0,"SESP",2,1661596,"t"],["专辑","u*",1,1,0,"ZHj;",2,1661597,"u"],["月份","u@",1,1,0,"YDfF",2,1661598,"u"],["大师","v*",1,1,0,"Dksd",2,1661599,"v"],["跟着","v@",1,1,0,"gLzI",2,1661600,"v"],["过了","w*",1,1,0,"GJlM",2,1661601,"w"],["记住","w;",1,1,0,"jpZF",2,1661602,"w"],["不多","z*",1,1,0,"BKDT",2,1661603,"z"],["一场","z@",1,1,0,"yC*=",2,1661604,"z"],["如果没有","*:",1,1,0,"RGmY",2,1661605,"*"],["什么样的","*;",1,1,0,"smYd",2,1661606,"*"],["这篇文章","*<",1,1,0,"zpwZ",2,1661607,"*"],["就可以了","*?",1,1,0,"jkyl",2,1661608,"*"],["数据分析","*@",1,1,0,"SJfx",2,1661609,"*"],["个人认为","*C",1,1,0,"grrw",2,1661610,"*"],["可以直接","*D",1,1,0,"kyzj",2,1661611,"*"],["一般来说","*E",1,1,0,"yBLS",2,1661612,"*"],["非常重要","*F",1,1,0,"fCZY",2,1661613,"*"],["大多数人","*H",1,1,0,"DDSr",2,1661614,"*"],["还有很多","*I",1,1,0,"HYhD",2,1661615,"*"],["可以选择","*J",1,1,0,"kyXz",2,1661616,"*"],["举个例子","*K",1,1,0,"Jglz",2,1661617,"*"],["这个世界","*L",1,1,0,"zgsj",2,1661618,"*"],["我不知道","*N",1,1,0,"WBzD",2,1661619,"*"],["不仅仅是","*O",1,1,0,"Bjjs",2,1661620,"*"],["你会发现","*P",1,1,0,"nHFx",2,1661621,"*"],["可以看出","*R",1,1,0,"kyKC",2,1661622,"*"],["大家可以","*U",1,1,0,"Djky",2,1661623,"*"],["一段时间","*V",1,1,0,"yDsj",2,1661624,"*"],["完全可以","*X",1,1,0,"WQky",2,1661625,"*"],["是这样的","*_",1,1,0,"szYd",2,1661626,"*"],["解决方案","*`",1,1,0,"jJFA",2,1661627,"*"],["人工智能","*a",1,1,0,"Ai*=",2,1661628,"*"],["这些都是","*b",1,1,0,"zxDs",2,1661629,"*"],["在我看来","*e",1,1,0,"ZWKL",2,1661630,"*"],["千万不要","*g",1,1,0,"qWBY",2,1661631,"*"],["可以考虑","*h",1,1,0,"kyKL",2,1661632,"*"],["解决问题","*i",1,1,0,"jJwt",2,1661633,"*"],["感兴趣的","*k",1,1,0,"GxQd",2,1661634,"*"],["一个问题","*n",1,1,0,"ygwt",2,1661635,"*"],["有限公司","*o",1,1,0,"YxGs",2,1661636,"*"],["这样一个","*p",1,1,0,"zYyg",2,1661637,"*"],["这部电影","*q",1,1,0,"zBdy",2,1661638,"*"],["那个时候","*t",1,1,0,"NgsH",2,1661639,"*"],["除此之外","*u",1,1,0,"CczW",2,1661640,"*"],["还有一些","*y",1,1,0,"HYyx",2,1661641,"*"],["只有一个","*~",1,1,0,"zYyg",2,1661642,"*"],["听听","?!",1,1,0,"tltl",2,1661643,"?"],["种种","?'",1,1,0,"ZqZq",2,1661644,"?"],["嘻嘻","?*",1,1,0,"xlxl",2,1661645,"?"],["渐渐","?,",1,1,0,"jcjc",2,1661646,"?"],["大大","?.",1,1,0,"DkDk",2,1661647,"?"],["偷偷","?/",1,1,0,"TfTf",2,1661648,"?"],["多多","?:",1,1,0,"DTDT",2,1661649,"?"],["画画","?;",1,1,0,"HZHZ",2,1661650,"?"],["谈谈","?<",1,1,0,"TpTp",2,1661651,"?"],["远远","??",1,1,0,"YHYH",2,1661652,"?"],["某某","?@",1,1,0,"MjMj",2,1661653,"?"],["讲讲","?A",1,1,0,"jpjp",2,1661654,"?"],["滴滴","?E",1,1,0,"dcdc",2,1661655,"?"],["一一","?I",1,1,0,"yzyz",2,1661656,"?"],["偏偏","?L",1,1,0,"pfpf",2,1661657,"?"],["整整","?O",1,1,0,"zJzJ",2,1661658,"?"],["默默","?R",1,1,0,"MgMg",2,1661659,"?"],["聊聊","?T",1,1,0,"ljlj",2,1661660,"?"],["妥妥","?U",1,1,0,"TRTR",2,1661661,"?"],["当当","?V",1,1,0,"DfDf",2,1661662,"?"],["短短","?_",1,1,0,"DQDQ",2,1661663,"?"],["东东","?`",1,1,0,"D;D;",2,1661664,"?"],["深深","?e",1,1,0,"sCsC",2,1661665,"?"],["早早","?f",1,1,0,"ZsZs",2,1661666,"?"],["星星","?i",1,1,0,"xsxs",2,1661667,"?"],["统统","?k",1,1,0,"T/T/",2,1661668,"?"],["小小","?o",1,1,0,"xdxd",2,1661669,"?"],["玩玩","?u",1,1,0,"WhWh",2,1661670,"?"],["处处","?v",1,1,0,"CTCT",2,1661671,"?"],["恰恰","?x",1,1,0,"qoqo",2,1661672,"?"],["乖乖","?~",1,1,0,"GQGQ",2,1661673,"?"]],"added_stats":{"total":634,"jianma":634,"one_press":634,"unique":633,"shared":1,"head_hist":[["_",66],[".",46],["*",44],[",",43],["/",36],[":",34],["@",31],["?",31],["!",29],[";",28],["I",27],["9",23],["<",23],["8",20],["7",19],["0",15],["U",13],["i",12],["A",10],["E",4],["a",4],["L",3],["X",3],["c",3],["d",3],["e",3],["f",3],["h",3],["o",3],["=",2],["D",2],["F",2],["J",2],["M",2],["N",2],["O",2],["P",2],["Q",2],["R",2],["T",2],["V",2],["b",2],["k",2],["m",2],["p",2],["r",2],["t",2],["u",2],["v",2],["w",2],["z",2],["y",1],["'",1],["H",1],["S",1],["Y",1],["g",1],["n",1],["q",1]]}},"trad":{"added":[["她們","0d",1,1,0,"T,mF",2,187,"0"],["因爲","yw",1,0,2,"0d",1,543,"y"],["上的","!!",1,1,0,"SadW",2,1661081,"!"],["體驗","!*",1,1,0,"tfY/",2,1661082,"!"],["本身","!,",1,1,0,"bJsW",2,1661083,"!"],["日本","!.",1,1,0,"rsbJ",2,1661084,"!"],["複習","!/",1,1,0,"FQx.",2,1661085,"!"],["左右","!:",1,1,0,"ZKYk",2,1661086,"!"],["進入","!;",1,1,0,"jR@=",2,1661087,"!"],["我是","!?",1,1,0,"Wqss",2,1661088,"!"],["上面","!@",1,1,0,"Samk",2,1661089,"!"],["一次","!A",1,1,0,"yzcy",2,1661090,"!"],["簡單","!E",1,1,0,"jD*=",2,1661091,"!"],["方法","!F",1,1,0,"FyFc",2,1661092,"!"],["是個","!I",1,1,0,"sg@=",2,1661093,"!"],["未來","!K",1,1,0,"wHLl",2,1661094,"!"],["自然","!O",1,1,0,"zwRt",2,1661095,"!"],["到了","!U",1,1,0,"D;lM",2,1661096,"!"],["模式","!_",1,1,0,"Ms*=",2,1661097,"!"],["當年","!`",1,1,0,"Dfnq",2,1661098,"!"],["有點","!a",1,1,0,"Ykda",2,1661099,"!"],["還要","!f",1,1,0,"HkYj",2,1661100,"!"],["原因","!h",1,1,0,"YKyg",2,1661101,"!"],["行爲","!k",1,1,0,"xewI",2,1661102,"!"],["補充","!m",1,1,0,"BPCy",2,1661103,"!"],["優勢","!n",1,1,0,"Yfsu",2,1661104,"!"],["第一","!o",1,1,0,"dqyz",2,1661105,"!"],["不好","!p",1,1,0,"BKH,",2,1661106,"!"],["這一","!u",1,1,0,"zYyz",2,1661107,"!"],["利用","!w",1,1,0,"lqYt",2,1661108,"!"],["電話","!~",1,1,0,"dgHP",2,1661109,"!"],["回覆日期","*!",1,1,0,"HFrq",2,1661110,"*"],["我也","'",1,1,0,"WqyM",2,1661111,"'"],["申請",",!",1,1,0,"sGqp",2,1661112,","],["面試",",'",1,1,0,"mksp",2,1661113,","],["說的",",*",1,1,0,"SPdW",2,1661114,","],["遇到",",,",1,1,0,"YGD;",2,1661115,","],["如此",",.",1,1,0,"R<ca",2,1661116,","],["而已",",/",1,1,0,"eKyn",2,1661117,","],["表示",",:",1,1,0,"bhsh",2,1661118,","],["技能",",;",1,1,0,"jn_=",2,1661119,","],["人物",",<",1,1,0,"rFWQ",2,1661120,","],["而言",",?",1,1,0,"eKYy",2,1661121,","],["上海",",@",1,1,0,"SaHc",2,1661122,","],["父母",",A",1,1,0,"FRM?",2,1661123,","],["成績",",E",1,1,0,"cKj/",2,1661124,","],["小時",",I",1,1,0,"xdss",2,1661125,","],["說明",",K",1,1,0,"SPms",2,1661126,","],["獲得",",L",1,1,0,"HBdE",2,1661127,","],["以前",",M",1,1,0,"y.qi",2,1661128,","],["應用",",N",1,1,0,"yY@=",2,1661129,","],["哪個",",O",1,1,0,"NlgF",2,1661130,","],["會有",",P",1,1,0,"HFYk",2,1661131,","],["評論",",Q",1,1,0,"ppLP",2,1661132,","],["對比",",R",1,1,0,"D!b;",2,1661133,","],["討論",",U",1,1,0,"Tl*=",2,1661134,","],["材料",",V",1,1,0,"Cxli",2,1661135,","],["行業",",X",1,1,0,"HeyS",2,1661136,","],["回覆",",_",1,1,0,"HGFJ",2,1661137,","],["也能",",`",1,1,0,"yMn!",2,1661138,","],["處理",",a",1,1,0,"CTlh",2,1661139,","],["思考",",b",1,1,0,"sgKj",2,1661140,","],["晚上",",c",1,1,0,"WS@=",2,1661141,","],["都能",",d",1,1,0,"Djn!",2,1661142,","],["針對",",e",1,1,0,"zZD!",2,1661143,","],["它們",",h",1,1,0,"TomF",2,1661144,","],["概念",",i",1,1,0,"Gxnf",2,1661145,","],["保持",",k",1,1,0,"Bfcu",2,1661146,","],["堅持",",m",1,1,0,"jc*=",2,1661147,","],["圖片",",n",1,1,0,"TGpw",2,1661148,","],["她的",",o",1,1,0,"T,dW",2,1661149,","],["每年",",p",1,1,0,"mQnq",2,1661150,","],["邏輯",",t",1,1,0,"LGj;",2,1661151,","],["事件",",u",1,1,0,"sjjf",2,1661152,","],["症狀",",v",1,1,0,"zYZY",2,1661153,","],["介紹",",~",1,1,0,"jfS/",2,1661154,","],["開發",".!",1,1,0,"KhF,",2,1661155,"."],["類似",".'",1,1,0,"lIsf",2,1661156,"."],["放在",".*",1,1,0,"FyZk",2,1661157,"."],["依然",".,",1,1,0,"yfRt",2,1661158,"."],["版本","..",1,1,0,"BwbJ",2,1661159,"."],["觀點","./",1,1,0,"G!da",2,1661160,"."],["觀衆",".:",1,1,0,"G!Zf",2,1661161,"."],["互聯網","@!",1,1,0,"H:lW",2,1661162,"@"],["那就",".;",1,1,0,"Nnjy",2,1661163,"."],["做了",".<",1,1,0,"ZFlM",2,1661164,"."],["接下來","@'",1,1,0,"juxL",2,1661165,"@"],["解釋",".?",1,1,0,"js*=",2,1661166,"."],["壓力",".@",1,1,0,"Ykl,",2,1661167,"."],["都沒有","@*",1,1,0,"DjmY",2,1661168,"@"],["更多的","@,",1,1,0,"gJDd",2,1661169,"@"],["名字",".A",1,1,0,"mtzo",2,1661170,"."],["職業",".E",1,1,0,"zjyS",2,1661171,"."],["即可",".H",1,1,0,"jnkZ",2,1661172,"."],["真的是","@.",1,1,0,"zJds",2,1661173,"@"],["昨天",".I",1,1,0,"ZSth",2,1661174,"."],["加上",".K",1,1,0,"j,Sa",2,1661175,"."],["最好",".L",1,1,0,"ZH@=",2,1661176,"."],["過去",".M",1,1,0,"GJQV",2,1661177,"."],["收益",".N",1,1,0,"Smyi",2,1661178,"."],["人的",".O",1,1,0,"rFdW",2,1661179,"."],["採用",".P",1,1,0,"CrYt",2,1661180,"."],["哪裏",".Q",1,1,0,"Nl@=",2,1661181,"."],["直到",".R",1,1,0,"zjD;",2,1661182,"."],["有關",".T",1,1,0,"YkGI",2,1661183,"."],["熟悉",".U",1,1,0,"Syxr",2,1661184,"."],["那樣",".V",1,1,0,"NnYx",2,1661185,"."],["畢業",".X",1,1,0,"b;yS",2,1661186,"."],["哪些","._",1,1,0,"Nlxa",2,1661187,"."],["下來",".`",1,1,0,"xjLl",2,1661188,"."],["單詞",".a",1,1,0,"Dicp",2,1661189,"."],["總是",".b",1,1,0,"Ziss",2,1661190,"."],["不夠",".c",1,1,0,"BKGt",2,1661191,"."],["估計",".d",1,1,0,"GFjp",2,1661192,"."],["就要",".e",1,1,0,"jyYj",2,1661193,"."],["工資",".f",1,1,0,"Gjzy",2,1661194,"."],["也不是","@/",1,1,0,"yMBs",2,1661195,"@"],["終於",".h",1,1,0,"Z/WY",2,1661196,"."],["畫面",".i",1,1,0,"HZmk",2,1661197,"."],["真正的","@:",1,1,0,"zJzd",2,1661198,"@"],["之外",".k",1,1,0,"zpWt",2,1661199,"."],["在這裏","@;",1,1,0,"Zkzl",2,1661200,"@"],["算是",".m",1,1,0,"SQss",2,1661201,"."],["快速",".n",1,1,0,"KOSJ",2,1661202,"."],["這類",".o",1,1,0,"zYlI",2,1661203,"."],["一天",".p",1,1,0,"yzth",2,1661204,"."],["角度",".u",1,1,0,"jD_=",2,1661205,"."],["更是",".v",1,1,0,"gJss",2,1661206,"."],["現象",".w",1,1,0,"xhxt",2,1661207,"."],["股票",".~",1,1,0,"GDpj",2,1661208,"."],["看起來","@<",1,1,0,"KqqL",2,1661209,"@"],["銀行","/!",1,1,0,"yH@=",2,1661210,"/"],["數學","/'",1,1,0,"SIXO",2,1661211,"/"],["員工","/*",1,1,0,"YLGj",2,1661212,"/"],["複雜","/,",1,1,0,"FQZ,",2,1661213,"/"],["提到","/.",1,1,0,"tuD;",2,1661214,"/"],["三個","//",1,1,0,"ShgF",2,1661215,"/"],["傳統","/:",1,1,0,"CFT/",2,1661216,"/"],["我自己","@?",1,1,0,"Wqzj",2,1661217,"@"],["我認爲","@@",1,1,0,"Wqrw",2,1661218,"@"],["不一樣","@E",1,1,0,"BKyY",2,1661219,"@"],["都要","/;",1,1,0,"DjYj",2,1661220,"/"],["翻譯","/<",1,1,0,"Fryp",2,1661221,"/"],["類型","/?",1,1,0,"lIxh",2,1661222,"/"],["對應","/@",1,1,0,"D!yy",2,1661223,"/"],["家裏","/A",1,1,0,"jolg",2,1661224,"/"],["數量","/E",1,1,0,"SIls",2,1661225,"/"],["不如","/I",1,1,0,"BKR<",2,1661226,"/"],["經典","/K",1,1,0,"j/dg",2,1661227,"/"],["官方","/L",1,1,0,"GOFy",2,1661228,"/"],["實習","/N",1,1,0,"sox.",2,1661229,"/"],["通常","/O",1,1,0,"T.Cf",2,1661230,"/"],["證據","/Q",1,1,0,"zPJU",2,1661231,"/"],["再次","/U",1,1,0,"Zjcy",2,1661232,"/"],["期間","/V",1,1,0,"qjju",2,1661233,"/"],["第一個","@H",1,1,0,"dqyg",2,1661234,"@"],["表達","/X",1,1,0,"bhDk",2,1661235,"/"],["顏色","/_",1,1,0,"YysT",2,1661236,"/"],["身上","/`",1,1,0,"sWSa",2,1661237,"/"],["是在","/a",1,1,0,"ssZk",2,1661238,"/"],["也要","/c",1,1,0,"yMYj",2,1661239,"/"],["因素","/e",1,1,0,"ygSH",2,1661240,"/"],["加入","/f",1,1,0,"j,RR",2,1661241,"/"],["獨立","/i",1,1,0,"DTly",2,1661242,"/"],["在於","/k",1,1,0,"ZkYH",2,1661243,"/"],["基於","/o",1,1,0,"jjWY",2,1661244,"/"],["足夠","/p",1,1,0,"ZLGt",2,1661245,"/"],["交流","/t",1,1,0,"jylc",2,1661246,"/"],["這一點","@I",1,1,0,"zYyd",2,1661247,"@"],["技巧","/u",1,1,0,"juqj",2,1661248,"/"],["最高","/v",1,1,0,"ZSGy",2,1661249,"/"],["看了","/~",1,1,0,"KqlM",2,1661250,"/"],["資金","0!",1,1,0,"zyjz",2,1661251,"0"],["也不會","@L",1,1,0,"yMBH",2,1661252,"@"],["此時","0'",1,1,0,"cass",2,1661253,"0"],["十分","0*",1,1,0,"sf_=",2,1661254,"0"],["那裏","0,",1,1,0,"Nl*=",2,1661255,"0"],["原來","0.",1,1,0,"YKLl",2,1661256,"0"],["模型","0/",1,1,0,"Mxxh",2,1661257,"0"],["電腦","0:",1,1,0,"dgNd",2,1661258,"0"],["一邊","0;",1,1,0,"yzb,",2,1661259,"0"],["成了","0<",1,1,0,"cKlM",2,1661260,"0"],["導演","0?",1,1,0,"DnYc",2,1661261,"0"],["不到","0@",1,1,0,"BKD;",2,1661262,"0"],["策略","0_",1,1,0,"cQLG",2,1661263,"0"],["習慣","0`",1,1,0,"x.GO",2,1661264,"0"],["寫的","0~",1,1,0,"xpdW",2,1661265,"0"],["聯繫","7!",1,1,0,"ljxt",2,1661266,"7"],["則是","7'",1,1,0,"zGss",2,1661267,"7"],["意思","7*",1,1,0,"ys@=",2,1661268,"7"],["很容易","@O",1,1,0,"hERy",2,1661269,"@"],["真是","7,",1,1,0,"zJss",2,1661270,"7"],["還在","7.",1,1,0,"HZ*=",2,1661271,"7"],["最多","7/",1,1,0,"ZSDT",2,1661272,"7"],["英國","7:",1,1,0,"yG@=",2,1661273,"7"],["一款","7;",1,1,0,"yzKJ",2,1661274,"7"],["還會","7<",1,1,0,"HH*=",2,1661275,"7"],["無論是","@P",1,1,0,"WHLs",2,1661276,"@"],["給大家","@R",1,1,0,"g?Dj",2,1661277,"@"],["小說","7?",1,1,0,"xdSP",2,1661278,"7"],["追求","7@",1,1,0,"ZQ@=",2,1661279,"7"],["鏈接","7M",1,1,0,"lzju",2,1661280,"7"],["文件","7O",1,1,0,"wYjf",2,1661281,"7"],["教授","7P",1,1,0,"jjSu",2,1661282,"7"],["在這個","@U",1,1,0,"Zkzg",2,1661283,"@"],["算法","7Q",1,1,0,"SQFc",2,1661284,"7"],["你要","7V",1,1,0,"nfYj",2,1661285,"7"],["看着","7_",1,1,0,"KqzI",2,1661286,"7"],["規則","7o",1,1,0,"GHzG",2,1661287,"7"],["一家","7u",1,1,0,"yzjo",2,1661288,"7"],["另一個","@V",1,1,0,"llyg",2,1661289,"@"],["特別是","@X",1,1,0,"tQbs",2,1661290,"@"],["某些","8!",1,1,0,"Mjxa",2,1661291,"8"],["流量","8'",1,1,0,"lcls",2,1661292,"8"],["設定","8*",1,1,0,"sPdo",2,1661293,"8"],["以爲","8,",1,1,0,"y.wI",2,1661294,"8"],["主動","8.",1,1,0,"ZYDh",2,1661295,"8"],["拿到","8/",1,1,0,"NfD;",2,1661296,"8"],["反而","8:",1,1,0,"FeeK",2,1661297,"8"],["其實是","@_",1,1,0,"qjss",2,1661298,"@"],["食物","8;",1,1,0,"sfWQ",2,1661299,"8"],["正在","8<",1,1,0,"zJZk",2,1661300,"8"],["重複","8?",1,1,0,"CqFQ",2,1661301,"8"],["簡單的","@`",1,1,0,"jqDd",2,1661302,"@"],["做出","8@",1,1,0,"ZFCM",2,1661303,"8"],["保護","8M",1,1,0,"BfHU",2,1661304,"8"],["其次","8O",1,1,0,"qc*=",2,1661305,"8"],["記憶","8P",1,1,0,"jpyo",2,1661306,"8"],["比例","8Q",1,1,0,"b;lf",2,1661307,"8"],["纔會","8V",1,1,0,"CjHF",2,1661308,"8"],["多了","8_",1,1,0,"DTlM",2,1661309,"8"],["減少","8`",1,1,0,"jySd",2,1661310,"8"],["動畫","8o",1,1,0,"DhHZ",2,1661311,"8"],["用的","8u",1,1,0,"YtdW",2,1661312,"8"],["元素","9!",1,1,0,"YHSH",2,1661313,"9"],["歡迎","9'",1,1,0,"H!yt",2,1661314,"9"],["創作","9*",1,1,0,"CFZF",2,1661315,"9"],["無論","9,",1,1,0,"WHLP",2,1661316,"9"],["代碼","9.",1,1,0,"DM*=",2,1661317,"9"],["答主","9/",1,1,0,"DqZY",2,1661318,"9"],["方便","9:",1,1,0,"Fb*=",2,1661319,"9"],["賺錢","9;",1,1,0,"ZGqz",2,1661320,"9"],["做到","9<",1,1,0,"ZFD;",2,1661321,"9"],["宇宙","9?",1,1,0,"YOZo",2,1661322,"9"],["女性","9@",1,1,0,"N<xo",2,1661323,"9"],["爲主","9E",1,1,0,"wIZY",2,1661324,"9"],["實在","9I",1,1,0,"sZ*=",2,1661325,"9"],["這麼多","@a",1,1,0,"zYmD",2,1661326,"@"],["長期","9M",1,1,0,"Cq*=",2,1661327,"9"],["全國","9O",1,1,0,"QFGG",2,1661328,"9"],["當你","9P",1,1,0,"Dfnf",2,1661329,"9"],["就業","9Q",1,1,0,"jyyS",2,1661330,"9"],["提出","9V",1,1,0,"tuCM",2,1661331,"9"],["一個月","@c",1,1,0,"yzgY",2,1661332,"@"],["知識點","@d",1,1,0,"zqsd",2,1661333,"@"],["反應","9_",1,1,0,"Feyy",2,1661334,"9"],["一張","9`",1,1,0,"yzZn",2,1661335,"9"],["穩定","9a",1,1,0,"wQdo",2,1661336,"9"],["什麼的","@f",1,1,0,"sFmd",2,1661337,"@"],["真實","9o",1,1,0,"zJso",2,1661338,"9"],["逐漸","9u",1,1,0,"ZKjc",2,1661339,"9"],["限制",":!",1,1,0,"xmzq",2,1661340,":"],["豐富",":'",1,1,0,"fHFO",2,1661341,":"],["費用",":*",1,1,0,"fNYt",2,1661342,":"],["哪怕",":,",1,1,0,"NlPo",2,1661343,":"],["要是",":.",1,1,0,"Yjss",2,1661344,":"],["彷彿",":/",1,1,0,"FeFE",2,1661345,":"],["認知",":;",1,1,0,"rPzq",2,1661346,":"],["去了",":<",1,1,0,"QVlM",2,1661347,":"],["身份",":?",1,1,0,"sWfF",2,1661348,":"],["帶着",":@",1,1,0,"DjzI",2,1661349,":"],["要麼",":A",1,1,0,"YjmT",2,1661350,":"],["資產",":E",1,1,0,"zyCy",2,1661351,":"],["自身",":I",1,1,0,"zwsW",2,1661352,":"],["商業",":L",1,1,0,"SyyS",2,1661353,":"],["願意",":N",1,1,0,"YKyy",2,1661354,":"],["周圍",":O",1,1,0,"ZtwG",2,1661355,":"],["中間",":P",1,1,0,"Zgju",2,1661356,":"],["既然",":U",1,1,0,"jnRt",2,1661357,":"],["一位",":V",1,1,0,"yzwF",2,1661358,":"],["好了",":_",1,1,0,"H,lM",2,1661359,":"],["性能",":`",1,1,0,"xon!",2,1661360,":"],["溝通",":a",1,1,0,"GcT.",2,1661361,":"],["出來的","@m",1,1,0,"CMLd",2,1661362,"@"],["提前",":d",1,1,0,"tq*=",2,1661363,":"],["年輕人","@n",1,1,0,"nqqr",2,1661364,"@"],["關鍵",":e",1,1,0,"GIjz",2,1661365,":"],["大家都","@v",1,1,0,"DkjD",2,1661366,"@"],["不可能","@~",1,1,0,"BKkn",2,1661367,"@"],["定義",":f",1,1,0,"doyi",2,1661368,":"],["消費",":h",1,1,0,"xcfN",2,1661369,":"],["我會",":i",1,1,0,"WqHF",2,1661370,":"],["很高",":l",1,1,0,"hEGy",2,1661371,":"],["用來",":n",1,1,0,"YtLl",2,1661372,":"],["某個",":o",1,1,0,"MjgF",2,1661373,":"],["利益",":p",1,1,0,"lqyi",2,1661374,":"],["積累",":u",1,1,0,"jl_=",2,1661375,":"],["隨便",":v",1,1,0,"SMbf",2,1661376,":"],["使得",":~",1,1,0,"sfdE",2,1661377,":"],["重要",";!",1,1,0,"ZqYj",2,1661378,";"],["教材",";'",1,1,0,"jjCx",2,1661379,";"],["總之",";*",1,1,0,"Zizp",2,1661380,";"],["級別",";,",1,1,0,"j/bl",2,1661381,";"],["儘管",";.",1,1,0,"jG@=",2,1661382,";"],["我說",";/",1,1,0,"WqSP",2,1661383,";"],["合併",";:",1,1,0,"hFbi",2,1661384,";"],["手段",";;",1,1,0,"SuDW",2,1661385,";"],["就有",";<",1,1,0,"jyYk",2,1661386,";"],["處於",";?",1,1,0,"CTWY",2,1661387,";"],["聽到",";@",1,1,0,"tlD;",2,1661388,";"],["國外",";A",1,1,0,"GGWt",2,1661389,";"],["成熟",";E",1,1,0,"cKSY",2,1661390,";"],["一份",";I",1,1,0,"yzfF",2,1661391,";"],["做好",";N",1,1,0,"ZFH,",2,1661392,";"],["此外",";O",1,1,0,"caWt",2,1661393,";"],["一條",";U",1,1,0,"yztt",2,1661394,";"],["後的",";V",1,1,0,"HedW",2,1661395,";"],["假設",";_",1,1,0,"jfsP",2,1661396,";"],["節奏",";`",1,1,0,"jbZh",2,1661397,";"],["導師",";e",1,1,0,"Dnsd",2,1661398,";"],["醫院",";h",1,1,0,"y;YM",2,1661399,";"],["不然",";i",1,1,0,"BKRt",2,1661400,";"],["收穫",";o",1,1,0,"SmHB",2,1661401,";"],["英雄",";p",1,1,0,"ybxk",2,1661402,";"],["超級",";u",1,1,0,"Cvj/",2,1661403,";"],["形象",";v",1,1,0,"xhxt",2,1661404,";"],["死亡",";~",1,1,0,"skWy",2,1661405,";"],["學院","<!",1,1,0,"XOYM",2,1661406,"<"],["美元","<'",1,1,0,"mIYH",2,1661407,"<"],["記者","<*",1,1,0,"jpzJ",2,1661408,"<"],["物理","<,",1,1,0,"WQlh",2,1661409,"<"],["重點","<.",1,1,0,"Zqda",2,1661410,"<"],["分佈","</",1,1,0,"fRBK",2,1661411,"<"],["這位","<:",1,1,0,"zYwF",2,1661412,"<"],["有效","<;",1,1,0,"Ykxy",2,1661413,"<"],["現代","<<",1,1,0,"xhDf",2,1661414,"<"],["自我","<?",1,1,0,"zwWq",2,1661415,"<"],["用了","<@",1,1,0,"YtlM",2,1661416,"<"],["部門","<A",1,1,0,"BYmU",2,1661417,"<"],["主題","<I",1,1,0,"ZYts",2,1661418,"<"],["肌肉","<O",1,1,0,"jdRg",2,1661419,"<"],["地球","<P",1,1,0,"dvqh",2,1661420,"<"],["對手","<T",1,1,0,"D!Su",2,1661421,"<"],["嘗試","<U",1,1,0,"Cfsp",2,1661422,"<"],["博士","<_",1,1,0,"Bjsj",2,1661423,"<"],["保險","<`",1,1,0,"Bfxm",2,1661424,"<"],["理由","<o",1,1,0,"lhYg",2,1661425,"<"],["身邊","<p",1,1,0,"sWb,",2,1661426,"<"],["宣佈","<w",1,1,0,"XOBK",2,1661427,"<"],["點擊","<~",1,1,0,"dajh",2,1661428,"<"],["又是","=*",1,1,0,"Y.ss",2,1661429,"="],["性格","=@",1,1,0,"xogX",2,1661430,"="],["差距","A!",1,1,0,"CiJL",2,1661431,"A"],["態度","A*",1,1,0,"TD*=",2,1661432,"A"],["筆記","A/",1,1,0,"bqjp",2,1661433,"A"],["變得","A:",1,1,0,"bydE",2,1661434,"A"],["大小","A;",1,1,0,"Dkxd",2,1661435,"A"],["買了","A<",1,1,0,"MblM",2,1661436,"A"],["結束","A?",1,1,0,"j/SJ",2,1661437,"A"],["衝擊","A@",1,1,0,"Cyjh",2,1661438,"A"],["寫作","A`",1,1,0,"xpZF",2,1661439,"A"],["指數","Aa",1,1,0,"zuSI",2,1661440,"A"],["讀者","D*",1,1,0,"DPzJ",2,1661441,"D"],["營銷","D@",1,1,0,"ybxz",2,1661442,"D"],["是我","E'",1,1,0,"ssWq",2,1661443,"E"],["感謝","E*",1,1,0,"Gkxp",2,1661444,"E"],["慾望","E;",1,1,0,"YRWy",2,1661445,"E"],["備考","E@",1,1,0,"bTKj",2,1661446,"E"],["錯誤","F*",1,1,0,"CZWP",2,1661447,"F"],["太陽","F@",1,1,0,"TkYm",2,1661448,"F"],["相應","H@",1,1,0,"xxyy",2,1661449,"H"],["那是","I!",1,1,0,"Nnss",2,1661450,"I"],["接觸","I*",1,1,0,"juCT",2,1661451,"I"],["不想","I,",1,1,0,"BKxx",2,1661452,"I"],["書籍","I.",1,1,0,"S?jq",2,1661453,"I"],["沒有任何","*'",1,1,0,"mYrh",2,1661454,"*"],["觀察","I/",1,1,0,"G!Co",2,1661455,"I"],["媒體","I:",1,1,0,"m<tf",2,1661456,"I"],["綜合","I;",1,1,0,"Z/hF",2,1661457,"I"],["說法","I<",1,1,0,"SPFc",2,1661458,"I"],["機器","I?",1,1,0,"jxql",2,1661459,"I"],["生物","I@",1,1,0,"sQWQ",2,1661460,"I"],["不行","IA",1,1,0,"BKxe",2,1661461,"I"],["好看","IE",1,1,0,"H,Kq",2,1661462,"I"],["汽車","IH",1,1,0,"qcc:",2,1661463,"I"],["衣服","II",1,1,0,"Yf*=",2,1661464,"I"],["創業","IK",1,1,0,"CFyS",2,1661465,"I"],["他是","IL",1,1,0,"Tfss",2,1661466,"I"],["一套","IN",1,1,0,"yzTk",2,1661467,"I"],["推廣","IO",1,1,0,"TUGY",2,1661468,"I"],["這點","IP",1,1,0,"zYda",2,1661469,"I"],["用於","IR",1,1,0,"YY@=",2,1661470,"I"],["面前","IT",1,1,0,"mkqi",2,1661471,"I"],["說了","IU",1,1,0,"SPlM",2,1661472,"I"],["相同","IV",1,1,0,"xxTg",2,1661473,"I"],["對象","Ik",1,1,0,"D!xt",2,1661474,"I"],["顯示","Io",1,1,0,"xs_=",2,1661475,"I"],["回去","Ip",1,1,0,"HGQV",2,1661476,"I"],["一句","Iv",1,1,0,"yzJT",2,1661477,"I"],["也不","J*",1,1,0,"yMBK",2,1661478,"J"],["現實","J@",1,1,0,"xhso",2,1661479,"J"],["年輕","L*",1,1,0,"nqq;",2,1661480,"L"],["母親","L;",1,1,0,"M?qy",2,1661481,"L"],["新聞","L@",1,1,0,"xywU",2,1661482,"L"],["原理","M*",1,1,0,"YKlh",2,1661483,"M"],["簡歷","M@",1,1,0,"jqlk",2,1661484,"M"],["全面","N*",1,1,0,"QFmk",2,1661485,"N"],["一遍","N;",1,1,0,"yzbp",2,1661486,"N"],["特徵","O*",1,1,0,"tQzE",2,1661487,"O"],["高中","O@",1,1,0,"GyZg",2,1661488,"O"],["心理","P*",1,1,0,"xplh",2,1661489,"P"],["對你","P@",1,1,0,"D!nf",2,1661490,"P"],["高考","Q*",1,1,0,"GyKj",2,1661491,"Q"],["站在","Q@",1,1,0,"ZyZk",2,1661492,"Q"],["前期","R*",1,1,0,"qiqj",2,1661493,"R"],["一段","R@",1,1,0,"yzDW",2,1661494,"R"],["讀書","S*",1,1,0,"DPS?",2,1661495,"S"],["輸出","T*",1,1,0,"S:CM",2,1661496,"T"],["接近","T@",1,1,0,"jj@=",2,1661497,"T"],["說話","U*",1,1,0,"SH@=",2,1661498,"U"],["後續","U:",1,1,0,"HeX?",2,1661499,"U"],["來了","U@",1,1,0,"LllM",2,1661500,"U"],["咱們","UE",1,1,0,"ZlmF",2,1661501,"U"],["記得","UI",1,1,0,"jd*=",2,1661502,"U"],["從事","UL",1,1,0,"Cfsj",2,1661503,"U"],["制定","UN",1,1,0,"zqdo",2,1661504,"U"],["新手","UO",1,1,0,"xySu",2,1661505,"U"],["谷歌","UQ",1,1,0,"GRgZ",2,1661506,"U"],["還沒","UR",1,1,0,"HkmC",2,1661507,"U"],["分別","US",1,1,0,"fRbl",2,1661508,"U"],["只會","UU",1,1,0,"zlHF",2,1661509,"U"],["戰爭","UV",1,1,0,"ZazT",2,1661510,"U"],["銷量","V*",1,1,0,"xzls",2,1661511,"V"],["可以說是","**",1,1,0,"kySs",2,1661512,"*"],["之中","V@",1,1,0,"zpZg",2,1661513,"V"],["進攻","X*",1,1,0,"jhGj",2,1661514,"X"],["地位","X;",1,1,0,"dvwF",2,1661515,"X"],["上班","X@",1,1,0,"SB*=",2,1661516,"X"],["當中","Y*",1,1,0,"DfZg",2,1661517,"Y"],["或是","_!",1,1,0,"H:ss",2,1661518,"_"],["但我","_'",1,1,0,"DfWq",2,1661519,"_"],["周邊","_*",1,1,0,"Ztb,",2,1661520,"_"],["參與","_,",1,1,0,"C.Y:",2,1661521,"_"],["就在","_.",1,1,0,"jyZk",2,1661522,"_"],["房子","_/",1,1,0,"Fpzm",2,1661523,"_"],["主流","_:",1,1,0,"ZYlc",2,1661524,"_"],["英文","_;",1,1,0,"ybwY",2,1661525,"_"],["優化","_<",1,1,0,"YfHF",2,1661526,"_"],["小米","_?",1,1,0,"xdmi",2,1661527,"_"],["演員","_@",1,1,0,"YcYL",2,1661528,"_"],["給他","_A",1,1,0,"g?Tf",2,1661529,"_"],["男生","_B",1,1,0,"NgsQ",2,1661530,"_"],["一本","_C",1,1,0,"yzbJ",2,1661531,"_"],["鍛鍊","_D",1,1,0,"DZli",2,1661532,"_"],["同事","_E",1,1,0,"Tgsj",2,1661533,"_"],["屬性","_F",1,1,0,"SNxo",2,1661534,"_"],["也在","_G",1,1,0,"yMZk",2,1661535,"_"],["組成","_H",1,1,0,"Z?cK",2,1661536,"_"],["缺點","_I",1,1,0,"QQda",2,1661537,"_"],["的確","_J",1,1,0,"dwQK",2,1661538,"_"],["事實","_K",1,1,0,"sjso",2,1661539,"_"],["可以看到","*,",1,1,0,"kyKD",2,1661540,"*"],["展示","_L",1,1,0,"Znsh",2,1661541,"_"],["消息","_M",1,1,0,"xcxw",2,1661542,"_"],["差異","_N",1,1,0,"Ciyn",2,1661543,"_"],["傷害","_O",1,1,0,"SfHo",2,1661544,"_"],["不再","_P",1,1,0,"BKZj",2,1661545,"_"],["看來","_Q",1,1,0,"KqLl",2,1661546,"_"],["一部","_R",1,1,0,"yzBY",2,1661547,"_"],["體系","_S",1,1,0,"tfxt",2,1661548,"_"],["歌曲","_T",1,1,0,"gZQG",2,1661549,"_"],["中文","_U",1,1,0,"ZgwY",2,1661550,"_"],["原則","_V",1,1,0,"YKzG",2,1661551,"_"],["降低","_W",1,1,0,"jmdf",2,1661552,"_"],["修改","_X",1,1,0,"xfGn",2,1661553,"_"],["調整","_Y",1,1,0,"tpzJ",2,1661554,"_"],["你好","_Z",1,1,0,"nfH,",2,1661555,"_"],["教練","__",1,1,0,"jjl/",2,1661556,"_"],["當初","_`",1,1,0,"DfCP",2,1661557,"_"],["攻擊","_a",1,1,0,"Gjjh",2,1661558,"_"],["線上","_b",1,1,0,"x/Sa",2,1661559,"_"],["原本","_c",1,1,0,"YKbJ",2,1661560,"_"],["擔心","_d",1,1,0,"Duxp",2,1661561,"_"],["即便","_e",1,1,0,"jnbf",2,1661562,"_"],["依舊","_f",1,1,0,"yfjx",2,1661563,"_"],["碩士","_g",1,1,0,"SKsj",2,1661564,"_"],["運用","_h",1,1,0,"YHYt",2,1661565,"_"],["正是","_i",1,1,0,"zJss",2,1661566,"_"],["過的","_j",1,1,0,"GJdW",2,1661567,"_"],["可以通過","*.",1,1,0,"kyTG",2,1661568,"*"],["沒事","_k",1,1,0,"mCsj",2,1661569,"_"],["下去","_l",1,1,0,"xjQV",2,1661570,"_"],["很快","_m",1,1,0,"hEKO",2,1661571,"_"],["人才","_n",1,1,0,"rFCj",2,1661572,"_"],["我們可以","*/",1,1,0,"Wmky",2,1661573,"*"],["概率","_o",1,1,0,"GxLY",2,1661574,"_"],["世紀","_p",1,1,0,"sjj/",2,1661575,"_"],["動物","_q",1,1,0,"DhWQ",2,1661576,"_"],["直播","_r",1,1,0,"zjBu",2,1661577,"_"],["是指","_s",1,1,0,"sszu",2,1661578,"_"],["指標","_t",1,1,0,"zubx",2,1661579,"_"],["缺乏","_u",1,1,0,"QF@=",2,1661580,"_"],["爲例","_v",1,1,0,"wIlf",2,1661581,"_"],["屏幕","_w",1,1,0,"pnMB",2,1661582,"_"],["重新","_x",1,1,0,"Cqxy",2,1661583,"_"],["明確","_y",1,1,0,"msQK",2,1661584,"_"],["並非","_z",1,1,0,"bifA",2,1661585,"_"],["謝邀","_~",1,1,0,"xpYw",2,1661586,"_"],["這就","a*",1,1,0,"zYjy",2,1661587,"a"],["認證","a@",1,1,0,"rPzP",2,1661588,"a"],["平衡","a`",1,1,0,"plhE",2,1661589,"a"],["創新","a~",1,1,0,"CFxy",2,1661590,"a"],["百度","b*",1,1,0,"BkDY",2,1661591,"b"],["工程","b@",1,1,0,"GjcQ",2,1661592,"b"],["動力","c*",1,1,0,"Dhl,",2,1661593,"c"],["雙方","c;",1,1,0,"S!Fy",2,1661594,"c"],["也好","c@",1,1,0,"yMH,",2,1661595,"c"],["年齡","d*",1,1,0,"nqla",2,1661596,"d"],["下的","d;",1,1,0,"xjdW",2,1661597,"d"],["多年","d@",1,1,0,"DTnq",2,1661598,"d"],["競爭","e*",1,1,0,"jyzT",2,1661599,"e"],["商家","e;",1,1,0,"Syjo",2,1661600,"e"],["隊友","e@",1,1,0,"DMYk",2,1661601,"e"],["大的","f*",1,1,0,"DkdW",2,1661602,"f"],["竟然","f;",1,1,0,"jyRt",2,1661603,"f"],["就不","f@",1,1,0,"jyBK",2,1661604,"f"],["也沒","g@",1,1,0,"yMmC",2,1661605,"g"],["武器","h*",1,1,0,"WHql",2,1661606,"h"],["大佬","h;",1,1,0,"DkLf",2,1661607,"h"],["留下","h@",1,1,0,"ltxj",2,1661608,"h"],["戰鬥","i!",1,1,0,"ZaDo",2,1661609,"i"],["角色","i*",1,1,0,"JTsT",2,1661610,"i"],["享受","i:",1,1,0,"xySr",2,1661611,"i"],["預算","i<",1,1,0,"Y!SQ",2,1661612,"i"],["相機","i?",1,1,0,"xxjx",2,1661613,"i"],["是誰","i@",1,1,0,"ssSP",2,1661614,"i"],["而在","iI",1,1,0,"eKZk",2,1661615,"i"],["結局","iK",1,1,0,"j/JN",2,1661616,"i"],["高級","iU",1,1,0,"Gyj/",2,1661617,"i"],["過於","iV",1,1,0,"GJYH",2,1661618,"i"],["吐槽","i`",1,1,0,"TLCx",2,1661619,"i"],["來講","i~",1,1,0,"Lljp",2,1661620,"i"],["電商","k*",1,1,0,"dgSy",2,1661621,"k"],["保障","k@",1,1,0,"BfZm",2,1661622,"k"],["麻煩","m*",1,1,0,"Mf*=",2,1661623,"m"],["上述","m@",1,1,0,"SaSX",2,1661624,"m"],["就行","n*",1,1,0,"jyxe",2,1661625,"n"],["藉助","o*",1,1,0,"jbZG",2,1661626,"o"],["優點","o;",1,1,0,"Yd*=",2,1661627,"o"],["升級","o@",1,1,0,"sQj/",2,1661628,"o"],["包含","p*",1,1,0,"BH@=",2,1661629,"p"],["來源","p@",1,1,0,"LlYC",2,1661630,"p"],["瞬間","q@",1,1,0,"SGju",2,1661631,"q"],["出了","r*",1,1,0,"CMlM",2,1661632,"r"],["字體","r@",1,1,0,"zotf",2,1661633,"r"],["時的","t*",1,1,0,"ssdW",2,1661634,"t"],["所說","t@",1,1,0,"SESP",2,1661635,"t"],["專輯","u*",1,1,0,"ZHj;",2,1661636,"u"],["月份","u@",1,1,0,"YDfF",2,1661637,"u"],["大師","v*",1,1,0,"Dksd",2,1661638,"v"],["跟着","v@",1,1,0,"gLzI",2,1661639,"v"],["過了","w*",1,1,0,"GJlM",2,1661640,"w"],["記住","w;",1,1,0,"jpZF",2,1661641,"w"],["不多","z*",1,1,0,"BKDT",2,1661642,"z"],["一場","z@",1,1,0,"yC*=",2,1661643,"z"],["如果沒有","*:",1,1,0,"RGmY",2,1661644,"*"],["什麼樣的","*;",1,1,0,"smYd",2,1661645,"*"],["這篇文章","*<",1,1,0,"zpwZ",2,1661646,"*"],["就可以了","*?",1,1,0,"jkyl",2,1661647,"*"],["數據分析","*@",1,1,0,"SJfx",2,1661648,"*"],["個人認爲","*C",1,1,0,"grrw",2,1661649,"*"],["可以直接","*D",1,1,0,"kyzj",2,1661650,"*"],["一般來說","*E",1,1,0,"yBLS",2,1661651,"*"],["非常重要","*F",1,1,0,"fCZY",2,1661652,"*"],["大多數人","*H",1,1,0,"DDSr",2,1661653,"*"],["還有很多","*I",1,1,0,"HYhD",2,1661654,"*"],["可以選擇","*J",1,1,0,"kyXz",2,1661655,"*"],["舉個例子","*K",1,1,0,"Jglz",2,1661656,"*"],["這個世界","*L",1,1,0,"zgsj",2,1661657,"*"],["我不知道","*N",1,1,0,"WBzD",2,1661658,"*"],["不僅僅是","*O",1,1,0,"Bjjs",2,1661659,"*"],["你會發現","*P",1,1,0,"nHFx",2,1661660,"*"],["可以看出","*R",1,1,0,"kyKC",2,1661661,"*"],["大家可以","*U",1,1,0,"Djky",2,1661662,"*"],["一段時間","*V",1,1,0,"yDsj",2,1661663,"*"],["完全可以","*X",1,1,0,"WQky",2,1661664,"*"],["是這樣的","*_",1,1,0,"szYd",2,1661665,"*"],["解決方案","*`",1,1,0,"jJFA",2,1661666,"*"],["人工智能","*a",1,1,0,"Ai*=",2,1661667,"*"],["這些都是","*b",1,1,0,"zxDs",2,1661668,"*"],["在我看來","*e",1,1,0,"ZWKL",2,1661669,"*"],["千萬不要","*g",1,1,0,"qWBY",2,1661670,"*"],["可以考慮","*h",1,1,0,"kyKL",2,1661671,"*"],["解決問題","*i",1,1,0,"jJwt",2,1661672,"*"],["感興趣的","*k",1,1,0,"GxQd",2,1661673,"*"],["一個問題","*n",1,1,0,"ygwt",2,1661674,"*"],["有限公司","*o",1,1,0,"YxGs",2,1661675,"*"],["這樣一個","*p",1,1,0,"zYyg",2,1661676,"*"],["這部電影","*q",1,1,0,"zBdy",2,1661677,"*"],["那個時候","*t",1,1,0,"NgsH",2,1661678,"*"],["除此之外","*u",1,1,0,"CczW",2,1661679,"*"],["還有一些","*y",1,1,0,"HYyx",2,1661680,"*"],["只有一個","*~",1,1,0,"zYyg",2,1661681,"*"],["聽聽","?!",1,1,0,"tltl",2,1661682,"?"],["種種","?'",1,1,0,"ZqZq",2,1661683,"?"],["嘻嘻","?*",1,1,0,"xlxl",2,1661684,"?"],["漸漸","?,",1,1,0,"jcjc",2,1661685,"?"],["大大","?.",1,1,0,"DkDk",2,1661686,"?"],["偷偷","?/",1,1,0,"TfTf",2,1661687,"?"],["多多","?:",1,1,0,"DTDT",2,1661688,"?"],["畫畫","?;",1,1,0,"HZHZ",2,1661689,"?"],["談談","?<",1,1,0,"TpTp",2,1661690,"?"],["遠遠","??",1,1,0,"YHYH",2,1661691,"?"],["某某","?@",1,1,0,"MjMj",2,1661692,"?"],["講講","?A",1,1,0,"jpjp",2,1661693,"?"],["滴滴","?E",1,1,0,"dcdc",2,1661694,"?"],["一一","?I",1,1,0,"yzyz",2,1661695,"?"],["偏偏","?L",1,1,0,"pfpf",2,1661696,"?"],["整整","?O",1,1,0,"zJzJ",2,1661697,"?"],["默默","?R",1,1,0,"MgMg",2,1661698,"?"],["聊聊","?T",1,1,0,"ljlj",2,1661699,"?"],["妥妥","?U",1,1,0,"TRTR",2,1661700,"?"],["噹噹","?V",1,1,0,"DfDf",2,1661701,"?"],["短短","?_",1,1,0,"DQDQ",2,1661702,"?"],["東東","?`",1,1,0,"D;D;",2,1661703,"?"],["深深","?e",1,1,0,"sCsC",2,1661704,"?"],["早早","?f",1,1,0,"ZsZs",2,1661705,"?"],["星星","?i",1,1,0,"xsxs",2,1661706,"?"],["統統","?k",1,1,0,"T/T/",2,1661707,"?"],["小小","?o",1,1,0,"xdxd",2,1661708,"?"],["玩玩","?u",1,1,0,"WhWh",2,1661709,"?"],["處處","?v",1,1,0,"CTCT",2,1661710,"?"],["恰恰","?x",1,1,0,"qoqo",2,1661711,"?"],["乖乖","?~",1,1,0,"GQGQ",2,1661712,"?"]],"added_stats":{"total":634,"jianma":634,"one_press":634,"unique":633,"shared":1,"head_hist":[["_",66],[".",46],["*",44],[",",43],["/",36],[":",34],["@",31],["?",31],["!",29],[";",28],["I",27],["9",23],["<",23],["8",20],["7",19],["0",15],["U",13],["i",12],["A",10],["E",4],["a",4],["L",3],["X",3],["c",3],["d",3],["e",3],["f",3],["h",3],["o",3],["=",2],["D",2],["F",2],["J",2],["M",2],["N",2],["O",2],["P",2],["Q",2],["R",2],["T",2],["V",2],["b",2],["k",2],["m",2],["p",2],["r",2],["t",2],["u",2],["v",2],["w",2],["z",2],["y",1],["'",1],["H",1],["S",1],["Y",1],["g",1],["n",1],["q",1]]}}};
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- theme ---------- */
+const btn = $('#themeBtn');
+const order = ['auto','light','dark'];
+let ti = 0;
+btn.onclick = () => {
+  ti = (ti + 1) % 3;
+  document.documentElement.dataset.theme = order[ti];
+  btn.textContent = ti === 0 ? '◐' : (ti === 1 ? '☀' : '☾');
+};
+
+/* ---------- KPI ---------- */
+const S = DATA.simp, T = DATA.trad, A = S.added_stats, AT = T.added_stats;
+const words = A.unique;               // 直出条数
+const kpis = [
+  {v:A.total, l:'新增简码条目（简/繁各）', n:'全部 ≤ 3 码元'},
+  {v:A.one_press, l:'其中一击可达', n:'一击 = 左右手各一码元同时按下'},
+  {v:A.unique, l:'一击零延伸直出', n:'唯一候选，不用按空格'},
+  {v:A.shared, l:'需补空格选重', n:'因为 yw（与 劓 同桶）'},
+  {v:'2→1', l:'击数收益（633 条）', n:'原来打两下，现在打一下'},
+];
+$('#kpis').innerHTML = kpis.map((k,i) =>
+  `<div class="kpi${i===0?' accent':''}"><div class="v">${k.v}</div><div class="l">${k.l}</div><div class="n">${k.n}</div></div>`
+).join('');
+
+/* ---------- change cards ---------- */
+const cards = [
+  {
+    word:'因为', tag:['move','码位改派'], from:'0d', to:'yw',
+    rows:[['原来','<code>0d</code> — 1 击直出'],['现在','<code>yw</code> — 1 击 + 空格（桶内 3 条）'],
+          ['为什么','11-15 的一词一码收敛把 <code>yw</code> 收走、塞进了 <code>0d</code>；<code>yw</code> 本身是 Y-W 助记，比 <code>0d</code> 好记'],
+          ['代价','多按一下空格。历史上 <code>yw</code> 桶一直是 3 条，与你原来的手感一致']]
+  },
+  {
+    word:'她们', tag:['add','新发简码'], from:'T,mF', to:'0d',
+    rows:[['原来','<code>T,mF</code> / <code>Tm*=</code> — 2 击'],['现在','<code>0d</code> — 1 击零延伸，唯一候选直出'],
+          ['为什么','<code>因为</code> 让出 <code>0d</code> 后空出一个一击槽，按词频挑接收人（词频 19318）'],
+          ['收益','省一击，且不用选重']]
+  }
+];
+$('#changes').innerHTML = cards.map(c => `
+  <article class="chg">
+    <header>
+      <span class="word">${c.word}</span>
+      <span class="tag ${c.tag[0]}">${c.tag[1]}</span>
+    </header>
+    <div class="flow">
+      <span class="code old">${esc(c.from)}</span>
+      <span class="arrow">→</span>
+      <span class="code new">${esc(c.to)}</span>
+    </div>
+    <dl class="kv">${c.rows.map(r => `<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('')}</dl>
+    <p class="note">简体 <code>kongmingmas_exp.dict.yaml</code> 与繁体 <code>kongmingmas_exp_t.dict.yaml</code> 同步改动，行号相同。</p>
+  </article>`).join('');
+
+/* ---------- table ---------- */
+let curSet = 'simp', curFilter = 'all', curFamily = null, q = '';
+let sortKey = 'line', sortDir = 1;
+
+const state = {simp: mk(S.added), trad: mk(T.added)};
+function mk(rows){
+  return rows.map((r, i) => ({
+    i, word:r[0], code:r[1], strokes:r[2], unique:r[3] === 1,
+    contenders:r[4], before:r[5] || '—', beforeStrokes:r[6], line:r[7], head:r[8]
+  }));
+}
+
+function filtered(){
+  const arr = state[curSet].filter(r => {
+    if (curFilter === 'direct' && !r.unique) return false;
+    if (curFilter === 'space' && r.unique) return false;
+    if (curFamily && r.head !== curFamily) return false;
+    if (q){
+      const t = q.toLowerCase();
+      if (!(r.word.includes(q) || r.code.includes(t) || (r.before||'').includes(t))) return false;
+    }
+    return true;
+  });
+  const k = sortKey, d = sortDir;
+  arr.sort((a,b) => {
+    let x = a[k], y = b[k];
+    if (k === 'before'){ x = a.beforeStrokes ?? 99; y = b.beforeStrokes ?? 99; }
+    if (k === 'unique'){ x = a.unique ? 0 : 1; y = b.unique ? 0 : 1; }
+    if (typeof x === 'string') return x.localeCompare(y, 'zh') * d;
+    return (x - y) * d;
+  });
+  return arr;
+}
+
+function render(){
+  const arr = filtered();
+  const rows = arr.map(r => `
+    <tr>
+      <td class="w">${esc(r.word)}</td>
+      <td class="c">${esc(r.code)}</td>
+      <td class="num">${r.strokes}</td>
+      <td>${r.unique ? '<span class="pill ok">直出</span>' : `<span class="pill mid">需空格 · ${r.contenders}</span>`}</td>
+      <td class="num">${r.before === '—' ? '—' : `<code>${esc(r.before)}</code>${r.beforeStrokes && r.beforeStrokes < 90 ? ` · ${r.beforeStrokes} 击` : ''}`}</td>
+      <td class="num">${r.line}</td>
+    </tr>`).join('');
+  $('#tbody').innerHTML = rows || '<tr><td colspan="6" class="empty">没有匹配的条目</td></tr>';
+  $('#count').textContent = `${arr.length} / ${state[curSet].length} 条`;
+}
+
+document.querySelectorAll('#segSet button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('#segSet button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  curSet = b.dataset.set;
+  render();
+});
+document.querySelectorAll('#segFilter button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('#segFilter button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  curFilter = b.dataset.f;
+  render();
+});
+document.querySelectorAll('thead th').forEach(th => th.onclick = () => {
+  const k = th.dataset.sort;
+  if (sortKey === k) sortDir *= -1; else { sortKey = k; sortDir = 1; }
+  render();
+});
+$('#q').oninput = e => { q = e.target.value.trim(); render(); };
+
+render();
+
+/* ---------- family bars ---------- */
+const heads = DATA.simp.added_stats.head_hist;
+const topHeads = heads.slice(0, 18);
+const maxN = topHeads[0][1];
+$('#bars').innerHTML = topHeads.map(([h, n]) => `
+  <div class="bar" data-h="${esc(h)}">
+    <div class="k">${esc(h)}</div>
+    <div class="track"><div class="fill" style="width:${Math.round(n / maxN * 100)}%"></div></div>
+    <div class="n">${n}</div>
+  </div>`).join('') +
+  `<div class="n" style="margin-top:8px;color:var(--muted);font-size:12.5px">另有 ${heads.length - topHeads.length} 个小族（各 1–9 条）未画出。</div>`;
+
+document.querySelectorAll('.bar').forEach(el => el.onclick = () => {
+  curFamily = el.dataset.h;
+  curFilter = 'all';
+  document.querySelectorAll('#segFilter button').forEach(x => x.classList.toggle('on', x.dataset.f === 'all'));
+  $('#q').value = ''; q = '';
+  render();
+  document.getElementById('table').scrollIntoView({behavior:'smooth'});
+});
+</script>
+</body>
+</html>
